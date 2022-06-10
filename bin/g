@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# ===================
+# === Git Command ===
+# ===================
+
+if [[ $# == 0 ]]; then
+    git status -s
+else
+    git $@
+fi

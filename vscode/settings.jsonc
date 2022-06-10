@@ -1,0 +1,148 @@
+// =======================
+// === VSCode Settings ===
+// =======================
+
+{
+  // ========================
+  // === General Settings ===
+  // ========================
+
+  "editor.fontFamily": "Cascadia NF, Menlo, Source Code Pro, Courier, monospace",
+  "editor.cursorStyle": "block",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.iconTheme": "Monokai Classic Icons",
+  "editor.fontLigatures": false,
+  "editor.guides.bracketPairs": false,
+  "editor.linkedEditing": false,
+  "problems.showCurrentInStatus": true,
+
+  // =======================
+  // === Editor Settings ===
+  // =======================
+
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "gutter",
+  "editor.lightbulb.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.accessibilitySupport": "off",
+  "editor.suggestSelection": "first",
+  "editor.formatOnPaste": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.cursorBlinking": "phase",
+  "editor.matchBrackets": "near",
+  "editor.suggest.showIcons": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.codeLens": false,
+
+  // =========================
+  // === Explorer Settings ===
+  // =========================
+
+  "explorer.enableUndo": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "explorer.autoReveal": false,
+
+  // =========================
+  // === Zen Mode Settings ===
+  // =========================
+
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideTabs": false,
+
+  // =====================
+  // === File Settings ===
+  // =====================
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  // ==========================
+  // === Workbench Settings ===
+  // ==========================
+
+  "workbench.editor.untitled.hint": "hidden",
+
+  // ===========================
+  // === Integrated Terminal ===
+  // ===========================
+
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.fontWeightBold": "600",
+
+  // =========================
+  // === Language Settings ===
+  // =========================
+
+  "python.formatting.provider": "none",
+  "python.terminal.executeInFileDir": true,
+  "markdown.preview.breaks": true,
+
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "javascript.inlayHints.variableTypes.enabled": true,
+
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.variableTypes.enabled": true,
+
+  "go.playground": {
+    "share": false
+  },
+  "[go]": {
+    "editor.formatOnSave": false
+  },
+
+  // ======================
+  // === Other Settings ===
+  // ======================
+
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+
+  "files.associations": {
+    "*.vim": "vimrc"
+  },
+
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [{
+      "scope": [
+        "comment",
+        "comment.block",
+        "comment.block.documentation",
+        "comment.line",
+        "comment.line.double-slash",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    }]
+  },
+
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "editor.selectionHighlightBorder": "#00000000"
+    }
+  },
+
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.leader": ",",
+  "vim.easymotion": true
+}

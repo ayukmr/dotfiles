@@ -1,0 +1,32 @@
+# ======================
+# === RuboCop Config ===
+# ======================
+
+# allow no empty line after guard clause
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+# disable hash alignment warnings
+Layout/HashAlignment:
+  Enabled: false
+  EnforcedColonStyle: table
+
+# disable broken indentation
+Layout/FirstArgumentIndentation:
+  Enabled: false
+
+# set max method length
+Metrics/MethodLength:
+  Max: 50
+
+# set max module length
+Metrics/ModuleLength:
+  Max: 250
+
+# allow single line methods
+Style/SingleLineMethods:
+  Enabled: false
+
+# preferred name for errors in begin..rescue
+Naming/RescuedExceptionsVariableName:
+  PreferredName: error

@@ -1,0 +1,17 @@
+# =========================
+# === Tmux Clock Preset ===
+# =========================
+
+name: clock
+root: ~/
+
+windows:
+  - shell:
+      # ┃┣┃ layout
+      layout: 8427,364x94,0,0{182x94,0,0,42,181x94,183,0[181x59,183,0,43,181x34,183,60,44]}
+      panes:
+        -
+        -
+        - tmux clock
+
+  - editor: <%= ENV['EDITOR'] %>

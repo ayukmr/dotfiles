@@ -1,0 +1,10 @@
+# ======================
+# === Zest Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/zest
+
+  link:
+    - ~/.config/zest: config.yml

@@ -1,0 +1,17 @@
+# ===================
+# === Yarn Config ===
+# ===================
+
+# init fields in package.json
+initFields:
+  license: MIT
+  private: true
+
+# enable colors
+enableColors: true
+
+# enable links
+enableHyperlinks: true
+
+# enable message names
+enableMessageNames: true

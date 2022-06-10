@@ -1,0 +1,16 @@
+# =======================
+# === Cargo Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.cargo
+
+  link:
+    - ~/.cargo: config.toml
+
+packages:
+  packages:
+    - cargo install:
+      - wasm-pack
+      - evcxr_repl

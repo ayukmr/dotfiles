@@ -1,0 +1,7 @@
+# ==============================
+# === EditorConfig Bootstrap ===
+# ==============================
+
+config:
+  link:
+    - ~/.editorconfig: editorconfig

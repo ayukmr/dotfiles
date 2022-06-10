@@ -1,0 +1,40 @@
+{
+  // use file's basename in tab
+  "basename": true,
+
+  // set colorscheme to one dark
+  "colorscheme": "one-dark",
+
+  // enable git status in gutter
+  "diffgutter": true,
+
+  // set chars for split borders
+  "divchars": "│—",
+
+  // don't display dividers as reverse
+  "divreverse": false,
+
+  // disable ftoptions plugin
+  "ftoptions": false,
+
+  // create parent directories when writing file
+  "mkparents": true,
+
+  // remove trailing whitespace
+  "rmtrailingws": true,
+
+  // enable scrollbar
+  "scrollbar": true,
+
+  // statusline on left
+  "statusformatl": " $(filename) $(modified)($(line),$(col)) $(status.paste)",
+
+  // statusline on right
+  "statusformatr": "$(opt:fileformat) | $(opt:encoding) | $(opt:filetype) ",
+
+  // enable tab-like movement for spaces
+  "tabmovement": true,
+
+  // convert tabs to spaces
+  "tabstospaces": true
+}

@@ -1,0 +1,12 @@
+# ===================
+# === Atom Keymap ===
+# ===================
+
+'atom-text-editor':
+  # move lines
+  'alt-up':   'editor:move-line-up'
+  'alt-down': 'editor:move-line-down'
+
+  # bookmarks
+  'ctrl-y': 'bookmarks:toggle-bookmark'
+  'cmd-y':  'bookmarks:view-all'

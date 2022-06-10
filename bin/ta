@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# ===========================
+# === Tmux Attach Command ===
+# ===========================
+
+if [[ $# == 0 ]]; then
+    tmux attach
+else
+    tmux attach -t $@
+fi

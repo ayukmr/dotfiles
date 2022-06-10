@@ -1,0 +1,26 @@
+# =====================
+# === Vim Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.vim
+    - ~/.vim/backups
+    - ~/.vim/swaps
+    - ~/.vim/undos
+
+  files:
+    - ~/.vim/vimrc:  'source ~/.cfg/vim/vimrc.vim'
+    - ~/.vim/gvimrc: 'source ~/.cfg/vim/gvimrc.vim'
+
+  test:
+    - '[[ ! -f ~/.vim/autoload/plug.vim ]]':
+        dirs:
+          - ~/.vim/autoload
+
+        shell:
+          # install vim-plug
+          - ? curl -fsL
+              -o ~/.vim/autoload/plug.vim
+              raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+            : 'installing vim-plug'

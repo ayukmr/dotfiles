@@ -1,0 +1,34 @@
+# ======================
+# === Ripgrep Ignore ===
+# ======================
+
+# git folder
+.git/
+
+# metadata
+.DS_Store
+Thumbs.db
+
+# js
+.yarn-error.log
+yarn-error.log
+.next/
+build/
+node_modules/
+
+# python
+*.pyc
+__pycache__/
+
+# rust
+Cargo.lock
+debug/
+target/
+
+# ruby
+*.gem
+
+# swift
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/

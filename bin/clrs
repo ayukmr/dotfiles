@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+# ===================
+# === Show Colors ===
+# ===================
+
+for i in {0..255}; do
+    print -nP "%K{$i}%F{black} ${(l:3:: :)i} %f%k"
+
+    if ! (( (i + 1) % 8 )); then
+        echo
+    fi
+done

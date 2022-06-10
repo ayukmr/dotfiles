@@ -1,0 +1,16 @@
+# =====================
+# === Git Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/git
+
+  files:
+    - ~/.config/git/config: |
+        [user]
+            name  = <name>
+            email = <email>
+
+        [include]
+            path = ~/.cfg/git/gitconfig

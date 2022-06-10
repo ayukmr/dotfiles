@@ -1,0 +1,8 @@
+# ========================
+# === Alacritty Config ===
+# ========================
+
+import:
+  - ~/.cfg/alacritty/settings.yml
+  - ~/.cfg/alacritty/font.yml
+  - ~/.cfg/alacritty/colors.yml

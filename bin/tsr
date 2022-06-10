@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+# ====================
+# === Run TS Files ===
+# ====================
+
+if [[ -n $1 ]]; then
+    if (( $+commands[tsc] && $+commands[node] )); then
+        print -P "%B%F{blue}tsc%f%b $1"
+        echo '––––––––––––––––––––\n'
+
+        local out_file=$(echo $1 | sed -E 's/.ts$/.ts.js/')
+
+        # compile and run file
+        tsc $1 --outFile $out_file &&
+        node $out_file ${@:2}
+    else
+        print -P '%B%F{red}error%f%b: tsc and/or node not found'
+    fi
+else
+    print -P '%B%F{red}error%f%b: no input file given'
+    return 1
+fi

@@ -1,0 +1,10 @@
+# =======================
+# === Micro Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.config/micro
+
+  link:
+    - ~/.config/micro/settings.json: settings.jsonc

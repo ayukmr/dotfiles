@@ -1,0 +1,7 @@
+# ======================
+# === Lynx Bootstrap ===
+# ======================
+
+config:
+  link:
+    - ~/.lynxrc: lynxrc

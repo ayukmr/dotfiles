@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# =================================
+# === Tmux Kill Session Command ===
+# =================================
+
+if [[ $# == 0 ]]; then
+    tmux kill-session
+else
+    tmux kill-session -t $@
+fi

@@ -1,0 +1,33 @@
+# ======================
+# === Ripgrep Config ===
+# ======================
+
+# only preview long columns
+--max-columns=150
+--max-columns-preview
+
+# extra padding
+--field-match-separator=:\x20
+
+# enable column number
+# --column
+# --field-match-separator=:
+
+# show hidden files
+--hidden
+
+# use smart case
+--smart-case
+
+# line number style
+--colors=line:fg:blue
+--colors=line:style:bold
+
+# column number style
+--colors=column:fg:cyan
+
+# match style
+--colors=match:fg:green
+
+# path style
+--colors=path:style:bold

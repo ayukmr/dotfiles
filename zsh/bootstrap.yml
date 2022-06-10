@@ -1,0 +1,21 @@
+# =====================
+# === ZSH Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.zsh
+
+  files:
+    - ~/.zshenv:     source ~/.cfg/zsh/zshenv.zsh
+    - ~/.zsh/.zshrc: source ~/.cfg/zsh/zshrc.zsh
+    - ~/.hushlogin
+
+  test:
+    - '[[ ! -d ~/.zsh/zplug ]]':
+        shell:
+          # install zplug
+          - ? git clone
+              https://github.com/zplug/zplug
+              ~/.zsh/zplug
+            : 'installing zplug'

@@ -1,0 +1,18 @@
+# ==================
+# === Bat Config ===
+# ==================
+
+# theme
+--theme TwoDark
+
+# show changes and header
+--style changes,header
+
+# never wrap text
+--wrap never
+
+# set tab width to 4 chars
+--tabs 4
+
+# show line numbers
+--number

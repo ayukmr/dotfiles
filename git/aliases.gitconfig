@@ -1,0 +1,24 @@
+# ===================
+# === Git Aliases ===
+# ===================
+
+[alias]
+    a = add
+    p = push
+    d = diff
+    s = status -s
+    l = log -n 20 --pretty=oneline --abbrev-commit
+
+    sh = show
+    rs = reset
+    cl = clone
+    br = branch
+    st = status
+    ct = commit
+    hm = heatmap
+    co = checkout
+    ds = diffstat
+    cm = commit -m
+    dc = diff --cached
+
+    psu = push -u origin main

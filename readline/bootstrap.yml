@@ -1,0 +1,7 @@
+# ==========================
+# === Readline Bootstrap ===
+# ==========================
+
+config:
+  link:
+    - ~/.inputrc: inputrc

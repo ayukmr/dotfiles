@@ -1,0 +1,7 @@
+# =======================
+# === Newsboat Config ===
+# =======================
+
+include "~/.cfg/newsboat/settings"
+include "~/.cfg/newsboat/colors"
+include "~/.cfg/newsboat/keybinds"

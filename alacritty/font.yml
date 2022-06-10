@@ -1,0 +1,27 @@
+# ======================
+# === Alacritty Font ===
+# ======================
+
+font:
+  # normal
+  normal:
+    family: Cascadia NF
+    style:  Regular
+
+  # bold
+  bold:
+    family: Cascadia NF
+    style:  Bold
+
+  # italic
+  italic:
+    family: Cascadia NF
+    style:  Italic
+
+  # bold and italic
+  bold_italic:
+    family: Cascadia NF
+    style:  Italic
+
+  # font size
+  size: 12.0

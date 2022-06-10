@@ -1,0 +1,43 @@
+# ===================
+# === Atom Config ===
+# ===================
+
+'*':
+  autosave: {}
+
+  core:
+    closeDeletedFileTabs: true
+    telemetryConsent: 'no'
+    # themes
+    themes: [
+      'one-dark-ui'
+      'one-dark-theme'
+    ]
+
+  editor:
+    # font
+    defaultFontSize: 12
+    fontFamily: 'Cascadia NF, Menlo, Source Code Pro, monospace'
+    fontSize: 12
+
+    invisibles: {}
+    showIndentGuide: true
+    tabLength: 4
+
+  'file-icons':
+    coloured: false
+    onChanges: true
+    strategies: {}
+
+  minimap:
+    displayPluginsControls: false
+    plugins:
+      # show bookmarks
+      bookmarks: true
+
+  'wrap-guide':
+    # disable wrap guide
+    enabled: false
+
+  welcome:
+    showOnStartup: false

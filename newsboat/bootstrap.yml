@@ -1,0 +1,13 @@
+# ==========================
+# === Newsboat Bootstrap ===
+# ==========================
+
+config:
+  dirs:
+    - ~/.config/newsboat
+
+  files:
+    - ~/.config/newsboat/config: 'include "~/.cfg/newsboat/config"'
+
+  link:
+    - ~/.config/newsboat: urls

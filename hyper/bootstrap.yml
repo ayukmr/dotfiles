@@ -1,0 +1,7 @@
+# =======================
+# === Hyper Bootstrap ===
+# =======================
+
+config:
+  link:
+    - ~/.hyper.js: hyper.js

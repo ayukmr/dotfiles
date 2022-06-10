@@ -1,0 +1,11 @@
+# =========================
+# === RuboCop Bootstrap ===
+# =========================
+
+config:
+  dirs:
+    - ~/.config/rubocop
+
+  files:
+    - ~/.config/rubocop/config.yml: |
+        inherit_from: ~/.cfg/rubocop/config.yml

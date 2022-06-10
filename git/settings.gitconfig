@@ -1,0 +1,36 @@
+# ====================
+# === Git Settings ===
+# ====================
+
+[color]
+    # use color automatically
+    ui = auto
+
+[color "diff"]
+    # diff colors
+    meta = cyan bold
+    frag = magenta bold
+    old  = red
+    new  = green
+
+[color "status"]
+    # status colors
+    untracked = magenta
+
+[commit]
+    # template for commit message
+    template = ~/.cfg/git/gitmessage
+
+[core]
+    # use delta for paging
+    pager = delta
+
+    # global git hooks
+    hooksPath = ~/.cfg/git/hooks
+
+    # global gitignore
+    excludesFile = ~/.cfg/git/gitignore
+
+[init]
+    # use main as default branch
+    defaultBranch = main

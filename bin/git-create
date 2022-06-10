@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# ==================
+# === Git Create ===
+# ==================
+
+# init repo
+git init $@
+
+# create github repo
+gh repo create

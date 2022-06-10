@@ -1,0 +1,22 @@
+// ===================
+// === Deno Config ===
+// ===================
+
+{
+  "compilerOptions": {
+    // check types in js files
+    "checkJs": true
+  },
+
+  "fmt": {
+    "files": {
+      // format files in src directory
+      "include": ["src"]
+    },
+
+    "options": {
+      // use single quotes
+      "singleQuote": true
+    }
+  }
+}

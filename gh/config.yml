@@ -1,0 +1,11 @@
+# =========================
+# === GitHub CLI Config ===
+# =========================
+
+aliases:
+  rv: repo view
+  repos: repo list
+  login: auth login
+
+git_protocol: https
+prompt: enabled

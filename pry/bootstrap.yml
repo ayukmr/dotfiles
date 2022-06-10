@@ -1,0 +1,10 @@
+# =====================
+# === Pry Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/pry
+
+  files:
+    - ~/.config/pry/pryrc: "require '~/.cfg/pry/pryrc'"

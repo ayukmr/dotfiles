@@ -1,0 +1,281 @@
+# =======================
+# === MacOS Bootstrap ===
+# =======================
+
+scripts:
+  defaults:
+    shell:
+      # ============
+      # === Dock ===
+      # ============
+
+      - ? defaults write
+          com.apple.dock orientation
+          -string 'left'
+        : 'setting dock orientation'
+
+      - ? defaults write
+          com.apple.dock autohide
+          -bool true
+        : 'enabling automatically hiding dock'
+
+      - ? defaults write
+          com.apple.dock autohide-delay
+          -float 0
+        : 'disabling delay on reappearing'
+
+      - ? defaults write
+          com.apple.dock tilesize
+          -int 45
+        : 'setting size of dock icons'
+
+      - ? defaults write
+          com.apple.dock show-recents
+          -bool false
+        : 'disabling recents'
+
+      - ? defaults write
+          com.apple.dock mineffect
+          -string 'suck'
+        : 'settings minimize effect'
+
+      - ? defaults write
+          com.apple.dock minimize-to-application
+          -bool true
+        : 'enabling minimizing into application'
+
+      - ? defaults write
+          com.apple.dock launchanim
+          -bool false
+        : 'disabling animating opening applications'
+
+      - ? defaults write
+          com.apple.dock showhidden
+          -bool true
+        : 'enabling grayed out hidden applications'
+
+      - ? defaults write
+          com.apple.dock wvous-tr-corner
+          -int 5
+        : 'setting top right corner to start screensaver'
+
+      - ? defaults write
+          com.apple.dock wvous-tr-modifier
+          -int 0
+        : 'setting top right corner to start screensaver'
+
+      - ? defaults write
+          com.apple.dock enable-spring-load-actions-on-all-items
+          -bool true
+        : 'enabling spring loading'
+
+      # ===================
+      # === Screenshots ===
+      # ===================
+
+      - ? defaults write
+          com.apple.screencapture include-date
+          -bool false
+        : 'disabling including date in screenshot name'
+
+      - mkdir -p ~/Documents/Screenshots
+      - ? defaults write
+          com.apple.screencapture location
+          -string '~/Documents/Screenshots'
+        : 'enabling putting screenshots in folder'
+
+      # ==============
+      # === Finder ===
+      # ==============
+
+      - ? defaults write
+          com.apple.finder QuitMenuItem
+          -bool true
+        : 'enabling quitting finder'
+
+      - ? defaults write
+          NSGlobalDomain AppleShowAllExtensions
+          -bool true
+        : 'enabling showing file extensions'
+
+      - ? defaults write
+          com.apple.finder FXEnableExtensionChangeWarning
+          -bool false
+        : 'disabling warning on changing file extension'
+
+      - ? defaults write
+          NSGlobalDomain NSToolbarTitleViewRolloverDelay
+          -float 0
+        : 'disabling delay on hovering for icon'
+
+      - ? defaults write
+          com.apple.finder ShowPathbar
+          -bool true
+        : 'enabling showing path bar'
+
+      - ? defaults write
+          com.apple.finder _FXSortFoldersFirst
+          -bool true
+        : 'enabling keeping folders on top'
+
+      - ? defaults write
+          com.apple.finder AppleShowAllFiles
+          -bool true
+        : 'enabling showing hidden files'
+
+      - ? /usr/libexec/PlistBuddy
+          -c 'Set DesktopViewSettings:IconViewSettings:labelOnBottom false'
+          ~/Library/Preferences/com.apple.finder.plist
+        : 'enabling showing name to the right of icon'
+
+      - ? /usr/libexec/PlistBuddy
+          -c 'Set :DesktopViewSettings:IconViewSettings:showItemInfo true'
+          ~/Library/Preferences/com.apple.finder.plist
+        : 'enabling showing item info on desktop'
+
+      - ? /usr/libexec/PlistBuddy
+          -c 'Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true'
+          ~/Library/Preferences/com.apple.finder.plist
+        : 'enabling showing item info in finder'
+
+      - ? /usr/libexec/PlistBuddy
+          -c 'Set :StandardViewSettings:IconViewSettings:showItemInfo true'
+          ~/Library/Preferences/com.apple.finder.plist
+        : 'enabling showing item info in icon view'
+
+      - ? chflags nohidden ~/Library
+        : 'enabling showing library folder'
+
+      # ================
+      # === TextEdit ===
+      # ================
+
+      - ? defaults write
+          com.apple.TextEdit RichText
+          -bool false
+        : 'enabling defaulting to txt files'
+
+      # ================
+      # === Menu Bar ===
+      # ================
+
+      - ? defaults write
+          com.apple.menuextra.clock DateFormat
+          -string 'EEE MMM d  h:mm:ss a'
+        : 'changing time format in menu bar'
+
+      - ? defaults write
+          com.apple.screensaver askForPassword
+          -int 1
+        : 'enabling requiring password after screensaver'
+
+      - ? defaults write
+          com.apple.screensaver askForPasswordDelay
+          -int 0
+        : 'disabling password delay for screensaver'
+
+      # ==============
+      # === Safari ===
+      # ==============
+
+      - ? defaults write
+          com.apple.Safari ShowFullURLInSmartSearchField
+          -bool true
+        : 'enabling showing full url'
+
+      - ? defaults write
+          com.apple.Safari AutoOpenSafeDownloads
+          -bool false
+        : "disabling open 'safe' items automatically"
+
+      - ? defaults write
+          com.apple.Safari ShowFavoritesBar
+          -bool false
+        : 'disabling displaying bookmark bar'
+
+      - ? defaults write
+          com.apple.Safari IncludeDevelopMenu
+          -bool true
+        : 'enabling develop menu'
+
+      - ? defaults write
+          com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey
+          -bool true
+        : 'enabling developer preference key'
+
+      - ? defaults write
+          com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+          -bool true
+        : 'enabling developer extras'
+
+      - ? defaults write
+          com.apple.Safari SendDoNotTrackHTTPHeader
+          -bool true
+        : "enabling 'do not track'"
+
+      # ============
+      # === Mail ===
+      # ============
+
+      - ? defaults write
+          com.apple.Mail AddressesIncludeNameOnPasteboard
+          -bool false
+        : 'enabling copying email instead of name'
+
+      # ================
+      # === Keyboard ===
+      # ================
+
+      - ? defaults write
+          NSGlobalDomain KeyRepeat
+          -int 2
+        : 'setting a blazingly fast key-repeat rate'
+
+      - ? defaults write
+          NSGlobalDomain InitialKeyRepeat
+          -int 15
+        : 'setting a blazingly fast key-repeat rate'
+
+      - ? defaults write
+          -g ApplePressAndHoldEnabled
+          -bool false
+        : 'disable accents menu when holding key'
+
+      # ==============
+      # === Global ===
+      # ==============
+
+      - ? defaults write
+          NSGlobalDomain NSUseAnimatedFocusRing
+          -bool false
+        : 'disabling focus ring animation'
+
+      - ? defaults write
+          NSGlobalDomain AppleAccentColor
+          -string '-1'
+        : 'setting accent color to graphite'
+
+      - ? defaults write
+          NSGlobalDomain AppleActionOnDoubleClick
+          -string 'Minimize'
+        : 'enabling minimizing on double click on window title'
+
+      # =============
+      # === Other ===
+      # =============
+
+      - ? defaults write
+          com.microsoft.VSCode ApplePressAndHoldEnabled
+          -bool false
+        : 'enabling key-repeat in vscode'
+
+      # ===============
+      # === Killing ===
+      # ===============
+
+      - killall Dock:       'killing dock'
+      - killall SystemUIServer: 'killing uiserver'
+      - killall Finder:     'killing finder'
+      - killall TextEdit:     'killing textedit'
+      - killall Safari:     'killing safari'
+      - killall Mail:       'killing mail'

@@ -1,0 +1,22 @@
+#!/usr/bin/env zsh
+
+# ======================
+# === Run Java Files ===
+# ======================
+
+if [[ -n $1 ]]; then
+    if (( $+commands[javac] && $+commands[java] )); then
+        print -P "%B%F{red}javac%f%b $1"
+        echo '––––––––––––––––––––\n'
+
+        # compile and run file
+        javac $1 &&
+        java $(echo $1 | sed -E 's/.java$//') ${@:2}
+    else
+        print -P '%B%F{red}error%f%b: javac and/or java not found'
+        return 1
+    fi
+else
+    print -P '%B%F{red}error%f%b: no input file given'
+    return 1
+fi

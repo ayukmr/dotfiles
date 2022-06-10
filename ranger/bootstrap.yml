@@ -1,0 +1,10 @@
+# ========================
+# === Ranger Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/.config/ranger
+
+  link:
+    - ~/.config/ranger: rc.conf

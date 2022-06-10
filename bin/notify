@@ -1,0 +1,19 @@
+#!/usr/bin/env osascript
+
+-- =========================
+-- === Send Notification ===
+-- =========================
+
+on run argv
+    set args to ""
+    -- get args as string
+    repeat with arg in argv
+        set args to args & space & arg
+    end repeat
+
+    set now to (do shell script "date +%I:%M:%S")
+    set fmt to "Sent At " & now
+
+    -- display notification
+    display notification (fmt as text) with title args
+end run

@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# ===========================
+# === Show Battery Charge ===
+# ===========================
+
+local current_charge=$(ioreg -n AppleSmartBattery -r | grep '"CurrentCapacity"' | sed -E 's/\s*"CurrentCapacity" = //')
+local max_charge=$(ioreg -n AppleSmartBattery -r | grep '"MaxCapacity"' | sed -E 's/\s*"MaxCapacity" = //')
+
+local charge=$(( current_charge * 100 / max_charge ))
+
+print -P "⎪%F{green}${(l:charge/10::█:)}%K{8}${(l:10-charge/10:: :)}%f%k⎪ %B$charge%%%b"

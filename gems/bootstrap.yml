@@ -1,0 +1,24 @@
+# ==========================
+# === RubyGems Bootstrap ===
+# ==========================
+
+packages:
+  setup:
+    shell:
+      - gem update:  'updating gems'
+      - gem cleanup: 'cleaning up gems'
+
+  packages:
+    - gem install:
+      # tools
+      - pry
+      - yard
+      - asciidoctor
+
+      # frameworks
+      - rails
+      - rspec
+
+      # linting
+      - rubocop
+      - solargraph

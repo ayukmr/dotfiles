@@ -1,0 +1,10 @@
+# =======================
+# === Evcxr Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/Library/Preferences/evcxr
+
+  link:
+    - ~/Library/Preferences/evcxr: init.evcxr

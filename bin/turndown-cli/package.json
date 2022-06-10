@@ -1,0 +1,19 @@
+{
+  "name": "turndown-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "license": "MIT",
+
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg . --out-path build"
+  },
+
+  "dependencies": {
+    "turndown": "^7.1.1"
+  },
+  "devDependencies": {
+    "pkg": "^5.7.0"
+  }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env osascript
+
+-- ================================
+-- === Get PWD of Finder Window ===
+-- ================================
+
+tell application "Finder"
+    if (count of Finder windows) is 0 then
+        -- default to home directory
+        set directory to (home as alias)
+    else
+        set directory to ((target of Finder window 1) as alias)
+    end if
+
+    return POSIX path of dir
+end tell

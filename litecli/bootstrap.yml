@@ -1,0 +1,10 @@
+# =========================
+# === LiteCLI Bootstrap ===
+# =========================
+
+config:
+  dirs:
+    - ~/.config/litecli
+
+  copy:
+    - ~/.config/litecli/config: config.ini

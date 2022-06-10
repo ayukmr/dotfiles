@@ -1,0 +1,40 @@
+# ==========================
+# === Git Delta Settings ===
+# ==========================
+
+[delta]
+    # custom decorations
+    features = decorations
+
+    # show line numbers
+    line-numbers = true
+
+    # use side-by-side mode
+    side-by-side = true
+
+[delta "decorations"]
+    # file style
+    file-style            = magenta bold
+    file-decoration-style = magenta bold ul
+
+    # file labels
+    file-added-label    = [+]
+    file-removed-label  = [-]
+    file-modified-label = [~]
+    file-copied-label   = [=]
+    file-renamed-label  = [→]
+
+    # heading styles
+    commit-decoration-style      = yellow bold ol ul
+    hunk-header-decoration-style = blue ol ul
+
+    # line numbers style
+    line-numbers-zero-style  = "#abb2bf"
+    line-numbers-plus-style  = "#98c379 bold"
+    line-numbers-minus-style = "#e06c75 bold"
+
+    # character styles
+    plus-emph-style  = "#2c2e33 #98c379 bold"
+    minus-emph-style = "#2c2e33 #e06c75 bold"
+    plus-style       = "#98c379 bold"
+    minus-style      = "#e06c75 bold"

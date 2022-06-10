@@ -1,0 +1,13 @@
+# ==========================
+# === Terminal Bootstrap ===
+# ==========================
+
+config:
+  shell:
+    - open ~/.cfg/terminal/Vibrant.terminal:   'installing vibrant theme'
+    - open ~/.cfg/terminal/One\ Dark.terminal: 'installing one dark theme'
+
+    - ? defaults write com.apple.Terminal
+        'Default Window Settings'
+        -string 'One Dark'
+      : 'setting default theme to one dark'

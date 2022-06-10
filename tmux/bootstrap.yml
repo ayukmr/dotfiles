@@ -1,0 +1,22 @@
+# ======================
+# === Tmux Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/tmux
+
+  files:
+    - ~/.config/tmux/tmux.conf: 'source ~/.cfg/tmux/tmux.conf'
+
+  test:
+    - '[[ ! -d ~/.tmux/bundle/tpm ]]':
+        dirs:
+          - ~/.tmux/bundle
+
+        shell:
+          # install tpm
+          - ? git clone
+              https://github.com/tmux-plugins/tpm
+              ~/.tmux/bundle/tpm
+            : 'installing tpm'

@@ -1,0 +1,15 @@
+# =========================
+# === Global Git Ignore ===
+# =========================
+
+# macos
+.DS_Store
+
+# subversion
+.svn
+
+# tilde end
+*~
+
+# vim swaps
+.*.swp

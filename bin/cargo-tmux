@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+# ==========================
+# === Cargo Tmux Command ===
+# ==========================
+
+tmuxinator start cargo .

@@ -1,0 +1,10 @@
+# ============================
+# === GitHub CLI Bootstrap ===
+# ============================
+
+config:
+  dirs:
+    - ~/.config/gh
+
+  link:
+    - ~/.config/gh: config.yml

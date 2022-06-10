@@ -1,0 +1,25 @@
+# ======================
+# === Yarn Bootstrap ===
+# ======================
+
+config:
+  link:
+    - ~/.yarnrc.yml: yarnrc.yml
+
+packages:
+  setup:
+    shell:
+      - yarn global upgrade: 'updating packages'
+
+  packages:
+    - yarn global add:
+      - tsc
+      - less
+      - sass
+      - serve
+      - hjson
+      - ts-node
+      - typescript
+      - coffeescript
+      - express-generator
+      - typescript-language-server

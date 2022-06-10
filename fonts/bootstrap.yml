@@ -1,0 +1,10 @@
+# =======================
+# === Fonts Bootstrap ===
+# =======================
+
+config:
+  copy:
+    # glob fonts
+    <% Dir.glob(File.expand_path('~/.cfg/fonts/*.ttf')).each do |font| %>
+      <%= "- ~/Library/Fonts: #{font}" %>
+    <% end %>

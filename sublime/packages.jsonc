@@ -1,0 +1,13 @@
+// =============================
+// === Sublime Text Packages ===
+// =============================
+
+{
+  "bootstrapped": true,
+  "in_process_packages": [],
+
+  "installed_packages": [
+    "One Half Color Schemes",
+    "Package Control"
+  ]
+}

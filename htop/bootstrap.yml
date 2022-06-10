@@ -1,0 +1,10 @@
+# ======================
+# === Htop Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/htop
+
+  link:
+    - ~/.config/htop: htoprc

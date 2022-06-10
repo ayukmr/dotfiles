@@ -1,0 +1,28 @@
+# ===================
+# === Nano Config ===
+# ===================
+
+# disable wrapping lines
+set nowrap
+
+# automatically indent lines
+set autoindent
+
+# enable mouse control
+set mouse
+
+# always show line info
+set const
+
+# enable smooth scrolling
+set smooth
+
+# use regex search by default
+set regexp
+
+# disable keybinds help
+set nohelp
+
+# enable four space tabs
+set tabsize 4
+set tabstospaces

@@ -1,0 +1,10 @@
+# ========================
+# === Bottom Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/.config/bottom
+
+  link:
+    - ~/.config/bottom: bottom.toml

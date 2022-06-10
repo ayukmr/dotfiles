@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+# ===============================
+# === Git Commit Message Hook ===
+# ===============================
+
+require 'erb'
+require 'open3'
+
+# only modify file if using template
+if ARGV[1] == 'template'
+  template = <<~ERB
+    <%= File.read(File.expand_path('~/.cfg/git/gitmessage')) %>
+
+    # Changes:
+    <%= changes %>
+  ERB
+
+  erb = ERB.new(template, 0, '>')
+
+  output = Open3.capture3('git diff --cached --name-status')[0]
+
+  changes = output
+    .lines
+    .map do |entry|
+      "# #{
+        entry
+          .sub(/^A\t/, '+ ')
+          .sub(/^M\t/, '~ ')
+          .sub(/^D\t/, '- ')
+      }"
+    end
+    .join('')
+
+  File.write(ARGV[0], erb.result(binding))
+end

@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# ==========================
+# === Open Vim or Neovim ===
+# ==========================
+
+if (( $+commands[nvim] )); then
+    nvim $@
+else
+    vim $@
+fi

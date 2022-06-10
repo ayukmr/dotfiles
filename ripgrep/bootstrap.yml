@@ -1,0 +1,7 @@
+# =========================
+# === Ripgrep Bootstrap ===
+# =========================
+
+config:
+  link:
+    - ~/.rgignore: rgignore

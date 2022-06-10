@@ -1,0 +1,11 @@
+# =========================
+# === Taskell Bootstrap ===
+# =========================
+
+config:
+  dirs:
+    - ~/.config/taskell
+
+  link:
+    - ~/.config/taskell: config.ini
+    - ~/.config/taskell: template.md

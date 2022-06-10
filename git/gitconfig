@@ -1,0 +1,8 @@
+# ==================
+# === Git Config ===
+# ==================
+
+[include]
+    path = ~/.cfg/git/settings.gitconfig
+    path = ~/.cfg/git/aliases.gitconfig
+    path = ~/.cfg/git/delta.gitconfig

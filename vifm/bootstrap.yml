@@ -1,0 +1,10 @@
+# ======================
+# === Vifm Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/vifm
+
+  files:
+    - ~/.config/vifm/vifmrc: 'source ~/.cfg/vifm/vifmrc.vim'

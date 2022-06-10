@@ -1,0 +1,29 @@
+# =============================
+# === Readline Input Config ===
+# =============================
+
+# ================
+# === Settings ===
+# ================
+
+# disable bell
+set bell-style none
+
+# case insensitive matching
+set completion-ignore-case off
+
+# set keybinds
+set editing-mode vi
+
+# show character after files
+set visible-stats on
+
+# ================
+# === Keybinds ===
+# ================
+
+# edit vi-insert keybinds
+set keymap vi-insert
+
+# select suggestion
+TAB: menu-complete

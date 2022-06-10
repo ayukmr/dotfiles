@@ -1,0 +1,66 @@
+# ==========================
+# === Homebrew Bootstrap ===
+# ==========================
+
+config:
+  dirs:
+    - ~/.config/brew-aliases
+
+  shell:
+    - brew tap homebrew/aliases: 'tapping homebrew/aliases'
+
+    - brew alias i=install:     'setting install alias'
+    - brew alias ui=uninstall:  'setting uninstall alias'
+    - brew alias u=upgrade:     'setting upgrade alias'
+    - brew alias t=tap:         'setting tap alias'
+
+packages:
+  setup:
+    shell:
+      - brew update:  'updating packages'
+      - brew upgrade: 'upgrading homebrew'
+      - brew cleanup: 'cleaning up packages'
+
+  packages:
+    - brew install:
+      # dev
+      - neovim
+      - gh
+
+      # tmux
+      - tmux
+      - tmuxinator
+
+      # langs
+      - rust
+      - ruby
+      - node
+      - deno
+      - yarn
+      - python
+      - golang
+
+      # viewers
+      - bat
+      - bottom
+      - git-delta
+
+      # reading
+      - glow
+      - tldr
+      - newsboat
+
+      # data tools
+      - jq
+      - wget
+      - httpie
+      - ripgrep
+
+      # tools
+      - coreutils
+      - moreutils
+
+    - brew install --cask:
+      - iterm2
+      - github
+      - firefox

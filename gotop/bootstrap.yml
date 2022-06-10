@@ -1,0 +1,10 @@
+# =======================
+# === Gotop Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.config/gotop
+
+  link:
+    - ~/.config/gotop: vibrant.json

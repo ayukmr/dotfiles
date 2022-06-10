@@ -1,0 +1,42 @@
+# ========================
+# === VSCode Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/Library/Application Support/Code/User
+
+  link:
+    - ~/Library/Application Support/Code/User/settings.json: settings.jsonc
+    - ~/Library/Application Support/Code/User/keybindings.json: keybinds.jsonc
+
+packages:
+  packages:
+    - code --install-extension:
+      # vim emulation
+      - vscodevim.vim
+
+      # themes
+      - GitHub.github-vscode-theme
+      - zhuangtongfa.material-theme
+
+      # icons
+      - miguelsolorio.fluent-icons
+      - monokai.theme-monokai-pro-vscode
+
+      # rust
+      - rust-lang.rust
+      - be5invis.toml
+
+      # python
+      - ms-python.python
+      - ms-python.vscode-pylance
+
+      # langs
+      - golang.go
+      - ms-dotnettools.csharp
+      - wingrunr21.vscode-ruby
+
+      # other
+      - qwtel.sqlite-viewer
+      - yzhang.markdown-all-in-one

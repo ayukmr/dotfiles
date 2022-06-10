@@ -1,0 +1,12 @@
+# ===================
+# === Zest Config ===
+# ===================
+
+# force links and copies
+force: true
+
+# verbose errors
+verbose: true
+
+# show error on non-zero exit
+shell_error: true

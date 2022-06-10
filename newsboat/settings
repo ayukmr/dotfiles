@@ -1,0 +1,41 @@
+# =========================
+# === Newsboat Settings ===
+# =========================
+
+# open in gui browser
+browser "open %u"
+
+# use glow as renderer with turndown
+html-renderer "cat"
+pager "cat %f | turndown | tail -n +3 | glow -s ~/.cfg/glow/vibrant.json -w 175 - | less -rc"
+
+# automatically reload feeds
+auto-reload yes
+
+# reload every hour
+reload-time 60
+
+# don't show bottom bar
+show-keymap-hint no
+
+# show read articles
+show-read-articles yes
+
+# keep a maximum of 50 articles
+max-items 50
+
+# item titles
+feedlist-format    " %t %> %U/%c  "
+articlelist-format " %?n?&? %t %> %D  "
+
+# list titles
+feedlist-title-format     "  Feeds (%u unread, %t total)%?T? - %T&? %>  %N %V "
+articlelist-title-format  " %T (%u unread, %t total) - %U %>  %N %V "
+searchresult-title-format "  Search Result (%u unread, %t total) %>  %N %V "
+filebrowser-title-format  "  %?O?Open File&Save File? - %f %>  %N %V "
+help-title-format         "  Help %>  %N %V "
+selecttag-title-format    "  Select Tag %>  %N %V "
+selectfilter-title-format "  Select Filter %>  %N %V "
+itemview-title-format     "  %T (%u unread, %t total) %>  %N %V "
+urlview-title-format      "  URLs %>  %N %V "
+dialogs-title-format      "  Dialogs %>  %N %V "

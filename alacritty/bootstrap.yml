@@ -1,0 +1,12 @@
+# ===========================
+# === Alacritty Bootstrap ===
+# ===========================
+
+config:
+  dirs:
+    - ~/.config/alacritty
+
+  files:
+    - ~/.config/alacritty/alacritty.yml: |
+        import:
+          - ~/.cfg/alacritty/alacritty.yml

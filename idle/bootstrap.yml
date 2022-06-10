@@ -1,0 +1,11 @@
+# ======================
+# === IDLE Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.idlerc
+
+  link:
+    - ~/.idlerc/config-main.cfg: config.ini
+    - ~/.idlerc/config-highlight.cfg: theme.ini

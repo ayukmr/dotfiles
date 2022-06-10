@@ -1,0 +1,32 @@
+// =======================
+// === VSCode Keybinds ===
+// =======================
+
+[
+  // execute python file in terminal
+  {
+    "key": "cmd+k cmd+y",
+    "command": "python.execInTerminal"
+  },
+
+  // clear terminal
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+
+  // show current file in tree
+  {
+    "key": "cmd+alt+i",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorTextFocus"
+  },
+
+  // select occurrences of highlighted word
+  {
+    "key": "cmd+ctrl+g",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus && !editorReadonly"
+  }
+]

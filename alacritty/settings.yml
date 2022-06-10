@@ -1,0 +1,24 @@
+# ==========================
+# === Alacritty Settings ===
+# ==========================
+
+window:
+  # preset dimensions
+  dimensions:
+    columns: 160
+    lines:   48
+
+  # window padding
+  padding:
+    x: 5
+    y: 5
+
+  # title
+  title: Alacritty
+
+key_bindings:
+  # create new window
+  - { key: N, mods: Command, action: CreateNewWindow }
+
+  # clear current log
+  - { key: L, mods: Control, action: ClearLogNotice  }

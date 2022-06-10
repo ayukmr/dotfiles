@@ -1,0 +1,12 @@
+# ====================================
+# === Midnight Commander Bootstrap ===
+# ====================================
+
+config:
+  dirs:
+    - ~/.config/mc
+    - ~/.local/share/mc
+
+  link:
+    - ~/.config/mc/ini: config.ini
+    - ~/.local/share/mc/skins/default.ini: theme.ini

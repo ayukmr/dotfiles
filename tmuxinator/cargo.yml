@@ -1,0 +1,18 @@
+# =========================
+# === Tmux Cargo Preset ===
+# =========================
+
+# get directory name from args
+name: <%= File.basename(File.expand_path(@args[0], Dir.pwd)) %>
+root: <%= File.expand_path(@args[0], Dir.pwd) %>
+
+windows:
+  - shell:
+      # ┃┻┃ layout
+      layout: b13d,204x58,0,0[204x43,0,0{102x43,0,0,0,101x43,103,0,2},204x14,0,44,3]
+      panes:
+        - cargo check
+        - cd ~/
+        - evcxr
+
+  - editor: anyvim <%= @args[0] %>/src/*

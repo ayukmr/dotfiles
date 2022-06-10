@@ -1,0 +1,7 @@
+# =======================
+# === RSpec Bootstrap ===
+# =======================
+
+config:
+  files:
+    - ~/.rspec: '--require ~/.cfg/rspec/config.rb'

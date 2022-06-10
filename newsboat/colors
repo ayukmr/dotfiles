@@ -1,0 +1,33 @@
+# =======================
+# === Newsboat Colors ===
+# =======================
+
+# background
+color background white default
+
+# normal item
+color listnormal        white  default
+color listnormal_unread yellow default bold
+
+# focused item
+color listfocus        black blue
+color listfocus_unread black blue bold
+
+# misc
+color info    black magenta bold
+color article white default
+
+# article elements
+# highlight article "^ [^ ].+"        magenta default bold
+# highlight article "^ {4}.+"         green   default
+# highlight article "^ *[0-9]+\\. .+" green   default
+# highlight article "^ *[•□*] .+"     green   default
+# highlight article "\\[[^]]+\\]"     yellow  default
+# highlight article "https?://([a-zA-Z0-9%/._:?=&#]|-)+" blue default underline
+
+# article info
+# highlight article "^Feed: .+$"   magenta default bold
+# highlight article "^Date: .+$"   green   default bold
+# highlight article "^Title: .+$"  yellow  default bold
+# highlight article "^Author: .+$" red     default bold
+# highlight article "^Link: .+$"   blue    default bold

@@ -1,0 +1,57 @@
+#!/usr/bin/env ruby
+
+# ===================
+# === Git Heatmap ===
+# ===================
+
+require 'date'
+
+class String
+  # color string
+  def color(code)
+    "\e[38;5;#{code}m#{self}\e[0m"
+  end
+end
+
+# get commits
+commits = Hash.new {0}
+output = `git log --pretty=format:%cd`
+
+# put commits into hash
+output.lines.each do |line|
+  commits[Date.parse(line.chomp)] += 1
+end
+
+# terminal width
+width = `stty size`.split[1].to_i
+
+# get end of current week
+week_end = Date.today + (6 - Date.today.wday)
+past = week_end.prev_month((width / 10).floor)
+
+# create range of days
+range = (past + (7 - past.wday)..week_end)
+lines = Array.new(7, '')
+
+range.each do |date|
+  amount = commits[date]
+
+  # add block to lines
+  lines[date.wday] +=
+    if amount.zero?
+      '  '
+    else
+      '██'.color([amount * 6 + 16, 46].min)
+    end
+end
+
+box_width = range.count / 7 * 2 + 2
+
+lines.map! do |line|
+  "   #{'│'.color(239)} #{line} #{'│'.color(239)}"
+end
+
+# display heatmap
+puts "   ┌#{'─' * box_width}┐".color(239)
+puts lines
+puts "   └#{'─' * box_width}┘".color(239)

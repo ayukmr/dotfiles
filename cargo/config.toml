@@ -1,0 +1,9 @@
+# ====================
+# === Cargo Config ===
+# ====================
+
+[alias]
+i = 'install'
+rr = 'run --release'
+br = 'build --release'
+cl = 'clippy'

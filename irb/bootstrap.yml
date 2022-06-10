@@ -1,0 +1,7 @@
+# =====================
+# === IRB Bootstrap ===
+# =====================
+
+config:
+  files:
+    - ~/.irbrc: "require '~/.cfg/irb/irbrc.rb'"

@@ -1,0 +1,47 @@
+# ========================
+# === Alacritty Colors ===
+# ========================
+
+colors:
+  search:
+    # matches
+    matches:
+      background: '#98c379'
+      foreground: '#282c34'
+
+        # focused match
+      focused_match:
+        background: '#e5c07b'
+        foreground: '#282c34'
+
+          # search bar
+        bar:
+          background: '#242830'
+          foreground: '#abb2bf'
+
+  # primary colors
+  primary:
+    background: '#282c34'
+    foreground: '#abb2bf'
+
+  # normal colors
+  normal:
+    black:   '#2c313a'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#e5c07b'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#abb2bf'
+
+  # bright colors
+  bright:
+    black:   '#5c6370'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#e5c07b'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#abb2bf'

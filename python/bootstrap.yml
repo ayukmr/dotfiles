@@ -1,0 +1,24 @@
+# ========================
+# === Python Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/.config/python
+    - ~/.cache/python
+
+  link:
+    - ~/.config/python: init.py
+
+packages:
+  setup:
+    shell:
+      - ? python3 -m
+          pip install --upgrade pip
+        : 'upgrading pip'
+
+  packages:
+    - python3 -m pip install:
+      - pygame
+      - drawille
+      - firebase_admin

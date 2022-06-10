@@ -1,0 +1,10 @@
+# =====================
+# === Bat Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/bat
+
+  link:
+    - ~/.config/bat: config
