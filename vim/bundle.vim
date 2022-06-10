@@ -71,7 +71,7 @@ Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
 Plug 'itchyny/vim-gitbranch', { 'as': 'gitbranch' }
 
 " [gitgutter] show git status in gutter
-" Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
+Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
