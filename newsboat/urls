@@ -6,8 +6,8 @@ https://daringfireball.net/feeds/main      "~⍟ Daring Fireball" tech news
 https://css-tricks.com/feed                "~ CSS Tricks"      dev
 https://stackoverflow.blog/newsletter/feed "~ The Overflow"    dev  news
 https://github.blog/feed                   "~ GitHub Blog"     dev  news
-https://panic.com/blog/feed                "~ Panic Blog"      tech dev
 https://blog.rust-lang.org/feed            "~ Rust Blog"       dev
-https://webkit.org/blog/feed               "~ WebKit Blog"     dev
-https://hacks.mozilla.org/feed             "~ Mozilla Hacks"   dev
 https://reactjs.org/feed.xml               "~ React Blog"      dev
+https://panic.com/blog/feed                "~ Panic Blog"      tech dev
+https://hacks.mozilla.org/feed             "~ Mozilla Hacks"   dev
+https://webkit.org/blog/feed               "~ WebKit Blog"     dev
