@@ -39,25 +39,22 @@ endfunc
 augroup xmlify
     auto!
     " run xmlify on binary-encoded plists
-    auto BufEnter,WinEnter *.plist if &binary | call s:XMLify() | endif
+    auto BufEnter,WinEnter *.plist if system(['file', '-ib', expand('%:p')]) !~# '^text/' | call s:XMLify() | endif
 augroup END
 
 func! s:XMLify()
     " get filename
-    let imagefile = @%
+    let s:image_file = @%
 
     " wipe buffer
     bwipe
 
     " write xml to buffer
-    enew | put = system(['plutil', '-convert', 'xml1', '-o', '-', imagefile])
+    enew | put = system(['plutil', '-convert', 'xml1', '-o', '-', s:image_file])
 
     " remove empty lines
     1 delete 2
 
     " set filetype
     set filetype=xml
-
-    " clean up
-    unlet imagefile
 endfunc
