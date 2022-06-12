@@ -9,10 +9,12 @@ config:
   shell:
     - brew tap homebrew/aliases: 'tapping homebrew/aliases'
 
-    - brew alias i=install:     'setting install alias'
-    - brew alias ui=uninstall:  'setting uninstall alias'
-    - brew alias u=upgrade:     'setting upgrade alias'
-    - brew alias t=tap:         'setting tap alias'
+    - brew alias i=install:           'setting install alias'
+    - brew alias ic='install --cask': 'setting cask install alias'
+
+    - brew alias ui=uninstall: 'setting uninstall alias'
+    - brew alias up=upgrade:   'setting upgrade alias'
+    - brew alias t=tap:        'setting tap alias'
 
 packages:
   setup:
@@ -64,3 +66,5 @@ packages:
       - iterm2
       - github
       - firefox
+      - amethyst
+      - rectangle
