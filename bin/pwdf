@@ -12,5 +12,5 @@ tell application "Finder"
         set directory to ((target of Finder window 1) as alias)
     end if
 
-    return POSIX path of dir
+    return POSIX path of directory
 end tell
