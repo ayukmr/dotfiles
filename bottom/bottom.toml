@@ -53,7 +53,7 @@ graph_color = 'gray'
     ratio = 5
     [[row.child]]
     type = 'cpu'
- 
+
 [[row]]
     ratio = 5
     [[row.child]]
