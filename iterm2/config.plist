@@ -895,7 +895,7 @@
             <key>Horizontal Spacing</key>
             <real>1</real>
             <key>Icon</key>
-            <integer>1</integer>
+            <integer>0</integer>
             <key>Idle Code</key>
             <integer>0</integer>
             <key>Jobs to Ignore</key>
