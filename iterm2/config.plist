@@ -1438,7 +1438,7 @@
     <key>VisualIndicatorForEsc</key>
     <false/>
     <key>WindowNumber</key>
-    <true/>
+    <false/>
     <key>disableMetalWhenUnplugged</key>
     <true/>
     <key>findMode_iTerm</key>
