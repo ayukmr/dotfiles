@@ -7,7 +7,7 @@
     p = push
     d = diff
     s = status -s
-    l = log -n 20 --pretty=oneline --abbrev-commit
+    l = log -n 20 --oneline
 
     sh = show
     rs = reset
