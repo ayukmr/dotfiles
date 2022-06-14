@@ -2,31 +2,37 @@
 # === ZSH Bundle ===
 # ==================
 
-# zplug location
-ZPLUG_HOME="$HOME/.zsh/zplug"
 # plugins location
-ZPLUG_REPOS="$HOME/.zsh/bundle"
+ZGEN_DIR="$HOME/.zsh/bundle"
 
-source ~/.zsh/zplug/init.zsh
+source ~/.zsh/zgen/zgen.zsh
 
-# =================
-# === Oh My ZSH ===
-# =================
+if ! zgen saved; then
+    # =================
+    # === Oh My ZSH ===
+    # =================
 
-# [acs] aliases cheatsheet
-zplug plugins/aliases, from:oh-my-zsh
+    # load omz without running
+    zgen oh-my-zsh cache/.gitkeep
 
-# [dotenv] read .env files
-zplug plugins/dotenv, from:oh-my-zsh
+    # [acs] aliases cheatsheet
+    zgen oh-my-zsh plugins/aliases
 
-# ===============
-# === General ===
-# ===============
+    # [dotenv] read .env files
+    zgen oh-my-zsh plugins/dotenv
 
-# [autosuggestions] fish-like autosuggestions
-zplug zsh-users/zsh-autosuggestions
+    # ===============
+    # === General ===
+    # ===============
 
-# [syntax-highlighting] fish-like syntax highlighting
-zplug zsh-users/zsh-syntax-highlighting, defer:2
+    # [syntax-highlighting] fish-like syntax highlighting
+    zgen load zsh-users/zsh-syntax-highlighting
 
-zplug load
+    # [autosuggestions] fish-like autosuggestions
+    zgen load zsh-users/zsh-autosuggestions
+
+    # [history-substring-search] search for substring in history
+    zgen load zsh-users/zsh-history-substring-search
+
+    zgen save
+fi

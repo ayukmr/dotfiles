@@ -12,10 +12,10 @@ config:
     - ~/.hushlogin
 
   test:
-    - '[[ ! -d ~/.zsh/zplug ]]':
+    - '[[ ! -d ~/.zsh/zgen ]]':
         shell:
-          # install zplug
+          # install zgen
           - ? git clone
-              https://github.com/zplug/zplug
-              ~/.zsh/zplug
-            : 'installing zplug'
+              https://github.com/tarjoilija/zgen
+              ~/.zsh/zgen
+            : 'installing zgen'

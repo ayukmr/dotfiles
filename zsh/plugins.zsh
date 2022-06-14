@@ -2,14 +2,25 @@
 # === ZSH Plugins ===
 # ===================
 
-# ====================
-# === Highlighting ===
-# ====================
+# ================================
+# === History Substring Search ===
+# ================================
 
-# highlight variable
-typeset -A ZSH_HIGHLIGHT_STYLES
+# bind keys to search
+bindkey -M vicmd k history-substring-search-up
+bindkey -M vicmd j history-substring-search-down
 
 # highlight colors
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=black,bg=green,bold'
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
+
+# ===========================
+# === Syntax Highlighting ===
+# ===========================
+
+# syntax colors
+typeset -A ZSH_HIGHLIGHT_STYLES
+
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[command]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[function]='fg=magenta,bold'
