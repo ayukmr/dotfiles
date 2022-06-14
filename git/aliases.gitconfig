@@ -15,6 +15,7 @@
     br = branch
     st = status
     ct = commit
+    ap = add -p
     hm = heatmap
     co = checkout
     ds = diffstat
