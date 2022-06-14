@@ -34,3 +34,7 @@
 [init]
     # use main as default branch
     defaultBranch = main
+
+[interactive]
+    # use delta as diff filter
+    diffFilter = delta --color-only
