@@ -12,8 +12,6 @@
     "indent_token": ""
   },
 
-  "paragraph": {},
-
   "list": {
     "level_indent": 2
   },
@@ -32,29 +30,10 @@
     "bold": true
   },
 
-  "h2": {
-    "prefix": ""
-  },
-
-  "h3": {
-    "prefix": ""
-  },
-
-  "h4": {
-    "prefix": ""
-  },
-
-  "h5": {
-    "prefix": ""
-  },
-
   "h6": {
-    "prefix": "",
     "color":  "35",
     "bold":   false
   },
-
-  "text": {},
 
   "strikethrough": {
     "crossed_out": true
@@ -178,26 +157,17 @@
         "color": "#f1f1f1"
       },
 
-      "name_constant": {},
-
       "name_decorator": {
         "color": "#ffff87"
       },
-
-      "name_exception": {},
 
       "name_function": {
         "color": "#00d787"
       },
 
-      "name_other": {},
-      "literal":    {},
-
       "literal_number": {
         "color": "#6eefc0"
       },
-
-      "literal_date": {},
 
       "literal_string": {
         "color": "#c69669"
@@ -239,13 +209,7 @@
     "row_separator":    "─"
   },
 
-  "definition_list": {},
-  "definition_term": {},
-
   "definition_description": {
     "block_prefix": "\n> "
-  },
-
-  "html_block": {},
-  "html_span":  {}
+  }
 }
