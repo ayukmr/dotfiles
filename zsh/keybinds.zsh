@@ -25,9 +25,10 @@ bindkey -M vicmd '^K' _clear
 
 # open line contents with editor
 function _edit {
-    [[ ! $BUFFER =~ "^$EDITOR.*" ]] &&
-    BUFFER="$EDITOR $BUFFER" &&
-    zle end-of-line
+    if [[ ! $BUFFER =~ "^$EDITOR.*" ]]; then
+        BUFFER="$EDITOR $BUFFER"
+        zle end-of-line
+    fi
 }
 zle -N _edit
 
