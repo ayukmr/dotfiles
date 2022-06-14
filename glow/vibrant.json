@@ -191,8 +191,7 @@
       },
 
       "name_other": {},
-
-      "literal": {},
+      "literal":    {},
 
       "literal_number": {
         "color": "#6eefc0"
@@ -248,5 +247,5 @@
   },
 
   "html_block": {},
-  "html_span": {}
+  "html_span":  {}
 }
