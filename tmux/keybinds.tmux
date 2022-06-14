@@ -28,15 +28,15 @@ bind h split-window -v
 bind '[' select-window -p
 bind ']' select-window -n
 
+# go to next session
+unbind n
+bind n switch-client -n
+
 # switch panes without prefix
 bind -n M-Left  select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up    select-pane -U
 bind -n M-Down  select-pane -D
-
-# kill pane without confirmation
-unbind x
-bind x kill-pane
 
 # vim keybinds
 set -wg mode-keys vi
