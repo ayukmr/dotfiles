@@ -13,7 +13,8 @@ config:
     - brew alias ic='install --cask': 'setting cask install alias'
 
     - brew alias ui=uninstall: 'setting uninstall alias'
-    - brew alias up=upgrade:   'setting upgrade alias'
+    - brew alias ug=upgrade:   'setting upgrade alias'
+    - brew alias cu=cleanup:   'setting clean up alias'
     - brew alias t=tap:        'setting tap alias'
 
 packages:
@@ -45,6 +46,8 @@ packages:
       # viewers
       - bat
       - bottom
+      - ranger
+      - litecli
       - git-delta
 
       # reading
