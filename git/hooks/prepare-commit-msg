@@ -16,7 +16,7 @@ if ARGV[1] == 'template'
     <%= changes %>
   ERB
 
-  erb = ERB.new(template, 0, '>')
+  erb = ERB.new(template, trim_mode: '>')
 
   output = Open3.capture3('git diff --cached --name-status')[0]
 
