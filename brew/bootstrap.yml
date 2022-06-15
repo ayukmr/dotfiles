@@ -45,6 +45,7 @@ packages:
 
       # viewers
       - bat
+      - fzf
       - bottom
       - ranger
       - litecli
