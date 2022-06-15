@@ -58,7 +58,7 @@ noremap <BS> gg
 inoremap jk <Esc>
 
 " get current syntax group
-nmap <Leader>z :call <SID>SynStack()<CR>
+nnoremap <Leader>z :call <SID>SynStack()<CR>
 
 func! <SID>SynStack()
     if !exists('*synstack')
