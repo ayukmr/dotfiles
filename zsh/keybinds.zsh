@@ -3,13 +3,13 @@
 # ====================
 
 # remove text from cursor to eol
-bindkey '^L' kill-line
+bindkey ^L kill-line
 
 # search history with query
-bindkey '^R' history-incremental-search-backward
+bindkey ^R history-incremental-search-backward
 
 # insert from command history
-bindkey '^N' insert-last-word
+bindkey ^N insert-last-word
 
 # clear screen and wipe history
 function _clear {
@@ -20,8 +20,8 @@ function _clear {
 }
 zle -N _clear
 
-bindkey -M main  '^K' _clear
-bindkey -M vicmd '^K' _clear
+bindkey -M main  ^K _clear
+bindkey -M vicmd ^K _clear
 
 # open line contents with editor
 function _edit {
@@ -32,16 +32,8 @@ function _edit {
 }
 zle -N _edit
 
-bindkey -M main  '^E' _edit
-bindkey -M vicmd '^E' _edit
-
-# expand alias
-zle -C alias-expansion complete-word _generic
-
-bindkey -M main  '^X' alias-expansion
-bindkey -M vicmd '^X' alias-expansion
-
-zstyle ':completion:alias-expansion:*' completer _expand_alias
+bindkey -M main  ^E _edit
+bindkey -M vicmd ^E _edit
 
 # vi keybinds
 function vi_keybinds {
