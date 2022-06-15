@@ -12,7 +12,7 @@ on run argv
     end repeat
 
     set now to (do shell script "date +%I:%M:%S")
-    set fmt to "Sent At " & now
+    set fmt to "Sent at " & now
 
     -- display notification
     display notification (fmt as text) with title args
