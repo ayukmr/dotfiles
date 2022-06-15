@@ -30,21 +30,12 @@ if !has('nvim')
     let g:coc_config_home = '~/.cfg/vim'
 
     " show suggestions
-    inoremap <silent><expr> <A-CR> coc#refresh()
+    inoremap <silent><expr> <M-CR> coc#refresh()
 
     " accept suggestion
-    inoremap <silent><expr> <CR> pumvisible()
-                                    \ ? coc#_select_confirm()
-                                    \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-    " show documentation
-    func! s:ShowDocumentation()
-        if (coc#rpc#ready())
-            call CocActionAsync('doHover')
-        endif
-    endfunc
-
-    nnoremap <silent> K :call <SID>ShowDocumentation()<CR>
+    inoremap <silent><expr> <CR> <CR>pumvisible()
+        \ ? coc#_select_confirm()
+        \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
     " coc extensions
     let g:coc_global_extensions = [
