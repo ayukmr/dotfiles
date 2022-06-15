@@ -18,19 +18,18 @@ if ARGV[1] == 'template'
 
   erb = ERB.new(template, trim_mode: '>')
 
-  output = Open3.capture3('git diff --cached --name-status')[0]
+  output = Open3.capture3('git diff --cached --name-status')[0].lines
 
-  changes = output
-    .lines
-    .map do |entry|
-      "# #{
-        entry
-          .sub(/^A\t/, '+ ')
-          .sub(/^M\t/, '~ ')
-          .sub(/^D\t/, '- ')
-      }"
-    end
-    .join('')
+  output.map! do |entry|
+    "# #{
+      entry
+        .sub(/^A\t/, '+ ')
+        .sub(/^M\t/, '~ ')
+        .sub(/^D\t/, '- ')
+    }"
+  end
+
+  changes = output.join('')
 
   File.write(ARGV[0], erb.result(binding))
 end
