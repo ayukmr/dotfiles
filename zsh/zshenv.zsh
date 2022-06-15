@@ -5,13 +5,16 @@
 # editor
 export EDITOR='anyvim'
 
-# config locations
+# xdg specification
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
+# zsh files
 export ZDOTDIR="$HOME/.zsh"
+
+# python config file
 export PYTHONSTARTUP="$HOME/.cfg/python/init.py"
 
 # history size
@@ -21,9 +24,8 @@ export SAVEHIST=32768
 # disable deprecation message in bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# colors for gnu ls
+# colors for ls
 export LS_COLORS=$(cat ~/.cfg/zsh/lscolors.txt | tr '\n' ':')
-# colors for bsd ls
 export LSCOLORS='ExFxxxDxBxhxhxhxhxcxcx'
 
 # colorize man pages
