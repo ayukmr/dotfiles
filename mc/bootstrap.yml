@@ -9,4 +9,4 @@ config:
 
   link:
     - ~/.config/mc/ini: config.ini
-    - ~/.local/share/mc/skins/default.ini: theme.ini
+    - ~/.local/share/mc/skins/custom.ini: skin.ini
