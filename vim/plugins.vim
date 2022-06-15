@@ -257,6 +257,7 @@ sign define vimspectorPCBP          text=#> texthl=Question           linehl=Cur
 sign define vimspectorCurrentThread text=>> texthl=DiagnosticSignInfo linehl=CursorLine
 sign define vimspectorCurrentFrame  text=>> texthl=DiagnosticSignInfo linehl=CursorLine
 
+" configurations for files
 let g:vimspector_configurations = {
     \ 'node': {
     \     'adapter':   'vscode-node',
@@ -311,6 +312,8 @@ augroup END
 
 " don't show infoline
 let g:VM_set_statusline = 0
+
+" exit silently
 let g:VM_silent_exit = 1
 
 " add cursors up and down
