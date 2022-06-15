@@ -12,11 +12,11 @@ alias files='find . -type file'
 alias -- +x='chmod +x'
 
 # command aliases
-alias zgr='zgen reset && exec $SHELL -l'
 alias clr='tput reset && unset FIRST_LINE'
 alias path='echo $PATH | tr -s ":" "\n"'
 alias rmds='find . -name .DS_Store -type file -delete'
 alias badge='tput bel && notify'
+alias zgenr='zgen reset && exec $SHELL -l'
 
 # ls aliases
 alias l='na -ic'
@@ -121,8 +121,8 @@ alias vi='vim'
 alias nv='nvim'
 
 # system aliases
-alias slp='pmset sleepnow'
 alias svr='open -a ScreenSaverEngine'
+alias slp='pmset sleepnow &> /dev/null'
 
 # clear screen and history
 function clear {
