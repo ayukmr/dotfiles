@@ -42,10 +42,10 @@ ZVM_VI_HIGHLIGHT_BACKGROUND='#3e4452'
 # use zle as engine
 ZVM_READKEY_ENGINE='zle'
 
-function zvm_after_init {
-    # faster keystrokes
-    export KEYTIMEOUT=10
+# faster keystrokes
+ZVM_KEYTIMEOUT=0.1
 
+function zvm_after_init {
     # add custom keybinds
     source ~/.cfg/zsh/keybinds.zsh
 }
