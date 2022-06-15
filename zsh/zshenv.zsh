@@ -42,14 +42,13 @@ export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
 
 # fzf
 export FZF_DEFAULT_OPTS='
-    --color fg:#abb2bf,hl:#61afef,fg+:#c2c7d1,bg+:#32353d
-    --color hl+:#5fd7ff,info:#56b6c2,prompt:#c678dd,pointer:#61afef
-    --color marker:#61afef,spinner:#e5c07b,header:#c678dd,border:#9ba2af,bg:-1
+    --color bg+:#32353d,bg:#282c34,spinner:#e5c07b,hl:#61afef
+    --color fg:#abb2bf,header:#c678dd,info:#56b6c2,pointer:#61afef
+    --color marker:#61afef,fg+:#c2c7d1,prompt:#c678dd,hl+:#5fd7ff
+
     --reverse
     --marker "* "
-    --margin 1,4
-    --preview-window right:60%
-    --border rounded
+    --preview-window right:50%
 '
 export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-case'
 

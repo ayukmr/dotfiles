@@ -103,11 +103,9 @@ augroup END
 
 " find files in directory above current directory
 nnoremap <silent> <Leader>. :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
+
 " find files in home directory
 nnoremap <Leader><leader> :Files ~<CR>
-
-" fzf layout
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
 " ==================
 " === Git Gutter ===
