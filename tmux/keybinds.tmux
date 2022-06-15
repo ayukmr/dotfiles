@@ -32,7 +32,7 @@ bind ']' select-window -n
 bind N switch-client -p
 bind n switch-client -n
 
-# switch panes without prefix
+# switch panes
 bind -n M-Left  select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up    select-pane -U
