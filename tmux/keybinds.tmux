@@ -28,8 +28,8 @@ bind h split-window -v
 bind '[' select-window -p
 bind ']' select-window -n
 
-# go to next session
-unbind n
+# switch sessions
+bind N switch-client -p
 bind n switch-client -n
 
 # switch panes without prefix
