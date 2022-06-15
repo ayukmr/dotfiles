@@ -60,3 +60,4 @@ add-zsh-hook precmd set_prompt
 
 # prompt
 PROMPT='%B%(?.%F{green}.%F{red})%#%f%b '
+PS2='%B%F{yellow}>%f%b '

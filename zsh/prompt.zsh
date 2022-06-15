@@ -61,3 +61,4 @@ precmd_functions+=('set_header')
 
 # prompt
 PROMPT='%B%(?.%F{green}.%F{red})❯%f%b '
+PS2='%B%F{yellow}…%f%b '
