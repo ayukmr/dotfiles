@@ -51,7 +51,7 @@ func! LightlineFiletype()
         \ ? WebDevIconsGetFileTypeSymbol() . ' ' . (
         \     strlen(&filetype)
         \         ? &filetype
-        \         : 'no ft'
+        \         : 'none'
         \ )
         \ : ''
 endfunc
