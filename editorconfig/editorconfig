@@ -21,7 +21,7 @@ trim_trailing_whitespace = true
 # insert final linebreak
 insert_final_newline = true
 
-[*.{yml,json,js,css,html,rb,cr}]
+[*.{yml,js,ts,jsx,tsx,json,css,html,rb,cr}]
 # two space indentation
 indent_size = 2
 
