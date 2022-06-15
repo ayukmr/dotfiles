@@ -34,39 +34,3 @@ zle -N _edit
 
 bindkey -M main  ^E _edit
 bindkey -M vicmd ^E _edit
-
-# vi keybinds
-function vi-mode {
-    bindkey -v
-    bindkey jk vi-cmd-mode
-
-    # faster keystrokes
-    export KEYTIMEOUT=10
-
-    # set cursor shape
-    function zle-keymap-select {
-        if [[ $KEYMAP == vicmd ]]; then
-            block_cursor
-        elif [[ $KEYMAP == main || $KEYMAP == viins ]]; then
-            line_cursor
-        fi
-    }
-
-    # set block cursor
-    function block_cursor {
-        printf '\e[2 q'
-    }
-
-    # set line cursor
-    function line_cursor {
-        printf '\e[6 q'
-    }
-
-    zle -N zle-keymap-select
-
-    # set line cursor on prompt
-    add-zsh-hook precmd line_cursor
-
-    # set block cursor on exec
-    add-zsh-hook preexec block_cursor
-}
