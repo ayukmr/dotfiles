@@ -122,8 +122,11 @@ alias v='anyvim'
 alias vi='vim'
 alias nv='nvim'
 
-# app aliases
+# system aliases
 alias svr='open -a ScreenSaverEngine'
+alias slp='pmset sleepnow'
+
+# app aliases
 alias xcode='open -a Xcode'
 alias vscode='open -a "Visual Studio Code"'
 
