@@ -13,6 +13,7 @@
   "dependencies": {
     "turndown": "^7.1.1"
   },
+
   "devDependencies": {
     "pkg": "^5.7.0"
   }
