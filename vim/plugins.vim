@@ -574,6 +574,6 @@ let g:VM_maps['Select Cursor Up']   = '<M-K>'
 
 " multi cursor highlight
 let g:VM_Mono_hl   = 'TermCursor'
-let g:VM_Extend_hl = 'TermCursor'
+let g:VM_Extend_hl = 'Visual'
 let g:VM_Cursor_hl = 'TermCursor'
 let g:VM_Insert_hl = 'TermCursor'
