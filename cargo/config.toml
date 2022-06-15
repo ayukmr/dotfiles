@@ -3,7 +3,6 @@
 # ====================
 
 [alias]
-i = 'install'
+cl = 'clippy'
 rr = 'run --release'
 br = 'build --release'
-cl = 'clippy'

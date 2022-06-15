@@ -4,25 +4,19 @@
 
 # general aliases
 alias e='$EDITOR'
-alias w='warp'
-alias gz='gzip -k'
-alias ungz='gzip -dk'
+alias rmd='rm -rf'
+alias bel='tput bel'
 alias rel='exec $SHELL -l'
 alias lst='cd - &> /dev/null'
-
-alias bel='tput bel'
-alias mk='touch'
-alias mkd='mkdir'
-alias rmd='rm -rf'
 alias files='find . -type file'
 alias -- +x='chmod +x'
 
 # command aliases
+alias zgr='zgen reset && exec $SHELL -l'
 alias clr='tput reset && unset FIRST_LINE'
-alias badge='tput bel && notify'
-alias pbuuid='uuidgen | pbcopy && pbpaste'
-alias rmds='find . -name .DS_Store -type file -delete'
 alias path='echo $PATH | tr -s ":" "\n"'
+alias rmds='find . -name .DS_Store -type file -delete'
+alias badge='tput bel && notify'
 
 # ls aliases
 alias l='na -ic'
@@ -30,14 +24,19 @@ alias lt='na -ict'
 alias ll='ls -AlhG'
 
 # cd aliases
-alias home='cd ~'
 alias cdf='cd $(pwdf)'
+alias home='cd ~'
+function back { cd ${(l:$1*3::../:)} }
+function mkcd { mkdir -p $@ && cd $1 }
+
+# dot aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias mkcd='function { mkdir -p $@ && cd $1 }'
-alias back='function { cd ${(l:$1*3::../:)} }'
-alias bk='back'
+
+# creation aliases
+alias mk='touch'
+alias mkd='mkdir -p'
 
 # safety aliases
 alias rm='rm -i'
@@ -46,8 +45,8 @@ alias cp='cp -i'
 
 # lang aliases
 alias js='node'
-alias gr='go run .'
 alias sw='swift'
+alias gr='go run .'
 alias osa='osascript'
 
 # sqlite aliases
@@ -56,39 +55,38 @@ alias lite='litecli'
 
 # ruby aliases
 alias rb='ruby'
-alias gm='gem'
 alias rk='rake'
-alias bnd='bundler'
+alias bn='bundle'
 
 # crystal aliases
-alias si='shards install'
 alias sr='shards run'
 alias sb='shards build'
+alias si='shards install'
 
 # python aliases
 alias py='python3'
 alias py2='python'
-alias pi='pip3 install'
 alias ipy='ipython'
 
 # rust aliases
 alias rc='rustc'
 alias c='cargo'
 alias cr='cargo run'
-alias cb='cargo build'
-alias cbr='cargo build --release'
 alias ct='cargo test'
+alias cb='cargo build'
 alias ccl='cargo clippy'
+alias crr='cargo run --release'
+alias cbr='cargo build --release'
 
 # yarn aliases
 alias y='yarn'
-alias yg='yarn global'
-alias yga='yarn global add'
+alias ya='yarn add'
 alias yd='yarn dev'
 alias ys='yarn start'
-alias ysv='yarn serve'
-alias ya='yarn add'
 alias yb='yarn build'
+alias yg='yarn global'
+alias ysv='yarn serve'
+alias yga='yarn global add'
 alias ybs='yarn build && yarn start'
 alias yrs='yarn run react-scripts start'
 
@@ -123,12 +121,8 @@ alias vi='vim'
 alias nv='nvim'
 
 # system aliases
-alias svr='open -a ScreenSaverEngine'
 alias slp='pmset sleepnow'
-
-# app aliases
-alias xcode='open -a Xcode'
-alias vscode='open -a "Visual Studio Code"'
+alias svr='open -a ScreenSaverEngine'
 
 # clear screen and history
 function clear {
