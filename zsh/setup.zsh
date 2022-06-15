@@ -28,7 +28,7 @@ function alias_for {
     fi
 
     # get alias command
-    local found=$(alias -m $1 | sed -E -e "s/^$1=(.*)$/\1/" -e "s/^'//" -e "s/'$//")
+    local found=$(alias $1 | sed -E -e "s/^$1=(.*)$/\1/" -e "s/^'//" -e "s/'$//")
 
     if [[ -n $found ]]; then
         local full="$found ${@:2}"
