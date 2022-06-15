@@ -1,0 +1,18 @@
+# ===================
+# === Glow Config ===
+# ===================
+
+# use custom style
+style: ~/.cfg/glow/style.json
+
+# disable network
+local: true
+
+# disable mouse support
+mouse: false
+
+# disable pager
+pager: false
+
+# wrap at 175 chars
+width: 175

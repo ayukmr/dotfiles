@@ -1,0 +1,10 @@
+# ======================
+# === Glow Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/Library/Preferences/glow
+
+  link:
+    - ~/Library/Preferences/glow: glow.yml
