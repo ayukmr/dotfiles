@@ -60,6 +60,9 @@ noremap gV `[v`]
 noremap <CR> G
 noremap <BS> gg
 
+" escape from insert mode
+inoremap jk <Esc>
+
 " get current syntax group
 nmap <Leader>z :call <SID>SynStack()<CR>
 
