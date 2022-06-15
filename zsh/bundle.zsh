@@ -34,5 +34,8 @@ if ! zgen saved; then
     # [history-substring-search] search for substring in history
     zgen load zsh-users/zsh-history-substring-search
 
+    # [vi-mode] better vi keybinds for zsh
+    zgen load jeffreytse/zsh-vi-mode
+
     zgen save
 fi
