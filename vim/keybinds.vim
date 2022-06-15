@@ -40,12 +40,6 @@ nnoremap <Leader>D "*D
 nnoremap <Leader>c "*c
 vnoremap <Leader>d "*d
 
-" insert mode movement
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
-
 " write file
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
