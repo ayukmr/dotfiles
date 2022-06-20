@@ -18,7 +18,7 @@ path+=("$HOME/.cargo/bin")
 path+=("$HOME/.gem/ruby/2.6.0/bin")
 
 # python binaries
-path+=("$HOME/Library/Python/3.9/bin")
+path+=("/Library/Frameworks/Python.framework/Versions/Current/bin")
 
 # zplug binaries
 path+=("$ZPLUG_HOME/bin")
