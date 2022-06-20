@@ -281,6 +281,9 @@ let g:vimspector_configurations = {
     \ },
 \}
 
+" base directory
+let g:vimspector_base_dir = expand('~/.vim/bundle/vimspector')
+
 " =============
 " === Vimux ===
 " =============
