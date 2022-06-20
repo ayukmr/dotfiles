@@ -226,7 +226,7 @@ func! CharTabularize(add_zs, range)
 
     if a:add_zs
         " add \zs to command
-        let s:command .= '\zs'
+        let s:command .= '\zs /l0'
     endif
 
     exec s:command
