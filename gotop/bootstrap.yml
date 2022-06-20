@@ -7,4 +7,4 @@ config:
     - ~/.config/gotop
 
   link:
-    - ~/.config/gotop/custom.json: colorscheme.json
+    - ~/.config/gotop/custom.json: theme.json
