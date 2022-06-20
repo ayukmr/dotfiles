@@ -33,9 +33,16 @@ if !has('nvim')
     inoremap <silent><expr> <M-CR> coc#refresh()
 
     " accept suggestion
-    inoremap <silent><expr> <CR> <CR>pumvisible()
-        \ ? coc#_select_confirm()
-        \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+    inoremap <silent><expr> <CR>
+        \ pumvisible()
+            \ ? coc#_select_confirm()
+            \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+    inoremap <silent><expr> <Tab>
+        \ pumvisible() ? "\<C-n>" : "\<Tab>"
+
+    inoremap <silent><expr> <S-Tab>
+        \ pumvisible() ? "\<C-p>" : "\<C-h>"
 
     " coc extensions
     let g:coc_global_extensions = [
