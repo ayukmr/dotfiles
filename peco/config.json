@@ -1,0 +1,17 @@
+{
+  "Prompt":          ">",
+  "StickySelection": true,
+  "InitialFilter":   "Fuzzy",
+
+  "Style": {
+    "Basic":          ["default", "on_default"        ],
+    "SavedSelection": ["yellow",  "bold"              ],
+    "Selected":       ["black",   "on_magenta", "bold"],
+    "Matched":        ["blue",    "bold"              ],
+    "Query":          ["yellow"                       ]
+  },
+
+  "Keymap": {
+    "Tab": "peco.ToggleSelectionAndSelectNext"
+  }
+}
