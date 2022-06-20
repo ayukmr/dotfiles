@@ -7,7 +7,7 @@ browser "open %u"
 
 # use glow as renderer with turndown
 html-renderer "cat"
-pager "cat %f | turndown | tail -n +3 | glow - | less -rc"
+pager "cat %f | turndown | tail -n +3 | glow -s ~/.cfg/glow/style.json - | less -rc"
 
 # automatically reload feeds
 auto-reload yes
