@@ -251,11 +251,11 @@ nnoremap <Leader>Vi <Plug>VimspectorStepInto
 sign define vimspectorBP            text=>> texthl=DiagnosticSignInfo
 sign define vimspectorBPCond        text=?? texthl=DiagnosticSignInfo
 sign define vimspectorBPLog         text=-- texthl=DiagnosticSignWarn
-sign define vimspectorBPDisabled    text=!! texthl=NonText
+sign define vimspectorBPDisabled    text=>> texthl=NonText
 sign define vimspectorPC            text=## texthl=DiagnosticSignInfo linehl=CursorLine
 sign define vimspectorPCBP          text=#> texthl=Question           linehl=CursorLine
-sign define vimspectorCurrentThread text=>> texthl=DiagnosticSignInfo linehl=CursorLine
-sign define vimspectorCurrentFrame  text=>> texthl=DiagnosticSignInfo linehl=CursorLine
+sign define vimspectorCurrentThread text=>  texthl=DiagnosticSignInfo
+sign define vimspectorCurrentFrame  text=>  texthl=DiagnosticSignInfo
 
 " configurations for files
 let g:vimspector_configurations = {
