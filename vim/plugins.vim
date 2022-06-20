@@ -207,17 +207,17 @@ hi! link StartifySlash   StartifyPath
 " ===============
 
 " tabularize with character
-nnoremap <Leader>t :TabularizeChar<CR>
-vnoremap <Leader>t :TabularizeChar<CR>
+nnoremap <Leader>t :CharTabularize<CR>
+vnoremap <Leader>t :CharTabularize<CR>
 
 " tabularize with character and \zs
-nnoremap <Leader>T :TabularizeChar!<CR>
-vnoremap <Leader>T :TabularizeChar!<CR>
+nnoremap <Leader>T :CharTabularize!<CR>
+vnoremap <Leader>T :CharTabularize!<CR>
 
 " tabularize with character
-command! -bang -range TabularizeChar call TabularizeChar(<bang>0, <range>)
+command! -bang -range CharTabularize call CharTabularize(<bang>0, <range>)
 
-func! TabularizeChar(add_zs, range)
+func! CharTabularize(add_zs, range)
     let s:command = a:range
         \ ? "'<,'>Tabularize /"
         \ : 'Tabularize /'
