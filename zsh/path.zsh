@@ -20,9 +20,6 @@ path+=("$HOME/.gem/ruby/2.6.0/bin")
 # python binaries
 path+=("/Library/Frameworks/Python.framework/Versions/Current/bin")
 
-# zplug binaries
-path+=("$ZPLUG_HOME/bin")
-
 # config binaries
 path+=("$HOME/.cfg/bin")
 
