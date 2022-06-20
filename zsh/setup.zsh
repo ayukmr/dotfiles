@@ -2,21 +2,6 @@
 # === ZSH Setup ===
 # =================
 
-# select completions using menu
-zstyle ':completion:*' menu select
-
-# group completions under group name
-zstyle ':completion:*' group-name ''
-
-# use ls colors in file completions
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-# completion headers
-zstyle ':completion:*:descriptions' format '%B%F{green}%d%f%b'
-zstyle ':completion:*:corrections'  format '%B%F{yellow}%d (errors: %e)%f%b'
-zstyle ':completion:*:messages'     format '%B%F{magenta}%d%f%b'
-zstyle ':completion:*:warnings'     format '%B%F{red}no matches found%f%b'
-
 # don't show inverted %
 PROMPT_EOL_MARK=''
 
