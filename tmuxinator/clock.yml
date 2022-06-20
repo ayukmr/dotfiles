@@ -8,10 +8,10 @@ root: ~/
 windows:
   - shell:
       # ┃┣┃ layout
-      layout: 8427,364x94,0,0{182x94,0,0,42,181x94,183,0[181x59,183,0,43,181x34,183,60,44]}
+      layout: 6c2a,203x58,0,0{101x58,0,0,0,101x58,102,0[101x29,102,0,4,101x28,102,30,5]}
       panes:
         -
         -
-        - tmux clock
+        - tmux clock -t 3
 
   - editor: <%= ENV['EDITOR'] %>
