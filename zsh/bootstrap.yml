@@ -7,8 +7,8 @@ config:
     - ~/.zsh
 
   files:
-    - ~/.zshenv:     source ~/.cfg/zsh/zshenv.zsh
-    - ~/.zsh/.zshrc: source ~/.cfg/zsh/zshrc.zsh
+    - ~/.zshenv:     'source ~/.cfg/zsh/zshenv.zsh'
+    - ~/.zsh/.zshrc: 'source ~/.cfg/zsh/zshrc.zsh'
     - ~/.hushlogin
 
   test:
