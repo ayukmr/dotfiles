@@ -25,8 +25,8 @@ bind v split-window -h
 bind h split-window -v
 
 # switch windows
-bind '[' select-window -p
-bind ']' select-window -n
+bind [ select-window -p
+bind ] select-window -n
 
 # switch sessions
 bind N switch-client -p
