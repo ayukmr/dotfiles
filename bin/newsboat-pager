@@ -5,19 +5,19 @@
 # ======================
 
 # read file
-cat $1 \
+cat $1 |
 
-    # remove lines from newsboat
-    | tail -n +3 \
+# remove lines from newsboat
+tail -n +3 |
 
-    # convert html to markdown
-    | turndown \
+# convert html to markdown
+turndown |
 
-    # remove blank code blocks
-    | sed 's/^> $//' \
+# remove blank code blocks
+sed 's/^> $//' |
 
-    # format markdown for viewing
-    | glow -s ~/.cfg/glow/style.json - \
+# format markdown for viewing
+glow -s ~/.cfg/glow/style.json - |
 
-    # page output
-    | less -rc
+# page output
+less -rc
