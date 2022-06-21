@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+# ======================
+# === Newsboat Pager ===
+# ======================
+
+# read file
+cat $1 \
+
+    # remove lines from newsboat
+    | tail -n +3 \
+
+    # convert html to markdown
+    | turndown \
+
+    # remove blank code blocks
+    | sed 's/^> $//' \
+
+    # format markdown for viewing
+    | glow -s ~/.cfg/glow/style.json - \
+
+    # page output
+    | less -rc

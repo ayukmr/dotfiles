@@ -5,9 +5,9 @@
 # open in gui browser
 browser "open %u"
 
-# use glow as renderer with turndown
+# use newsboat-pager
 html-renderer "cat"
-pager "cat %f | turndown | tail -n +3 | glow -s ~/.cfg/glow/style.json - | less -rc"
+pager "newsboat-pager %f"
 
 # automatically reload feeds
 auto-reload yes
