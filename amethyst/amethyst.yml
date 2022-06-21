@@ -1,0 +1,60 @@
+# =======================
+# === Amethyst Config ===
+# =======================
+
+# ================
+# === Settings ===
+# ================
+
+# layouts
+layouts:
+  - tall
+  - 3column-left
+  - middle-wide
+
+# floating apps
+floating:
+  - com.apple.systempreferences
+  - com.apple.DigitalColorMeter
+  - com.apple.QuickTimePlayer
+
+# 5px window margins
+window-margins: true
+smart-window-margins: false
+window-margin-size: 5
+
+# disable showing layout when changing spaces
+enables-layout-hud-on-space-change: false
+
+# ================
+# === Keybinds ===
+# ================
+
+# use ctrl-alt as mod1
+mod1:
+  - control
+  - option
+
+# use ctrl-alt-shift as mod2
+mod2:
+  - control
+  - option
+  - shift
+
+# use j for cw
+focus-cw:
+  mod: mod1
+  key: j
+
+swap-cw:
+  mod: mod2
+  key: j
+
+# use k for ccw
+focus-ccw:
+  mod: mod1
+  key: k
+
+swap-ccw:
+  mod: mod2
+  key: k

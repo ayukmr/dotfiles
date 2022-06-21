@@ -1,0 +1,7 @@
+# ==========================
+# === Amethyst Bootstrap ===
+# ==========================
+
+config:
+  link:
+    - ~/.amethyst.yml: amethyst.yml
