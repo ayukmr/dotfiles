@@ -1,0 +1,10 @@
+# ========================
+# === Tmux Mini Preset ===
+# ========================
+
+name: mini
+root: ~/
+
+windows:
+  - shell:  ~
+  - editor: <%= ENV['EDITOR'] %>
