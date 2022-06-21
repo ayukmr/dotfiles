@@ -3,17 +3,16 @@
 # =====================
 
 [flags]
+time_delta = 15000
+rate       = 1000
 default_time_value = 60000
-time_delta         = 15000
 
 default_widget_type  = 'proc'
 default_widget_count = 1
 
-rate  = 1000
 regex = true
 color = 'default'
 tree  = false
-
 temperature_type = 'fahrenheit'
 
 [colors]
