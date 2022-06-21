@@ -1,9 +1,0 @@
-# =========================
-# === Tmux Shell Preset ===
-# =========================
-
-name: shell
-root: ~/
-
-windows:
-  - shell: ~
