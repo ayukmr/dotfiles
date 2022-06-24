@@ -58,9 +58,9 @@ noremap <BS> gg
 inoremap jk <Esc>
 
 " get current syntax group
-nnoremap <Leader>z :call <SID>SynStack()<CR>
+nnoremap <silent> <Leader>z :call <SID>SynStack()<CR>
 
-func! <SID>SynStack()
+func! s:SynStack()
     if !exists('*synstack')
         return
     endif
