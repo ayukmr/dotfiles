@@ -24,29 +24,11 @@ augroup nerdtree_utils
     auto BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 augroup END
 
-augroup nerdtree_vars
+augroup nerdtree_conceal
     auto!
-    " set statusline
-    auto FileType nerdtree               call s:NERDTreeSetVars()
-    auto WinEnter,BufWinEnter,TabEnter * call s:NERDTreeSetVars()
-augroup END
-
-" set vars in nerdtree buffer
-func! s:NERDTreeSetVars() abort
-    " get nerdtree winnr
-    let nerdtree_winnr = index(
-    \   map(
-    \       range(1, winnr('$')),
-    \       { _, v -> getbufvar(winbufnr(v), '&filetype') }
-    \   ),
-    \   'nerdtree'
-    \) + 1
-
-    " set statusline
-    call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&statusline', '%#LightlineLeft_normal_0# NTR %#LightlineLeft_normal_0_1#%#LightlineLeft_normal_1# Files %#LightlineLeft_normal_1_2#%#LightlineLeft_normal_2#') })
     " set concealcursor
-    call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
-endfunc
+    auto Filetype nerdtree set concealcursor=nvic
+augroup END
 
 " =======================
 " === NERDTree Colors ===
