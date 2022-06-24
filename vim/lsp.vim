@@ -51,6 +51,7 @@ if !has('nvim')
         \ 'coc-rust-analyzer',
         \ 'coc-pyright',
         \ 'coc-diagnostic',
+        \ 'coc-snippets',
     \]
 else
     " ==================

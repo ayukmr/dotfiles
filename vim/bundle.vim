@@ -110,7 +110,7 @@ Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
 
 " [snippets] snippets for ultisnips
-Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
+Plug 'honza/vim-snippets', { 'as': 'snippets' }
 
 " [startify] start screen
 Plug 'mhinz/vim-startify', { 'as': 'startify' }
@@ -125,7 +125,7 @@ Plug 'folke/trouble.nvim', Cond(has('nvim'), { 'as': 'trouble' })
 Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
 
 " [ultisnips] snippets manager
-Plug 'SirVer/ultisnips', Cond(has('nvim'))
+Plug 'SirVer/ultisnips'
 
 " [vimspector] debugger for vim
 Plug 'puremourning/vimspector'

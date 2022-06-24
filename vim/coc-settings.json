@@ -40,9 +40,8 @@
   "coc.source.file.shortcut":    "",
 
   // completion settings
-  "suggest.snippetIndicator": "",
-  "suggest.noselect":         false,
-  "suggest.fixInsertedWord":  false,
+  "suggest.noselect":        false,
+  "suggest.fixInsertedWord": false,
 
   // rust settings
   "rust.clippy_preference": "on",
