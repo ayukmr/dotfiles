@@ -11,12 +11,14 @@ layouts:
   - tall
   - 3column-left
   - middle-wide
+  - bsp
 
 # floating apps
 floating:
-  - com.apple.systempreferences
+  - com.apple.archiveutility
   - com.apple.DigitalColorMeter
   - com.apple.QuickTimePlayer
+  - com.apple.systempreferences
 
 # 5px window margins
 window-margins: true
