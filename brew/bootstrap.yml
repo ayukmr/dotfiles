@@ -27,8 +27,9 @@ packages:
   packages:
     - brew install:
       # dev
-      - neovim
       - gh
+      - vim
+      - nvim
 
       # tmux
       - tmux
