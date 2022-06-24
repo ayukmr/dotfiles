@@ -8,7 +8,7 @@
 cat $1 |
 
 # remove lines from newsboat
-tail -n +3 |
+tail -n +6 |
 
 # convert html to markdown
 turndown |
