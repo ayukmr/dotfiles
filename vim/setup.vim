@@ -13,17 +13,26 @@ if has('termguicolors')
     set termguicolors
 endif
 
+augroup highlight_adjustments
+    auto!
+    " change highlight colors
+    auto ColorScheme * call s:HighlightAdjustments()
+augroup END
+
+func! s:HighlightAdjustments()
+    " search highlighting
+    hi! link Search DiffAdd
+    hi! link IncSearch Search
+
+    " jsx tag highlighting
+    hi! link jsxOpenPunct   Fg
+    hi! link jsxClosePunct  Fg
+    hi! link jsxCloseString Fg
+endfunc
+
 " theme
 let g:onedark_terminal_italics = 2
 colorscheme onedark
-
-hi! link Search DiffAdd
-hi! link IncSearch Search
-
-" jsx tag highlighting
-hi! link jsxOpenPunct   Fg
-hi! link jsxClosePunct  Fg
-hi! link jsxCloseString Fg
 
 " enable syntax highlighting
 syntax on
