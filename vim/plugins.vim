@@ -253,22 +253,22 @@ sign define vimspectorCurrentFrame  text=>  texthl=DiagnosticSignInfo
 
 " configurations for files
 let g:vimspector_configurations = {
-    \ 'node': {
+    \ 'debugpy': {
+    \     'adapter':   'debugpy',
+    \     'filetypes': ['python'],
+    \     'configuration': {
+    \         'request':     'launch',
+    \         'program':     '${file}',
+    \         'stopOnEntry': v:true,
+    \     }
+    \ },
+    \ 'vscode-node': {
     \     'adapter':   'vscode-node',
     \     'filetypes': ['javascript', 'typescript'],
     \     'configuration': {
     \         'request':     'launch',
     \         'protocol':    'auto',
     \         'console':     'integratedTerminal',
-    \         'program':     '${file}',
-    \         'stopOnEntry': v:true,
-    \     }
-    \ },
-    \ 'debugpy': {
-    \     'adapter':   'debugpy',
-    \     'filetypes': ['python'],
-    \     'configuration': {
-    \         'request':     'launch',
     \         'program':     '${file}',
     \         'stopOnEntry': v:true,
     \     }
