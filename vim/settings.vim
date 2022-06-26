@@ -7,9 +7,9 @@ set title
 
 " set titlestring
 if has('nvim')
-    set titlestring=%t\ –\ nvim\ ◂\ %{&filetype}
+    set titlestring=%t\ –\ nvim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 else
-    set titlestring=%t\ –\ vim\ ◂\ %{&filetype}
+    set titlestring=%t\ –\ vim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 endif
 
 " set viminfo location
