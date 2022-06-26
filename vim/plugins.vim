@@ -95,12 +95,6 @@ noremap ; <Plug>(easymotion-prefix)
 " === FZF Vim ===
 " ===============
 
-augroup fzf_statusline
-    auto!
-    " set statusline in fzf
-    auto User FzfStatusLine setlocal statusline=%#LightlineLeft_normal_0#\ FZF\ %#LightlineLeft_normal_0_1#%#LightlineLeft_normal_1#\ Fuzzy\ Finder\ %#LightlineLeft_normal_1_2#%#LightlineLeft_normal_2#
-augroup END
-
 " find files in directory above current directory
 nnoremap <silent> <Leader>. :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
 
