@@ -20,8 +20,6 @@ let g:DevIconsAppendArtifactFix = 0
 let g:DevIconsEnableFoldersOpenClose = 1
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
 let g:DevIconsDefaultFolderOpenSymbol                    = 'ﱮ'
-let g:NERDTreeDirArrowExpandable  = ''
-let g:NERDTreeDirArrowCollapsible = ''
 
 " padding in nerdtree
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''

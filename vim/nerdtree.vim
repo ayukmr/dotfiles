@@ -15,6 +15,10 @@ let NERDTreeMinimalUI = 1
 " show hidden files by default
 let NERDTreeShowHidden = 1
 
+" disable folder arrows
+let g:NERDTreeDirArrowExpandable  = ''
+let g:NERDTreeDirArrowCollapsible = ''
+
 " toggle nerdtree
 nnoremap <silent> <C-t> :call g:NERDTreeCreator.ToggleTabTree(expand('%:h'))<CR>
 
