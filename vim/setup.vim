@@ -38,8 +38,9 @@ colorscheme onedark
 syntax on
 
 " change cursor depending on mode
-let &t_SI = "\033[6 q"
-let &t_EI = "\033[1 q"
+let &t_SI = "\e[6 q"
+let &t_SR = "\e[4 q"
+let &t_EI = "\e[1 q"
 
 " set update time
 set updatetime=100
