@@ -51,7 +51,7 @@ alias osa='osascript'
 
 # sqlite aliases
 alias sqt='sqlite3'
-alias lite='litecli'
+alias ltc='litecli'
 
 # ruby aliases
 alias rb='ruby'
