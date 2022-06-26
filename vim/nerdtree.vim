@@ -26,9 +26,24 @@ augroup END
 
 augroup nerdtree_conceal
     auto!
-    " set concealcursor
-    auto Filetype nerdtree set concealcursor=nvic
+    " set vars in nerdtree buffer
+    auto Filetype nerdtree   call s:NERDTreeSetVars()
+    auto BufEnter,WinEnter * call s:NERDTreeSetVars()
 augroup END
+
+func! s:NERDTreeSetVars() abort
+    " get nerdtree winnr
+    let nerdtree_winnr = index(
+    \   map(
+    \       range(1, winnr('$')),
+    \       { _, v -> getbufvar(winbufnr(v), '&filetype') }
+    \   ),
+    \   'nerdtree'
+    \) + 1
+
+    " set concealcursor
+    call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
+endfunc
 
 " =======================
 " === NERDTree Colors ===
