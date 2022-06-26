@@ -59,9 +59,5 @@
   },
 
   // diagnostic settings
-  "diagnostic.displayByAle": true,
-  "diagnostic-languageserver.filetypes": {
-    "vim":  "vint",
-    "rust": "clippy"
-  }
+  "diagnostic.displayByAle": true
 }

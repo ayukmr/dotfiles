@@ -50,7 +50,6 @@ if !has('nvim')
         \ 'coc-tsserver',
         \ 'coc-rust-analyzer',
         \ 'coc-pyright',
-        \ 'coc-diagnostic',
         \ 'coc-snippets',
     \]
 else
