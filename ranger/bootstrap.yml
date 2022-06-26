@@ -8,3 +8,14 @@ config:
 
   link:
     - ~/.config/ranger: rc.conf
+
+  test:
+    - '[[ ! -d ~/.config/ranger/plugins/devicons ]]':
+        dirs:
+          - ~/.config/ranger/plugins
+
+        shell:
+          - ? git clone
+              https://github.com/alexanderjeurissen/ranger_devicons
+              ~/.config/ranger/plugins/devicons
+            : 'installing ranger devicons'
