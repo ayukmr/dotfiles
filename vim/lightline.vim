@@ -49,9 +49,7 @@ endfunc
 func! LightlineFiletype()
     return winwidth(0) > 70
         \ ? WebDevIconsGetFileTypeSymbol() . ' ' . (
-        \     strlen(&filetype)
-        \         ? &filetype
-        \         : 'none'
+        \     strlen(&filetype) ? &filetype : 'none'
         \ )
         \ : ''
 endfunc
