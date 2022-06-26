@@ -209,9 +209,9 @@ nnoremap <Leader>T :CharTabularize!<CR>
 vnoremap <Leader>T :CharTabularize!<CR>
 
 " tabularize with character
-command! -bang -range CharTabularize call CharTabularize(<bang>0, <range>)
+command! -bang -range CharTabularize call s:CharTabularize(<bang>0, <range>)
 
-func! CharTabularize(add_zs, range)
+func! s:CharTabularize(add_zs, range)
     let s:command = a:range
         \ ? "'<,'>Tabularize /"
         \ : 'Tabularize /'
