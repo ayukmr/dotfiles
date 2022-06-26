@@ -15,7 +15,7 @@ path+=("$HOME/.yarn/bin")
 path+=("$HOME/.cargo/bin")
 
 # ruby binaries
-path+=("$HOME/.gem/ruby/2.6.0/bin")
+path+=("$GEM_HOME/bin")
 
 # python binaries
 path+=("/Library/Frameworks/Python.framework/Versions/Current/bin")
