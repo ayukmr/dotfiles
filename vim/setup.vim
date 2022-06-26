@@ -34,6 +34,3 @@ let &t_EI = "\033[1 q"
 
 " set update time
 set updatetime=100
-
-" refresh statusline with timer
-call timer_start(&updatetime, {-> execute(':let &stl=&stl') }, { 'repeat': -1 })

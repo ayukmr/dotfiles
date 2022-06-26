@@ -173,6 +173,9 @@ let g:lightline.tab_component_function = {
     \ 'tabnum': 'LightlineTabIcons',
 \}
 
+" refresh with timer
+call timer_start(&updatetime, {-> lightline#update() }, { 'repeat': -1 })
+
 " ============================
 " === Lightline Bufferline ===
 " ============================
