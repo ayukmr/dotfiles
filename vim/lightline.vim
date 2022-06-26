@@ -4,13 +4,13 @@
 
 " current mode
 func! LightlineMode()
-if exists('b:VM_Selection') && !empty(b:VM_Selection)
-    " visual multi
-    return 'VMT'
-else
-    " normal mode
-    return lightline#mode()
-endif
+    if exists('b:VM_Selection') && !empty(b:VM_Selection)
+        " visual multi
+        return 'VMT'
+    else
+        " normal mode
+        return lightline#mode()
+    endif
 endfunc
 
 " linter errors for lightline
