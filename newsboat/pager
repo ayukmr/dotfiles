@@ -14,7 +14,7 @@ turndown |
 tail -n +3 |
 
 # remove blank code blocks
-sed 's/^> $//' |
+sed -E 's/^(> )+$//' |
 
 # format markdown for viewing
 glow -s ~/.cfg/glow/style.json - |
