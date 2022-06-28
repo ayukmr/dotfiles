@@ -7,7 +7,7 @@ browser "open %u"
 
 # use newsboat-pager
 html-renderer "cat"
-pager "newsboat-pager %f"
+pager "~/.cfg/newsboat/pager %f"
 
 # automatically reload feeds
 auto-reload yes
