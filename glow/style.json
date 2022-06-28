@@ -8,8 +8,7 @@
 
   "block_quote": {
     "indent": 1,
-    "color":  "#a1aaad",
-    "indent_token": ""
+    "color":  "#a1aaad"
   },
 
   "list": {
