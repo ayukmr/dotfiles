@@ -13,9 +13,6 @@ endfunc
 
 call plug#begin('~/.vim/bundle')
 
-" [ale] linting
-Plug 'dense-analysis/ale', Cond(!has('nvim'))
-
 " [bbye] better :bd and :bw
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
@@ -36,9 +33,6 @@ Plug 'hrsh7th/cmp-path', Cond(has('nvim'))
 
 " [cmp-ultisnips] completion using ultisnips
 Plug 'quangnguyen30192/cmp-nvim-ultisnips', Cond(has('nvim'), { 'as': 'cmp-ultisnips' })
-
-" [coc] completion and lsp
-Plug 'neoclide/coc.nvim', Cond(!has('nvim'), { 'as': 'coc', 'branch': 'release' })
 
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
@@ -110,7 +104,7 @@ Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
 
 " [snippets] snippets for ultisnips
-Plug 'honza/vim-snippets', { 'as': 'snippets' }
+Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
 
 " [startify] start screen
 Plug 'mhinz/vim-startify', { 'as': 'startify' }
@@ -125,7 +119,7 @@ Plug 'folke/trouble.nvim', Cond(has('nvim'), { 'as': 'trouble' })
 Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
 
 " [ultisnips] snippets manager
-Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips', Cond(has('nvim'))
 
 " [vimspector] debugger for vim
 Plug 'puremourning/vimspector'
