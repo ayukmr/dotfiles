@@ -22,9 +22,9 @@ if !has('nvim')
     " coc support
     let g:ale_disable_lsp = 1
 
-    " ===============================
-    " === Conqueror of Completion ===
-    " ===============================
+    " ===============
+    " === CoC LSP ===
+    " ===============
 
     " config file location
     let g:coc_config_home = '~/.cfg/vim'
