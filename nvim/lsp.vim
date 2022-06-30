@@ -87,7 +87,7 @@ lua <<EOF
         ['<S-Tab>'] = cmp.mapping.select_prev_item(),
         ['<C-e>']   = cmp.mapping.abort(),
         ['<CR>']    = cmp.mapping.confirm { select = true },
-        ['<-CR>']  = cmp.mapping.complete(),
+        ['<M-CR>']  = cmp.mapping.complete(),
       },
 
       -- completion sources
