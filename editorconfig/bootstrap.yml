@@ -4,4 +4,4 @@
 
 config:
   link:
-    - ~/.editorconfig: editorconfig
+    - ~/.editorconfig: editorconfig.ini
