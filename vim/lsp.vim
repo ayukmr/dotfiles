@@ -46,11 +46,11 @@ if !has('nvim')
 
     " coc extensions
     let g:coc_global_extensions = [
-        \ 'coc-json',
-        \ 'coc-tsserver',
-        \ 'coc-rust-analyzer',
         \ 'coc-pyright',
+        \ 'coc-rust-analyzer',
         \ 'coc-snippets',
+        \ 'coc-solargraph',
+        \ 'coc-tsserver',
     \]
 else
     " ==================
