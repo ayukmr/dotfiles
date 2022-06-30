@@ -6,6 +6,7 @@
     a = add
     p = push
     d = diff
+    c = commit
     s = status -s
     l = log -n 20 --oneline
 
@@ -14,7 +15,6 @@
     cl = clone
     br = branch
     st = status
-    ct = commit
     ap = add -p
     hm = heatmap
     co = checkout
