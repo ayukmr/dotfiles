@@ -15,32 +15,20 @@ endfunc
 
 " linter errors for lightline
 func! LightlineErrors()
-    if !has('nvim')
-        let l:counts = ale#statusline#Count(bufnr(''))
-        let l:errors = l:counts.error + l:counts.style_error
-    else
-        lua vim.g.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
+    lua vim.g.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
 
-        let l:errors = g:errors
-        unlet g:errors
-    endif
+    let l:errors = g:errors
+    unlet g:errors
 
     return l:errors
 endfunc
 
 " linter warnings for lightline
 func! LightlineWarnings()
-    if !has('nvim')
-        let l:counts = ale#statusline#Count(bufnr(''))
+    lua vim.g.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
 
-        let l:errors   = l:counts.error + l:counts.style_error
-        let l:warnings = l:counts.total - l:errors
-    else
-        lua vim.g.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
-
-        let l:warnings = g:warnings
-        unlet g:warnings
-    endif
+    let l:warnings = g:warnings
+    unlet g:warnings
 
     return l:warnings
 endfunc
@@ -115,7 +103,7 @@ let g:lightline.active = {
     \ 'left': [
     \     ['mode'],
     \     ['readonly', 'filename', 'modified'],
-    \     ['errors', 'warnings'],
+    \     has('nvim') ? ['errors', 'warnings'] : [],
     \ ],
     \ 'right': [
     \     ['lineinfo'],
