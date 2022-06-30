@@ -57,6 +57,11 @@ endfunc
 func! LightlineTabChars()
     let s = ''
 
+    " return if single tab
+    if len(range(tabpagenr('$'))) < 2
+        return ''
+    endif
+
     " add chars for tabs
     for i in range(tabpagenr('$'))
         let s .=
