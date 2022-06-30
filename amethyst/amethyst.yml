@@ -17,8 +17,9 @@ layouts:
 floating:
   - com.apple.archiveutility
   - com.apple.DigitalColorMeter
-  - com.apple.QuickTimePlayer
+  - com.valvesoftware.steam
   - com.apple.systempreferences
+  - com.apple.QuickTimePlayer
 
 # 5px window margins
 window-margins: true
