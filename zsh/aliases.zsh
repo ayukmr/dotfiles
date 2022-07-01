@@ -12,11 +12,12 @@ alias files='find . -type file'
 alias -- +x='chmod +x'
 
 # command aliases
-alias clr='tput reset && unset FIRST_LINE'
+alias clr='clear'
 alias path='echo $PATH | tr -s ":" "\n"'
 alias rmds='find . -name .DS_Store -type file -delete'
 alias badge='tput bel && notify'
 alias zgenr='zgen reset && exec $SHELL -l'
+alias clear='tput reset && unset FIRST_LINE'
 
 # ls aliases
 alias l='na -ic'
@@ -123,13 +124,3 @@ alias nv='nvim'
 # system aliases
 alias svr='open -a ScreenSaverEngine'
 alias slp='pmset sleepnow &> /dev/null'
-
-# clear screen and history
-function clear {
-    tput reset
-    unset FIRST_LINE
-
-    if [[ -n $TMUX ]] && (( $+commands[tmux] )); then
-        tmux clear-history
-    fi
-}
