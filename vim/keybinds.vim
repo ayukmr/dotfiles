@@ -20,6 +20,10 @@ nnoremap <silent> <Leader>} :tabnext<CR>
 " disable highlighting temporarily
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 
+" faster indentation
+nnoremap < <<
+nnoremap > >>
+
 " move lines
 nnoremap <silent> <M-j> :move . +1<CR>
 nnoremap <silent> <M-k> :move . -2<CR>
