@@ -84,7 +84,7 @@ vnoremap V <Plug>(expand_region_shrink)
 " ==================
 
 " cursor color
-hi! link EasyMotionIncCursorDefault Search
+highlight! link EasyMotionIncCursorDefault Search
 
 " commands prefix
 noremap ; <Plug>(easymotion-prefix)
@@ -119,7 +119,7 @@ let g:gitgutter_sign_allow_clobber = 0
 " ========================
 
 " highlight color
-hi! link HighlightedyankRegion Search
+highlight! link HighlightedyankRegion Search
 
 " mappings for vim
 if !exists('##TextYankPost')
@@ -191,8 +191,8 @@ let g:startify_lists = [
 let g:startify_change_to_dir = 0
 
 " colors
-hi! link StartifyBracket StartifyNumber
-hi! link StartifySlash   StartifyPath
+highlight! link StartifyBracket StartifyNumber
+highlight! link StartifySlash   StartifyPath
 
 " ===============
 " === Tabular ===

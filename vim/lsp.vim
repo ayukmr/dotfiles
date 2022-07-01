@@ -7,9 +7,9 @@
 " ===================
 
 " colors
-hi! link ALEWarningSign WarningMsg
-hi ALEInfo cterm=underline ctermfg=39 gui=underline guifg=#61afef
-hi ALEInfoSign ctermfg=39 guifg=#61afef
+highlight! link ALEWarningSign WarningMsg
+highlight ALEInfo cterm=underline ctermfg=39 gui=underline guifg=#61afef
+highlight ALEInfoSign ctermfg=39 guifg=#61afef
 
 " error and warning signs
 let g:ale_sign_error   = '>>'

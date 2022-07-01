@@ -130,8 +130,8 @@ let g:lightline.component_function = {
 \}
 
 " color linter error and warning symbols
-hi LightlineErrors   ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2c323c
-hi LightlineWarnings ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2c323c
+highlight LightlineErrors   ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2c323c
+highlight LightlineWarnings ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2c323c
 
 " bufferline component
 let g:lightline.component_expand = {

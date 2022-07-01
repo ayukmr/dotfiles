@@ -21,13 +21,13 @@ augroup END
 
 func! s:HighlightAdjustments()
     " search highlighting
-    hi! link Search DiffAdd
-    hi! link IncSearch Search
+    highlight! link Search DiffAdd
+    highlight! link IncSearch Search
 
     " jsx tag highlighting
-    hi! link jsxOpenPunct   Fg
-    hi! link jsxClosePunct  Fg
-    hi! link jsxCloseString Fg
+    highlight! link jsxOpenPunct   Fg
+    highlight! link jsxClosePunct  Fg
+    highlight! link jsxCloseString Fg
 endfunc
 
 " theme

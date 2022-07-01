@@ -3,11 +3,11 @@
 " ================
 
 " highlight arrows
-hi! link NERDTreeOpenable Red
-hi! link NERDTreeClosable Red
+highlight! link NERDTreeOpenable Red
+highlight! link NERDTreeClosable Red
 
 " highlight slash the same as directories
-hi! link NERDTreeDirSlash NERDTreeDir
+highlight! link NERDTreeDirSlash NERDTreeDir
 
 " hide help ui
 let NERDTreeMinimalUI = 1
@@ -119,8 +119,8 @@ let g:NERDTreeExactMatchHighlightColor['rakefile'] = 'df5465'
 
 let g:NERDTreeExactMatchHighlightColor['node_modules'] = '8fca74'
 let g:NERDTreeExactMatchHighlightColor['dropbox']      = '89bed6'
-hi nerdtreeExactMatchFolder_node_modules ctermfg=114 guifg=#8fca74
-hi nerdtreeExactMatchFolder_dropbox      ctermfg=110 guifg=#89bed6
+highlight nerdtreeExactMatchFolder_node_modules ctermfg=114 guifg=#8fca74
+highlight nerdtreeExactMatchFolder_dropbox      ctermfg=110 guifg=#89bed6
 
 let g:NERDTreeExactMatchHighlightColor['cargo.toml']   = 'c788eb'
 let g:NERDTreeExactMatchHighlightColor['package.json'] = 'ed884e'
@@ -129,7 +129,7 @@ let g:NERDTreeExactMatchHighlightColor['.gitattributes'] = 'fe9764'
 let g:NERDTreeExactMatchHighlightColor['.gitignore']     = 'fe9764'
 
 let g:NERDTreeExactMatchHighlightColor['.git'] = 'fe9764'
-silent! hi nerdtreeExactMatchFolder_.git ctermfg=209 guifg=#fe9764
+silent! highlight nerdtreeExactMatchFolder_.git ctermfg=209 guifg=#fe9764
 
 let g:NERDTreePatternMatchHighlightColor = {}
 
