@@ -24,9 +24,6 @@ nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 nnoremap <silent> <M-j> :move . +1<CR>
 nnoremap <silent> <M-k> :move . -2<CR>
 
-" paste with proper indentation
-noremap <silent> P :set paste<CR> :put *<CR> :set nopaste<CR>
-
 " sane deleting
 nnoremap x "_x
 nnoremap d "_d
@@ -46,9 +43,6 @@ nnoremap <Leader>W :noauto write<CR>
 
 " delete buffer
 nnoremap <silent> <Leader>Q :bdelete<CR>
-
-" select changed text
-noremap gV `[v`]
 
 " file movement
 noremap <CR> G
