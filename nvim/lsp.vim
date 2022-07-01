@@ -16,7 +16,7 @@ nnoremap <silent> <M-h> :lua vim.diagnostic.open_float()<CR>
 " ===============
 
 " highlights for trouble
-hi TroubleText ctermfg=fg ctermbg=none guifg=fg guibg=none
+highlight TroubleText ctermfg=fg ctermbg=none guifg=fg guibg=none
 
 " keybinds for trouble
 nnoremap <Leader><C-t> :TroubleToggle<CR>
