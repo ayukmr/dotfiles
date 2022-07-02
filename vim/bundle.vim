@@ -118,9 +118,6 @@ Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Cond(has('nvim'))
 
-" [vimspector] debugger for vim
-Plug 'puremourning/vimspector'
-
 " [vimux] tmux interactions from vim
 Plug 'preservim/vimux'
 

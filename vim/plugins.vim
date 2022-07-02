@@ -224,58 +224,6 @@ func! s:CharTabularize(add_zs, range)
     exec s:command
 endfunc
 
-" ==================
-" === Vimspector ===
-" ==================
-
-" vimspector keybinds
-nnoremap <Leader>VR :VimspectorReset<CR>
-nnoremap <Leader>Vr <Plug>VimspectorRestart
-nnoremap <Leader>Vc <Plug>VimspectorContinue
-nnoremap <Leader>Vs <Plug>VimspectorStop
-nnoremap <Leader>Vp <Plug>VimspectorPause
-nnoremap <Leader>Vb <Plug>VimspectorToggleBreakpoint
-nnoremap <Leader>Vf <Plug>VimspectorAddFunctionBreakpoint
-nnoremap <Leader>Vo <Plug>VimspectorStepOver
-nnoremap <Leader>Vi <Plug>VimspectorStepInto
-
-" vimspector signs
-sign define vimspectorBP            text=>> texthl=DiagnosticSignInfo
-sign define vimspectorBPCond        text=?? texthl=DiagnosticSignInfo
-sign define vimspectorBPLog         text=-- texthl=DiagnosticSignWarn
-sign define vimspectorBPDisabled    text=>> texthl=NonText
-sign define vimspectorPC            text=## texthl=DiagnosticSignInfo linehl=CursorLine
-sign define vimspectorPCBP          text=#> texthl=Question           linehl=CursorLine
-sign define vimspectorCurrentThread text=>  texthl=DiagnosticSignInfo
-sign define vimspectorCurrentFrame  text=>  texthl=DiagnosticSignInfo
-
-" configurations for files
-let g:vimspector_configurations = {
-    \ 'debugpy': {
-    \     'adapter':   'debugpy',
-    \     'filetypes': ['python'],
-    \     'configuration': {
-    \         'request':     'launch',
-    \         'program':     '${file}',
-    \         'stopOnEntry': v:true,
-    \     }
-    \ },
-    \ 'vscode-node': {
-    \     'adapter':   'vscode-node',
-    \     'filetypes': ['javascript', 'typescript'],
-    \     'configuration': {
-    \         'request':     'launch',
-    \         'protocol':    'auto',
-    \         'console':     'integratedTerminal',
-    \         'program':     '${file}',
-    \         'stopOnEntry': v:true,
-    \     }
-    \ },
-\}
-
-" base directory
-let g:vimspector_base_dir = expand('~/.vim/bundle/vimspector')
-
 " =============
 " === Vimux ===
 " =============
