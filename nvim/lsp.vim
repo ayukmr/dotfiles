@@ -80,7 +80,7 @@ lua <<EOF
         format = function(_, item)
           item.kind = symbols[item.kind]
           return item
-        end
+        end,
       },
 
       -- keybinds for completion
@@ -99,13 +99,13 @@ lua <<EOF
         { name = 'nvim_lsp' },
         { name = 'ultisnips' },
         { name = 'buffer' },
-        { name = 'path' }
+        { name = 'path' },
       },
 
       -- enable ghost text
       experimental = {
-        ghost_text = true
-      }
+        ghost_text = true,
+      },
     }
 
     -- search completion
