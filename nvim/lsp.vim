@@ -137,7 +137,6 @@ lua <<EOF
     -- add lsp servers
     for _, lsp in pairs(servers) do
       lspconfig[lsp].setup {
-        on_attach    = on_attach,
         capabilities = capabilities,
       }
     end
