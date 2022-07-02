@@ -2,6 +2,17 @@
 " === Neovim LSP ===
 " ==================
 
+" ======================
+" === Cmp Completion ===
+" ======================
+
+" highlight matching text
+highlight CmpItemAbbrMatch cterm=bold gui=bold
+
+" ==================
+" === Neovim LSP ===
+" ==================
+
 " signs for diagnostics
 sign define DiagnosticSignError text=>> texthl=DiagnosticSignError linehl= numhl=
 sign define DiagnosticSignWarn  text=-- texthl=DiagnosticSignWarn  linehl= numhl=
@@ -26,14 +37,15 @@ nnoremap <Leader><C-t> :TroubleToggle<CR>
 " =================
 
 lua <<EOF
-    -- plugins
+    -- ======================
+    -- === Cmp Completion ===
+    -- ======================
+
+    -- cmp modules
     local cmp          = require 'cmp'
     local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 
-    local lspconfig = require 'lspconfig'
-    local trouble   = require 'trouble'
-
-
+    -- symbols for items
     local symbols = {
         Text          = '',
         Method        = '',
@@ -62,12 +74,8 @@ lua <<EOF
         TypeParameter = '',
     }
 
-    -- ======================
-    -- === Cmp Completion ===
-    -- ======================
-
     -- completion
-    cmp.setup {
+    cmp.setup({
         -- use ultisnips
         snippet = {
             expand = function(args)
@@ -95,18 +103,18 @@ lua <<EOF
         },
 
         -- completion sources
-        sources = cmp.config.sources {
+        sources = cmp.config.sources({
             { name = 'nvim_lsp' },
             { name = 'ultisnips' },
             { name = 'buffer' },
             { name = 'path' },
-        },
+        }),
 
         -- enable ghost text
         experimental = {
             ghost_text = true,
         },
-    }
+    })
 
     -- search completion
     cmp.setup.cmdline('/', {
@@ -124,9 +132,12 @@ lua <<EOF
         },
     })
 
-    -- ==================
-    -- === Neovim LSP ===
-    -- ==================
+    -- =================
+    -- === LSPConfig ===
+    -- =================
+
+    -- lspconfig module
+    local lspconfig = require 'lspconfig'
 
     -- capabilities for completion
     local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -136,9 +147,9 @@ lua <<EOF
 
     -- add lsp servers
     for _, lsp in pairs(servers) do
-        lspconfig[lsp].setup {
+        lspconfig[lsp].setup({
             capabilities = capabilities,
-        }
+        })
     end
 
     -- diagnostics config
@@ -155,8 +166,11 @@ lua <<EOF
     -- === Trouble ===
     -- ===============
 
+    -- trouble module
+    local trouble = require 'trouble'
+
     -- trouble ui
-    trouble.setup {
+    trouble.setup({
         icons = false,
         padding = false,
         indent_lines = false,
@@ -167,5 +181,5 @@ lua <<EOF
             information = '',
             other       = '',
         },
-    }
+    })
 EOF
