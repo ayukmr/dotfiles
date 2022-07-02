@@ -132,6 +132,18 @@ lua <<EOF
         },
     })
 
+    -- ============================
+    -- === Neovim LSP Installer ===
+    -- ============================
+
+    -- lsp installer module
+    local nvim_lsp_installer = require 'nvim-lsp-installer'
+
+    -- setup lsp installer
+    nvim_lsp_installer.setup({
+        automatic_installation = true,
+    })
+
     -- =================
     -- === LSPConfig ===
     -- =================

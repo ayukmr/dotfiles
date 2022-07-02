@@ -22,4 +22,3 @@ packages:
 
       # linting
       - rubocop
-      - solargraph

@@ -88,6 +88,9 @@ Plug 'preservim/nerdtree'
 " [nerdtree-colors] file colors in nerdtree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'as': 'nerdtree-colors' }
 
+" [nvim-lsp-installer] installer for nvim lsp servers
+Plug 'williamboman/nvim-lsp-installer', Cond(has('nvim'))
+
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 

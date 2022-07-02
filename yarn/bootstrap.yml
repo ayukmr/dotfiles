@@ -22,4 +22,3 @@ packages:
       - typescript
       - coffeescript
       - express-generator
-      - typescript-language-server
