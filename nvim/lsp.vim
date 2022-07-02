@@ -29,8 +29,36 @@ lua <<EOF
     -- plugins
     local cmp      = require 'cmp'
     local nvim_lsp = require 'lspconfig'
-    local lspkind  = require 'lspkind'
     local trouble  = require 'trouble'
+
+
+    local symbols = {
+      Text          = '',
+      Method        = '',
+      Function      = '',
+      Constructor   = '',
+      Field         = '',
+      Variable      = '',
+      Class         = '',
+      Interface     = '',
+      Module        = '',
+      Property      = '',
+      Unit          = '',
+      Value         = '',
+      Enum          = '',
+      Keyword       = '',
+      Snippet       = '',
+      Color         = '',
+      File          = '',
+      Reference     = '',
+      Folder        = '',
+      EnumMember    = '',
+      Constant      = '',
+      Struct        = 'פּ',
+      Event         = '',
+      Operator      = '',
+      TypeParameter = '',
+    }
 
     -- ======================
     -- === Cmp Completion ===
@@ -45,38 +73,12 @@ lua <<EOF
         end,
       },
 
-      -- use lspkind symbols
+      -- show icons for items
       formatting = {
-        format = lspkind.cmp_format {
-          mode = 'symbol',
-          symbol_map = {
-            Text          = '',
-            Method        = '',
-            Function      = '',
-            Constructor   = '',
-            Field         = '',
-            Variable      = '',
-            Class         = '',
-            Interface     = '',
-            Module        = '',
-            Property      = '',
-            Unit          = '',
-            Value         = '',
-            Enum          = '',
-            Keyword       = '',
-            Snippet       = '',
-            Color         = '',
-            File          = '',
-            Reference     = '',
-            Folder        = '',
-            EnumMember    = '',
-            Constant      = '',
-            Struct        = 'פּ',
-            Event         = '',
-            Operator      = '',
-            TypeParameter = '',
-          },
-        },
+        format = function(_, item)
+          item.kind = symbols[item.kind]
+          return item
+        end
       },
 
       -- keybinds for completion

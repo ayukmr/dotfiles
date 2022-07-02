@@ -82,9 +82,6 @@ Plug 'mengelbrecht/lightline-bufferline'
 " [lspconfig] config for nvim lsp
 Plug 'neovim/nvim-lspconfig', Cond(has('nvim'), { 'as': 'lspconfig' })
 
-" [lspkind] lsp icons
-Plug 'onsails/lspkind.nvim', Cond(has('nvim'), { 'as': 'lspkind' })
-
 " [nerdtree] file browser
 Plug 'preservim/nerdtree'
 
