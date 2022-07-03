@@ -144,7 +144,7 @@ local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
-local servers = { 'pyright', 'rls', 'solargraph', 'sourcekit', 'tsserver' }
+local servers = { 'pyright', 'rust_analyzer', 'solargraph', 'sourcekit', 'tsserver' }
 
 -- add lsp servers
 for _, lsp in pairs(servers) do
