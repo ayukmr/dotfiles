@@ -165,6 +165,23 @@ vim.diagnostic.config({
 EOF
 
 " ===============
+" === Null LS ===
+" ===============
+
+lua <<EOF
+-- null-ls module
+local null_ls = require 'null-ls'
+
+-- setup null-ls
+null_ls.setup({
+    sources = {
+        null_ls.builtins.diagnostics.eslint,
+        null_ls.builtins.diagnostics.rubocop,
+    },
+})
+EOF
+
+" ===============
 " === Trouble ===
 " ===============
 

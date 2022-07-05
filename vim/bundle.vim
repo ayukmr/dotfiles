@@ -91,8 +91,14 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'as': 'nerdtree-colors' }
 " [nvim-lsp-installer] installer for nvim lsp servers
 Plug 'williamboman/nvim-lsp-installer', Cond(has('nvim'))
 
+" [null-ls] use neovim as a language server
+Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
+
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
+
+" [plenary] utils for neovim lua
+Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
 " [polyglot] language syntax pack
 Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
