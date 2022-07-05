@@ -80,6 +80,7 @@ let g:NERDTreeExtensionHighlightColor['less']   = '93b5fe'
 let g:NERDTreeExtensionHighlightColor['toml']   = 'c788eb'
 let g:NERDTreeExtensionHighlightColor['java']   = 'e58660'
 let g:NERDTreeExtensionHighlightColor['diff']   = 'fe9764'
+let g:NERDTreeExtensionHighlightColor['swift']  = 'ea7f5b'
 let g:NERDTreeExtensionHighlightColor['svelte'] = 'e87852'
 
 let g:NERDTreeExtensionHighlightColor['sass'] = 'fe86b2'
