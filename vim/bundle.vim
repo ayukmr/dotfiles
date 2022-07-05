@@ -52,6 +52,9 @@ Plug 'terryma/vim-expand-region', { 'as': 'expand-region' }
 " [emmet] emmet completions
 Plug 'mattn/emmet-vim', { 'as': 'emmet' }
 
+" [fidget] lsp status ui
+Plug 'j-hui/fidget.nvim', Cond(has('nvim'), { 'as': 'fidget' })
+
 " [fix-cursor-hold] fix updatetime for neovim
 Plug 'antoinemadec/FixCursorHold.nvim', Cond(has('nvim'), { 'as': 'fix-cursor-hold' })
 

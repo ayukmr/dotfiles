@@ -101,6 +101,25 @@ cmp.setup.cmdline(':', {
 })
 EOF
 
+" ==============
+" === Fidget ===
+" ==============
+
+" title highlight
+highlight! link FidgetTitle Label
+
+lua <<EOF
+-- fidget module
+local fidget = require 'fidget'
+
+-- fidget setup
+fidget.setup({
+   text = {
+       spinner = 'dots',
+   },
+})
+EOF
+
 " =====================
 " === LSP Installer ===
 " =====================
