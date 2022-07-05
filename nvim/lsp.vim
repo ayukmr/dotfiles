@@ -42,7 +42,7 @@ local symbols = {
     TypeParameter = '',
 }
 
--- completion
+-- setup cmp
 cmp.setup({
     -- use ultisnips
     snippet = {
@@ -227,7 +227,7 @@ lua <<EOF
 -- trouble module
 local trouble = require 'trouble'
 
--- trouble ui
+-- setup trouble
 trouble.setup({
     icons = false,
     padding = false,
