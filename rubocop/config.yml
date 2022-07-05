@@ -2,6 +2,10 @@
 # === RuboCop Config ===
 # ======================
 
+AllCops:
+  # enable new cops
+  NewCops: enable
+
 # allow no empty line after guard clause
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
