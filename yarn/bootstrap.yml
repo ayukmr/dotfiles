@@ -13,12 +13,17 @@ packages:
 
   packages:
     - yarn global add:
-      - tsc
+      # langs
       - less
       - sass
-      - serve
-      - hjson
+      - coffeescript
+
+      # typescript
+      - tsc
       - ts-node
       - typescript
-      - coffeescript
+
+      # utils
+      - serve
+      - eslint
       - express-generator
