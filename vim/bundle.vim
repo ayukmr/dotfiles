@@ -59,7 +59,7 @@ Plug 'j-hui/fidget.nvim', Cond(has('nvim'), { 'as': 'fidget' })
 Plug 'antoinemadec/FixCursorHold.nvim', Cond(has('nvim'), { 'as': 'fix-cursor-hold' })
 
 " [fzf] fuzzy finder
-Plug 'junegunn/fzf', { 'do': {-> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': ':call fzf#install()' }
 
 " [fzf-vim] fzf support for vim
 Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
