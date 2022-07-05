@@ -15,22 +15,12 @@ endfunc
 
 " linter errors for lightline
 func! LightlineErrors()
-    lua vim.g.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
-
-    let l:errors = g:errors
-    unlet g:errors
-
-    return l:errors
+    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
 endfunc
 
 " linter warnings for lightline
 func! LightlineWarnings()
-    lua vim.g.warnings = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })
-
-    let l:warnings = g:warnings
-    unlet g:warnings
-
-    return l:warnings
+    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })')
 endfunc
 
 " add file icon to filetype
