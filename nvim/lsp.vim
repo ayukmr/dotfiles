@@ -117,6 +117,12 @@ fidget.setup({
     text = {
         spinner = 'dots',
     },
+    window = {
+        blend = 25,
+    },
+    fmt = {
+        stack_upwards = false,
+    },
 })
 EOF
 
