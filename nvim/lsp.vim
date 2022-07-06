@@ -114,9 +114,9 @@ local fidget = require 'fidget'
 
 -- fidget setup
 fidget.setup({
-   text = {
-       spinner = 'dots',
-   },
+    text = {
+        spinner = 'dots',
+    },
 })
 EOF
 
