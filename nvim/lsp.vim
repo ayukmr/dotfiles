@@ -7,7 +7,8 @@
 " ======================
 
 " highlight matching text
-highlight CmpItemAbbrMatch cterm=bold gui=bold
+highlight CmpItemAbbrMatch      cterm=bold gui=bold
+highlight CmpItemAbbrMatchFuzzy cterm=bold gui=bold
 
 lua <<EOF
 -- cmp module
