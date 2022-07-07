@@ -1,18 +1,22 @@
-var TurndownService = require('turndown');
+// ====================
+// === Turndown CLI ===
+// ====================
+
+const TurndownService = require('turndown');
 
 // override escaping
 TurndownService.prototype.escape = (str) => str
 
 function toMarkdown(data) {
   // turndown settings
-  let settings = {
+  const settings = {
     hr: '***',
     headingStyle:   'atx',
     codeBlockStyle: 'fenced'
   }
 
-  let service = new TurndownService(settings);
-  let markdown = service.turndown(data.toString());
+  const service  = new TurndownService(settings);
+  const markdown = service.turndown(data.toString());
 
   console.log(markdown);
 }
