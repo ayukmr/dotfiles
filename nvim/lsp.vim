@@ -60,7 +60,7 @@ cmp.setup({
         end,
     },
 
-    -- keybinds for completion
+    -- completion keybinds
     mapping = cmp.mapping.preset.insert {
         ['<C-u>']   = cmp.mapping.scroll_docs(-8),
         ['<C-d>']   = cmp.mapping.scroll_docs(8),
