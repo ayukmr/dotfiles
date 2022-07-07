@@ -18,6 +18,7 @@ function toMarkdown(data) {
   const service  = new TurndownService(settings);
   const markdown = service.turndown(data.toString());
 
+  // return markdown
   console.log(markdown);
 }
 
