@@ -101,6 +101,31 @@ cmp.setup.cmdline(':', {
 })
 EOF
 
+" ================
+" === Dressing ===
+" ================
+
+" title highlight
+highlight! link FloatTitle Normal
+
+lua <<EOF
+-- dressing module
+local dressing = require 'dressing'
+
+-- dressing setup
+dressing.setup({
+    input = {
+        winblend = 0,
+    },
+    select = {
+        backend = { 'builtin' },
+        builtin = {
+            winblend = 0,
+        },
+    },
+})
+EOF
+
 " ==============
 " === Fidget ===
 " ==============
@@ -173,10 +198,35 @@ nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gr :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> gt :lua vim.lsp.buf.type_definition()<CR>
 
+" floating window background
+highlight! link NormalFloat Normal
+
 lua <<EOF
 -- lsp modules
 local lspconfig    = require 'lspconfig'
 local cmp_nvim_lsp = require 'cmp_nvim_lsp'
+
+-- window border
+local border = {
+    {'╭', 'FloatBorder'},
+    {'─', 'FloatBorder'},
+    {'╮', 'FloatBorder'},
+    {'│', 'FloatBorder'},
+    {'╯', 'FloatBorder'},
+    {'─', 'FloatBorder'},
+    {'╰', 'FloatBorder'},
+    {'│', 'FloatBorder'},
+}
+
+local open_floating_preview = vim.lsp.util.open_floating_preview
+
+-- open floating preview with custom border
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+    opts = opts or {}
+    opts.border = opts.border or border
+
+    return open_floating_preview(contents, syntax, opts, ...)
+end
 
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()

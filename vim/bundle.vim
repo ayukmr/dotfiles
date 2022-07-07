@@ -40,6 +40,9 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 " [devicons] icons for various plugins
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
+" [dressing] better ui for lsp
+Plug 'stevearc/dressing.nvim', Cond(has('nvim'), { 'as': 'dressing' })
+
 " [easymotion] motions on speed
 Plug 'easymotion/vim-easymotion', { 'as': 'easymotion' }
 
