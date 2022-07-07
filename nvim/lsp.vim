@@ -201,6 +201,12 @@ nnoremap <silent> gi :lua vim.lsp.buf.implementation()<CR>
 " floating window background
 highlight! link NormalFloat Normal
 
+augroup lsp_info_background
+    auto!
+    " set background for lsp info
+    auto FileType lspinfo set winhighlight=NormalFloat:PMenu
+augroup END
+
 lua <<EOF
 -- lsp modules
 local lspconfig    = require 'lspconfig'
