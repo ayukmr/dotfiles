@@ -33,13 +33,17 @@ nnoremap x "_x
 nnoremap d "_d
 nnoremap D "_D
 nnoremap c "_c
+
 vnoremap d "_d
+sunmap   d
 
 " cut text
 nnoremap <Leader>d "*d
 nnoremap <Leader>D "*D
 nnoremap <Leader>c "*c
+
 vnoremap <Leader>d "*d
+sunmap   <Leader>d
 
 " write file
 nnoremap <Leader>w :write<CR>
