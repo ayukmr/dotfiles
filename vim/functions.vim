@@ -46,15 +46,14 @@ func! s:XMLify()
     " get filename
     let s:image_file = @%
 
-    " wipe buffer
     bwipe
+    enew
 
     " write xml to buffer
-    enew | put = system(['plutil', '-convert', 'xml1', '-o', '-', s:image_file])
+    put = system(['plutil', '-convert', 'xml1', '-o', '-', s:image_file])
 
     " remove empty lines
     1 delete 2
 
-    " set filetype
     set filetype=xml
 endfunc
