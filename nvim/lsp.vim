@@ -60,6 +60,10 @@ cmp.setup({
         end,
     },
 
+    window = {
+        documentation = cmp.config.window.bordered(),
+    },
+
     -- completion keybinds
     mapping = cmp.mapping.preset.insert {
         ['<C-u>']   = cmp.mapping.scroll_docs(-8),
