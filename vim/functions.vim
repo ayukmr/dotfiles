@@ -39,7 +39,7 @@ endfunc
 augroup xmlify
     auto!
     " run xmlify on binary-encoded plists
-    auto BufEnter,WinEnter *.plist if system(['file', '-b', expand('%:p')]) ==# 'Apple binary property list' | call s:XMLify() | endif
+    auto BufEnter,WinEnter *.plist if system(['file', '-b', expand('%:p')]) =~# 'Apple binary property' | call s:XMLify() | endif
 augroup END
 
 func! s:XMLify()
