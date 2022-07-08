@@ -236,12 +236,12 @@ let g:UltiSnipsExpandTrigger = '<Plug>(ultisnips-expand)'
 " =============
 
 " vimux keybinds
-nnoremap <Leader>vk :VimuxRunCommand 'clear'<CR>
-nnoremap <Leader>vp :VimuxPromptCommand<CR>
-nnoremap <Leader>vl :VimuxRunLastCommand<CR>
-nnoremap <Leader>vq :VimuxCloseRunner<CR>
-nnoremap <Leader>vx :VimuxInterruptRunner<CR>
-nnoremap <Leader>vz :VimuxZoomRunner<CR>
+nnoremap <Leader>Vk :VimuxRunCommand 'clear'<CR>
+nnoremap <Leader>Vp :VimuxPromptCommand<CR>
+nnoremap <Leader>Vl :VimuxRunLastCommand<CR>
+nnoremap <Leader>Vq :VimuxCloseRunner<CR>
+nnoremap <Leader>Vx :VimuxInterruptRunner<CR>
+nnoremap <Leader>Vz :VimuxZoomRunner<CR>
 
 " command prompt
 let g:VimuxPromptString = '$ '
@@ -265,6 +265,9 @@ let g:VM_set_statusline = 0
 
 " exit silently
 let g:VM_silent_exit = 1
+
+" set visual multi leader
+let g:VM_leader = '<Leader>v'
 
 " add cursors up and down
 let g:VM_maps = {}
