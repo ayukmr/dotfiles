@@ -34,3 +34,11 @@ zle -N _edit
 
 bindkey -M main  ^E _edit
 bindkey -M vicmd ^E _edit
+
+# select completions
+zmodload zsh/complist
+
+bindkey -M menuselect h vi-backward-char
+bindkey -M menuselect k vi-up-line-or-history
+bindkey -M menuselect l vi-forward-char
+bindkey -M menuselect j vi-down-line-or-history
