@@ -15,16 +15,16 @@ endif
 
 augroup highlight_adjustments
     auto!
-    " change highlight colors
+    " adjust highlights
     auto ColorScheme * call s:HighlightAdjustments()
 augroup END
 
 func! s:HighlightAdjustments()
-    " search highlighting
+    " search highlight
     highlight! link Search DiffAdd
     highlight! link IncSearch Search
 
-    " jsx tag highlighting
+    " jsx tag highlights
     highlight! link jsxOpenPunct   Fg
     highlight! link jsxClosePunct  Fg
     highlight! link jsxCloseString Fg

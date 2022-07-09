@@ -2,7 +2,7 @@
 " === NERDTree ===
 " ================
 
-" highlight arrows
+" arrow highlights
 highlight! link NERDTreeOpenable Red
 highlight! link NERDTreeClosable Red
 
@@ -53,15 +53,15 @@ endfunc
 " === NERDTree Colors ===
 " =======================
 
-" limited syntax
+" use limited syntax
 let g:NERDTreeLimitedSyntax = 1
 
-" color folders
+" folder highlights
 let g:WebDevIconsDefaultFolderSymbolColor     = '6bc1e5'
 let g:WebDevIconsDefaultFolderSymbolColor     = '6bc1e5'
 let g:WebDevIconsDefaultOpenFolderSymbolColor = '6bc1e5'
 
-" file extension colors
+" file extension highlights
 let g:NERDTreeExtensionHighlightColor = {}
 
 let g:NERDTreeExtensionHighlightColor['kt']     = 'b778db'
@@ -110,7 +110,7 @@ let g:NERDTreeExtensionHighlightColor['jpg']  = '74e3ed'
 let g:NERDTreeExtensionHighlightColor['jpeg'] = '74e3ed'
 let g:NERDTreeExtensionHighlightColor['webp'] = '74e3ed'
 
-" exact file colors
+" exact file highlights
 let g:NERDTreeExactMatchHighlightColor = {}
 
 let g:NERDTreeExactMatchHighlightColor['brewfile'] = 'bc8b6f'

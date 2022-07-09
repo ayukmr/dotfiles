@@ -52,7 +52,7 @@ cmp.setup({
         end,
     },
 
-    -- show icons for items
+    -- formatting for items
     formatting = {
         format = function(_, item)
             -- show icons for kinds
@@ -309,7 +309,7 @@ EOF
 " === Trouble ===
 " ===============
 
-" highlights for trouble
+" fix cursorline in trouble window
 highlight TroubleText ctermfg=fg ctermbg=none guifg=fg guibg=none
 
 " keybinds for trouble

@@ -260,7 +260,7 @@ augroup END
 " === Visual Multi ===
 " ====================
 
-" don't show infoline
+" disable statusline
 let g:VM_set_statusline = 0
 
 " exit silently
@@ -269,12 +269,12 @@ let g:VM_silent_exit = 1
 " set visual multi leader
 let g:VM_leader = '<Leader>v'
 
-" add cursors up and down
+" visual multi keybinds
 let g:VM_maps = {}
 let g:VM_maps['Select Cursor Down'] = '<M-J>'
 let g:VM_maps['Select Cursor Up']   = '<M-K>'
 
-" multi cursor highlight
+" cursor highlights
 let g:VM_Mono_hl   = 'TermCursor'
 let g:VM_Extend_hl = 'Visual'
 let g:VM_Cursor_hl = 'TermCursor'
