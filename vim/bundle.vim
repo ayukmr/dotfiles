@@ -85,10 +85,10 @@ Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
 " [lightline-bufferline] bufferline for lightline
 Plug 'mengelbrecht/lightline-bufferline'
 
-" [lspconfig] config for nvim lsp
+" [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Cond(has('nvim'), { 'as': 'lspconfig' })
 
-" [nerdtree] file browser
+" [nerdtree] file tree in sidebar
 Plug 'preservim/nerdtree'
 
 " [nerdtree-colors] file colors in nerdtree
