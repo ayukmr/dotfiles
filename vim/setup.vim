@@ -21,7 +21,6 @@ augroup END
 
 func! s:HighlightAdjustments()
     " search highlight
-    highlight! link Search DiffAdd
     highlight! link IncSearch Search
 
     " jsx tag highlights
