@@ -28,7 +28,7 @@ nnoremap > >>
 nnoremap <silent> <M-j> :move . +1<CR>
 nnoremap <silent> <M-k> :move . -2<CR>
 
-" sane deleting
+" delete text
 nnoremap x "_x
 nnoremap d "_d
 nnoremap D "_D
