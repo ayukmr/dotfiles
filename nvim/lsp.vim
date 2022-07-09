@@ -56,6 +56,16 @@ cmp.setup({
     formatting = {
         format = function(_, item)
             item.kind = symbols[item.kind]
+
+            -- truncate string
+            local old_abbr = item.abbr
+            item.abbr = string.sub(item.abbr, 1, 25)
+
+            -- add ellipses if truncated
+            if item.abbr ~= old_abbr then
+                item.abbr = item.abbr .. '…'
+            end
+
             return item
         end,
     },
