@@ -19,14 +19,14 @@ Plug 'moll/vim-bbye', { 'as': 'bbye' }
 " [cmp] completion
 Plug 'hrsh7th/nvim-cmp', Cond(has('nvim'), { 'as': 'cmp' })
 
-" [cmp-lsp] completion using lsp
-Plug 'hrsh7th/cmp-nvim-lsp', Cond(has('nvim'), { 'as': 'cmp-lsp' })
-
-" [cmp-buffer] completion using buffer
+" [cmp-buffer] completion using buffer words
 Plug 'hrsh7th/cmp-buffer', Cond(has('nvim'))
 
 " [cmp-cmdline] completion for command line
 Plug 'hrsh7th/cmp-cmdline', Cond(has('nvim'))
+
+" [cmp-nvim-lsp] completion using nvim lsp
+Plug 'hrsh7th/cmp-nvim-lsp', Cond(has('nvim'))
 
 " [cmp-path] completion for paths
 Plug 'hrsh7th/cmp-path', Cond(has('nvim'))
