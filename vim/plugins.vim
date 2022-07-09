@@ -139,7 +139,7 @@ let g:indentLine_char = '▎'
 let g:indentLine_color_gui = '#2c323c'
 
 " disable for certain buffers
-let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-plug', 'Trouble']
+let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-plug', 'Trouble', 'lsp-installer']
 
 " set conceal cursor
 let g:indentLine_concealcursor = ''
