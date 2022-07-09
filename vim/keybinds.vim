@@ -17,8 +17,8 @@ nnoremap <silent> <Leader>] :bnext<CR>
 nnoremap <silent> <Leader>{ :tabprev<CR>
 nnoremap <silent> <Leader>} :tabnext<CR>
 
-" disable highlighting temporarily
-nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
+" unhighlight search
+nnoremap <silent> <M-l> :nohlsearch<CR>
 
 " faster indentation
 nnoremap < <<
