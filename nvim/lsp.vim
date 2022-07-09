@@ -78,13 +78,18 @@ cmp.setup({
 
     -- completion keybinds
     mapping = cmp.mapping.preset.insert {
-        ['<C-u>']   = cmp.mapping.scroll_docs(-8),
-        ['<C-d>']   = cmp.mapping.scroll_docs(8),
+        ['<C-e>']   = cmp.mapping.abort(),
+
         ['<Tab>']   = cmp.mapping.select_next_item(),
         ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-        ['<C-e>']   = cmp.mapping.abort(),
+
         ['<CR>']    = cmp.mapping.confirm { select = true },
         ['<M-CR>']  = cmp.mapping.complete(),
+
+        ['<C-f>']   = cmp.mapping.scroll_docs(-4),
+        ['<C-b>']   = cmp.mapping.scroll_docs(4),
+        ['<C-u>']   = cmp.mapping.scroll_docs(-4),
+        ['<C-d>']   = cmp.mapping.scroll_docs(4),
     },
 
     -- completion sources
