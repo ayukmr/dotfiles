@@ -12,6 +12,9 @@ bindkey ^R history-incremental-search-backward
 bindkey ^N insert-last-word
 
 # clear screen and wipe history
+bindkey -M main  ^K _clear
+bindkey -M vicmd ^K _clear
+
 function _clear {
     zle push-input
 
@@ -20,10 +23,10 @@ function _clear {
 }
 zle -N _clear
 
-bindkey -M main  ^K _clear
-bindkey -M vicmd ^K _clear
-
 # open line contents with editor
+bindkey -M main  ^E _edit
+bindkey -M vicmd ^E _edit
+
 function _edit {
     if [[ ! $BUFFER =~ "^$EDITOR.*" ]]; then
         BUFFER="$EDITOR $BUFFER"
@@ -31,9 +34,6 @@ function _edit {
     fi
 }
 zle -N _edit
-
-bindkey -M main  ^E _edit
-bindkey -M vicmd ^E _edit
 
 # select completions
 zmodload zsh/complist
