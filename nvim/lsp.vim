@@ -55,6 +55,7 @@ cmp.setup({
     -- show icons for items
     formatting = {
         format = function(_, item)
+            -- show icons for kinds
             item.kind = symbols[item.kind]
 
             -- truncate string
@@ -70,6 +71,7 @@ cmp.setup({
         end,
     },
 
+    -- window style
     window = {
         documentation = cmp.config.window.bordered(),
     },
