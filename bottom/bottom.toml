@@ -57,7 +57,7 @@ graph_color = 'gray'
     ratio = 5
     [[row.child]]
         ratio = 5
-        type  = 'memory'
+        type  = 'network'
 
     [[row.child]]
         ratio = 2
@@ -74,10 +74,8 @@ graph_color = 'gray'
 [[row]]
     ratio = 6
     [[row.child]]
-        ratio = 3
-        type  = 'network'
+        type = 'memory'
 
     [[row.child]]
-        ratio   = 2
         type    = 'processes'
         default = true
