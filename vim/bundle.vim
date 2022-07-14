@@ -52,9 +52,6 @@ Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 " [expand-region] expand select region
 Plug 'terryma/vim-expand-region', { 'as': 'expand-region' }
 
-" [emmet] emmet completions
-Plug 'mattn/emmet-vim', { 'as': 'emmet' }
-
 " [fidget] lsp status ui
 Plug 'j-hui/fidget.nvim', Cond(has('nvim'), { 'as': 'fidget' })
 
