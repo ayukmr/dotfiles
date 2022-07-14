@@ -73,6 +73,7 @@ cmp.setup({
 
     -- window style
     window = {
+        completion    = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
     },
 
