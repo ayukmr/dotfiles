@@ -115,6 +115,9 @@ Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
 " [startify] start screen
 Plug 'mhinz/vim-startify', { 'as': 'startify' }
 
+" [surround] edit surroundings
+Plug 'tpope/vim-surround', { 'as': 'surround' }
+
 " [tabular] easy text alignment
 Plug 'godlygeek/tabular'
 
