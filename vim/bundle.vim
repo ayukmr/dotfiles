@@ -106,9 +106,6 @@ Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 " [polyglot] language syntax pack
 Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
 
-" [rsi] readline keybinds in command mode
-Plug 'tpope/vim-rsi', { 'as': 'rsi' }
-
 " [smoothie] smooth scrolling
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
 
