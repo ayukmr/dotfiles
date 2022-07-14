@@ -13,6 +13,8 @@ color listnormal_unread yellow default bold
 color listfocus        black blue
 color listfocus_unread black blue bold
 
-# misc
-color info    black magenta bold
+# statusline
+color info black magenta bold
+
+# article text
 color article white default
