@@ -13,6 +13,9 @@ endfunc
 
 call plug#begin('~/.vim/bundle')
 
+" [alt-mappings] fix meta key bindings
+Plug 'vim-utils/vim-alt-mappings', Cond(!has('nvim'), { 'as': 'alt-mappings' })
+
 " [bbye] better :bd and :bw
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
