@@ -141,7 +141,7 @@ dressing.setup({
         winblend = 0,
     },
     select = {
-        backend = { 'builtin' },
+        backend = 'builtin',
         builtin = {
             winblend = 0,
         },
