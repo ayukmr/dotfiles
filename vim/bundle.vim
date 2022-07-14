@@ -109,6 +109,9 @@ Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 " [polyglot] language syntax pack
 Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
 
+" [quick-scope] highlight unique characters
+Plug 'unblevable/quick-scope'
+
 " [smoothie] smooth scrolling
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
 

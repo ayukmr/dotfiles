@@ -144,6 +144,20 @@ let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-
 " set conceal cursor
 let g:indentLine_concealcursor = ''
 
+" ===================
+" === Quick Scope ===
+" ===================
+
+" character highlights
+highlight QuickScopePrimary   cterm=underline ctermfg=39  gui=underline guifg=#61afef
+highlight QuickScopeSecondary cterm=underline ctermfg=170 gui=underline guifg=#c678dd
+
+" only highlight on motion
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" disable secondary highlight
+let g:qs_second_highlight = 0
+
 " ================
 " === Startify ===
 " ================
