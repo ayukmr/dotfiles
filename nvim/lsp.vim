@@ -311,7 +311,7 @@ EOF
 " ===============
 
 " fix cursorline in trouble window
-highlight TroubleText ctermfg=fg ctermbg=none guifg=fg guibg=none
+highlight! link TroubleText Fg
 
 " keybinds for trouble
 nnoremap <Leader><C-t> :TroubleToggle<CR>
