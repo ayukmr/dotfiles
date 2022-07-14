@@ -67,7 +67,7 @@ Plug 'junegunn/fzf', { 'do': './install --all' }
 " [fzf-vim] fzf support for vim
 Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
 
-" [gitbranch] gitbranch name
+" [gitbranch] get current git branch
 Plug 'itchyny/vim-gitbranch', { 'as': 'gitbranch' }
 
 " [gitgutter] show git status in gutter
@@ -76,7 +76,7 @@ Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
 
-" [indent-line] indent lines
+" [indent-line] show indent lines
 Plug 'Yggdroot/indentLine', { 'as': 'indent-line' }
 
 " [lightline] enhanced statusline
@@ -91,7 +91,7 @@ Plug 'neovim/nvim-lspconfig', Cond(has('nvim'), { 'as': 'lspconfig' })
 " [nerdtree] file tree in sidebar
 Plug 'preservim/nerdtree'
 
-" [nerdtree-colors] file colors in nerdtree
+" [nerdtree-colors] file colors for nerdtree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'as': 'nerdtree-colors' }
 
 " [null-ls] use neovim as a language server
