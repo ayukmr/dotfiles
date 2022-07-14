@@ -334,3 +334,10 @@ trouble.setup({
     },
 })
 EOF
+
+" =================
+" === UltiSnips ===
+" =================
+
+" disable expand trigger
+let g:UltiSnipsExpandTrigger = '<Plug>(ultisnips-expand)'

@@ -238,13 +238,6 @@ func! s:CharTabularize(add_zs, range)
     exec s:command
 endfunc
 
-" =================
-" === UltiSnips ===
-" =================
-
-" disable expand trigger
-let g:UltiSnipsExpandTrigger = '<Plug>(ultisnips-expand)'
-
 " =============
 " === Vimux ===
 " =============
