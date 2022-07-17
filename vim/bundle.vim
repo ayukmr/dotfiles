@@ -130,9 +130,6 @@ Plug 'godlygeek/tabular'
 " [trouble] neovim lsp ui
 Plug 'folke/trouble.nvim', Cond(has('nvim'), { 'as': 'trouble' })
 
-" [snippets] snippets for ultisnips
-Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
-
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Cond(has('nvim'))
 
