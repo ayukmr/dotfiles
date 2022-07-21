@@ -91,9 +91,6 @@ Plug 'neovim/nvim-lspconfig', Cond(has('nvim'), { 'as': 'lspconfig' })
 " [nerdtree] file tree in sidebar
 Plug 'preservim/nerdtree'
 
-" [nerdtree-colors] file colors for nerdtree
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'as': 'nerdtree-colors' }
-
 " [null-ls] use neovim as a language server
 Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
 
