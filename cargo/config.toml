@@ -3,6 +3,9 @@
 # ====================
 
 [alias]
+i = 'install'
+ui = 'uninstall'
+
 cl = 'clippy'
 rr = 'run --release'
 br = 'build --release'
