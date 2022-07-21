@@ -11,18 +11,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" quick buffer and tab navigation
-nnoremap <silent> <Leader>[ :bprev<CR>
-nnoremap <silent> <Leader>] :bnext<CR>
-nnoremap <silent> <Leader>{ :tabprev<CR>
-nnoremap <silent> <Leader>} :tabnext<CR>
-
 " unhighlight search
 nnoremap <silent> <M-l> :nohlsearch<CR>
-
-" faster indentation
-nnoremap < <<
-nnoremap > >>
 
 " move lines
 nnoremap <silent> <M-j> :move . +1<CR>

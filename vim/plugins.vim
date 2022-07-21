@@ -303,6 +303,14 @@ nnoremap <Leader>Vz :VimuxZoomRunner<CR>
 " command prompt
 let g:VimuxPromptString = '$ '
 
+" ==================
+" === Unimpaired ===
+" ==================
+
+" switch tabs
+nnoremap [t gT
+nnoremap ]t gt
+
 " ================
 " === Vim Plug ===
 " ================
