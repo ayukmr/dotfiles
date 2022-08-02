@@ -14,10 +14,6 @@ nnoremap <C-l> <C-w>l
 " unhighlight search
 nnoremap <silent> <M-l> :nohlsearch<CR>
 
-" move lines
-nnoremap <silent> <M-j> :move . +1<CR>
-nnoremap <silent> <M-k> :move . -2<CR>
-
 " motions without copying
 nnoremap <Leader>d "_d
 nnoremap <Leader>D "_D
