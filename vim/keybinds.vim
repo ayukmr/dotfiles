@@ -32,10 +32,6 @@ nnoremap <Leader>W :noauto write<CR>
 " delete buffer
 nnoremap <silent> <Leader>Q :bdelete<CR>
 
-" file movement
-noremap <CR> G
-noremap <BS> gg
-
 " substitution for comma
 nnoremap <silent> <M-;> :normal! ,<CR>
 
