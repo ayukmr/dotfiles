@@ -23,12 +23,29 @@ Layout/FirstArgumentIndentation:
 Metrics/MethodLength:
   Max: 50
 
+# set max class length
+Metrics/ClassLength:
+  Max: 250
+
 # set max module length
 Metrics/ModuleLength:
   Max: 250
 
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
 # allow single line methods
 Style/SingleLineMethods:
+  Enabled: false
+
+# allow no frozen string literal comment
+Style/FrozenStringLiteralComment:
   Enabled: false
 
 # preferred name for errors in begin..rescue
