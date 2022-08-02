@@ -32,13 +32,12 @@ nnoremap <Leader>W :noauto write<CR>
 " delete buffer
 nnoremap <silent> <Leader>Q :bdelete<CR>
 
-" substitutions for ; and ,
-nnoremap <silent> \     :normal! ;<CR>
-nnoremap <silent> <Bar> :normal! ,<CR>
-
 " file movement
 noremap <CR> G
 noremap <BS> gg
+
+" substitution for comma
+nnoremap <silent> <M-;> :normal! ,<CR>
 
 " escape from insert mode
 inoremap jk <Esc>
