@@ -46,9 +46,6 @@ Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 " [dressing] better ui for lsp
 Plug 'stevearc/dressing.nvim', Cond(has('nvim'), { 'as': 'dressing' })
 
-" [easymotion] motions on speed
-Plug 'easymotion/vim-easymotion', { 'as': 'easymotion' }
-
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
@@ -111,6 +108,9 @@ Plug 'unblevable/quick-scope'
 
 " [smoothie] smooth scrolling
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
+
+" [sneak] quicker movement
+Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
 " [snippets] snippets for ultisnips
 Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })

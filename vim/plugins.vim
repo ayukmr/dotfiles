@@ -79,16 +79,6 @@ let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['NERD_Tree_\d'] = ''
 vnoremap v <Plug>(expand_region_expand)
 vnoremap V <Plug>(expand_region_shrink)
 
-" ==================
-" === EasyMotion ===
-" ==================
-
-" cursor color
-highlight! link EasyMotionIncCursorDefault Search
-
-" commands prefix
-noremap ; <Plug>(easymotion-prefix)
-
 " ===============
 " === FZF Vim ===
 " ===============
@@ -207,6 +197,27 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " disable secondary highlight
 let g:qs_second_highlight = 0
+
+" =============
+" === Sneak ===
+" =============
+
+" absolute sneak direction
+let g:sneak#absolute_dir = 1
+
+" sneak labels
+let g:sneak#label = 1
+let g:sneak#target_labels = 'asdghklqwertyuiopzxcvbnmfjASDGHKLQWERTYUIOPZXCVBNMFJ'
+
+" sneak highlights
+highlight! link Sneak          WildMenu
+highlight! link SneakScope     Cursor
+highlight! link SneakLabel     WildMenu
+highlight! link SneakLabelMask Fg
+
+" sneak movement
+noremap [s <Plug>Sneak_,
+noremap ]s <Plug>Sneak_;
 
 " ================
 " === Startify ===
