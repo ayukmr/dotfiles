@@ -1,0 +1,10 @@
+# =====================
+# === Tig Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/tig
+
+  link:
+    - ~/.config/tig: config
