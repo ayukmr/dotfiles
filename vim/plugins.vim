@@ -71,14 +71,6 @@ let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['.*webpack.*']  = 'ﰩ'
 let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['\d;#FZF']      = ''
 let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['NERD_Tree_\d'] = ''
 
-" =====================
-" === Expand Region ===
-" =====================
-
-" expand region mappings
-vnoremap v <Plug>(expand_region_expand)
-vnoremap V <Plug>(expand_region_shrink)
-
 " ===============
 " === FZF Vim ===
 " ===============

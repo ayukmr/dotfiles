@@ -49,9 +49,6 @@ Plug 'stevearc/dressing.nvim', Cond(has('nvim'), { 'as': 'dressing' })
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
-" [expand-region] expand select region
-Plug 'terryma/vim-expand-region', { 'as': 'expand-region' }
-
 " [fidget] lsp status ui
 Plug 'j-hui/fidget.nvim', Cond(has('nvim'), { 'as': 'fidget' })
 
