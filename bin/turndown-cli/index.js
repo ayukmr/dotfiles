@@ -5,7 +5,7 @@
 const TurndownService = require('turndown');
 
 // override escaping
-TurndownService.prototype.escape = (str) => str
+TurndownService.prototype.escape = (str) => str;
 
 function toMarkdown(data) {
   // turndown settings
@@ -13,7 +13,7 @@ function toMarkdown(data) {
     hr: '***',
     headingStyle:   'atx',
     codeBlockStyle: 'fenced'
-  }
+  };
 
   const service  = new TurndownService(settings);
   const markdown = service.turndown(data.toString());
