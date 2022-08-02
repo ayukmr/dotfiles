@@ -18,21 +18,15 @@ nnoremap <silent> <M-l> :nohlsearch<CR>
 nnoremap <silent> <M-j> :move . +1<CR>
 nnoremap <silent> <M-k> :move . -2<CR>
 
-" delete text
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-nnoremap c "_c
+" motions without copying
+nnoremap <Leader>d "_d
+nnoremap <Leader>D "_D
 
-vnoremap d "_d
-sunmap   d
+nnoremap <Leader>c "_c
+nnoremap <Leader>s "_s
+nnoremap <Leader>x "_x
 
-" cut text
-nnoremap <Leader>d "*d
-nnoremap <Leader>D "*D
-nnoremap <Leader>c "*c
-
-vnoremap <Leader>d "*d
+vnoremap <Leader>d "_d
 sunmap   <Leader>d
 
 " write file
