@@ -11,7 +11,7 @@ layouts:
   - tall
   - 3column-left
   - middle-wide
-  - bsp
+  - fullscreen
 
 # floating apps
 floating:
