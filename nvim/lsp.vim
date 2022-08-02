@@ -306,35 +306,6 @@ null_ls.setup({
 })
 EOF
 
-" ===============
-" === Trouble ===
-" ===============
-
-" fix cursorline in trouble window
-highlight! link TroubleText Fg
-
-" keybinds for trouble
-nnoremap <Leader><C-t> :TroubleToggle<CR>
-
-lua <<EOF
--- trouble module
-local trouble = require 'trouble'
-
--- setup trouble
-trouble.setup({
-    icons = false,
-    padding = false,
-    indent_lines = false,
-    signs = {
-        error       = '',
-        warning     = '',
-        hint        = 'ﴞ',
-        information = '',
-        other       = '',
-    },
-})
-EOF
-
 " =================
 " === UltiSnips ===
 " =================
