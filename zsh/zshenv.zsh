@@ -52,7 +52,7 @@ export FZF_DEFAULT_OPTS="
     --marker '*'
     --preview-window noborder
 "
-export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-case'
+export FZF_DEFAULT_COMMAND="rg --files --hidden --ignore-case --glob '!Library/**'"
 
 # homebrew
 export HOMEBREW_INSTALL_BADGE='🍻'
