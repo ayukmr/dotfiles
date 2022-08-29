@@ -38,3 +38,7 @@
 [interactive]
     # use delta as diff filter
     diffFilter = delta --color-only
+
+[url "https://github.com/"]
+    # alias for github
+    insteadOf = gh:
