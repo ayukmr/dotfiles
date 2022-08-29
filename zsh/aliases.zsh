@@ -109,6 +109,7 @@ alias gdc='git diff --cached'
 alias tm='tmux'
 alias tx='tmuxinator'
 alias td='tmux detach'
+alias tch='tmux clear-history'
 alias tls='tmux list-sessions'
 
 # vim aliases
