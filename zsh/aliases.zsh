@@ -117,6 +117,10 @@ alias v='anyvim'
 alias vi='vim'
 alias nv='nvim'
 
+# tldr aliases
+alias tl='tldr'
+alias tlu='tldr --update'
+
 # system aliases
 alias svr='open -a ScreenSaverEngine'
 alias slp='pmset sleepnow &> /dev/null'
