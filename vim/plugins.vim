@@ -132,12 +132,6 @@ let g:indentLine_concealcursor = ''
 " === NERDTree ===
 " ================
 
-" highlight slash the same as directories
-highlight! link NERDTreeDirSlash NERDTreeDir
-
-" icon highlights
-highlight! link NERDTreeFlags Title
-
 " hide help ui
 let NERDTreeMinimalUI = 1
 
@@ -147,6 +141,12 @@ let NERDTreeShowHidden = 1
 " disable folder arrows
 let g:NERDTreeDirArrowExpandable  = ''
 let g:NERDTreeDirArrowCollapsible = ''
+
+" highlight slash the same as directories
+highlight! link NERDTreeDirSlash NERDTreeDir
+
+" icon highlights
+highlight! link NERDTreeFlags Title
 
 " toggle nerdtree
 nnoremap <silent> <C-t> :call g:NERDTreeCreator.ToggleTabTree(expand('%:h'))<CR>
