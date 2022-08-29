@@ -107,11 +107,9 @@ nnoremap ]g :GitGutterNextHunk<CR>
 " highlight color
 highlight! link HighlightedyankRegion Search
 
-" mappings for vim
+" mapping for vim
 if !exists('##TextYankPost')
-    nnoremap y <Plug>(highlightedyank)
-    xnoremap y <Plug>(highlightedyank)
-    onoremap y <Plug>(highlightedyank)
+    noremap y <Plug>(highlightedyank)
 endif
 
 " ===================
