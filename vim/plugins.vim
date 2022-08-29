@@ -79,7 +79,7 @@ let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['NERD_Tree_\d'] = ''
 nnoremap <silent> <Leader>. :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
 
 " find files in home directory
-nnoremap <Leader><leader> :Files ~<CR>
+nnoremap <Leader><Leader> :Files ~<CR>
 
 " ==================
 " === Git Gutter ===
