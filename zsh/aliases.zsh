@@ -39,11 +39,6 @@ alias ....='cd ../../..'
 alias mk='touch'
 alias mkd='mkdir -p'
 
-# safety aliases
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
-
 # lang aliases
 alias js='node'
 alias sw='swift'
