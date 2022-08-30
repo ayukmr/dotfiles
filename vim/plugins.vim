@@ -189,6 +189,13 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 highlight QuickScopePrimary   cterm=underline ctermfg=39  gui=underline guifg=#61afef
 highlight QuickScopeSecondary cterm=underline ctermfg=170 gui=underline guifg=#c678dd
 
+" ================
+" === Smoothie ===
+" ================
+
+" faster scrolling
+let g:smoothie_speed_exponentiation_factor = 1.1
+
 " =============
 " === Sneak ===
 " =============
