@@ -124,6 +124,9 @@ Plug 'godlygeek/tabular'
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Cond(has('nvim'))
 
+" [unimpaired] bracket mappings
+Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
+
 " [visual-multi] multiple cursors
 Plug 'mg979/vim-visual-multi', { 'as': 'visual-multi' }
 
