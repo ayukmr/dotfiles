@@ -143,6 +143,5 @@
 
   "vim.cursorStylePerMode.normal": "block",
   "vim.cursorStylePerMode.insert": "line",
-  "vim.leader": ",",
-  "vim.easymotion": true
+  "vim.leader": ","
 }
