@@ -279,6 +279,7 @@ vnoremap <Leader>T :CharTabularize!<CR>
 command! -bang -range CharTabularize call s:CharTabularize(<bang>0, <range>)
 
 func! s:CharTabularize(add_zs, range)
+    " use '<,'> for visual selection
     let s:command = a:range
         \ ? "'<,'>Tabularize /"
         \ : 'Tabularize /'
