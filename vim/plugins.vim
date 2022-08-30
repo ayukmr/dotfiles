@@ -327,8 +327,8 @@ let g:VM_leader = '<Leader>v'
 
 " visual multi keybinds
 let g:VM_maps = {}
-let g:VM_maps['Select Cursor Down'] = '<M-J>'
-let g:VM_maps['Select Cursor Up']   = '<M-K>'
+let g:VM_maps['Select Cursor Down'] = '<M-j>'
+let g:VM_maps['Select Cursor Up']   = '<M-k>'
 
 " cursor highlights
 let g:VM_Mono_hl   = 'TermCursor'
