@@ -11,6 +11,7 @@
     l = log -n 20 --oneline
 
     sh = show
+    pl = pull
     rs = reset
     cl = clone
     br = branch
