@@ -217,11 +217,6 @@ noremap ]s <Plug>Sneak_;
 " === Startify ===
 " ================
 
-" enable devicons for startify
-func! StartifyEntryFormat()
-    return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
-endfunc
-
 " startify header
 let g:startify_custom_header = startify#pad([
     \ '                  ##        .    ',
@@ -262,6 +257,11 @@ let g:startify_change_to_dir = 0
 " colors
 highlight! link StartifyBracket StartifyNumber
 highlight! link StartifySlash   StartifyPath
+
+" enable devicons for startify
+func! StartifyEntryFormat()
+    return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
+endfunc
 
 " ===============
 " === Tabular ===
