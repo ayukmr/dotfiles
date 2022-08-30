@@ -306,7 +306,7 @@ nnoremap ]t gt
 " === Vim Plug ===
 " ================
 
-augroup plug_nonumber
+augroup plug_no_numbers
     auto!
     " disable line numbers in vim plug buffer
     auto FileType vim-plug setlocal nonumber
