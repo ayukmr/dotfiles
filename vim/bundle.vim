@@ -103,6 +103,9 @@ Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
 " [quick-scope] highlight unique characters
 Plug 'unblevable/quick-scope'
 
+" [repeat] better repetition for plugins
+Plug 'tpope/vim-repeat', { 'as': 'repeat' }
+
 " [smoothie] smooth scrolling
 Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
 
