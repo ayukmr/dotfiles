@@ -23,6 +23,7 @@
     file-modified-label = [~]
     file-copied-label   = [=]
     file-renamed-label  = [→]
+    right-arrow = →
 
     # heading styles
     commit-decoration-style      = yellow bold ol ul
