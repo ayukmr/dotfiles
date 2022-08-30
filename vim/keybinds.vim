@@ -18,9 +18,11 @@ nnoremap <silent> <M-l> :nohlsearch<CR>
 nnoremap <Leader>d "_d
 nnoremap <Leader>D "_D
 
+nnoremap <Leader>x "_x
+nnoremap <Leader>X "_X
+
 nnoremap <Leader>c "_c
 nnoremap <Leader>s "_s
-nnoremap <Leader>x "_x
 
 vnoremap <Leader>d "_d
 sunmap   <Leader>d
