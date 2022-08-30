@@ -331,7 +331,10 @@ let g:VM_maps['Select Cursor Down'] = '<M-j>'
 let g:VM_maps['Select Cursor Up']   = '<M-k>'
 
 " cursor highlights
-let g:VM_Mono_hl   = 'TermCursor'
+let g:VM_Mono_hl   = 'Cursor'
+let g:VM_Cursor_hl = 'Cursor'
+let g:VM_Insert_hl = 'Cursor'
 let g:VM_Extend_hl = 'Visual'
-let g:VM_Cursor_hl = 'TermCursor'
-let g:VM_Insert_hl = 'TermCursor'
+
+" search highlight
+let g:VM_highlight_matches = ''
