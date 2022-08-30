@@ -182,15 +182,12 @@ endfunc
 " === Quick Scope ===
 " ===================
 
-" character highlights
-highlight QuickScopePrimary   cterm=underline ctermfg=39  gui=underline guifg=#61afef
-highlight QuickScopeSecondary cterm=underline ctermfg=170 gui=underline guifg=#c678dd
-
 " only highlight on motion
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
-" disable secondary highlight
-let g:qs_second_highlight = 0
+" character highlights
+highlight QuickScopePrimary   cterm=underline ctermfg=39  gui=underline guifg=#61afef
+highlight QuickScopeSecondary cterm=underline ctermfg=170 gui=underline guifg=#c678dd
 
 " =============
 " === Sneak ===
