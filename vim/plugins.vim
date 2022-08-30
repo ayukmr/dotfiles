@@ -294,21 +294,6 @@ func! s:CharTabularize(add_zs, range)
     exec s:command
 endfunc
 
-" =============
-" === Vimux ===
-" =============
-
-" vimux keybinds
-nnoremap <Leader>Vk :VimuxRunCommand 'clear'<CR>
-nnoremap <Leader>Vp :VimuxPromptCommand<CR>
-nnoremap <Leader>Vl :VimuxRunLastCommand<CR>
-nnoremap <Leader>Vq :VimuxCloseRunner<CR>
-nnoremap <Leader>Vx :VimuxInterruptRunner<CR>
-nnoremap <Leader>Vz :VimuxZoomRunner<CR>
-
-" command prompt
-let g:VimuxPromptString = '$ '
-
 " ==================
 " === Unimpaired ===
 " ==================

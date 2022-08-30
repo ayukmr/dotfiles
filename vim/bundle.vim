@@ -124,9 +124,6 @@ Plug 'godlygeek/tabular'
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Cond(has('nvim'))
 
-" [vimux] tmux interactions from vim
-Plug 'preservim/vimux'
-
 " [visual-multi] multiple cursors
 Plug 'mg979/vim-visual-multi', { 'as': 'visual-multi' }
 
