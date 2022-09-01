@@ -7,7 +7,7 @@
 if [[ -n $1 ]]; then
     if (( $+commands[rustc] )); then
         print -P "%B%F{red}rustc%f%b $1"
-        echo '––––––––––––––––––––\n'
+        echo '————————————————————\n'
 
         # compile and run file
         rustc $1 &&

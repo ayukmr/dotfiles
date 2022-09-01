@@ -7,7 +7,7 @@
 if [[ -n $1 ]]; then
     if (( $+commands[g++] )); then
         print -P "%B%F{magenta}g++%f%b $1"
-        echo '––––––––––––––––––––\n'
+        echo '————————————————————\n'
 
         local out_file=$(echo $1 | sed -E 's/.cpp$/.out/')
 

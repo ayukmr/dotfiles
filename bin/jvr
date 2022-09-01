@@ -7,7 +7,7 @@
 if [[ -n $1 ]]; then
     if (( $+commands[javac] && $+commands[java] )); then
         print -P "%B%F{red}javac%f%b $1"
-        echo '––––––––––––––––––––\n'
+        echo '————————————————————\n'
 
         # compile and run file
         javac $1 &&

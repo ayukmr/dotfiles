@@ -7,7 +7,7 @@
 if [[ -n $1 ]]; then
     if (( $+commands[tsc] && $+commands[node] )); then
         print -P "%B%F{blue}tsc%f%b $1"
-        echo '––––––––––––––––––––\n'
+        echo '————————————————————\n'
 
         local out_file=$(echo $1 | sed -E 's/.ts$/.ts.js/')
 
