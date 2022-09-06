@@ -12,7 +12,7 @@ scripts:
       - ? defaults write
           com.apple.dock orientation
           -string 'left'
-        : 'setting dock orientation'
+        : 'setting dock orientation to left'
 
       - ? defaults write
           com.apple.dock autohide
@@ -27,7 +27,7 @@ scripts:
       - ? defaults write
           com.apple.dock tilesize
           -int 45
-        : 'setting size of dock icons'
+        : 'setting size of dock icons to 45'
 
       - ? defaults write
           com.apple.dock show-recents
@@ -37,7 +37,7 @@ scripts:
       - ? defaults write
           com.apple.dock mineffect
           -string 'suck'
-        : 'settings minimize effect'
+        : 'settings minimize effect to suck'
 
       - ? defaults write
           com.apple.dock minimize-to-application
