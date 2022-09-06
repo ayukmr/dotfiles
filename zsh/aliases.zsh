@@ -126,3 +126,6 @@ alias tlu='tldr --update'
 # system aliases
 alias svr='open -a ScreenSaverEngine'
 alias slp='pmset sleepnow &> /dev/null'
+
+# other aliases
+alias qk='quark'
