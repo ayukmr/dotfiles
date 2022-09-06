@@ -28,7 +28,6 @@ packages:
     - brew install:
       # dev
       - gh
-      - vim
       - nvim
 
       # tmux
