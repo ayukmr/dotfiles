@@ -1,0 +1,8 @@
+# ===================
+# === Mutt Config ===
+# ===================
+
+source ~/.cfg/mutt/gmail
+source ~/.cfg/mutt/settings
+source ~/.cfg/mutt/colors
+source ~/.cfg/mutt/keybinds

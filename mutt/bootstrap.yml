@@ -1,0 +1,19 @@
+# ======================
+# === Mutt Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/mutt
+
+  link:
+    - ~/.mailcap: mailcap
+
+  files:
+    - ~/.config/mutt/muttrc: |
+        set my_name  = <name>
+        set my_gmail = <gmail>
+        set my_password = <password>
+
+        source ~/.cfg/mutt/muttrc
+    - ~/.config/mutt/signature: '– <name>'

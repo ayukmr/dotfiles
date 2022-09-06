@@ -1,0 +1,10 @@
+# ====================
+# === Mutt Mailcap ===
+# ====================
+
+# view html with w3m
+text/html; w3m -I %{charset} -T text/html -cols 125; copiousoutput
+
+# view images with jp2a
+image/*; convert -auto-orient - jpg:- | jp2a --border --colors - | less -rc; needsterminal
+image/*; convert -auto-orient - jpg:- | jp2a --border -; copiousoutput
