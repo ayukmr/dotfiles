@@ -227,16 +227,6 @@ scripts:
       # ================
 
       - ? defaults write
-          NSGlobalDomain KeyRepeat
-          -int 2
-        : 'setting a blazingly fast key-repeat rate'
-
-      - ? defaults write
-          NSGlobalDomain InitialKeyRepeat
-          -int 15
-        : 'setting a blazingly fast key-repeat rate'
-
-      - ? defaults write
           -g ApplePressAndHoldEnabled
           -bool false
         : 'disable accents menu when holding key'
