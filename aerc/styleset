@@ -1,0 +1,74 @@
+# ===================
+# === Aerc Colors ===
+# ===================
+
+# defaults
+*.default = true
+
+# selected elements
+*.selected.fg   = black
+*.selected.bg   = blue
+*.selected.bold = true
+
+# errors
+error.fg   = black
+error.bg   = red
+error.bold = true
+
+# warnings
+warning.fg   = black
+warning.bg   = yellow
+warning.bold = true
+
+# success
+success.fg   = black
+success.bg   = green
+success.bold = true
+
+# titles
+title.fg   = blue
+title.bold = true
+
+# headers
+header.fg   = blue
+header.bold = true
+
+# statusline
+statusline*.fg   = black
+statusline*.bold = true
+
+# statusline background
+statusline_default.bg = purple
+statusline_error.bg   = red
+statusline_success.bg = green
+
+# selected message
+msglist*.selected.bold = false
+msglist_unread.selected.bold = true
+
+# unread messages
+msglist_unread.fg   = yellow
+msglist_unread.bold = true
+
+# deleted messages
+msglist_deleted.fg = gray
+
+# selected directory
+dirlist*.selected.bold = false
+dirlist_unread.selected.bold = true
+
+# unread directories
+dirlist_unread.fg   = yellow
+dirlist_unread.bold = true
+
+# selected tab
+tab.selected.fg   = black
+tab.selected.bg   = purple
+tab.selected.bold = true
+
+# loading spinner
+spinner.fg   = teal
+spinner.bold = true
+
+# borders
+border.fg = gray

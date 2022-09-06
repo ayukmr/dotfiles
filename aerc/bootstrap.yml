@@ -1,0 +1,31 @@
+# ======================
+# === Aerc Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/aerc
+    - ~/.config/aerc/stylesets
+    - ~/.config/aerc/templates
+
+  files:
+    - ~/.config/aerc/accounts.conf: |
+        [<mailbox>]
+        source   = imaps://<gmail>:<password>@imap.gmail.com:993
+        outgoing = smtps://<gmail>:<password>@smtp.gmail.com:465
+
+        from = <name> <<gmail>>
+
+        default = INBOX
+        copy-to = [Gmail]/Sent Mail
+
+        check-mail = 30s
+
+  link:
+    # glob templates
+    <% Dir.glob(File.expand_path('~/.cfg/aerc/templates/*')).each do |template| %>
+    <%= "- ~/.config/aerc/templates: #{template}" %>
+    <% end %>
+    - ~/.config/aerc: aerc.conf
+    - ~/.config/aerc: binds.conf
+    - ~/.config/aerc/stylesets: styleset
