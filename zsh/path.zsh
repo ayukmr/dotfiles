@@ -5,11 +5,11 @@
 # defaults
 path=('/usr/local/bin' '/usr/bin' '/bin' '/usr/sbin' '/sbin')
 
-# golang
-path+=('/usr/local/go/bin')
+# golang binaries
+path+=("$HOME/go/bin")
 
-# yarn binaries
-path+=("$HOME/.yarn/bin")
+# python binaries
+path+=("$HOME/Library/Python/3.8/bin")
 
 # rust binaries
 path+=("$HOME/.cargo/bin")
@@ -17,8 +17,8 @@ path+=("$HOME/.cargo/bin")
 # ruby binaries
 path+=("$GEM_HOME/bin")
 
-# python binaries
-path+=("/Library/Frameworks/Python.framework/Versions/Current/bin")
+# yarn binaries
+path+=("$HOME/.yarn/bin")
 
 # config binaries
 path+=("$HOME/.cfg/bin")
