@@ -16,3 +16,4 @@ windows:
 
   - editor: <%= ENV['EDITOR'] %>
   - feeds:  newsboat
+  - mail:   aerc
