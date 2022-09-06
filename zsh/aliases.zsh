@@ -28,7 +28,7 @@ alias ll='ls -AlhG'
 alias cdf='cd $(pwdf)'
 alias home='cd ~'
 function back { cd ${(l:$1*3::../:)} }
-function mkcd { mkdir -p $@ && cd $1 }
+function mkcd { mkdir -p $@ && cd $_ }
 
 # dot aliases
 alias ..='cd ..'
