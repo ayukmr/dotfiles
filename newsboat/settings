@@ -21,7 +21,7 @@ show-keymap-hint no
 # show read articles
 show-read-articles yes
 
-# keep a maximum of 50 articles
+# keep 50 articles
 max-items 50
 
 # item titles
