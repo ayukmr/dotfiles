@@ -9,6 +9,6 @@ config:
   link:
     # glob presets
     <% Dir.glob(File.expand_path('~/.cfg/tmuxinator/*.yml')).each do |preset| %>
-      <% next if File.basename(preset) == 'bootstrap.yml' %>
-      <%= "- ~/.config/tmuxinator: #{preset}" %>
+    <% next if File.basename(preset) == 'bootstrap.yml' %>
+    <%= "- ~/.config/tmuxinator: #{preset}" %>
     <% end %>
