@@ -1,0 +1,7 @@
+# ========================
+# === ESLint Bootstrap ===
+# ========================
+
+config:
+  link:
+    - ~/.eslintrc.yml: eslintrc.yml

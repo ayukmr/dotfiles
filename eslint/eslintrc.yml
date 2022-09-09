@@ -1,0 +1,56 @@
+# =====================
+# === ESLint Config ===
+# =====================
+
+env:
+  browser: true
+  es2021:  true
+  node:    true
+
+parserOptions:
+  ecmaVersion: latest
+  sourceType:  module
+
+extends: eslint:recommended
+
+rules:
+  # enforce ===
+  eqeqeq: warn
+
+  # always enforce curly braces
+  curly: warn
+
+  # enforce camelcase
+  camelcase: warn
+
+  # warn for unused stuff
+  no-unused-private-class-members: warn
+  no-unused-vars: warn
+  no-unused-expressions: warn
+  no-unused-labels: warn
+
+  # disallow fallthrough for case
+  no-fallthrough: error
+
+  # enforce semicolons
+  semi: warn
+
+  # enforce wrapping for iifes
+  wrap-iife: error
+
+  # disallow nested ternary expressions
+  no-nested-ternary: warn
+
+  # consistent use of radix for parseInt
+  radix: warn
+
+  # enforce default params to be last
+  default-param-last: warn
+
+  # enforce dot notation when possible
+  dot-notation: warn
+
+  # enforce uncapitalized comments
+  capitalized-comments:
+    - error
+    - never
