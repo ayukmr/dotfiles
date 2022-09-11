@@ -224,10 +224,10 @@ let s:palette.visual.right    = [[ s:cursor_grey, s:yellow ], [ s:white, s:visua
 let s:palette.normal.middle   = [[ s:white, s:cursor_grey ]]
 let s:palette.inactive.middle = [[ s:white, s:cursor_grey ]]
 
-let s:palette.tabline.left    = [[ s:white, s:visual_grey  ]]
-let s:palette.tabline.tabsel  = [[ s:cursor_grey, s:purple ]]
-let s:palette.tabline.middle  = [[ s:white, s:cursor_grey  ]]
-let s:palette.tabline.right   = [[ s:purple, s:visual_grey ]]
+let s:palette.tabline.left    = [[ s:white,       s:visual_grey ]]
+let s:palette.tabline.tabsel  = [[ s:cursor_grey, s:purple      ]]
+let s:palette.tabline.middle  = [[ s:white,       s:cursor_grey ]]
+let s:palette.tabline.right   = [[ s:purple,      s:visual_grey ]]
 
 let s:palette.normal.warning  = [[ s:cursor_grey, s:yellow ]]
 let s:palette.normal.error    = [[ s:cursor_grey, s:red    ]]
