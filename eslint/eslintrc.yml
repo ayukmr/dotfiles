@@ -2,15 +2,20 @@
 # === ESLint Config ===
 # =====================
 
+# environment
 env:
   browser: true
   es2021:  true
   node:    true
 
 parserOptions:
+  # use latest ecma version
   ecmaVersion: latest
-  sourceType:  module
 
+  # treat source as module
+  sourceType: module
+
+# extend recommended config
 extends: eslint:recommended
 
 rules:
