@@ -18,12 +18,13 @@ set line-graphics = utf-8
 # truncation character
 set truncation-delimiter = …
 
-# date formats
+# main date format
 set main-view-date = custom
-set main-view-date-format = "%Y-%m-%d %H:%M"
+set main-view-date-format = %Y-%m-%d %H:%M
 
+# tree date format
 set tree-view-date = custom
-set tree-view-date-format = "%Y-%m-%d %H:%M"
+set tree-view-date-format = %Y-%m-%d %H:%M
 
 # max width for author
 set main-view-author-maxwidth = 20
