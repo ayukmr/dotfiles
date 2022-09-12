@@ -21,13 +21,13 @@ vi_prec_num 1
 wrap_search 1
 
 # colors
-basic_color     terminal
-anchor_color    blue
-image_color     green
-form_color      red
-mark_color      cyan
-bg_color        terminal
-active_style    0
-active_color    cyan
-visited_anchor  1
-visited_color   magenta
+basic_color    terminal
+anchor_color   blue
+image_color    green
+form_color     red
+mark_color     cyan
+bg_color       terminal
+active_style   0
+active_color   cyan
+visited_anchor 1
+visited_color  magenta
