@@ -78,11 +78,12 @@ scripts:
           -bool false
         : 'disabling including date in screenshot name'
 
-      - mkdir -p ~/Documents/Screenshots
+      - mkdir -p ~/Documents/Screenshots: 'creating screenshots directory'
+
       - ? defaults write
           com.apple.screencapture location
           -string '~/Documents/Screenshots'
-        : 'enabling putting screenshots in folder'
+        : 'setting screenshots directory'
 
       # ==============
       # === Finder ===
