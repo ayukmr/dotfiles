@@ -47,21 +47,21 @@ packages:
       - bat
       - fzf
       - w3m
+      - glow
+      - tldr
       - bottom
       - ranger
       - litecli
-      - git-delta
-
-      # reading
-      - glow
-      - tldr
       - newsboat
+      - git-delta
 
       # data tools
       - jq
+      - jp2a
       - wget
       - httpie
       - ripgrep
+      - imagemagick
 
       # tools
       - coreutils
