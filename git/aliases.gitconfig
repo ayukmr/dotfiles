@@ -18,10 +18,12 @@
     st = status
     ap = add -p
     hm = heatmap
+    pf = push -f
     co = checkout
     ds = diffstat
     cm = commit -m
     dc = diff --cached
 
+    rao = remote add origin
     psu = push -u origin main
     rsh = reset --soft HEAD~1
