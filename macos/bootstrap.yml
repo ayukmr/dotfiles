@@ -144,9 +144,6 @@ scripts:
           ~/Library/Preferences/com.apple.finder.plist
         : 'enabling showing item info in icon view'
 
-      - ? chflags nohidden ~/Library
-        : 'enabling showing library folder'
-
       # ================
       # === TextEdit ===
       # ================
