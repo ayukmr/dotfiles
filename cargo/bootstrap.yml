@@ -12,7 +12,6 @@ config:
 packages:
   packages:
     - cargo install:
-      - wasm-pack
       - evcxr_repl
 
     - cargo install --git:
