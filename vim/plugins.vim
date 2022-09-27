@@ -8,6 +8,7 @@
 
 " delete buffer
 nnoremap <silent> <Leader>q :Bdelete<CR>
+nnoremap <silent> <Leader>Q :Bdelete!<CR>
 
 " ================
 " === DevIcons ===

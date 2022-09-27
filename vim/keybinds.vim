@@ -31,9 +31,6 @@ sunmap   <Leader>d
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
 
-" delete buffer
-nnoremap <silent> <Leader>Q :bdelete<CR>
-
 " substitution for comma
 nnoremap <silent> <M-;> :normal! ,<CR>
 
