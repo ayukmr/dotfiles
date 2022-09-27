@@ -95,10 +95,10 @@ cmp.setup({
 
     -- completion sources
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
+        { name = 'nvim_lsp'  },
         { name = 'ultisnips' },
-        { name = 'buffer' },
-        { name = 'path' },
+        { name = 'buffer'    },
+        { name = 'path'      },
     }),
 
     -- enable ghost text
