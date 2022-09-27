@@ -9,7 +9,7 @@ root: <%= File.expand_path(@args[0], Dir.pwd) %>
 windows:
   - shell:
       # ┃┻┃ layout
-      layout: b13d,204x58,0,0[204x43,0,0{102x43,0,0,0,101x43,103,0,2},204x14,0,44,3]
+      layout: 67fc,203x53,0,0[203x36,0,0{101x36,0,0,0,101x36,102,0,2},203x16,0,37,3]
       panes:
         - cargo check
         - cd ~/
