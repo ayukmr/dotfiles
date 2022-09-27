@@ -106,9 +106,6 @@ Plug 'unblevable/quick-scope'
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 
-" [smoothie] smooth scrolling
-Plug 'psliwka/vim-smoothie', { 'as': 'smoothie' }
-
 " [sneak] quicker movement
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
