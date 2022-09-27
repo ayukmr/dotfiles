@@ -37,6 +37,9 @@ nnoremap <silent> <M-;> :normal! ,<CR>
 " escape from insert mode
 inoremap jk <Esc>
 
+" select changed lines
+nnoremap gV `[v`]
+
 " get current syntax group
 nnoremap <silent> <Leader>z :call <SID>SynStack()<CR>
 
