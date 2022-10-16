@@ -1,0 +1,137 @@
+{
+  "name": "onedark",
+  "schemaVersion": 1,
+
+  "colors": {
+    "background": {
+      "hex": "#282c34"
+    },
+    "foreground": {
+      "hex": "#abb2bf"
+    },
+
+    "frame_focused": {
+      "hex": "#e06c75"
+    },
+    "frame_important": {
+      "hex": "#e5c07b"
+    },
+
+    "text_focused": {
+      "hex": "#e06c75"
+    },
+    "text_active": {
+      "hex": "#e5c07b"
+    },
+    "text_disabled": {
+      "hex": "#5c6370"
+    },
+    "text_hidden": {
+      "hex": "#5c6370"
+    },
+    "text_warning": {
+      "hex": "#e5c07b"
+    },
+    "text_error": {
+      "hex": "#e06c75"
+    },
+
+    "overlay_background": {
+      "hex": "#5c6370"
+    },
+    "overlay_foreground": {
+      "hex": "#abb2bf"
+    },
+    "overlay_border": {
+      "hex": "#5c6370"
+    },
+    "overlay_focused_border": {
+      "hex": "#5c6370"
+    },
+    "overlay_focused_text": {
+      "hex": "#abb2bf"
+    },
+
+    "shortcuts_background": {
+      "hex": "#5c6370"
+    },
+    "shortcuts_foreground": {
+      "hex": "#abb2bf"
+    },
+    "shortcuts_background_focused": {
+      "hex": "#5c6370"
+    },
+    "shortcuts_foreground_focused": {
+      "hex": "#abb2bf"
+    },
+
+    "button_background_normal": {
+      "hex": "#61afef"
+    },
+    "button_foreground_normal": {
+      "hex": "#282c34"
+    },
+    "button_background_active": {
+      "hex": "#56b6c2"
+    },
+    "button_foreground_active": {
+      "hex": "#282c34"
+    },
+
+    "header_background": {
+      "hex": "#61afef"
+    },
+    "header_foreground": {
+      "hex": "#282c34"
+    },
+
+    "footer_background": {
+      "hex": "#61afef"
+    },
+    "footer_foreground": {
+      "hex": "#282c34"
+    },
+
+    "banner_background": {
+      "hex": "#c678dd"
+    },
+    "banner_foreground": {
+      "hex": "#282c34"
+    },
+
+    "list_header_background": {
+      "hex": "#c678dd"
+    },
+    "list_header_foreground": {
+      "hex": "#282c34"
+    },
+
+    "list_header_highlighted_background": {
+      "hex": "#c678dd"
+    },
+    "list_header_highlighted_foreground": {
+      "hex": "#282c34"
+    },
+
+    "list_item_highlighted_background": {
+      "hex": "#61afef"
+    },
+    "list_item_highlighted_foreground": {
+      "hex": "#282c34"
+    },
+
+    "list_item_active_background": {
+      "hex": "#282c34"
+    },
+    "list_item_active_foreground": {
+      "hex": "#98c379"
+    },
+
+    "list_item_active_highlighted_background": {
+      "hex": "#98c379"
+    },
+    "list_item_active_highlighted_foreground": {
+      "hex": "#282c34"
+    }
+  }
+}
