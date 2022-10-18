@@ -20,9 +20,7 @@ alias zgenr='zgen reset && exec $SHELL -l'
 alias clear='tput reset && unset FIRST_LINE'
 
 # ls aliases
-alias l='na -ic'
-alias lt='na -ict'
-alias la='ls -AhG'
+alias l='ls -AhG'
 alias ll='ls -AlhG'
 
 # cd aliases
