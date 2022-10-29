@@ -13,14 +13,19 @@ func! LightlineMode()
     endif
 endfunc
 
-" linter errors for lightline
+" linter errors count for lightline
 func! LightlineErrors()
     return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
 endfunc
 
-" linter warnings for lightline
+" linter warnings count for lightline
 func! LightlineWarnings()
     return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })')
+endfunc
+
+" linter info count for lightline
+func! LightlineInfo()
+    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.INFO })')
 endfunc
 
 " add file icon to filetype
@@ -93,7 +98,7 @@ let g:lightline.active = {
     \ 'left': [
     \     ['mode'],
     \     ['readonly', 'filename', 'modified'],
-    \     has('nvim') ? ['errors', 'warnings'] : [],
+    \     has('nvim') ? ['errors', 'warnings', 'info'] : [],
     \ ],
     \ 'right': [
     \     ['lineinfo'],
@@ -119,9 +124,10 @@ let g:lightline.component_function = {
     \ 'gitbranch': 'LightlineGitBranch',
 \}
 
-" color linter error and warning symbols
+" color linter symbols
 highlight LightlineErrors   ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2c323c
 highlight LightlineWarnings ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2c323c
+highlight LightlineInfo     ctermfg=39  ctermbg=236 guifg=#61afef guibg=#2c323c
 
 " bufferline component
 let g:lightline.component_expand = {
@@ -136,9 +142,11 @@ let g:lightline.component_type = {
 " components
 let g:lightline.component = {
     \ 'logo':     '',
+    \ 'lineinfo': '%2l:%-2c',
+    \
     \ 'errors':   '%#LightlineErrors#%#LightlineLeft_active_2# %{LightlineErrors()}',
     \ 'warnings': '%#LightlineWarnings#%#LightlineLeft_active_2# %{LightlineWarnings()}',
-    \ 'lineinfo': '%2l:%-2c',
+    \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
 \}
 
 " tabline
