@@ -10,7 +10,7 @@ set background=dark
 
 " enable gui colors
 if has('termguicolors')
-    set termguicolors
+  set termguicolors
 endif
 
 " theme

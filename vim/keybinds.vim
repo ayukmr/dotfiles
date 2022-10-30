@@ -44,12 +44,12 @@ nnoremap gV `[v`]
 nnoremap <silent> <Leader>z :call <SID>SynStack()<CR>
 
 func! s:SynStack()
-    if !exists('*synstack')
-        return
-    endif
+  if !exists('*synstack')
+    return
+  endif
 
-    echo join(map(synstack(
-        \ line('.'), col('.')),
-        \ "synIDattr(v:val, 'name')"),
-    \ ', ')
+  echo join(map(synstack(
+    \ line('.'), col('.')),
+    \ "synIDattr(v:val, 'name')"),
+  \ ', ')
 endfunc

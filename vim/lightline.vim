@@ -4,68 +4,68 @@
 
 " current mode
 func! LightlineMode()
-    if exists('b:VM_Selection') && !empty(b:VM_Selection)
-        " visual multi
-        return 'VMT'
-    else
-        " normal mode
-        return lightline#mode()
-    endif
+  if exists('b:VM_Selection') && !empty(b:VM_Selection)
+    " visual multi
+    return 'VMT'
+  else
+    " normal mode
+    return lightline#mode()
+  endif
 endfunc
 
 " linter errors count for lightline
 func! LightlineErrors()
-    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
+  return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
 endfunc
 
 " linter warnings count for lightline
 func! LightlineWarnings()
-    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })')
+  return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })')
 endfunc
 
 " linter info count for lightline
 func! LightlineInfo()
-    return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.INFO })')
+  return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.INFO })')
 endfunc
 
 " add file icon to filetype
 func! LightlineFiletype()
-    return winwidth(0) > 70
-        \ ? WebDevIconsGetFileTypeSymbol() . ' ' . (
-        \     strlen(&filetype) ? &filetype : 'none'
-        \ )
-        \ : ''
+  return winwidth(0) > 70
+    \ ? WebDevIconsGetFileTypeSymbol() . ' ' . (
+    \   strlen(&filetype) ? &filetype : 'none'
+    \ )
+    \ : ''
 endfunc
 
 func! LightlineTabChars()
-    let s = ''
+  let s = ''
 
-    " return if single tab
-    if len(range(tabpagenr('$'))) < 2
-        return ''
-    endif
+  " return if single tab
+  if len(range(tabpagenr('$'))) < 2
+    return ''
+  endif
 
-    " add chars for tabs
-    for i in range(tabpagenr('$'))
-        let s .=
-            \ i + 1 == tabpagenr() ? '*' : '='
-    endfor
+  " add chars for tabs
+  for i in range(tabpagenr('$'))
+    let s .=
+      \ i + 1 == tabpagenr() ? '*' : '='
+  endfor
 
-    return s
+  return s
 endfunc
 
 " current git branch
 func! LightlineGitBranch()
-    return ' ' . (strlen(gitbranch#name())
-        \ ? gitbranch#name()
-        \ : 'none'
-    \)
+  return ' ' . (strlen(gitbranch#name())
+    \ ? gitbranch#name()
+    \ : 'none'
+  \)
 endfunc
 
 " tab icons
 func! LightlineTabIcons(n)
-    let l:filename = lightline#tab#filename(a:n)
-    return WebDevIconsGetFileTypeSymbol(l:filename)
+  let l:filename = lightline#tab#filename(a:n)
+  return WebDevIconsGetFileTypeSymbol(l:filename)
 endfunc
 
 " lightline config
@@ -80,48 +80,48 @@ let g:lightline.tabline_subseparator = { 'left': ')', 'right': '|' }
 
 " mode abbreviations
 let g:lightline.mode_map = {
-    \ 'n':      'NML',
-    \ 'i':      'INS',
-    \ 'R':      'RPL',
-    \ 'v':      'VIS',
-    \ 'V':      'VLN',
-    \ "\<C-v>": 'VBL',
-    \ 'c':      'CMD',
-    \ 's':      'SEL',
-    \ 'S':      'SLN',
-    \ "\<C-s>": 'SBL',
-    \ 't':      'TMN',
+  \ 'n':      'NML',
+  \ 'i':      'INS',
+  \ 'R':      'RPL',
+  \ 'v':      'VIS',
+  \ 'V':      'VLN',
+  \ "\<C-v>": 'VBL',
+  \ 'c':      'CMD',
+  \ 's':      'SEL',
+  \ 'S':      'SLN',
+  \ "\<C-s>": 'SBL',
+  \ 't':      'TMN',
 \}
 
 " statusline
 let g:lightline.active = {
-    \ 'left': [
-    \     ['mode'],
-    \     ['readonly', 'filename', 'modified'],
-    \     has('nvim') ? ['errors', 'warnings', 'info'] : [],
-    \ ],
-    \ 'right': [
-    \     ['lineinfo'],
-    \     ['filetype'],
-    \     ['fileformat', 'fileencoding'],
-    \ ],
+  \ 'left': [
+  \   ['mode'],
+  \   ['readonly', 'filename', 'modified'],
+  \   has('nvim') ? ['errors', 'warnings', 'info'] : [],
+  \ ],
+  \ 'right': [
+  \   ['lineinfo'],
+  \   ['filetype'],
+  \   ['fileformat', 'fileencoding'],
+  \ ],
 \}
 
 let g:lightline.inactive = {
-    \ 'left': [
-    \     ['filename', 'modified']
-    \ ],
-    \ 'right': [
-    \     ['filetype']
-    \ ],
+  \ 'left': [
+  \   ['filename', 'modified']
+  \ ],
+  \ 'right': [
+  \   ['filetype']
+  \ ],
 \}
 
 " functions
 let g:lightline.component_function = {
-    \ 'mode':      'LightlineMode',
-    \ 'filetype':  'LightlineFiletype',
-    \ 'tabchars':  'LightlineTabChars',
-    \ 'gitbranch': 'LightlineGitBranch',
+  \ 'mode':      'LightlineMode',
+  \ 'filetype':  'LightlineFiletype',
+  \ 'tabchars':  'LightlineTabChars',
+  \ 'gitbranch': 'LightlineGitBranch',
 \}
 
 " color linter symbols
@@ -131,37 +131,37 @@ highlight LightlineInfo     ctermfg=39  ctermbg=236 guifg=#61afef guibg=#2c323c
 
 " bufferline component
 let g:lightline.component_expand = {
-    \ 'buffers': 'lightline#bufferline#buffers',
+  \ 'buffers': 'lightline#bufferline#buffers',
 \}
 
 " bufferline component type
 let g:lightline.component_type = {
-    \ 'buffers': 'tabsel',
+  \ 'buffers': 'tabsel',
 \}
 
 " components
 let g:lightline.component = {
-    \ 'logo':     '',
-    \ 'lineinfo': '%2l:%-2c',
-    \
-    \ 'errors':   '%#LightlineErrors#%#LightlineLeft_active_2# %{LightlineErrors()}',
-    \ 'warnings': '%#LightlineWarnings#%#LightlineLeft_active_2# %{LightlineWarnings()}',
-    \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
+  \ 'logo':     '',
+  \ 'lineinfo': '%2l:%-2c',
+  \
+  \ 'errors':   '%#LightlineErrors#%#LightlineLeft_active_2# %{LightlineErrors()}',
+  \ 'warnings': '%#LightlineWarnings#%#LightlineLeft_active_2# %{LightlineWarnings()}',
+  \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
 \}
 
 " tabline
 let g:lightline.tabline = {
-    \ 'left': [
-    \     ['logo', 'buffers'],
-    \ ],
-    \ 'right': [
-    \     ['tabchars', 'gitbranch'],
-    \ ],
+  \ 'left': [
+  \   ['logo', 'buffers'],
+  \ ],
+  \ 'right': [
+  \   ['tabchars', 'gitbranch'],
+  \ ],
 \}
 
 " icons in tab numbers
 let g:lightline.tab_component_function = {
-    \ 'tabnum': 'LightlineTabIcons',
+  \ 'tabnum': 'LightlineTabIcons',
 \}
 
 " refresh with timer
@@ -184,23 +184,23 @@ let g:lightline#bufferline#unnamed = '[No Name]'
 let s:colors = onedark#GetColors()
 
 if get(g:, 'onedark_termcolors', 256) == 16
-    let s:term_red         = s:colors.red.cterm16
-    let s:term_green       = s:colors.green.cterm16
-    let s:term_yellow      = s:colors.yellow.cterm16
-    let s:term_blue        = s:colors.blue.cterm16
-    let s:term_purple      = s:colors.purple.cterm16
-    let s:term_white       = s:colors.white.cterm16
-    let s:term_cursor_grey = s:colors.cursor_grey.cterm16
-    let s:term_visual_grey = s:colors.visual_grey.cterm16
+  let s:term_red         = s:colors.red.cterm16
+  let s:term_green       = s:colors.green.cterm16
+  let s:term_yellow      = s:colors.yellow.cterm16
+  let s:term_blue        = s:colors.blue.cterm16
+  let s:term_purple      = s:colors.purple.cterm16
+  let s:term_white       = s:colors.white.cterm16
+  let s:term_cursor_grey = s:colors.cursor_grey.cterm16
+  let s:term_visual_grey = s:colors.visual_grey.cterm16
 else
-    let s:term_red         = s:colors.red.cterm
-    let s:term_green       = s:colors.green.cterm
-    let s:term_yellow      = s:colors.yellow.cterm
-    let s:term_blue        = s:colors.blue.cterm
-    let s:term_purple      = s:colors.purple.cterm
-    let s:term_white       = s:colors.white.cterm
-    let s:term_cursor_grey = s:colors.cursor_grey.cterm
-    let s:term_visual_grey = s:colors.visual_grey.cterm
+  let s:term_red         = s:colors.red.cterm
+  let s:term_green       = s:colors.green.cterm
+  let s:term_yellow      = s:colors.yellow.cterm
+  let s:term_blue        = s:colors.blue.cterm
+  let s:term_purple      = s:colors.purple.cterm
+  let s:term_white       = s:colors.white.cterm
+  let s:term_cursor_grey = s:colors.cursor_grey.cterm
+  let s:term_visual_grey = s:colors.visual_grey.cterm
 endif
 
 let s:red         = [ s:colors.red.gui,         s:term_red         ]

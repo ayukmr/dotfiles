@@ -110,7 +110,7 @@ highlight! link HighlightedyankRegion Search
 
 " mapping for vim
 if !exists('##TextYankPost')
-    noremap y <Plug>(highlightedyank)
+  noremap y <Plug>(highlightedyank)
 endif
 
 " ===================
@@ -153,30 +153,30 @@ highlight! link NERDTreeFlags Title
 nnoremap <silent> <C-t> :call g:NERDTreeCreator.ToggleTabTree(expand('%:h'))<CR>
 
 augroup nerdtree_utils
-    auto!
-    " close tab if nerdtree is the last buffer
-    auto BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+  auto!
+  " close tab if nerdtree is the last buffer
+  auto BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 augroup END
 
 augroup nerdtree_conceal
-    auto!
-    " set vars in nerdtree buffer
-    auto Filetype nerdtree   call s:NERDTreeSetVars()
-    auto BufEnter,WinEnter * call s:NERDTreeSetVars()
+  auto!
+  " set vars in nerdtree buffer
+  auto Filetype nerdtree   call s:NERDTreeSetVars()
+  auto BufEnter,WinEnter * call s:NERDTreeSetVars()
 augroup END
 
 func! s:NERDTreeSetVars() abort
-    " get nerdtree winnr
-    let nerdtree_winnr = index(
-    \   map(
-    \       range(1, winnr('$')),
-    \       { _, v -> getbufvar(winbufnr(v), '&filetype') }
-    \   ),
-    \   'nerdtree'
-    \) + 1
+  " get nerdtree winnr
+  let nerdtree_winnr = index(
+  \   map(
+  \     range(1, winnr('$')),
+  \     { _, v -> getbufvar(winbufnr(v), '&filetype') }
+  \   ),
+  \   'nerdtree'
+  \) + 1
 
-    " set concealcursor
-    call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
+  " set concealcursor
+  call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
 endfunc
 
 " ===================
@@ -229,24 +229,24 @@ let g:startify_custom_header = startify#pad([
 
 " starting commands
 let g:startify_commands = [
-    \ { 'ff': 'Files'       },
-    \ { 'fh': 'History'     },
-    \ { 'pi': 'PlugInstall' },
-    \ { 'pc': 'PlugClean!'  },
+  \ { 'ff': 'Files'       },
+  \ { 'fh': 'History'     },
+  \ { 'pi': 'PlugInstall' },
+  \ { 'pc': 'PlugClean!'  },
 \]
 
 " bookmarked files
 let g:startify_bookmarks = [
-    \ { 'vs': '~/.cfg/vim/setup.vim'    },
-    \ { 'vp': '~/.cfg/vim/plugins.vim'  },
+  \ { 'vs': '~/.cfg/vim/setup.vim'   },
+  \ { 'vp': '~/.cfg/vim/plugins.vim' },
 \]
 
 " list headers
 let g:startify_lists = [
-    \ { 'type': 'dir',       'header': startify#pad(['ﱮ Files'    ])},
-    \ { 'type': 'sessions',  'header': startify#pad([' Sessions' ])},
-    \ { 'type': 'bookmarks', 'header': startify#pad([' Bookmarks'])},
-    \ { 'type': 'commands',  'header': startify#pad([' Commands' ])},
+  \ { 'type': 'dir',       'header': startify#pad(['ﱮ Files'    ])},
+  \ { 'type': 'sessions',  'header': startify#pad([' Sessions' ])},
+  \ { 'type': 'bookmarks', 'header': startify#pad([' Bookmarks'])},
+  \ { 'type': 'commands',  'header': startify#pad([' Commands' ])},
 \]
 
 " don't change to file directory
@@ -258,7 +258,7 @@ highlight! link StartifySlash   StartifyPath
 
 " enable devicons for startify
 func! StartifyEntryFormat()
-    return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
+  return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
 endfunc
 
 " ===============
@@ -277,19 +277,19 @@ vnoremap <Leader>T :CharTabularize!<CR>
 command! -bang -range CharTabularize call s:CharTabularize(<bang>0, <range>)
 
 func! s:CharTabularize(add_zs, range)
-    " use '<,'> for visual selection
-    let s:command = a:range
-        \ ? "'<,'>Tabularize /"
-        \ : 'Tabularize /'
+  " use '<,'> for visual selection
+  let s:command = a:range
+    \ ? "'<,'>Tabularize /"
+    \ : 'Tabularize /'
 
-    let s:command .= nr2char(getchar())
+  let s:command .= nr2char(getchar())
 
-    if a:add_zs
-        " add \zs to command
-        let s:command .= '\zs /l0'
-    endif
+  if a:add_zs
+    " add \zs to command
+    let s:command .= '\zs /l0'
+  endif
 
-    exec s:command
+  exec s:command
 endfunc
 
 " ==================
@@ -305,9 +305,9 @@ nnoremap ]t gt
 " ================
 
 augroup plug_no_numbers
-    auto!
-    " disable line numbers in vim plug buffer
-    auto FileType vim-plug setlocal nonumber
+  auto!
+  " disable line numbers in vim plug buffer
+  auto FileType vim-plug setlocal nonumber
 augroup END
 
 " ====================

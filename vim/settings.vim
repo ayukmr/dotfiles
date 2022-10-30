@@ -7,14 +7,14 @@ set title
 
 " set titlestring
 if has('nvim')
-    set titlestring=%t\ –\ nvim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
+  set titlestring=%t\ –\ nvim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 else
-    set titlestring=%t\ –\ vim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
+  set titlestring=%t\ –\ vim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 endif
 
 " set viminfo location
 if !has('nvim')
-    set viminfofile=~/.vim/viminfo
+  set viminfofile=~/.vim/viminfo
 endif
 
 " centralize directories

@@ -4,11 +4,11 @@
 
 " enable plugin on condition
 func! Cond(cond, ...)
-    let opts = get(a:000, 0, {})
+  let opts = get(a:000, 0, {})
 
-    return a:cond
-        \ ? opts
-        \ : extend(opts, { 'on': [], 'for': [] })
+  return a:cond
+    \ ? opts
+    \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
 
 call plug#begin('~/.vim/bundle')
