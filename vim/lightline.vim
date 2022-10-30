@@ -214,30 +214,30 @@ let s:visual_grey = [ s:colors.visual_grey.gui, s:term_visual_grey ]
 
 let s:palette = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
 
-let s:palette.normal.left     = [[ s:cursor_grey, s:green ], [ s:white, s:visual_grey ]]
-let s:palette.normal.right    = [[ s:cursor_grey, s:green ], [ s:white, s:visual_grey ]]
+let s:palette.normal.left  = [[ s:cursor_grey, s:green ], [ s:white, s:visual_grey ]]
+let s:palette.normal.right = [[ s:cursor_grey, s:green ], [ s:white, s:visual_grey ]]
 
-let s:palette.inactive.left   = [[ s:cursor_grey, s:white ], [ s:cursor_grey, s:white ]]
-let s:palette.inactive.right  = [[ s:cursor_grey, s:white ], [ s:cursor_grey, s:white ]]
+let s:palette.inactive.left  = [[ s:cursor_grey, s:white ], [ s:cursor_grey, s:white ]]
+let s:palette.inactive.right = [[ s:cursor_grey, s:white ], [ s:cursor_grey, s:white ]]
 
-let s:palette.insert.left     = [[ s:cursor_grey, s:blue ], [ s:white, s:visual_grey ]]
-let s:palette.insert.right    = [[ s:cursor_grey, s:blue ], [ s:white, s:visual_grey ]]
+let s:palette.insert.left  = [[ s:cursor_grey, s:blue ], [ s:white, s:visual_grey ]]
+let s:palette.insert.right = [[ s:cursor_grey, s:blue ], [ s:white, s:visual_grey ]]
 
-let s:palette.replace.left    = [[ s:cursor_grey, s:red ], [ s:white, s:visual_grey ]]
-let s:palette.replace.right   = [[ s:cursor_grey, s:red ], [ s:white, s:visual_grey ]]
+let s:palette.replace.left  = [[ s:cursor_grey, s:red ], [ s:white, s:visual_grey ]]
+let s:palette.replace.right = [[ s:cursor_grey, s:red ], [ s:white, s:visual_grey ]]
 
-let s:palette.visual.left     = [[ s:cursor_grey, s:yellow ], [ s:white, s:visual_grey ]]
-let s:palette.visual.right    = [[ s:cursor_grey, s:yellow ], [ s:white, s:visual_grey ]]
+let s:palette.visual.left  = [[ s:cursor_grey, s:yellow ], [ s:white, s:visual_grey ]]
+let s:palette.visual.right = [[ s:cursor_grey, s:yellow ], [ s:white, s:visual_grey ]]
 
 let s:palette.normal.middle   = [[ s:white, s:cursor_grey ]]
 let s:palette.inactive.middle = [[ s:white, s:cursor_grey ]]
 
-let s:palette.tabline.left    = [[ s:white,       s:visual_grey ]]
-let s:palette.tabline.tabsel  = [[ s:cursor_grey, s:purple      ]]
-let s:palette.tabline.middle  = [[ s:white,       s:cursor_grey ]]
-let s:palette.tabline.right   = [[ s:purple,      s:visual_grey ]]
+let s:palette.tabline.left   = [[ s:white,       s:visual_grey ]]
+let s:palette.tabline.tabsel = [[ s:cursor_grey, s:purple      ]]
+let s:palette.tabline.middle = [[ s:white,       s:cursor_grey ]]
+let s:palette.tabline.right  = [[ s:purple,      s:visual_grey ]]
 
-let s:palette.normal.warning  = [[ s:cursor_grey, s:yellow ]]
-let s:palette.normal.error    = [[ s:cursor_grey, s:red    ]]
+let s:palette.normal.warning = [[ s:cursor_grey, s:yellow ]]
+let s:palette.normal.error   = [[ s:cursor_grey, s:red    ]]
 
 let g:lightline#colorscheme#onedark#palette = lightline#colorscheme#flatten(s:palette)
