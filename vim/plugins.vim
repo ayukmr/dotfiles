@@ -20,7 +20,7 @@ let g:DevIconsAppendArtifactFix = 0
 " opened/closed folder icon
 let g:DevIconsEnableFoldersOpenClose = 1
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
-let g:DevIconsDefaultFolderOpenSymbol                    = 'ﱮ'
+let g:DevIconsDefaultFolderOpenSymbol = 'ﱮ'
 
 " padding in nerdtree
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
@@ -29,13 +29,13 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding  = ' '
 " extension icons
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['kt']      = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ts']      = 'ﯤ'
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr']      = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['erb']     = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['toml']    = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock']    = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['tmux']    = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['kt']   = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ts']   = 'ﯤ'
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr']   = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['erb']  = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['toml'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['tmux'] = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svelte']  = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['textile'] = ''
 
@@ -217,14 +217,14 @@ noremap ]s <Plug>Sneak_;
 
 " startify header
 let g:startify_custom_header = startify#pad([
-    \ '                             .   ',
-    \ '           \ | /            ==   ',
-    \ '            \|/           =====/ ',
-    \ '     /""""""===""""""\___/  /    ',
-    \ '~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ ~~ ~~~',
-    \ '     \_____  o          __/      ',
-    \ '      \    \         __/         ',
-    \ '        \____\______/            ',
+  \ '                             .   ',
+  \ '           \ | /            ==   ',
+  \ '            \|/           =====/ ',
+  \ '     /""""""===""""""\___/  /    ',
+  \ '~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ ~~ ~~~',
+  \ '     \_____  o          __/      ',
+  \ '      \    \         __/         ',
+  \ '        \____\______/            ',
 \])
 
 " starting commands
