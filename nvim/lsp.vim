@@ -210,8 +210,8 @@ nnoremap <silent> <Leader>lf :lua vim.lsp.buf.formatting()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
 
 nnoremap <silent> <M-d> :lua vim.diagnostic.open_float(nil, { scope = 'cursor', focus = false })<CR>
-nnoremap <silent> ]d :lua vim.diagnostic.goto_prev()<CR>
-nnoremap <silent> [d :lua vim.diagnostic.goto_next()<CR>
+nnoremap <silent> [d :lua vim.diagnostic.goto_prev()<CR>
+nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
