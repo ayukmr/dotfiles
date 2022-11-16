@@ -35,6 +35,7 @@ function set_title {
 function set_title_cmd {
     # split $1 into parts and trim with sed
     local expanded=$(alias_for ${(@s: :)1} | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')
+    expanded=${(MS)expanded##[[:graph:]]*[[:graph:]]}
 
     printf '\e]2;%s\a'     "$(print -P '%1/') – $(basename $SHELL) ◂ $expanded"
     printf '\033]0;%s\007' "$(print -P '%1/') – $(basename $SHELL) ◂ $expanded"
