@@ -37,7 +37,6 @@ packages:
       - rust
       - ruby
       - node
-      - deno
       - yarn
       - python
       - golang
