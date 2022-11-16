@@ -179,17 +179,6 @@ func! s:NERDTreeSetVars() abort
   call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
 endfunc
 
-" ===================
-" === Quick Scope ===
-" ===================
-
-" only highlight on motion
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
-" character highlights
-highlight QuickScopePrimary   cterm=underline ctermfg=39  gui=underline guifg=#61afef
-highlight QuickScopeSecondary cterm=underline ctermfg=170 gui=underline guifg=#c678dd
-
 " =============
 " === Sneak ===
 " =============
