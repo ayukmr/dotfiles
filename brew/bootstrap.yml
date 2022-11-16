@@ -15,7 +15,6 @@ config:
     - brew alias ui=uninstall: 'setting uninstall alias'
     - brew alias ug=upgrade:   'setting upgrade alias'
     - brew alias cu=cleanup:   'setting clean up alias'
-    - brew alias t=tap:        'setting tap alias'
 
 packages:
   setup:
