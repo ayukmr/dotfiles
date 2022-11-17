@@ -34,12 +34,12 @@ packages:
       - tmuxinator
 
       # langs
-      - rust
-      - ruby
       - node
+      - ruby
+      - rust
       - yarn
-      - python
       - golang
+      - python
 
       # viewers
       - bat
