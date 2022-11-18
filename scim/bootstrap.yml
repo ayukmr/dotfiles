@@ -1,0 +1,10 @@
+# =======================
+# === SC-IM Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.config/sc-im
+
+  link:
+    - ~/.config/sc-im: scimrc
