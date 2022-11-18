@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+s#!/usr/bin/env zsh
 
 # ==========================
 # === Pager for Newsboat ===
@@ -8,7 +8,7 @@
 cat $1 |
 
 # convert html to markdown
-turndown |
+~/.cfg/newsboat/turndown |
 
 # remove lines from newsboat
 tail -n +3 |
