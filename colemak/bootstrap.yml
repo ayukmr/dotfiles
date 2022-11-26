@@ -1,0 +1,17 @@
+# =========================
+# === Colemak Bootstrap ===
+# =========================
+
+scripts:
+  vim:
+    dirs:
+      - ~/.vim/keymap
+
+    link:
+      - ~/.vim/keymap/colemak.vim: keymap.vim
+
+    test:
+      - "[[ ! $(tail -n 1 ~/.cfg/vim/vimrc.vim) == 'source ~/.cfg/colemak/colemak.vim' ]]":
+          shell:
+            - ? echo 'source ~/.cfg/colemak/colemak.vim' >> ~/.cfg/vim/vimrc.vim
+              : 'sourcing colemak.vim in vimrc'
