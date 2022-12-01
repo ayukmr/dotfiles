@@ -1,0 +1,7 @@
+# =======================
+# === Tokei Bootstrap ===
+# =======================
+
+config:
+  link:
+    - ~/.tokeirc: tokeirc.toml
