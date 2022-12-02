@@ -2,7 +2,7 @@
 # === Bat Config ===
 # ==================
 
-# theme
+# one dark theme
 --theme TwoDark
 
 # show changes and header
@@ -11,7 +11,7 @@
 # never wrap text
 --wrap never
 
-# set tab width to 4 chars
+# use 4 char tabs
 --tabs 4
 
 # show line numbers
