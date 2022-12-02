@@ -2,15 +2,6 @@
 # === Htop Config ===
 # ===================
 
-# htop info
-htop_version=3.1.2
-config_reader_min_version=2
-fields=0 48 17 18 2 46 47 49 1
-
-# ===============
-# === Display ===
-# ===============
-
 # sorting
 sort_key=46
 sort_direction=-1
