@@ -11,7 +11,7 @@ bindkey ^R history-incremental-search-backward
 # insert from command history
 bindkey ^N insert-last-word
 
-# clear screen and wipe history
+# clear screen
 bindkey -M main  ^K _clear
 bindkey -M vicmd ^K _clear
 
@@ -23,7 +23,7 @@ function _clear {
 }
 zle -N _clear
 
-# open line contents with editor
+# edit using editor
 bindkey -M main  ^E _edit
 bindkey -M vicmd ^E _edit
 
