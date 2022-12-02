@@ -15,7 +15,7 @@ class String
 end
 
 # get commits
-commits = Hash.new { 0 }
+commits = Hash.new(0)
 output = `git log --pretty=format:%cd`
 
 # put commits into hash
