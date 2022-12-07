@@ -8,10 +8,10 @@ scripts:
       - ~/.vim/keymap
 
     link:
-      - ~/.vim/keymap/colemak.vim: keymap.vim
+      - ~/.vim/keymap/colemak.vim: vim/keymap.vim
 
     test:
-      - "[[ ! $(tail -n 1 ~/.cfg/vim/vimrc.vim) == 'source ~/.cfg/colemak/colemak.vim' ]]":
+      - "[[ ! $(tail -n 1 ~/.cfg/vim/vimrc.vim) == 'source ~/.cfg/colemak/vim/colemak.vim' ]]":
           shell:
-            - ? echo 'source ~/.cfg/colemak/colemak.vim' >> ~/.cfg/vim/vimrc.vim
+            - ? echo 'source ~/.cfg/colemak/vim/colemak.vim' >> ~/.cfg/vim/vimrc.vim
               : 'sourcing colemak.vim in vimrc'
