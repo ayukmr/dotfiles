@@ -38,12 +38,9 @@ function git_info {
     fi
 }
 
-# pad exec command with newline
-function pad_exec { echo }
-preexec_functions+=('pad_exec')
-
 # set prompt header
 function set_header {
+    # pad if not first line
     if $FIRST_LINE; then
         FIRST_LINE=false
     else
