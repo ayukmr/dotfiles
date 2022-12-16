@@ -23,7 +23,7 @@ packages:
       - ts-node
       - typescript
 
-      # utils
+      # tools
       - serve
       - eslint
-      - express-generator
+      - vercel
