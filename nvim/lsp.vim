@@ -136,12 +136,16 @@ local dressing = require 'dressing'
 -- dressing setup
 dressing.setup({
   input = {
-    winblend = 0,
+    win_options = {
+      winblend = 0,
+    }
   },
   select = {
     backend = 'builtin',
     builtin = {
-      winblend = 0,
+      win_options = {
+        winblend = 0,
+      }
     },
   },
 })
@@ -257,13 +261,12 @@ end
 
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 local servers = {
   'marksman',
   'pyright',
   'rust_analyzer',
-  'solargraph',
   'sourcekit',
   'tsserver',
   'vimls',
