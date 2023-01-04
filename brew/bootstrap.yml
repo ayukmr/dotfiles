@@ -56,11 +56,9 @@ packages:
 
       # data tools
       - jq
-      - jp2a
       - wget
       - httpie
       - ripgrep
-      - imagemagick
 
       # tools
       - coreutils
