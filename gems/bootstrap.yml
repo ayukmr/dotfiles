@@ -13,12 +13,6 @@ packages:
       # tools
       - pry
       - yard
-      - cocoapods
-      - asciidoctor
-
-      # frameworks
-      - rails
-      - rspec
 
       # linting
       - rubocop
