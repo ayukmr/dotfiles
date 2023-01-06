@@ -10,7 +10,7 @@ AllCops:
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
-# disable hash alignment warnings
+# disable hash alignment
 Layout/HashAlignment:
   Enabled: false
   EnforcedColonStyle: table
@@ -31,12 +31,15 @@ Metrics/ClassLength:
 Metrics/ModuleLength:
   Max: 250
 
+# disable cyclomatic complexity
 Metrics/CyclomaticComplexity:
   Enabled: false
 
+# disable abc size
 Metrics/AbcSize:
   Enabled: false
 
+# disable perceived complexity
 Metrics/PerceivedComplexity:
   Enabled: false
 
@@ -48,6 +51,6 @@ Style/SingleLineMethods:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-# preferred name for errors in begin..rescue
+# set preferred name for errors
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
