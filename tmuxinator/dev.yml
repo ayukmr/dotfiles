@@ -2,9 +2,9 @@
 # === Tmux Dev Preset ===
 # =======================
 
-# set project root with root setting
-name: <%= @settings['root'] ? File.basename(@settings['root']) : 'dev' %>
-root: <%= @settings['root'] ? File.expand_path(@settings['root'], Dir.pwd) : '~/' %>
+# get project root from args
+name: <%= @args[0] ? File.basename(@args[0]) : 'dev' %>
+root: <%= @args[0] ? File.expand_path(@args[0], Dir.pwd) : '~/' %>
 
 windows:
   - shell:
