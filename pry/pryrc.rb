@@ -2,6 +2,7 @@
 # === Pry Init ===
 # ================
 
+# string utils
 class String
   # color string
   def black;     "\e[30m#{self}\e[0m" end
@@ -40,6 +41,7 @@ def pbpaste
   `pbpaste`
 end
 
+# object utils
 class Object
   # read documentation for method
   def ri(method = nil)
