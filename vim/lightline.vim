@@ -2,17 +2,6 @@
 " === Lightline ===
 " =================
 
-" current mode
-func! LightlineMode()
-  if exists('b:VM_Selection') && !empty(b:VM_Selection)
-    " visual multi
-    return 'VMT'
-  else
-    " normal mode
-    return lightline#mode()
-  endif
-endfunc
-
 " linter errors count for lightline
 func! LightlineErrors()
   return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
@@ -118,7 +107,6 @@ let g:lightline.inactive = {
 
 " functions
 let g:lightline.component_function = {
-  \ 'mode':      'LightlineMode',
   \ 'filetype':  'LightlineFiletype',
   \ 'tabchars':  'LightlineTabChars',
   \ 'gitbranch': 'LightlineGitBranch',
