@@ -14,18 +14,6 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 " === DevIcons ===
 " ================
 
-" fix gvim spacing
-let g:DevIconsAppendArtifactFix = 0
-
-" opened/closed folder icon
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
-let g:DevIconsDefaultFolderOpenSymbol = 'ﱮ'
-
-" padding in nerdtree
-let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
-let g:WebDevIconsNerdTreeAfterGlyphPadding  = ' '
-
 " extension icons
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
 
@@ -128,56 +116,6 @@ let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-
 
 " set conceal cursor
 let g:indentLine_concealcursor = ''
-
-" ================
-" === NERDTree ===
-" ================
-
-" hide help ui
-let NERDTreeMinimalUI = 1
-
-" show hidden files by default
-let NERDTreeShowHidden = 1
-
-" disable folder arrows
-let g:NERDTreeDirArrowExpandable  = ''
-let g:NERDTreeDirArrowCollapsible = ''
-
-" highlight slash the same as directories
-highlight! link NERDTreeDirSlash NERDTreeDir
-
-" icon highlights
-highlight! link NERDTreeFlags Title
-
-" toggle nerdtree
-nnoremap <silent> <C-t> :call g:NERDTreeCreator.ToggleTabTree(expand('%:h'))<CR>
-
-augroup nerdtree_utils
-  auto!
-  " close tab if nerdtree is the last buffer
-  auto BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-augroup END
-
-augroup nerdtree_conceal
-  auto!
-  " set vars in nerdtree buffer
-  auto Filetype nerdtree   call s:NERDTreeSetVars()
-  auto BufEnter,WinEnter * call s:NERDTreeSetVars()
-augroup END
-
-func! s:NERDTreeSetVars() abort
-  " get nerdtree winnr
-  let nerdtree_winnr = index(
-  \   map(
-  \     range(1, winnr('$')),
-  \     { _, v -> getbufvar(winbufnr(v), '&filetype') }
-  \   ),
-  \   'nerdtree'
-  \) + 1
-
-  " set concealcursor
-  call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
-endfunc
 
 " =============
 " === Sneak ===
