@@ -15,50 +15,54 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 " ================
 
 " extension icons
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let s:extension_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = s:extension_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['kt']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ts']   = 'ﯤ'
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['erb']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['toml'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['tmux'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svelte']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['textile'] = ''
+let s:extension_icons['kt']      = ''
+let s:extension_icons['ts']      = 'ﯤ'
+let s:extension_icons['cr']      = ''
+let s:extension_icons['erb']     = ''
+let s:extension_icons['toml']    = ''
+let s:extension_icons['lock']    = ''
+let s:extension_icons['tmux']    = ''
+let s:extension_icons['svelte']  = ''
+let s:extension_icons['textile'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['asc']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['adoc'] = ''
+let s:extension_icons['asc']  = ''
+let s:extension_icons['adoc'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['yml']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['yaml'] = ''
+let s:extension_icons['yml']  = ''
+let s:extension_icons['yaml'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cson']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['jsonc'] = ''
+let s:extension_icons['cson']  = ''
+let s:extension_icons['jsonc'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['scpt']        = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['applescript'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ttf'] = 'ﯔ'
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['otf'] = 'ﯔ'
+let s:extension_icons['scpt']        = ''
+let s:extension_icons['applescript'] = ''
+
+let s:extension_icons['ttf'] = 'ﯔ'
+let s:extension_icons['otf'] = 'ﯔ'
 
 " exact icons
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {}
+let s:exact_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = s:exact_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['brewfile']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['[plugins]'] = ''
+let s:exact_icons['brewfile']  = ''
+let s:exact_icons['[plugins]'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.git']           = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitignore']     = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitattributes'] = ''
+let s:exact_icons['.git']           = ''
+let s:exact_icons['.gitignore']     = ''
+let s:exact_icons['.gitattributes'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['cargo.toml']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['package.json'] = ''
+let s:exact_icons['cargo.toml']   = ''
+let s:exact_icons['package.json'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = {}
+" pattern icons
+let s:pattern_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = s:pattern_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['.*webpack.*']  = 'ﰩ'
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['\d;#FZF']      = ''
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['NERD_Tree_\d'] = ''
+let s:pattern_icons['.*webpack.*'] = 'ﰩ'
+let s:pattern_icons['\d;#FZF']     = ''
 
 " ===============
 " === FZF Vim ===
