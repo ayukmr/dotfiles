@@ -76,6 +76,9 @@ Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
 " [lightline-bufferline] bufferline for lightline
 Plug 'mengelbrecht/lightline-bufferline'
 
+" [lion] alignment operator
+Plug 'tommcdo/vim-lion', { 'as': 'lion' }
+
 " [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
@@ -108,9 +111,6 @@ Plug 'mhinz/vim-startify', { 'as': 'startify' }
 
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
-
-" [tabular] easy text alignment
-Plug 'godlygeek/tabular'
 
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Nvim()

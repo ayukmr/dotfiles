@@ -121,6 +121,13 @@ let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-
 " set conceal cursor
 let g:indentLine_concealcursor = ''
 
+" ============
+" === Lion ===
+" ============
+
+" squeeze spaces
+let g:lion_squeeze_spaces = 1
+
 " =============
 " === Sneak ===
 " =============
@@ -190,37 +197,6 @@ highlight! link StartifySlash   StartifyPath
 " enable devicons for startify
 func! StartifyEntryFormat()
   return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
-endfunc
-
-" ===============
-" === Tabular ===
-" ===============
-
-" tabularize with character
-nnoremap <Leader>t :CharTabularize<CR>
-vnoremap <Leader>t :CharTabularize<CR>
-
-" tabularize with character and \zs
-nnoremap <Leader>T :CharTabularize!<CR>
-vnoremap <Leader>T :CharTabularize!<CR>
-
-" tabularize with character
-command! -bang -range CharTabularize call s:CharTabularize(<bang>0, <range>)
-
-func! s:CharTabularize(add_zs, range)
-  " use '<,'> for visual selection
-  let s:command = a:range
-    \ ? "'<,'>Tabularize /"
-    \ : 'Tabularize /'
-
-  let s:command .= nr2char(getchar())
-
-  if a:add_zs
-    " add \zs to command
-    let s:command .= '\zs /l0'
-  endif
-
-  exec s:command
 endfunc
 
 " ==================
