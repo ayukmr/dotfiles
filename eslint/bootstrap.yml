@@ -4,4 +4,4 @@
 
 config:
   link:
-    - ~/.eslintrc.yml: eslintrc.yml
+    - ~/.eslintrc.json: eslintrc.json

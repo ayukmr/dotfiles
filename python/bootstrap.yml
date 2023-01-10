@@ -20,5 +20,4 @@ packages:
   packages:
     - python3 -m pip install:
       - pygame
-      - drawille
-      - firebase_admin
+      - ipython

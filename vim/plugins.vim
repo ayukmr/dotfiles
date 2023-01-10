@@ -14,73 +14,65 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 " === DevIcons ===
 " ================
 
-" fix gvim spacing
-let g:DevIconsAppendArtifactFix = 0
-
-" opened/closed folder icon
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
-let g:DevIconsDefaultFolderOpenSymbol = 'ﱮ'
-
-" padding in nerdtree
-let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
-let g:WebDevIconsNerdTreeAfterGlyphPadding  = ' '
-
 " extension icons
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let s:extension_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = s:extension_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['kt']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ts']   = 'ﯤ'
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cr']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['erb']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['toml'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lock'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['tmux'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svelte']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['textile'] = ''
+let s:extension_icons['kt']      = ''
+let s:extension_icons['ts']      = 'ﯤ'
+let s:extension_icons['cr']      = ''
+let s:extension_icons['erb']     = ''
+let s:extension_icons['toml']    = ''
+let s:extension_icons['lock']    = ''
+let s:extension_icons['tmux']    = ''
+let s:extension_icons['svelte']  = ''
+let s:extension_icons['textile'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['asc']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['adoc'] = ''
+let s:extension_icons['asc']  = ''
+let s:extension_icons['adoc'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['yml']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['yaml'] = ''
+let s:extension_icons['yml']  = ''
+let s:extension_icons['yaml'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['cson']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['jsonc'] = ''
+let s:extension_icons['cson']  = ''
+let s:extension_icons['jsonc'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['scpt']        = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['applescript'] = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ttf'] = 'ﯔ'
-let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['otf'] = 'ﯔ'
+let s:extension_icons['scpt']        = ''
+let s:extension_icons['applescript'] = ''
+
+let s:extension_icons['ttf'] = 'ﯔ'
+let s:extension_icons['otf'] = 'ﯔ'
 
 " exact icons
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {}
+let s:exact_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = s:exact_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['brewfile']  = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['[plugins]'] = ''
+let s:exact_icons['brewfile']  = ''
+let s:exact_icons['[plugins]'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.git']           = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitignore']     = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitattributes'] = ''
+let s:exact_icons['.git']           = ''
+let s:exact_icons['.gitignore']     = ''
+let s:exact_icons['.gitattributes'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['cargo.toml']   = ''
-let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['package.json'] = ''
+let s:exact_icons['cargo.toml']   = ''
+let s:exact_icons['package.json'] = ''
 
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = {}
+" pattern icons
+let s:pattern_icons = {}
+let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = s:pattern_icons
 
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['.*webpack.*']  = 'ﰩ'
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['\d;#FZF']      = ''
-let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['NERD_Tree_\d'] = ''
+let s:pattern_icons['.*webpack.*'] = 'ﰩ'
+let s:pattern_icons['\d;#FZF']     = ''
 
 " ===============
 " === FZF Vim ===
 " ===============
 
 " find files
-nnoremap <silent> <Leader><Leader> :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
+nnoremap <silent> `` :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
 
 " find files in home
-nnoremap <silent> ,. :Files ~<CR>
+nnoremap <silent> `~ :Files ~<CR>
 
 " ==================
 " === Git Gutter ===
@@ -124,60 +116,17 @@ let g:indentLine_char = '▎'
 let g:indentLine_color_gui = '#2c323c'
 
 " disable for certain buffers
-let g:indentLine_fileTypeExclude = ['help', 'startify', 'nerdtree', 'fzf', 'vim-plug', 'Trouble', 'lsp-installer']
+let g:indentLine_fileTypeExclude = ['help', 'startify', 'fzf', 'vim-plug', 'lsp-installer']
 
 " set conceal cursor
 let g:indentLine_concealcursor = ''
 
-" ================
-" === NERDTree ===
-" ================
+" ============
+" === Lion ===
+" ============
 
-" hide help ui
-let NERDTreeMinimalUI = 1
-
-" show hidden files by default
-let NERDTreeShowHidden = 1
-
-" disable folder arrows
-let g:NERDTreeDirArrowExpandable  = ''
-let g:NERDTreeDirArrowCollapsible = ''
-
-" highlight slash the same as directories
-highlight! link NERDTreeDirSlash NERDTreeDir
-
-" icon highlights
-highlight! link NERDTreeFlags Title
-
-" toggle nerdtree
-nnoremap <silent> <C-t> :call g:NERDTreeCreator.ToggleTabTree(expand('%:h'))<CR>
-
-augroup nerdtree_utils
-  auto!
-  " close tab if nerdtree is the last buffer
-  auto BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-augroup END
-
-augroup nerdtree_conceal
-  auto!
-  " set vars in nerdtree buffer
-  auto Filetype nerdtree   call s:NERDTreeSetVars()
-  auto BufEnter,WinEnter * call s:NERDTreeSetVars()
-augroup END
-
-func! s:NERDTreeSetVars() abort
-  " get nerdtree winnr
-  let nerdtree_winnr = index(
-  \   map(
-  \     range(1, winnr('$')),
-  \     { _, v -> getbufvar(winbufnr(v), '&filetype') }
-  \   ),
-  \   'nerdtree'
-  \) + 1
-
-  " set concealcursor
-  call timer_start(0, {-> nerdtree_winnr && setwinvar(nerdtree_winnr, '&concealcursor', 'nvic') })
-endfunc
+" squeeze spaces
+let g:lion_squeeze_spaces = 1
 
 " =============
 " === Sneak ===
@@ -250,37 +199,6 @@ func! StartifyEntryFormat()
   return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
 endfunc
 
-" ===============
-" === Tabular ===
-" ===============
-
-" tabularize with character
-nnoremap <Leader>t :CharTabularize<CR>
-vnoremap <Leader>t :CharTabularize<CR>
-
-" tabularize with character and \zs
-nnoremap <Leader>T :CharTabularize!<CR>
-vnoremap <Leader>T :CharTabularize!<CR>
-
-" tabularize with character
-command! -bang -range CharTabularize call s:CharTabularize(<bang>0, <range>)
-
-func! s:CharTabularize(add_zs, range)
-  " use '<,'> for visual selection
-  let s:command = a:range
-    \ ? "'<,'>Tabularize /"
-    \ : 'Tabularize /'
-
-  let s:command .= nr2char(getchar())
-
-  if a:add_zs
-    " add \zs to command
-    let s:command .= '\zs /l0'
-  endif
-
-  exec s:command
-endfunc
-
 " ==================
 " === Unimpaired ===
 " ==================
@@ -298,30 +216,3 @@ augroup plug_no_numbers
   " disable line numbers in vim plug buffer
   auto FileType vim-plug setlocal nonumber
 augroup END
-
-" ====================
-" === Visual Multi ===
-" ====================
-
-" disable statusline
-let g:VM_set_statusline = 0
-
-" exit silently
-let g:VM_silent_exit = 1
-
-" set visual multi leader
-let g:VM_leader = '<Leader>v'
-
-" visual multi keybinds
-let g:VM_maps = {}
-let g:VM_maps['Select Cursor Down'] = '<M-j>'
-let g:VM_maps['Select Cursor Up']   = '<M-k>'
-
-" cursor highlights
-let g:VM_Mono_hl   = 'Cursor'
-let g:VM_Cursor_hl = 'Cursor'
-let g:VM_Insert_hl = 'Cursor'
-let g:VM_Extend_hl = 'Visual'
-
-" search highlight
-let g:VM_highlight_matches = ''

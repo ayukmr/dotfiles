@@ -1,0 +1,64 @@
+// =====================
+// === ESLint Config ===
+// =====================
+
+{
+  // environment
+  "env": {
+    "node":    true,
+    "es2021":  true,
+    "browser": true
+  },
+
+  "parserOptions": {
+    // use latest ecma version
+    "ecmaVersion": "latest",
+
+    // treat source as module
+    "sourceType": "module"
+  },
+
+  // extend recommended config
+  "extends": ["eslint:recommended"],
+
+  "rules": {
+    // enforce using declarations
+    "no-unused-private-class-members": "warn",
+    "no-unused-vars": "warn",
+    "no-unused-expressions": "warn",
+    "no-unused-labels": "warn",
+
+    // enforce triple equals
+    "eqeqeq": "warn",
+
+    // enforce curly braces
+    "curly": "warn",
+
+    // enforce camelcase
+    "camelcase": "warn",
+
+    // disallow fallthrough for case
+    "no-fallthrough": "error",
+
+    // enforce semicolons
+    "semi": "warn",
+
+    // enforce wrapping for iifes
+    "wrap-iife": "error",
+
+    // enforce unnested ternary expressions
+    "no-nested-ternary": "warn",
+
+    // enforce consistent use of radix
+    "radix": "warn",
+
+    // enforce default params to be last
+    "default-param-last": "warn",
+
+    // enforce dot notation when possible
+    "dot-notation": "warn",
+
+    // enforce uncapitalized comments
+    "capitalized-comments": ["warn", "never"]
+  }
+}

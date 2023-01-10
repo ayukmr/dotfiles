@@ -12,7 +12,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " unhighlight search
-nnoremap <silent> <M-l> :nohlsearch<CR>
+nnoremap <silent> <C-i> :nohlsearch<CR>
 
 " motions without copying
 nnoremap <Leader>d "_d
@@ -31,25 +31,5 @@ sunmap   <Leader>d
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
 
-" substitution for comma
-nnoremap <silent> <M-;> :normal! ,<CR>
-
 " escape from insert mode
 inoremap jk <Esc>
-
-" select changed lines
-nnoremap gV `[v`]
-
-" get current syntax group
-nnoremap <silent> <Leader>z :call <SID>SynStack()<CR>
-
-func! s:SynStack()
-  if !exists('*synstack')
-    return
-  endif
-
-  echo join(map(synstack(
-    \ line('.'), col('.')),
-    \ "synIDattr(v:val, 'name')"),
-  \ ', ')
-endfunc

@@ -6,18 +6,24 @@ AllCops:
   # enable new cops
   NewCops: enable
 
+  # set ruby version
+  TargetRubyVersion: 3.1
+
 # allow no empty line after guard clause
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
-# disable hash alignment warnings
+# disable hash alignment
 Layout/HashAlignment:
   Enabled: false
-  EnforcedColonStyle: table
 
 # disable broken indentation
 Layout/FirstArgumentIndentation:
   Enabled: false
+
+# set max block length
+Metrics/BlockLength:
+  Max: 50
 
 # set max method length
 Metrics/MethodLength:
@@ -31,13 +37,16 @@ Metrics/ClassLength:
 Metrics/ModuleLength:
   Max: 250
 
+# disable cyclomatic complexity
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/AbcSize:
+# disable perceived complexity
+Metrics/PerceivedComplexity:
   Enabled: false
 
-Metrics/PerceivedComplexity:
+# disable abc size
+Metrics/AbcSize:
   Enabled: false
 
 # allow single line methods
@@ -48,6 +57,10 @@ Style/SingleLineMethods:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-# preferred name for errors in begin..rescue
+# set preferred name for errors
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
+
+# fix rubocop crashing
+Lint/EmptyConditionalBody:
+  Enabled: false

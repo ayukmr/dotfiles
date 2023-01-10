@@ -3,39 +3,36 @@
 " ==================
 
 " enable plugin on condition
-func! Cond(cond, ...)
+func! Nvim(...)
   let opts = get(a:000, 0, {})
 
-  return a:cond
+  return has('nvim')
     \ ? opts
     \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
 
 call plug#begin('~/.vim/bundle')
 
-" [alt-mappings] fix meta key bindings
-Plug 'vim-utils/vim-alt-mappings', Cond(!has('nvim'), { 'as': 'alt-mappings' })
-
 " [bbye] better :bd and :bw
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
 " [cmp] completion
-Plug 'hrsh7th/nvim-cmp', Cond(has('nvim'), { 'as': 'cmp' })
+Plug 'hrsh7th/nvim-cmp', Nvim({ 'as': 'cmp' })
 
 " [cmp-buffer] completion using buffer words
-Plug 'hrsh7th/cmp-buffer', Cond(has('nvim'))
+Plug 'hrsh7th/cmp-buffer', Nvim()
 
 " [cmp-cmdline] completion for command line
-Plug 'hrsh7th/cmp-cmdline', Cond(has('nvim'))
+Plug 'hrsh7th/cmp-cmdline', Nvim()
 
 " [cmp-nvim-lsp] completion using nvim lsp
-Plug 'hrsh7th/cmp-nvim-lsp', Cond(has('nvim'))
+Plug 'hrsh7th/cmp-nvim-lsp', Nvim()
 
 " [cmp-path] completion for paths
-Plug 'hrsh7th/cmp-path', Cond(has('nvim'))
+Plug 'hrsh7th/cmp-path', Nvim()
 
 " [cmp-ultisnips] completion using ultisnips
-Plug 'quangnguyen30192/cmp-nvim-ultisnips', Cond(has('nvim'), { 'as': 'cmp-ultisnips' })
+Plug 'quangnguyen30192/cmp-nvim-ultisnips', Nvim({ 'as': 'cmp-ultisnips' })
 
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
@@ -44,16 +41,16 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
 " [dressing] better ui for lsp
-Plug 'stevearc/dressing.nvim', Cond(has('nvim'), { 'as': 'dressing' })
+Plug 'stevearc/dressing.nvim', Nvim({ 'as': 'dressing' })
 
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
 " [fidget] lsp status ui
-Plug 'j-hui/fidget.nvim', Cond(has('nvim'), { 'as': 'fidget' })
+Plug 'j-hui/fidget.nvim', Nvim({ 'as': 'fidget' })
 
 " [fix-cursor-hold] fix updatetime for neovim
-Plug 'antoinemadec/FixCursorHold.nvim', Cond(has('nvim'), { 'as': 'fix-cursor-hold' })
+Plug 'antoinemadec/FixCursorHold.nvim', Nvim({ 'as': 'fix-cursor-hold' })
 
 " [fzf] fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
@@ -79,17 +76,17 @@ Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
 " [lightline-bufferline] bufferline for lightline
 Plug 'mengelbrecht/lightline-bufferline'
 
-" [lspconfig] configs for neovim lsp
-Plug 'neovim/nvim-lspconfig', Cond(has('nvim'), { 'as': 'lspconfig' })
+" [lion] alignment operator
+Plug 'tommcdo/vim-lion', { 'as': 'lion' }
 
-" [nerdtree] file tree in sidebar
-Plug 'preservim/nerdtree'
+" [lspconfig] configs for neovim lsp
+Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
 " [null-ls] use neovim as a language server
 Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
 
 " [lsp-installer] installer for lsp servers
-Plug 'williamboman/nvim-lsp-installer', Cond(has('nvim'), { 'as': 'lsp-installer' })
+Plug 'williamboman/nvim-lsp-installer', Nvim({ 'as': 'lsp-installer' })
 
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
@@ -107,7 +104,7 @@ Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
 " [snippets] snippets for ultisnips
-Plug 'honza/vim-snippets', Cond(has('nvim'), { 'as': 'snippets' })
+Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
 " [startify] start screen
 Plug 'mhinz/vim-startify', { 'as': 'startify' }
@@ -115,16 +112,10 @@ Plug 'mhinz/vim-startify', { 'as': 'startify' }
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
 
-" [tabular] easy text alignment
-Plug 'godlygeek/tabular'
-
 " [ultisnips] snippets manager
-Plug 'SirVer/ultisnips', Cond(has('nvim'))
+Plug 'SirVer/ultisnips', Nvim()
 
 " [unimpaired] bracket mappings
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
-
-" [visual-multi] multiple cursors
-Plug 'mg979/vim-visual-multi', { 'as': 'visual-multi' }
 
 call plug#end()
