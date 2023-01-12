@@ -1,10 +1,17 @@
+# =========================
+# === GitHub CLI Config ===
+# =========================
+
 # aliases
 aliases:
     rl: repo list
     rv: repo view
     al: auth login
+    rc: release create
     create: '!git create'
+
 # preferred protocol
 git_protocol: https
+
 # enable prompt
 prompt: enabled
