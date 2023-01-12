@@ -67,9 +67,6 @@ Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
 
-" [indent-line] show indent lines
-Plug 'Yggdroot/indentLine', { 'as': 'indent-line' }
-
 " [lightline] enhanced statusline
 Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
 
