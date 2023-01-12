@@ -96,7 +96,7 @@ sparklines:
     scale: 0
 
     # sum cpu usage
-    sample: ps -A -o '%cpu' | awk '{ sum += $1 } END { print sum }'
+    sample: ps -A -o '%cpu' | awk '{sum += $1} END {print sum}'
 
 textboxes:
   # weather in san jose
