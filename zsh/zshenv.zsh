@@ -13,6 +13,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 # zsh files
 export ZDOTDIR="$HOME/.zsh"
+export ZSH_CACHE_DIR="$HOME/.zsh/cache"
 
 # python config file
 export PYTHONSTARTUP="$HOME/.cfg/python/init.py"
