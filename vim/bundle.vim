@@ -49,9 +49,6 @@ Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 " [fidget] lsp status ui
 Plug 'j-hui/fidget.nvim', Nvim({ 'as': 'fidget' })
 
-" [fix-cursor-hold] fix updatetime for neovim
-Plug 'antoinemadec/FixCursorHold.nvim', Nvim({ 'as': 'fix-cursor-hold' })
-
 " [fzf] fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
 
