@@ -51,12 +51,6 @@ func! LightlineGitBranch()
   \)
 endfunc
 
-" tab icons
-func! LightlineTabIcons(n)
-  let l:filename = lightline#tab#filename(a:n)
-  return WebDevIconsGetFileTypeSymbol(l:filename)
-endfunc
-
 " lightline config
 let g:lightline = {}
 
@@ -145,11 +139,6 @@ let g:lightline.tabline = {
   \ 'right': [
   \   ['tabchars', 'gitbranch'],
   \ ],
-\}
-
-" icons in tab numbers
-let g:lightline.tab_component_function = {
-  \ 'tabnum': 'LightlineTabIcons',
 \}
 
 " refresh with timer
