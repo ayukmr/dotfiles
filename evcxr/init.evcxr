@@ -2,10 +2,13 @@
 // === Evcxr Init ===
 // ==================
 
+// format results
 :fmt \x1b[93m=>\x1b[0m {:?}
 
+// show timings
 :timing
 
+// load crates
 :dep rand  = "0.8"
 :dep regex = "1.5"
 :dep serde = "1.0"

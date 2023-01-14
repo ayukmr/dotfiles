@@ -1,0 +1,120 @@
+# ======================
+# === Sampler Config ===
+# ======================
+
+runcharts:
+  # response times of search engines
+  - title: Response Times
+    position: [[0, 0], [40, 22]]
+
+    legend:
+        enabled: true
+        details: false
+
+    rate-ms: 500
+    scale: 2
+
+    items:
+      # google
+      - label: GOOGLE
+        color: 2
+        sample: curl -s -o /dev/null -w '%{time_total}' google.com
+
+      # duckduckgo
+      - label: DUCKDUCKGO
+        color: 3
+        sample: curl -s -o /dev/null -w '%{time_total}' duckduckgo.com
+
+      # bing
+      - label: BING
+        color: 6
+        sample: curl -s -o /dev/null -w '%{time_total}' bing.com
+
+barcharts:
+  # network activity
+  - title: Local Network Activity
+    position: [[0, 22], [40, 19]]
+
+    rate-ms: 500
+    scale: 0
+
+    items:
+      # udp bytes in
+      - label: UDP Bytes In
+        sample: nettop -J bytes_in -l 1 -m udp | awk '{sum += $4} END {print sum}'
+
+      # udp bytes out
+      - label: UDP Bytes Out
+        sample: nettop -J bytes_out -l 1 -m udp | awk '{sum += $4} END {print sum}'
+
+      # tcp bytes in
+      - label: TCP Bytes In
+        sample: nettop -J bytes_in -l 1 -m tcp | awk '{sum += $4} END {print sum}'
+
+      # tcp bytes out
+      - label: TCP Bytes Out
+        sample: nettop -J bytes_out -l 1 -m tcp | awk '{sum += $4} END {print sum}'
+
+gauges:
+  # battery percentage
+  - title: Battery Percentage
+    position: [[40, 22], [40, 6]]
+    color: 2
+
+    # current percentage
+    cur:
+      sample: ioreg -n AppleSmartBattery -r | grep '"CurrentCapacity"' | sed -E 's/\s*"CurrentCapacity" = //'
+
+    # max percentage
+    max:
+      sample: ioreg -n AppleSmartBattery -r | grep '"MaxCapacity"' | sed -E 's/\s*"MaxCapacity" = //'
+
+    min:
+      sample: echo 0
+
+  # progress through year
+  - title: Year Progress
+    position: [[40, 27], [40, 6]]
+    color: 3
+
+    # current date
+    cur:
+      sample: date +%j
+
+    max:
+      sample: echo 365
+
+    min:
+      sample: echo 0
+
+sparklines:
+  # cpu usage
+  - title: CPU Usage
+    position: [[40, 0], [40, 22]]
+
+    rate-ms: 300
+    scale: 0
+
+    # sum cpu usage
+    sample: ps -A -o '%cpu' | awk '{sum += $1} END {print sum}'
+
+textboxes:
+  # weather in san jose
+  - title: San Jose Weather
+    position: [[40, 33], [20, 8]]
+
+    rate-ms: 300000
+    color: 4
+
+    # show wttr data
+    sample: curl 'wttr.in/San+Jose?u0ATQF' || echo
+
+  # weather in san francisco
+  - title: San Francisco Weather
+    position: [[60, 33], [20, 8]]
+
+    rate-ms: 300000
+    color: 4
+
+    # show wttr data
+    sample: curl 'wttr.in/San+Francisco?u0ATQF' || echo

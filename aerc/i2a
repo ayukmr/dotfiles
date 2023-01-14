@@ -1,7 +1,0 @@
-#!/usr/bin/env zsh
-
-# ============================
-# === View Images as Ascii ===
-# ============================
-
-cat $@ | convert -auto-orient - jpg:- | jp2a --colors -

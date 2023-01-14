@@ -1,0 +1,10 @@
+# =============================
+# === QuteBrowser Bootstrap ===
+# =============================
+
+config:
+  dirs:
+    - ~/.qutebrowser
+
+  link:
+    - ~/.qutebrowser: config.py

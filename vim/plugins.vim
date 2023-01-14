@@ -105,22 +105,6 @@ if !exists('##TextYankPost')
   noremap y <Plug>(highlightedyank)
 endif
 
-" ===================
-" === Indent Line ===
-" ===================
-
-" indent line character
-let g:indentLine_char = '▎'
-
-" indent line color
-let g:indentLine_color_gui = '#2c323c'
-
-" disable for certain buffers
-let g:indentLine_fileTypeExclude = ['help', 'startify', 'fzf', 'vim-plug', 'lsp-installer']
-
-" set conceal cursor
-let g:indentLine_concealcursor = ''
-
 " ============
 " === Lion ===
 " ============
