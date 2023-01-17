@@ -5,9 +5,8 @@
 # git folder
 .git/
 
-# metadata
+# macos
 .DS_Store
-Thumbs.db
 
 # js
 .yarn-error.log
