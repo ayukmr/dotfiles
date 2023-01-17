@@ -6,4 +6,4 @@
 columns = 65
 
 # sort by lines
-sort = 'lines'
+sort = "lines"

@@ -7,72 +7,72 @@ time_delta = 15000
 rate       = 1000
 default_time_value = 60000
 
-default_widget_type  = 'proc'
+default_widget_type  = "proc"
 default_widget_count = 1
 
 regex = true
-color = 'default'
+color = "default"
 tree  = false
-temperature_type = 'fahrenheit'
+temperature_type = "fahrenheit"
 
 [colors]
-avg_cpu_color   = 'cyan'
+avg_cpu_color   = "cyan"
 cpu_core_colors = [
-    'lightred',
-    'lightgreen',
-    'lightyellow',
-    'lightblue',
-    'lightmagenta',
-    'lightcyan',
+    "lightred",
+    "lightgreen",
+    "lightyellow",
+    "lightblue",
+    "lightmagenta",
+    "lightcyan",
 ]
 
-table_header_color = 'lightblue'
-widget_title_color = 'gray'
+table_header_color = "lightblue"
+widget_title_color = "gray"
 
-ram_color  = 'lightmagenta'
-swap_color = 'lightyellow'
+ram_color  = "lightmagenta"
+swap_color = "lightyellow"
 
-rx_color = 'lightcyan'
-tx_color = 'lightgreen'
+rx_color = "lightcyan"
+tx_color = "lightgreen"
 
-border_color             = 'gray'
-highlighted_border_color = 'lightblue'
+border_color             = "gray"
+highlighted_border_color = "lightblue"
 
-text_color          = 'gray'
-selected_text_color = 'black'
-selected_bg_color   = 'lightblue'
+text_color          = "gray"
+selected_text_color = "black"
+selected_bg_color   = "lightblue"
 
-high_battery_color   = 'green'
-medium_battery_color = 'yellow'
-low_battery_color    = 'red'
+high_battery_color   = "green"
+medium_battery_color = "yellow"
+low_battery_color    = "red"
 
-graph_color = 'gray'
+graph_color = "gray"
 
 [[row]]
     ratio = 5
     [[row.child]]
-    type = 'cpu'
+    type = "cpu"
 
 [[row]]
     ratio = 5
     [[row.child]]
         ratio = 5
-        type  = 'network'
+        type  = "network"
 
     [[row.child]]
         ratio = 2
 
         [[row.child.child]]
-            type = 'disk'
+            type = "disk"
 
         [[row.child.child]]
-            type = 'battery'
+            type = "battery"
 
 [[row]]
     ratio = 6
     [[row.child]]
-        type = 'memory'
+        type = "memory"
 
     [[row.child]]
-        type    = 'processes'
+        type    = "processes"
         default = true
