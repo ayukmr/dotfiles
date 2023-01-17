@@ -23,8 +23,7 @@
 --colors=column:fg:cyan
 
 # match style
---colors=match:fg:black
---colors=match:bg:yellow
+--colors=match:fg:green
 
 # path style
 --colors=path:style:bold

@@ -15,7 +15,7 @@
 --color-colno=cyan
 
 # match style
---color-match=bold black on_yellow
+--color-match=bold green
 
 # path style
 --color-filename=bold magenta
