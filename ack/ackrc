@@ -17,5 +17,5 @@
 # match style
 --color-match=bold green
 
-# path style
+# filename style
 --color-filename=bold magenta
