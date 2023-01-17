@@ -1,0 +1,21 @@
+# ==================
+# === Ack Config ===
+# ==================
+
+# show column numbers
+--column
+
+# use smart case
+--smart-case
+
+# line number style
+--color-lineno=bold blue
+
+# column number style
+--color-colno=cyan
+
+# match style
+--color-match=bold black on_yellow
+
+# path style
+--color-filename=bold magenta
