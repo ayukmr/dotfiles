@@ -12,9 +12,6 @@ if ! zgen saved; then
     # === Oh My ZSH ===
     # =================
 
-    # load omz without running
-    zgen oh-my-zsh cache/.gitkeep
-
     # [acs] aliases cheatsheet
     zgen oh-my-zsh plugins/aliases
 
