@@ -1,0 +1,9 @@
+# =====================
+# === Browsh Config ===
+# =====================
+
+# hide browsh branding
+browsh_supporter = "I have shown my support for Browsh"
+
+# use duckduckgo as search engine
+default_search_engine_base = "https://www.duckduckgo.com/?q="
