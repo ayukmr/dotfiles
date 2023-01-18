@@ -56,6 +56,7 @@ packages:
 
       # data tools
       - jq
+      - gawk
       - wget
       - httpie
       - ripgrep
