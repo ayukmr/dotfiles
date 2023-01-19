@@ -62,7 +62,7 @@ set splitright
 " keep hidden buffers
 set hidden
 
-" don't show vim intro message
+" vim intro message
 set shortmess=atI
 
 " disable error bells
