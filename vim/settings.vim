@@ -59,6 +59,9 @@ set list
 set splitbelow
 set splitright
 
+" keep hidden buffers
+set hidden
+
 " don't show vim intro message
 set shortmess=atI
 
