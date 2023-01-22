@@ -2,7 +2,7 @@
 # === Drop ALT Bootstrap ===
 # ==========================
 
-script:
+scripts:
   firmware:
     shell:
       - ? mdloader -f --restart -D ~/.cfg/alt/firmware.bin
