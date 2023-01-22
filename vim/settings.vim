@@ -59,7 +59,10 @@ set list
 set splitbelow
 set splitright
 
-" don't show vim intro message
+" keep hidden buffers
+set hidden
+
+" vim intro message
 set shortmess=atI
 
 " disable error bells

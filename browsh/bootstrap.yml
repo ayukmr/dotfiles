@@ -1,0 +1,10 @@
+# ========================
+# === Browsh Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/Library/Application Support/browsh
+
+  link:
+    - ~/Library/Application Support/browsh: config.toml

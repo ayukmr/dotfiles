@@ -2,8 +2,8 @@
 # === ZSH Config ===
 # ==================
 
-source ~/.cfg/zsh/zshenv.zsh
 source ~/.cfg/zsh/path.zsh
+source ~/.cfg/zsh/exports.zsh
 source ~/.cfg/zsh/bundle.zsh
 source ~/.cfg/zsh/setup.zsh
 source ~/.cfg/zsh/settings.zsh

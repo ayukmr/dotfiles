@@ -10,9 +10,9 @@
 set bell-style none
 
 # case insensitive matching
-set completion-ignore-case off
+set completion-ignore-case on
 
-# set keybinds
+# use vim keybinds
 set editing-mode vi
 
 # show character after files

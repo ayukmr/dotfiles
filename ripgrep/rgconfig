@@ -6,14 +6,10 @@
 --max-columns=150
 --max-columns-preview
 
-# extra padding
---field-match-separator=:\x20
+# show column numbers
+--column
 
-# enable column number
-# --column
-# --field-match-separator=:
-
-# show hidden files
+# search hidden files
 --hidden
 
 # use smart case

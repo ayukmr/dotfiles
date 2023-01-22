@@ -3,15 +3,15 @@
 # ====================
 
 [alias]
-i  = 'install'
-ui = 'uninstall'
+i  = "install"
+ui = "uninstall"
 
-a = 'add'
-n = 'new'
+a = "add"
+n = "new"
 
-nb = 'new --bin'
-nl = 'new --lib'
+nb = "new --bin"
+nl = "new --lib"
 
-cl = 'clippy'
-rr = 'run --release'
-br = 'build --release'
+cl = "clippy"
+rr = "run --release"
+br = "build --release"
