@@ -23,3 +23,9 @@ scripts:
             - ? echo "config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))" >> ~/.cfg/qutebrowser/config.py
               : 'sourcing colemak.py in qutebrowser config'
 
+  hammerspoon:
+    test:
+      - "[[ ! $(tail -n 2 ~/.cfg/hammerspoon/init.lua) == \"package.path = '../.cfg/colemak/hammerspoon/?.lua;' .. package.path\nrequire 'colemak'\" ]]":
+          shell:
+            - ? echo "package.path = '../.cfg/colemak/hammerspoon/?.lua;' .. package.path\nrequire 'colemak'" >> ~/.cfg/hammerspoon/init.lua
+              : 'sourcing colemak.lua in hammerspoon config'

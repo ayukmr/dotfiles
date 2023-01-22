@@ -1,0 +1,10 @@
+# =============================
+# === Hammerspoon Bootstrap ===
+# =============================
+
+config:
+  dirs:
+    - ~/.hammerspoon
+
+  link:
+    - ~/.hammerspoon: init.lua
