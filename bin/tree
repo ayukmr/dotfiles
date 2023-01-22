@@ -6,7 +6,7 @@
 
 local branch="├── "
 local indent="    "
-local dir=$(print -P "%1d")
+local dir=$(basename $PWD)
 
 if [[ -n $1 ]]; then
     local depth=$1
