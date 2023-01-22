@@ -1,6 +1,6 @@
-# =======================
-# === Tmux Statusline ===
-# =======================
+# ===================
+# === Tmux Status ===
+# ===================
 
 # enable status
 set -g status on
@@ -9,10 +9,10 @@ set -g status on
 set -g status-position bottom
 set -g status-justify  left
 
-# statusline styles
+# status styles
+set -g status-style  'fg=#abb2bf bg=#2c323c'
+set -g message-style 'fg=#abb2bf bg=#2c323c'
 set -g message-command-style 'fg=#abb2bf bg=#2c323c'
-set -g message-style         'fg=#abb2bf bg=#2c323c'
-set -g status-style          'fg=#abb2bf bg=#2c323c'
 
 # left side
 set -g status-left-style  none
