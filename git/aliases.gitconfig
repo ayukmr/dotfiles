@@ -22,6 +22,7 @@
     co = checkout
     ds = diffstat
     cm = commit -m
+    lo = log --oneline
     dc = diff --cached
 
     rao = remote add origin

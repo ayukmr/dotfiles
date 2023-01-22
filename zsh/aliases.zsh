@@ -104,6 +104,7 @@ alias gpf='git push -f'
 alias gco='git checkout'
 alias gds='git diffstat'
 alias gcm='git commit -m'
+alias glo='git log --oneline'
 alias gdc='git diff --cached'
 
 # tmux aliases
