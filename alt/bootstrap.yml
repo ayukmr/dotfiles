@@ -1,0 +1,9 @@
+# ==========================
+# === Drop ALT Bootstrap ===
+# ==========================
+
+script:
+  firmware:
+    shell:
+      - ? mdloader -f --restart -D ~/.cfg/alt/firmware.bin
+        : 'loading firmware onto drop alt'
