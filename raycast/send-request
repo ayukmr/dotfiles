@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# ============================
+# === Raycast Send Request ===
+# ============================
+
+# @raycast.schemaVersion 1
+# @raycast.mode fullOutput
+# @raycast.icon 🔭
+# @raycast.title Send Request
+# @raycast.description Send request to URL with optional body.
+# @raycast.packageName Utilities
+
+# @raycast.argument1 { "type": "text", "placeholder": "URL" }
+# @raycast.argument2 { "type": "text", "placeholder": "Type" }
+# @raycast.argument3 { "type": "text", "placeholder": "Body", "optional": true }
+
+if [[ -n $3 ]]; then
+    # send with body
+    curl -fsSL -X $2 -d "$3" -H 'Content-Type: application/json' $1
+else
+    # send without body
+    curl -fsSL -X $2 $1
+fi

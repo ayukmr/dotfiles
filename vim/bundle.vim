@@ -37,7 +37,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips', Nvim({ 'as': 'cmp-ultisnips' })
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 
-" [devicons] icons for various plugins
+" [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
 " [dressing] better ui for lsp

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# =============================
+# === Raycast Generate UUID ===
+# =============================
+
+# @raycast.schemaVersion 1
+# @raycast.mode compact
+# @raycast.icon ⚙️
+# @raycast.title Generate UUID
+# @raycast.description Generates a random UUID and copies it.
+# @raycast.packageName Utilities
+
+# print and copy uuid
+echo $(uuidgen) | tee >(pbcopy)
