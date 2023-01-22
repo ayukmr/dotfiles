@@ -18,27 +18,24 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 let s:extension_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = s:extension_icons
 
-let s:extension_icons['kt']      = ''
-let s:extension_icons['ts']      = 'ﯤ'
-let s:extension_icons['cr']      = ''
-let s:extension_icons['erb']     = ''
-let s:extension_icons['toml']    = ''
-let s:extension_icons['lock']    = ''
-let s:extension_icons['tmux']    = ''
-let s:extension_icons['svelte']  = ''
-let s:extension_icons['textile'] = ''
-
-let s:extension_icons['asc']  = ''
+let s:extension_icons['kt']   = ''
+let s:extension_icons['ts']   = 'ﯤ'
+let s:extension_icons['cr']   = ''
+let s:extension_icons['erb']  = ''
+let s:extension_icons['toml'] = ''
+let s:extension_icons['lock'] = ''
+let s:extension_icons['tmux'] = ''
 let s:extension_icons['adoc'] = ''
+
+let s:extension_icons['svelte']      = ''
+let s:extension_icons['textile']     = ''
+let s:extension_icons['applescript'] = ''
 
 let s:extension_icons['yml']  = ''
 let s:extension_icons['yaml'] = ''
 
 let s:extension_icons['cson']  = ''
 let s:extension_icons['jsonc'] = ''
-
-let s:extension_icons['scpt']        = ''
-let s:extension_icons['applescript'] = ''
 
 let s:extension_icons['ttf'] = 'ﯔ'
 let s:extension_icons['otf'] = 'ﯔ'
@@ -50,7 +47,6 @@ let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = s:exact_icons
 let s:exact_icons['brewfile']  = ''
 let s:exact_icons['[plugins]'] = ''
 
-let s:exact_icons['.git']           = ''
 let s:exact_icons['.gitignore']     = ''
 let s:exact_icons['.gitattributes'] = ''
 
@@ -61,18 +57,18 @@ let s:exact_icons['package.json'] = ''
 let s:pattern_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = s:pattern_icons
 
-let s:pattern_icons['.*webpack.*'] = 'ﰩ'
 let s:pattern_icons['\d;#FZF']     = ''
+let s:pattern_icons['.*webpack.*'] = 'ﰩ'
 
 " ===============
 " === FZF Vim ===
 " ===============
 
 " find files
-nnoremap <silent> `` :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
+nnoremap <silent> - :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
 
 " find files in home
-nnoremap <silent> `~ :Files ~<CR>
+nnoremap <silent> _ :Files ~<CR>
 
 " ==================
 " === Git Gutter ===
