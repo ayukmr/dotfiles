@@ -1,6 +1,6 @@
-# ============================
-# === ZSH Multiline Prompt ===
-# ============================
+# ==================
+# === ZSH Prompt ===
+# ==================
 
 # get prompt git info
 function git_info {
@@ -27,35 +27,58 @@ function git_info {
             info+='?'
         fi
 
+        # format info
         if [[ -n $info ]]; then
-            info=" %F{red}[$info]"
+            info="%B%F{red}[$info]"
+            local branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
+
+            echo "$branch:%f%b$info%f%b"
         fi
-
-        local branch="%B%F{magenta} $(git symbolic-ref --short HEAD)"
-
-        # send git info back to caller
-        echo "%f%b on $branch%f$info%f%b"
     fi
 }
 
-# set prompt header
-function set_header {
-    # pad if not first line
+# load rprompt async
+function async_rprompt {
+    function async {
+        echo $(git_info) > /tmp/rprompt$$
+
+        # signal to update prompt
+        kill -s USR1 $$
+    }
+
+    # kill existing proc
+    if [[ $ASYNC_PROC != 0 ]]; then
+        kill -s HUP $ASYNC_PROC &> /dev/null
+    fi
+
+    async &!
+    ASYNC_PROC=$$
+}
+
+# trap usr1 signal
+function TRAPUSR1 {
+    # get rprompt from file
+    RPROMPT=$(cat /tmp/rprompt$ASYNC_PROC)
+    rm /tmp/rprompt$ASYNC_PROC
+
+    ASYNC_PROC=0
+
+    # redraw prompt
+    zle && zle reset-prompt
+}
+
+add-zsh-hook precmd async_rprompt
+
+# set prompt
+PROMPT='%B%F{blue}%~%(?.%F{green}.%b%f %B%F{red}[%?])>%f%b '
+
+# pad if not first line
+function pad_prompt {
     if $FIRST_LINE; then
         FIRST_LINE=false
     else
         echo
     fi
-
-    local header_root="%(!.%F{red}root%f%b in %B.)"
-    local header_git=$(git_info)
-    local header_path="%F{blue}$(print -P '%2~' | sed -E 's|[^~]+/||')%f%b"
-
-    # prompt header
-    print -P "%B$header_root$header_path$header_git"
 }
-precmd_functions+=('set_header')
 
-# prompt
-PROMPT='%B%(?.%F{green}.%F{red})❯%f%b '
-PS2='%B%F{yellow}…%f%b '
+add-zsh-hook precmd pad_prompt
