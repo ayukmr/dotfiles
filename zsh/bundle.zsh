@@ -8,20 +8,6 @@ ZGEN_DIR="$HOME/.zsh/bundle"
 source ~/.zsh/zgen/zgen.zsh
 
 if ! zgen saved; then
-    # =================
-    # === Oh My ZSH ===
-    # =================
-
-    # [acs] aliases cheatsheet
-    zgen oh-my-zsh plugins/aliases
-
-    # [direnv] load direnv hook
-    zgen oh-my-zsh plugins/direnv
-
-    # ===============
-    # === General ===
-    # ===============
-
     # [autosuggestions] fish-like autosuggestions
     zgen load zsh-users/zsh-autosuggestions
 
