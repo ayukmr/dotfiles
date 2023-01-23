@@ -15,8 +15,8 @@ if ! zgen saved; then
     # [acs] aliases cheatsheet
     zgen oh-my-zsh plugins/aliases
 
-    # [dotenv] read .env files
-    zgen oh-my-zsh plugins/dotenv
+    # [direnv] load direnv hook
+    zgen oh-my-zsh plugins/direnv
 
     # ===============
     # === General ===

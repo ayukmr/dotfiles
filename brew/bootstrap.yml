@@ -58,6 +58,7 @@ packages:
       - jq
       - gawk
       - wget
+      - direnv
       - httpie
       - ripgrep
 
