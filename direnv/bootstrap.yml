@@ -1,0 +1,10 @@
+# ========================
+# === Direnv Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/.config/direnv
+
+  link:
+    - ~/.config/direnv: direnv.toml

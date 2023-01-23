@@ -1,0 +1,10 @@
+# =====================
+# === Direnv Config ===
+# =====================
+
+[global]
+# load .env files
+load_dotenv = true
+
+# set pipefail options
+strict_env = true
