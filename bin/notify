@@ -6,6 +6,7 @@
 
 on run argv
     set args to ""
+
     -- get args as string
     repeat with arg in argv
         set args to args & space & arg
