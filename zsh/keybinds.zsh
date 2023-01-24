@@ -23,18 +23,6 @@ function _clear {
 }
 zle -N _clear
 
-# edit using editor
-bindkey -M main  ^E _edit
-bindkey -M vicmd ^E _edit
-
-function _edit {
-    if [[ ! $BUFFER =~ "^$EDITOR.*" ]]; then
-        BUFFER="$EDITOR $BUFFER"
-        zle end-of-line
-    fi
-}
-zle -N _edit
-
 # select completions
 zmodload zsh/complist
 
