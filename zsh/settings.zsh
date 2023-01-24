@@ -32,7 +32,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
 
 # use ls colors in file completions
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:default' list-colors "${(s.:.)LS_COLORS}"
 
 # completion headers
 zstyle ':completion:*:descriptions' format '%B%F{magenta}%d%f%b'

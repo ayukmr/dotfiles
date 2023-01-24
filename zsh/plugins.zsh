@@ -14,8 +14,8 @@ eval "$(direnv hook zsh)"
 # ================================
 
 # bind keys to search
-bindkey -M vicmd k history-substring-search-up
 bindkey -M vicmd j history-substring-search-down
+bindkey -M vicmd k history-substring-search-up
 
 # highlight colors
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''

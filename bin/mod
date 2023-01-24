@@ -9,18 +9,18 @@ if [[ $# < 1 ]]; then
     exit 1
 fi
 
-if [[ ! -f $1 && ! -d $1 ]]; then
+if [[ ! -f "$1" && ! -d "$1" ]]; then
     print -P '%B%F{red}error%f%b: file does not exist'
     exit 1
 fi
 
-text=$(ls -l $(dirname $1) | grep -E "^([^ ]* *){8} $(basename $1)$" | sed -E 's/^([^ ]*) .*/\1/')
+text="$(ls -l $(dirname $1) | grep -E "^([^ ]* *){8} $(basename $1)$" | sed -E 's/^([^ ]*) .*/\1/')"
 
-text=$(print -P $(echo $text | sed 's/-/%F{8}-%f/g'))
-text=$(print -P $(echo $text | sed 's/r/%F{yellow}r%f/g'))
-text=$(print -P $(echo $text | sed 's/w/%F{red}w%f/g'))
-text=$(print -P $(echo $text | sed 's/x/%F{green}x%f/g'))
-text=$(print -P $(echo $text | sed 's/d/%F{blue}d%f/g'))
-text=$(print -P $(echo $text | sed 's/@/%F{magenta}@%f/g'))
+text="$(print -P $(echo $text | sed 's/-/%F{8}-%f/g'))"
+text="$(print -P $(echo $text | sed 's/r/%F{yellow}r%f/g'))"
+text="$(print -P $(echo $text | sed 's/w/%F{red}w%f/g'))"
+text="$(print -P $(echo $text | sed 's/x/%F{green}x%f/g'))"
+text="$(print -P $(echo $text | sed 's/d/%F{blue}d%f/g'))"
+text="$(print -P $(echo $text | sed 's/@/%F{magenta}@%f/g'))"
 
-echo $text
+echo "$text"

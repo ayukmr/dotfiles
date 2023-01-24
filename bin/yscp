@@ -10,4 +10,4 @@ if [[ $# < 2 ]]; then
 fi
 
 yarn build &&
-scp -r build $1:$2
+scp -r build "$1:$2"

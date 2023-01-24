@@ -23,15 +23,15 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # colors for ls
 export LSCOLORS='ExFxxxDxBxhxhxhxhxcxcx'
-export LS_COLORS=$(tr '\n' ':' < ~/.cfg/zsh/lscolors.txt)
+export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/lscolors.txt)"
 
 # colorize man pages
-export LESS_TERMCAP_md=$(tput bold; tput setaf 4)
-export LESS_TERMCAP_us=$(tput setaf 2)
-export LESS_TERMCAP_ue=$(tput setaf 7)
+export LESS_TERMCAP_md="$(tput bold; tput setaf 4)"
+export LESS_TERMCAP_us="$(tput setaf 2)"
+export LESS_TERMCAP_ue="$(tput setaf 7)"
 
 # rubygems home
-export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
 # bat theme
 export BAT_THEME='TwoDark'

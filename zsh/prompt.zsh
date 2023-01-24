@@ -8,7 +8,7 @@ function git_info {
         local info=''
 
         # stashed files
-        if [[ -n $(git stash list) ]]; then
+        if [[ -n "$(git stash list)" ]]; then
             info+='$'
         fi
 
@@ -23,12 +23,12 @@ function git_info {
         fi
 
         # untracked files
-        if [[ -n $(git ls-files --others --exclude-standard) ]]; then
+        if [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
             info+='?'
         fi
 
         # format info
-        if [[ -n $info ]]; then
+        if [[ -n "$info" ]]; then
             info="%B%F{red}[$info]"
             local branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
 
@@ -40,7 +40,7 @@ function git_info {
 # load rprompt async
 function async_rprompt {
     function async {
-        echo $(git_info) > /tmp/rprompt$$
+        echo "$(git_info)" > "/tmp/rprompt$$"
 
         # signal to update prompt
         kill -s USR1 $$
@@ -58,8 +58,8 @@ function async_rprompt {
 # trap usr1 signal
 function TRAPUSR1 {
     # get rprompt from file
-    RPROMPT=$(cat /tmp/rprompt$ASYNC_PROC)
-    rm /tmp/rprompt$ASYNC_PROC
+    RPROMPT=$(cat "/tmp/rprompt$ASYNC_PROC")
+    rm "/tmp/rprompt$ASYNC_PROC"
 
     ASYNC_PROC=0
 
