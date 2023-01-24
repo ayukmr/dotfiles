@@ -14,8 +14,10 @@ if [[ ! -f "$1" && ! -d "$1" ]]; then
     exit 1
 fi
 
+# get modifiers
 text="$(ls -l "$1" | sed -E 's/^([^ ]*) .*/\1/')"
 
+# color modifiers
 text="$(print -P $(echo $text | sed 's/-/%F{8}-%f/g'))"
 text="$(print -P $(echo $text | sed 's/r/%F{yellow}r%f/g'))"
 text="$(print -P $(echo $text | sed 's/w/%F{red}w%f/g'))"
