@@ -5,8 +5,7 @@
 # ============================
 
 for filter in A C D M R T U X B; do
-    # cut last two lines with tac and tail
-    git diff --diff-filter=$filter --stat --color | tac | tail -n +2 | tac |
+    git diff --diff-filter "$filter" --stat --color | ghead -n -2 |
     while read -r line; do
         print -P "%F{red}$filter%f | $line"
     done
