@@ -1,0 +1,11 @@
+# =========================
+# === Nushell Bootstrap ===
+# =========================
+
+config:
+  dirs:
+    - ~/Library/Application Support/nushell
+
+  link:
+    - ~/Library/Application Support/nushell: config.nu
+    - ~/Library/Application Support/nushell: env.nu
