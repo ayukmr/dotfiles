@@ -46,6 +46,7 @@ export FZF_DEFAULT_OPTS="
     --color pointer:#61afef,marker:#61afef,header:#c678dd,prompt:#c678dd
 
     --reverse
+    --no-scrollbar
     --marker '*'
     --preview-window noborder
 "
