@@ -14,7 +14,7 @@ if [[ ! -f "$1" && ! -d "$1" ]]; then
     exit 1
 fi
 
-text="$(ls -l $(dirname $1) | grep -E "^([^ ]* *){8} $(basename $1)$" | sed -E 's/^([^ ]*) .*/\1/')"
+text="$(ls -l "$1" | sed -E 's/^([^ ]*) .*/\1/')"
 
 text="$(print -P $(echo $text | sed 's/-/%F{8}-%f/g'))"
 text="$(print -P $(echo $text | sed 's/r/%F{yellow}r%f/g'))"
