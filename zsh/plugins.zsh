@@ -21,6 +21,13 @@ bindkey -M vicmd j history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
 
+# =============
+# === Quark ===
+# =============
+
+# load quark
+eval "$(quark hook zsh)"
+
 # ===========================
 # === Syntax Highlighting ===
 # ===========================

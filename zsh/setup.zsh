@@ -48,6 +48,3 @@ add-zsh-hook precmd  set_title
 
 # set title
 set_title
-
-# quark
-eval "$(quark hook zsh)"
