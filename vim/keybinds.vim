@@ -17,16 +17,22 @@ nnoremap <silent> <Tab> :nohlsearch<CR>
 
 " motions without copying
 nnoremap <Leader>d "_d
+xnoremap <Leader>d "_d
+
 nnoremap <Leader>D "_D
+xnoremap <Leader>D "_D
 
 nnoremap <Leader>x "_x
+xnoremap <Leader>x "_x
+
 nnoremap <Leader>X "_X
+xnoremap <Leader>X "_X
 
 nnoremap <Leader>c "_c
-nnoremap <Leader>s "_s
+xnoremap <Leader>c "_c
 
-vnoremap <Leader>d "_d
-sunmap   <Leader>d
+nnoremap <Leader>s "_s
+xnoremap <Leader>s "_s
 
 " write file
 nnoremap <Leader>w :write<CR>
