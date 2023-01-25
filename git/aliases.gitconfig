@@ -21,6 +21,7 @@
     pf = push -f
     co = checkout
     ds = diffstat
+    sl = shortlog
     cm = commit -m
     lo = log --oneline
     dc = diff --cached
