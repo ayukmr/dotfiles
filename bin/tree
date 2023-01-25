@@ -6,7 +6,7 @@
 
 local branch="├── "
 local indent="    "
-local dir=$(basename "$PWD")
+local dir="$(basename "$PWD")"
 
 if [[ -n "$1" ]]; then
     local depth="$1"
@@ -15,13 +15,13 @@ else
 fi
 
 # use sed to create tree
-local tree=$(
+local tree="$(
     find . -maxdepth "$depth" |
     sed -E \
         -e "s|./(.+)|$branch%F{green}\1%f|" \
         -e "s|/([^/]+)$|/$branch%F{yellow}\1%f|g" \
         -e "s|[^/]+/|$indent|g" \
         -e "s|^.$|%B%F{cyan}$dir%f%b|"
-)
+)"
 
 print -P "$tree"
