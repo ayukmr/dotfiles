@@ -12,4 +12,4 @@
 # @raycast.packageName Utilities
 
 # print and copy uuid
-echo $(uuidgen) | tee >(pbcopy)
+uuidgen | tee >(pbcopy)
