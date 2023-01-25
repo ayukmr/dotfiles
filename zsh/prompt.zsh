@@ -57,9 +57,11 @@ function async_rprompt {
 
 # trap usr1 signal
 function TRAPUSR1 {
-    # get rprompt from file
-    RPROMPT=$(cat "/tmp/rprompt$ASYNC_PROC")
-    rm "/tmp/rprompt$ASYNC_PROC"
+    if [[ -f "/tmp/rprompt$ASYNC_PROC" ]]; then
+        # get rprompt from file
+        RPROMPT="$(cat "/tmp/rprompt$ASYNC_PROC")"
+        rm "/tmp/rprompt$ASYNC_PROC"
+    fi
 
     ASYNC_PROC=0
 
