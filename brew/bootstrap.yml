@@ -67,7 +67,8 @@ packages:
       - moreutils
 
     - brew install --cask:
+      - iina
       - iterm2
-      - github
-      - firefox
+      - raycast
       - amethyst
+      - hammerspoon
