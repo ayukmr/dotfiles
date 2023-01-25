@@ -1,0 +1,11 @@
+# ===================
+# === Delta Setup ===
+# ===================
+
+[core]
+    # use delta for paging
+    pager = delta
+
+[interactive]
+    # use delta as diff filter
+    diffFilter = delta --color-only

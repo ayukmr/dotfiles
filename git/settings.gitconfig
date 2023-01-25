@@ -22,9 +22,6 @@
     template = ~/.cfg/git/gitmessage
 
 [core]
-    # use delta for paging
-    pager = delta
-
     # global git hooks
     hooksPath = ~/.cfg/git/hooks
 
@@ -34,10 +31,6 @@
 [init]
     # use main as default branch
     defaultBranch = main
-
-[interactive]
-    # use delta as diff filter
-    diffFilter = delta --color-only
 
 [url "https://github.com/"]
     # alias for github
