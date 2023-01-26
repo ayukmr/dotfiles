@@ -32,7 +32,7 @@
     line-numbers-plus-style  = "#98c379 bold"
     line-numbers-minus-style = "#e06c75 bold"
 
-    # character styles
+    # diff styles
     plus-emph-style  = "#2c2e33 #98c379 bold"
     minus-emph-style = "#2c2e33 #e06c75 bold"
     plus-style       = "#98c379 bold"
