@@ -27,6 +27,7 @@
     dc = diff --cached
 
     sth = stash
+    cfg = config
     rao = remote add origin
     psu = push -u origin main
     rsh = reset --soft HEAD~1
