@@ -5,39 +5,47 @@
 '*':
   autosave: {}
 
+  # core settings
   core:
     closeDeletedFileTabs: true
     telemetryConsent: 'no'
+
     # themes
     themes: [
       'one-dark-ui'
       'one-dark-theme'
     ]
 
+  # editor settings
   editor:
     # font
     defaultFontSize: 12
     fontFamily: 'Cascadia NF, Menlo, Source Code Pro, monospace'
     fontSize: 12
 
+    # invisibles
     invisibles: {}
     showIndentGuide: true
     tabLength: 4
 
+  # file icons settings
   'file-icons':
     coloured: false
     onChanges: true
     strategies: {}
 
+  # minimap settings
   minimap:
     displayPluginsControls: false
+
+    # show bookmarks
     plugins:
-      # show bookmarks
       bookmarks: true
 
+  # disable wrap guide
   'wrap-guide':
-    # disable wrap guide
     enabled: false
 
+  # disable welcome on startup
   welcome:
     showOnStartup: false
