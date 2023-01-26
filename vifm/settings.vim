@@ -21,7 +21,7 @@ set nofollowlinks
 " natural sort of version numbers in text
 set sortnumbers
 
-" use vim's help file format
+" use vim help file format
 set vimhelp
 
 " don't run executables on enter
@@ -47,7 +47,7 @@ set incsearch
 " scroll offset
 set scrolloff=4
 
-" don't do too many requests to slow filesystems
+" prevent too many requests
 set slowfs=curlftpfs
 
 " vifm statusline
