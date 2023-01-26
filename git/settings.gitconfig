@@ -8,10 +8,10 @@
 
 [color "diff"]
     # diff colors
+    old  = red bold
+    new  = green bold
     meta = cyan bold
     frag = magenta bold
-    old  = red
-    new  = green
 
 [color "status"]
     # status colors
@@ -27,6 +27,10 @@
 
     # global gitignore
     excludesFile = ~/.cfg/git/gitignore
+
+[diff]
+    # enable moved color
+    colorMoved = plain
 
 [init]
     # use main as default branch
