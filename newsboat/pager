@@ -20,4 +20,4 @@ sed -E 's/^(> )+$//' |
 glow -s ~/.cfg/glow/style.json - |
 
 # page output
-less -rc
+less -cR
