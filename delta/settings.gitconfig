@@ -12,16 +12,16 @@
     # moved arrow
     right-arrow = →
 
-    # files style
-    file-style            = magenta bold
-    file-decoration-style = magenta bold ul
-
     # file labels
     file-added-label    = [+]
     file-removed-label  = [-]
     file-modified-label = [~]
     file-copied-label   = [=]
     file-renamed-label  = [→]
+
+    # files style
+    file-style            = magenta bold
+    file-decoration-style = magenta bold ul
 
     # headings style
     commit-decoration-style      = yellow bold ol ul
