@@ -12,7 +12,7 @@
     # moved arrow
     right-arrow = →
 
-    # file style
+    # files style
     file-style            = magenta bold
     file-decoration-style = magenta bold ul
 
@@ -23,7 +23,7 @@
     file-copied-label   = [=]
     file-renamed-label  = [→]
 
-    # heading styles
+    # headings style
     commit-decoration-style      = yellow bold ol ul
     hunk-header-decoration-style = blue ol ul
 
@@ -32,7 +32,7 @@
     line-numbers-plus-style  = green bold
     line-numbers-minus-style = red bold
 
-    # diff styles
+    # changes style
     plus-style       = green bold
     minus-style      = red bold
     plus-emph-style  = black green bold
