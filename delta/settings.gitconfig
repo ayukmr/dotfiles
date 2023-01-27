@@ -28,12 +28,12 @@
     hunk-header-decoration-style = blue ol ul
 
     # line numbers style
-    line-numbers-zero-style  = "#abb2bf"
-    line-numbers-plus-style  = "#98c379 bold"
-    line-numbers-minus-style = "#e06c75 bold"
+    line-numbers-zero-style  = white
+    line-numbers-plus-style  = green bold
+    line-numbers-minus-style = red bold
 
     # diff styles
-    plus-emph-style  = "#2c2e33 #98c379 bold"
-    minus-emph-style = "#2c2e33 #e06c75 bold"
-    plus-style       = "#98c379 bold"
-    minus-style      = "#e06c75 bold"
+    plus-style       = green bold
+    minus-style      = red bold
+    plus-emph-style  = black green bold
+    minus-emph-style = black red bold
