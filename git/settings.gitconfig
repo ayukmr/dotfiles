@@ -7,11 +7,17 @@
     ui = auto
 
 [color "diff"]
-    # diff colors
-    old  = red bold
-    new  = green bold
-    meta = cyan bold
+    # headers color
+    meta = magenta bold
     frag = magenta bold
+
+    # changes color
+    old = red bold
+    new = green bold
+
+    # moved color
+    oldMoved = yellow bold
+    newMoved = cyan   bold
 
 [color "status"]
     # status colors
