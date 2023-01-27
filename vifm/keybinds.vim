@@ -19,16 +19,16 @@ vnoremap w :view<CR>gv
 nnoremap gb :!open -g %f<CR>
 
 " copy current file
-nnoremap yd :!printf %d | pbcopy<CR>
+nnoremap yd :!printf %d   | pbcopy<CR>
 nnoremap yf :!printf %c:p | pbcopy<CR>
 
 " quicklook tool
 nnoremap <Space> :!qlmanage -p %f &> /dev/null<CR>
 
 " change words
-nnoremap I cw<C-a>
+nnoremap I  cw<C-a>
 nnoremap cc cw<C-u>
-nnoremap A cw
+nnoremap A  cw
 
 " toggle wrapping
 nnoremap <Leader>w :set wrap!<CR>
