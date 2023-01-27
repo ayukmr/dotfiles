@@ -3,23 +3,9 @@
 " =====================
 
 augroup write_utils
-  " strip trailing whitespace when writing file
-  auto BufWritePre * call s:StripTrailingWhitespaces()
   " create parent directories when writing file
   auto BufWritePre * call s:MakeDirectories()
 augroup END
-
-" strip trailing whitespace
-func! s:StripTrailingWhitespaces()
-  " make sure file isn't binary or diff
-  if !&binary && &filetype !=# 'diff'
-    let l:save = winsaveview()
-    keeppatterns silent %s/\s\+$//e
-
-    " restore cursor position
-    call winrestview(l:save)
-  endif
-endfunc
 
 " create parent directories for file
 func! s:MakeDirectories()
