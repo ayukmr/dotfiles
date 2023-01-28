@@ -26,9 +26,9 @@ export LSCOLORS='ExFxxxDxBxhxhxhxhxcxcx'
 export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/lscolors.txt)"
 
 # colorize man pages
-export LESS_TERMCAP_md="$(tput bold; tput setaf 4)"
-export LESS_TERMCAP_us="$(tput setaf 2)"
-export LESS_TERMCAP_ue="$(tput setaf 7)"
+export LESS_TERMCAP_md="$(print -P '%B%F{blue}')"
+export LESS_TERMCAP_us="$(print -P '%F{green}')"
+export LESS_TERMCAP_ue="$(print -P '%f')"
 
 # rubygems home
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
