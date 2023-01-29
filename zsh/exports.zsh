@@ -40,6 +40,7 @@ export BAT_THEME='TwoDark'
 export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
 
 # fzf options
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!Library/**'"
 export FZF_DEFAULT_OPTS="
     --color bg:#282c34,bg+:#282c34,fg:#abb2bf,fg+:#c2c7d1
     --color hl:#61afef,hl+:#5fd7ff,spinner:#e5c07b,info:#56b6c2
@@ -50,7 +51,6 @@ export FZF_DEFAULT_OPTS="
     --marker '*'
     --preview-window noborder
 "
-export FZF_DEFAULT_COMMAND="rg --files --hidden --ignore-case --glob '!Library/**'"
 
 # homebrew styling
 export HOMEBREW_NO_EMOJI=1
