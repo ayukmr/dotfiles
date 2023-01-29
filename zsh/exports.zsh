@@ -55,6 +55,3 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --ignore-case --glob '!Library/*
 # homebrew styling
 export HOMEBREW_INSTALL_BADGE='🍻'
 export HOMEBREW_NO_ENV_HINTS=1
-
-# load add-zsh-hook
-autoload -Uz add-zsh-hook
