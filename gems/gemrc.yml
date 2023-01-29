@@ -1,0 +1,9 @@
+# =======================
+# === RubyGems Config ===
+# =======================
+
+# disable verbose output
+:verbose: false
+
+# skip installing documentation
+gem: --no-document

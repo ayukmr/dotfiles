@@ -2,6 +2,10 @@
 # === RubyGems Bootstrap ===
 # ==========================
 
+config:
+  link:
+    - ~/.gemrc: gemrc.yml
+
 packages:
   setup:
     shell:
