@@ -53,5 +53,5 @@ export FZF_DEFAULT_OPTS="
 export FZF_DEFAULT_COMMAND="rg --files --hidden --ignore-case --glob '!Library/**'"
 
 # homebrew styling
-export HOMEBREW_INSTALL_BADGE='🍻'
+export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ENV_HINTS=1
