@@ -29,11 +29,11 @@ function git_info {
 
         # format info
         if [[ -n "$info" ]]; then
-            info="%B%F{red}[$info]"
-            local branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
-
-            echo "$branch:%f%b$info%f%b"
+            info="%B%F{magenta}:%F{red}[$info]"
         fi
+
+        local branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
+        echo "$branch%f%b$info%f%b"
     fi
 }
 
