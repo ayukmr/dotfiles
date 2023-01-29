@@ -8,7 +8,7 @@
 
 [color "diff"]
     # headers color
-    meta = magenta bold
+    meta = blue    bold
     frag = magenta bold
 
     # changes color
