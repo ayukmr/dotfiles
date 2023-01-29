@@ -76,11 +76,11 @@ Plug 'tommcdo/vim-lion', { 'as': 'lion' }
 " [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
-" [null-ls] use neovim as a language server
-Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
-
 " [lsp-installer] installer for lsp servers
 Plug 'williamboman/nvim-lsp-installer', Nvim({ 'as': 'lsp-installer' })
+
+" [null-ls] use neovim as a language server
+Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
 
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
