@@ -52,7 +52,7 @@ packages:
       - ranger
       - litecli
       - newsboat
-      - git-delta
+      - diff-so-fancy
 
       # data tools
       - jq
