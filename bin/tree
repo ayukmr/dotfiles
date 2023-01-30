@@ -4,18 +4,18 @@
 # === Display File Tree ===
 # =========================
 
-local branch="├── "
-local indent="    "
-local dir="$(basename "$PWD")"
+branch="├── "
+indent="    "
+dir="$(basename "$PWD")"
 
 if [[ -n "$1" ]]; then
-    local depth="$1"
+    depth="$1"
 else
-    local depth=500
+    depth=500
 fi
 
 # use sed to create tree
-local tree="$(
+tree="$(
     find . -maxdepth "$depth" |
     sed -E \
         -e "s|./(.+)|$branch%F{green}\1%f|" \
