@@ -3,15 +3,19 @@
 # ====================
 
 [alias]
+# installation aliases
 i  = "install"
 ui = "uninstall"
 
+# project aliases
 a = "add"
 n = "new"
 
+# creation aliases
 nb = "new --bin"
 nl = "new --lib"
 
+# other aliases
 cl = "clippy"
 rr = "run --release"
 br = "build --release"
