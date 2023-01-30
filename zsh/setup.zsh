@@ -7,7 +7,8 @@ PROMPT_EOL_MARK=''
 
 # get command from alias
 function alias_for {
-    if [[ "$1" =~ '[[:punct:]]' ]]; then
+    # return if command exists
+    if [[ (( $+commands[$1] )) || -f "$1" ]]; then
         echo "$@"
         return
     fi
@@ -16,29 +17,25 @@ function alias_for {
     local found="$(alias "$1" | sed -E -e "s/^$1=(.*)$/\1/" -e "s/^'//" -e "s/'$//")"
 
     if [[ -n "$found" ]]; then
-        local full="$found ${@:2}"
+        echo "$found ${@:2}"
     else
-        local full="$@"
+        echo "$@"
     fi
-
-    # strip trailing whitespace
-    echo "${(MS)full##[[:graph:]]*[[:graph:]]}"
 }
 
 # set window title
 function set_title {
-    printf '\e]2;%s\a'     "$(print -P '%1/') – $(basename "$SHELL")"
-    printf '\033]0;%s\007' "$(print -P '%1/') – $(basename "$SHELL")"
+    echo -ne "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
+    echo -ne "\033]0;$(print -P '%1/') – $(basename "$SHELL")\007"
 }
 
 # set window title with command
 function set_title_cmd {
-    # split $1 into parts and trim with sed
+    # split command into parts and trim with sed
     local expanded="$(alias_for "${(@s: :)1}" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
-    expanded="${(MS)expanded##[[:graph:]]*[[:graph:]]}"
 
-    printf '\e]2;%s\a'     "$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded"
-    printf '\033]0;%s\007' "$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded"
+    echo -ne "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
+    echo -ne "\033]0;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\007"
 }
 
 # update title on hooks
