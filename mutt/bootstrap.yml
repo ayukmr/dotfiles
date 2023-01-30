@@ -11,8 +11,8 @@ config:
 
   files:
     - ~/.config/mutt/muttrc: |
-        set my_name  = <name>
-        set my_gmail = <gmail>
+        set my_name     = <name>
+        set my_gmail    = <gmail>
         set my_password = <password>
 
         source ~/.cfg/mutt/muttrc
