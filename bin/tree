@@ -4,8 +4,8 @@
 # === Display File Tree ===
 # =========================
 
-branch="├── "
-indent="    "
+branch='├── '
+indent='    '
 dir="$(basename "$PWD")"
 
 if [[ -n "$1" ]]; then
