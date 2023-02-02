@@ -6,5 +6,5 @@
 text/html; w3m -I %{charset} -T text/html -cols 125; copiousoutput
 
 # view images with jp2a
-image/*; cat $@ | magick convert -auto-orient - jpg:- | jp2a --colors - | less -rc; needsterminal
-image/*; cat $@ | magick convert -auto-orient - jpg:- | jp2a --colors -; copiousoutput
+image/*; cat $@ | magick - -auto-orient jpg:- | jp2a --colors - | less -rc; needsterminal
+image/*; cat $@ | magick - -auto-orient jpg:- | jp2a --colors -; copiousoutput
