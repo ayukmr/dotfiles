@@ -17,7 +17,7 @@ tail -n +3 |
 sed -E 's/^(> )+$//' |
 
 # format markdown for viewing
-glow -s ~/.cfg/glow/style.json - |
+glow -w 175 -s ~/.cfg/glow/style.json - |
 
 # page output
 less -cR

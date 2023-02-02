@@ -13,6 +13,3 @@ mouse: false
 
 # disable pager
 pager: false
-
-# wrap at 175 chars
-width: 175
