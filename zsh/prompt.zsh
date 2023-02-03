@@ -4,8 +4,11 @@
 
 # get prompt git info
 function git_info {
+    local info
+    local branch
+
     if git status &> /dev/null; then
-        local info=''
+        info=''
 
         # stashed files
         if [[ -n "$(git stash list)" ]]; then
@@ -32,7 +35,7 @@ function git_info {
             info="%B%F{magenta}:%F{red}[$info]"
         fi
 
-        local branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
+        branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
         echo "$branch%f%b$info%f%b"
     fi
 }
