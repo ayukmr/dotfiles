@@ -18,5 +18,6 @@ packages:
       - pry
       - yard
 
-      # linting
+      # lsp
       - rubocop
+      - ruby-lsp
