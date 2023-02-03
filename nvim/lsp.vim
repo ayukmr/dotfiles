@@ -133,7 +133,7 @@ lua <<EOF
 -- dressing module
 local dressing = require 'dressing'
 
--- dressing setup
+-- setup dressing
 dressing.setup({
   input = {
     win_options = {
@@ -162,7 +162,7 @@ lua <<EOF
 -- fidget module
 local fidget = require 'fidget'
 
--- fidget setup
+-- setup fidget
 fidget.setup({
   text = {
     spinner = 'dots',
