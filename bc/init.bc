@@ -1,0 +1,33 @@
+# ===============
+# === BC Init ===
+# ===============
+
+# two decimal places
+scale = 2
+
+# greatest common divisor
+define gcd(a, b) {
+  # save old scale
+  old_scale = scale
+
+  scale = 0
+  mod = a % b
+
+  # reset scale
+  scale = old_scale
+
+  if (mod == 0) return b
+  return gcd(b, mod)
+}
+
+# least common multiple
+define lcm(a, b) {
+  return a * b / gcd(a, b)
+}
+
+# aliases for math functions
+define sin(x)  { s(x) }
+define cos(x)  { c(x) }
+define atan(x) { a(x) }
+define log(x)  { l(x) }
+define exp(x)  { e(x) }
