@@ -3,6 +3,6 @@
 # ==================
 
 [include]
-    path = ~/.cfg/git/settings.gitconfig
-    path = ~/.cfg/git/aliases.gitconfig
-    path = ~/.cfg/diff-so-fancy/diff-so-fancy.gitconfig
+	path = ~/.cfg/git/settings.gitconfig
+	path = ~/.cfg/git/aliases.gitconfig
+	path = ~/.cfg/diff-so-fancy/diff-so-fancy.gitconfig

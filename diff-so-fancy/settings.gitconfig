@@ -3,12 +3,12 @@
 # ==============================
 
 [diff-so-fancy]
-    # disable marking empty lines
-    markEmptyLines = false
+	# disable marking empty lines
+	markEmptyLines = false
 
 [color "diff-highlight"]
-    # diff styles
-    oldNormal    = red bold
-    oldHighlight = black bold red
-    newNormal    = green bold
-    newHighlight = black bold green
+	# diff styles
+	oldNormal    = red bold
+	oldHighlight = black bold red
+	newNormal    = green bold
+	newHighlight = black bold green

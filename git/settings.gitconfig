@@ -3,45 +3,45 @@
 # ====================
 
 [color]
-    # use color automatically
-    ui = auto
+	# use color automatically
+	ui = auto
 
 [color "diff"]
-    # headers color
-    meta = blue    bold
-    frag = magenta bold
+	# headers color
+	meta = blue    bold
+	frag = magenta bold
 
-    # changes color
-    old = red bold
-    new = green bold
+	# changes color
+	old = red bold
+	new = green bold
 
-    # moved color
-    oldMoved = yellow bold
-    newMoved = cyan   bold
+	# moved color
+	oldMoved = yellow bold
+	newMoved = cyan   bold
 
 [color "status"]
-    # status colors
-    untracked = magenta
+	# status colors
+	untracked = magenta
 
 [commit]
-    # template for commit message
-    template = ~/.cfg/git/gitmessage
+	# template for commit message
+	template = ~/.cfg/git/gitmessage
 
 [core]
-    # global git hooks
-    hooksPath = ~/.cfg/git/hooks
+	# global git hooks
+	hooksPath = ~/.cfg/git/hooks
 
-    # global gitignore
-    excludesFile = ~/.cfg/git/gitignore
+	# global gitignore
+	excludesFile = ~/.cfg/git/gitignore
 
 [diff]
-    # enable moved color
-    colorMoved = plain
+	# enable moved color
+	colorMoved = plain
 
 [init]
-    # use main as default branch
-    defaultBranch = main
+	# use main as default branch
+	defaultBranch = main
 
 [url "https://github.com/"]
-    # alias for github
-    insteadOf = gh:
+	# alias for github
+	insteadOf = gh:

@@ -3,9 +3,9 @@
 # ===================
 
 [core]
-    # use delta for paging
-    pager = delta
+	# use delta for paging
+	pager = delta
 
 [interactive]
-    # use delta as diff filter
-    diffFilter = delta --color-only
+	# use delta as diff filter
+	diffFilter = delta --color-only

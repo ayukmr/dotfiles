@@ -3,31 +3,31 @@
 # ===================
 
 [alias]
-    a = add
-    p = push
-    d = diff
-    c = commit
-    s = status -s
-    l = log -n 20 --oneline
+	a = add
+	p = push
+	d = diff
+	c = commit
+	s = status -s
+	l = log -n 20 --oneline
 
-    sh = show
-    pl = pull
-    rs = reset
-    cl = clone
-    br = branch
-    st = status
-    ap = add -p
-    hm = heatmap
-    pf = push -f
-    co = checkout
-    ds = diffstat
-    sl = shortlog
-    cm = commit -m
-    lo = log --oneline
-    dc = diff --cached
+	sh = show
+	pl = pull
+	rs = reset
+	cl = clone
+	br = branch
+	st = status
+	ap = add -p
+	hm = heatmap
+	pf = push -f
+	co = checkout
+	ds = diffstat
+	sl = shortlog
+	cm = commit -m
+	lo = log --oneline
+	dc = diff --cached
 
-    sth = stash
-    cfg = config
-    rao = remote add origin
-    psu = push -u origin main
-    rsh = reset --soft HEAD~1
+	sth = stash
+	cfg = config
+	rao = remote add origin
+	psu = push -u origin main
+	rsh = reset --soft HEAD~1

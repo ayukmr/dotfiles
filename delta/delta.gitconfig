@@ -3,5 +3,5 @@
 # ====================
 
 [include]
-    path = ~/.cfg/delta/setup.gitconfig
-    path = ~/.cfg/delta/settings.gitconfig
+	path = ~/.cfg/delta/setup.gitconfig
+	path = ~/.cfg/delta/settings.gitconfig

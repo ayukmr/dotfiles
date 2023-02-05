@@ -3,37 +3,37 @@
 # ======================
 
 [delta]
-    # show line numbers
-    line-numbers = true
+	# show line numbers
+	line-numbers = true
 
-    # use side-by-side mode
-    side-by-side = true
+	# use side-by-side mode
+	side-by-side = true
 
-    # moved arrow
-    right-arrow = →
+	# moved arrow
+	right-arrow = →
 
-    # file labels
-    file-added-label    = [+]
-    file-removed-label  = [-]
-    file-modified-label = [~]
-    file-copied-label   = [=]
-    file-renamed-label  = [→]
+	# file labels
+	file-added-label    = [+]
+	file-removed-label  = [-]
+	file-modified-label = [~]
+	file-copied-label   = [=]
+	file-renamed-label  = [→]
 
-    # files style
-    file-style            = magenta bold
-    file-decoration-style = magenta bold ul
+	# files style
+	file-style            = magenta bold
+	file-decoration-style = magenta bold ul
 
-    # headings style
-    commit-decoration-style      = yellow bold ol ul
-    hunk-header-decoration-style = blue ol ul
+	# headings style
+	commit-decoration-style      = yellow bold ol ul
+	hunk-header-decoration-style = blue ol ul
 
-    # line numbers style
-    line-numbers-zero-style  = white
-    line-numbers-plus-style  = green bold
-    line-numbers-minus-style = red bold
+	# line numbers style
+	line-numbers-zero-style  = white
+	line-numbers-plus-style  = green bold
+	line-numbers-minus-style = red bold
 
-    # changes style
-    plus-style       = green bold
-    minus-style      = red bold
-    plus-emph-style  = black green bold
-    minus-emph-style = black red bold
+	# changes style
+	plus-style       = green bold
+	minus-style      = red bold
+	plus-emph-style  = black green bold
+	minus-emph-style = black red bold
