@@ -10,7 +10,7 @@ function alias_for {
     local found
 
     # return if command exists
-    if [[ (( $+commands[$1] )) || -f "$1" ]]; then
+    if [[ (( $+commands[$1] )) || -x "$1" ]]; then
         echo "$@"
         return
     fi
