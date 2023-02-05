@@ -5,7 +5,7 @@
 # =================================
 
 if [[ $# == 0 ]]; then
-    tmux kill-session
+  tmux kill-session
 else
-    tmux kill-session -t "$@"
+  tmux kill-session -t "$@"
 fi

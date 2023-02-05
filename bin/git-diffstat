@@ -5,8 +5,8 @@
 # ============================
 
 for filter in A C D M R T U X B; do
-    git diff --diff-filter "$filter" --stat --color | ghead -n -2 |
-    while read -r line; do
-        print -P "%F{red}$filter%f | $line"
-    done
+  git diff --diff-filter "$filter" --stat --color | ghead -n -2 |
+  while read -r line; do
+    print -P "%F{red}$filter%f | $line"
+  done
 done

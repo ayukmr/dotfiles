@@ -5,7 +5,7 @@
 # ===========================
 
 if [[ $# == 0 ]]; then
-    tmux attach
+  tmux attach
 else
-    tmux attach -t "$@"
+  tmux attach -t "$@"
 fi

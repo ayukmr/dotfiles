@@ -5,13 +5,13 @@
 # ========================
 
 if [[ $# < 1 ]]; then
-    print -P '%B%F{red}error%f%b: file not given'
-    exit 1
+  print -P '%B%F{red}error%f%b: file not given'
+  exit 1
 fi
 
 if [[ ! -f "$1" && ! -d "$1" ]]; then
-    print -P '%B%F{red}error%f%b: file does not exist'
-    exit 1
+  print -P '%B%F{red}error%f%b: file does not exist'
+  exit 1
 fi
 
 # get modifiers

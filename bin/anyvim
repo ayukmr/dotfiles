@@ -5,7 +5,7 @@
 # ==========================
 
 if (( $+commands[nvim] )); then
-    nvim $@
+  nvim $@
 else
-    vim $@
+  vim $@
 fi

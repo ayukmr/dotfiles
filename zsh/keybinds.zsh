@@ -16,10 +16,10 @@ bindkey -M main  ^K _clear
 bindkey -M vicmd ^K _clear
 
 function _clear {
-    zle push-input
+  zle push-input
 
-    BUFFER='clear'
-    zle accept-line
+  BUFFER='clear'
+  zle accept-line
 }
 zle -N _clear
 

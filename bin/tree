@@ -9,19 +9,19 @@ indent='    '
 dir="$(basename "$PWD")"
 
 if [[ -n "$1" ]]; then
-    depth="$1"
+  depth="$1"
 else
-    depth=500
+  depth=500
 fi
 
 # use sed to create tree
 tree="$(
-    find . -maxdepth "$depth" |
-    sed -E \
-        -e "s|./(.+)|$branch%F{green}\1%f|" \
-        -e "s|/([^/]+)$|/$branch%F{yellow}\1%f|g" \
-        -e "s|[^/]+/|$indent|g" \
-        -e "s|^.$|%B%F{cyan}$dir%f%b|"
+  find . -maxdepth "$depth" |
+  sed -E \
+    -e "s|./(.+)|$branch%F{green}\1%f|" \
+    -e "s|/([^/]+)$|/$branch%F{yellow}\1%f|g" \
+    -e "s|[^/]+/|$indent|g" \
+    -e "s|^.$|%B%F{cyan}$dir%f%b|"
 )"
 
 print -P "$tree"

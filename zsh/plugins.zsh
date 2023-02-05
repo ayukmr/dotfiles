@@ -57,6 +57,6 @@ ZVM_VI_HIGHLIGHT_BACKGROUND='#3e4452'
 ZVM_KEYTIMEOUT=0.1
 
 function zvm_after_init {
-    # add custom keybinds
-    source ~/.cfg/zsh/keybinds.zsh
+  # add custom keybinds
+  source ~/.cfg/zsh/keybinds.zsh
 }

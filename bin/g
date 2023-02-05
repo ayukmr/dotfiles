@@ -5,7 +5,7 @@
 # ===================
 
 if [[ $# == 0 ]]; then
-    git status -s
+  git status -s
 else
-    git $@
+  git $@
 fi
