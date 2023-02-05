@@ -3,24 +3,24 @@
 # ======================
 
 let-env config = {
-    table: {
-        # use compact mode
-        mode: compact
-    }
+  table: {
+    # use compact mode
+    mode: compact
+  }
 
-    ls: {
-        # disable clickable links
-        clickable_links: false
-    }
+  ls: {
+    # disable clickable links
+    clickable_links: false
+  }
 
-    cd: {
-        # allow abbreviations
-        abbreviations: true
-    }
+  cd: {
+    # allow abbreviations
+    abbreviations: true
+  }
 
-    # use vim keybinds
-    edit_mode: vi
+  # use vim keybinds
+  edit_mode: vi
 
-    # disable banner
-    show_banner: false
+  # disable banner
+  show_banner: false
 }
