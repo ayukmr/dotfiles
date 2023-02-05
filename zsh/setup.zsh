@@ -27,8 +27,8 @@ function alias_for {
 
 # set window title
 function set_title {
-    echo -ne "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
-    echo -ne "\033]0;$(print -P '%1/') – $(basename "$SHELL")\007"
+    echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
+    echo -n "\033]0;$(print -P '%1/') – $(basename "$SHELL")\007"
 }
 
 # set window title with command
@@ -38,8 +38,8 @@ function set_title_cmd {
     # split command into parts and trim with sed
     expanded="$(alias_for "${(@s: :)1}" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
 
-    echo -ne "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
-    echo -ne "\033]0;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\007"
+    echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
+    echo -n "\033]0;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\007"
 }
 
 # update title on hooks
