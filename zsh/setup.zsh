@@ -7,37 +7,37 @@ PROMPT_EOL_MARK=''
 
 # get command from alias
 function alias_for {
-    local found
+  local found
 
-    # return if command exists
-    if [[ $+commands[$1] == 1 || -x "$1" ]]; then
-        echo "$@"
-        return
-    fi
+  # return if command exists
+  if [[ $+commands[$1] == 1 || -x "$1" ]]; then
+    echo "$@"
+    return
+  fi
 
-    # get alias command
-    found="$(alias "$1" | sed -E -e "s/^$1=(.*)$/\1/" -e "s/^'//" -e "s/'$//")"
+  # get alias command
+  found="$(alias "$1" | sed -E -e "s/^$1=(.*)$/\1/" -e "s/^'//" -e "s/'$//")"
 
-    if [[ -n "$found" ]]; then
-        echo "$found ${@:2}"
-    else
-        echo "$@"
-    fi
+  if [[ -n "$found" ]]; then
+    echo "$found ${@:2}"
+  else
+    echo "$@"
+  fi
 }
 
 # set window title
 function set_title {
-    echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
+  echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
 }
 
 # set window title with command
 function set_title_cmd {
-    local expanded
+  local expanded
 
-    # split command into parts and trim with sed
-    expanded="$(alias_for "${(@s: :)1}" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
+  # split command into parts and trim with sed
+  expanded="$(alias_for "${(@s: :)1}" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
 
-    echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
+  echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
 }
 
 # update title on hooks
