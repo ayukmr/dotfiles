@@ -18,11 +18,11 @@ fi
 text="$(ls -l "$1" | sed -E 's/^([^ ]*) .*/\1/')"
 
 # color modifiers
-text="$(print -P "$(echo "$text" | sed 's/-/%F{8}-%f/g')")"
-text="$(print -P "$(echo "$text" | sed 's/r/%F{yellow}r%f/g')")"
-text="$(print -P "$(echo "$text" | sed 's/w/%F{red}w%f/g')")"
-text="$(print -P "$(echo "$text" | sed 's/x/%F{green}x%f/g')")"
-text="$(print -P "$(echo "$text" | sed 's/d/%F{blue}d%f/g')")"
-text="$(print -P "$(echo "$text" | sed 's/@/%F{magenta}@%f/g')")"
+text="$(print -P "$(sed 's/-/%F{8}-%f/g'       <<< "$text")")"
+text="$(print -P "$(sed 's/r/%F{yellow}r%f/g'  <<< "$text")")"
+text="$(print -P "$(sed 's/w/%F{red}w%f/g'     <<< "$text")")"
+text="$(print -P "$(sed 's/x/%F{green}x%f/g'   <<< "$text")")"
+text="$(print -P "$(sed 's/d/%F{blue}d%f/g'    <<< "$text")")"
+text="$(print -P "$(sed 's/@/%F{magenta}@%f/g' <<< "$text")")"
 
 echo "$text"
