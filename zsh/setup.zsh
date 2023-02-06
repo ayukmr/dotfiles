@@ -35,7 +35,7 @@ function set_title_cmd {
   local expanded
 
   # split command into parts and trim with sed
-  expanded="$(alias_for "${(@s: :)1}" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
+  expanded="$(alias_for "$1" | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
 
   echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
 }
