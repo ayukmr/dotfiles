@@ -42,14 +42,14 @@ export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
 # fzf options
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!Library/**'"
 export FZF_DEFAULT_OPTS="
-    --color bg:#282c34,bg+:#282c34,fg:#abb2bf,fg+:#c2c7d1
-    --color hl:#61afef,hl+:#5fd7ff,spinner:#e5c07b,info:#56b6c2
-    --color pointer:#61afef,marker:#61afef,header:#c678dd,prompt:#c678dd
+  --color bg:#282c34,bg+:#282c34,fg:#abb2bf,fg+:#c2c7d1
+  --color hl:#61afef,hl+:#5fd7ff,spinner:#e5c07b,info:#56b6c2
+  --color pointer:#61afef,marker:#61afef,header:#c678dd,prompt:#c678dd
 
-    --reverse
-    --no-scrollbar
-    --marker '*'
-    --preview-window noborder
+  --reverse
+  --no-scrollbar
+  --marker '*'
+  --preview-window noborder
 "
 
 # homebrew styling
