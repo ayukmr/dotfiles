@@ -21,10 +21,10 @@ end
 
 # irb prompt
 IRB.conf[:PROMPT][:DEFAULT] = {
-  PROMPT_I: '%m:%i> ',
-  PROMPT_S: '%m:%i* ',
-  PROMPT_C: '%m:%i* ',
-  PROMPT_N: '%m:%i* ',
+  PROMPT_I: "#{'%m'.red.bold}:#{'%i'.blue}> ",
+  PROMPT_S: "#{'%m'.red.bold}:#{'%i'.blue}* ",
+  PROMPT_C: "#{'%m'.red.bold}:#{'%i'.blue}* ",
+  PROMPT_N: "#{'%m'.red.bold}:#{'%i'.blue}* ",
   RETURN:   "=> %s\n"
 }
 
