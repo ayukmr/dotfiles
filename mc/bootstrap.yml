@@ -5,7 +5,7 @@
 config:
   dirs:
     - ~/.config/mc
-    - ~/.local/share/mc
+    - ~/.local/share/mc/skins
 
   link:
     - ~/.config/mc/ini: config.ini
