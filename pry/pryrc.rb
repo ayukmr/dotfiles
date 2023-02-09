@@ -19,7 +19,7 @@ class String
   def underline; "\e[4m#{self}\e[24m" end
 end
 
-# pry prompt
+# set prompt
 Pry.config.prompt = Pry::Prompt.new(
   'default',
   'default prompt',
