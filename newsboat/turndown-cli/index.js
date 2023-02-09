@@ -26,6 +26,7 @@ service.addRule('asciiImages', {
   ),
 
   replacement: (content, node) => {
+    // node attributes
     const nodeAlt = node.getAttribute('alt');
     const nodeSrc = node.getAttribute('src');
 
@@ -40,11 +41,10 @@ service.addRule('asciiImages', {
 
       const markdownImage = `![${nodeAlt}](${nodeSrc})`;
 
-      if (code === 0) {
-        return `\n${'```'}\n${stdout}${'```'}\n${markdownImage}\n${content}`;
-      } else {
-        return `\n${markdownImage}\n${content}`;
-      }
+      // return image
+      return code === 0
+        ? `\n${'```'}\n${stdout}${'```'}\n${markdownImage}\n${content}`
+        : `\n${markdownImage}\n${content}`;
     }
   }
 });
