@@ -10,6 +10,3 @@ local: true
 
 # disable mouse support
 mouse: false
-
-# disable pager
-pager: false
