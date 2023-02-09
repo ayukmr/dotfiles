@@ -49,11 +49,6 @@ function async_rprompt {
     kill -s USR1 $$
   }
 
-  # kill existing proc
-  if [[ $ASYNC_PROC != 0 ]]; then
-    kill -s HUP $ASYNC_PROC &> /dev/null
-  fi
-
   async &!
   ASYNC_PROC=$$
 }
