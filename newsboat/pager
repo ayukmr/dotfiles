@@ -4,14 +4,45 @@
 # === Pager for Newsboat ===
 # ==========================
 
-# read file
-cat $1 |
+function spinner {
+  local pid
+  local spin
+  local back
+  local frame
+
+  pid=$!
+  spin=(⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏)
+
+  back="$(( $(stty size | cut -d ' ' -f 2) - 19 ))"
+
+  # hide cursor
+  echo -n '\e[2J\e[1;1H\e[?25l' > /dev/stderr
+
+  # show first frame of spinner
+  print -nP "%B%K{magenta}%F{black} ${spin[0]} loading article" > /dev/stderr
+  repeat "$back" echo -n ' ' > /dev/stderr
+  print -nP "%f%k%b" > /dev/stderr
+
+  while kill -0 $pid &> /dev/null; do
+    # show spinner
+    for frame in "${spin[@]}"; do
+      print -nP "\r%B%K{magenta}%F{black} $frame loading article" > /dev/stderr
+      repeat "$back" echo -n ' ' > /dev/stderr
+      print -nP "%f%k%b" > /dev/stderr
+
+      sleep 0.1
+    done
+  done
+
+  # show cursor
+  echo -n '\e[?25h' > /dev/stderr
+}
 
 # convert html to markdown
-~/.cfg/newsboat/turndown |
+markdown=$(~/.cfg/newsboat/turndown < "$1" & spinner)
 
 # remove lines from newsboat
-tail -n +3 |
+tail -n +3 <<< "$markdown" |
 
 # remove blank code blocks
 sed -E 's/^(> )+$//' |
