@@ -51,4 +51,4 @@ sed -E 's/^(> )+$//' |
 glow -w 175 -s ~/.cfg/glow/style.json - |
 
 # page output
-less -cR
+less -cR --tilde
