@@ -32,10 +32,14 @@ function set_title {
 
 # set window title with command
 function set_title_cmd {
+  local trimmed
   local expanded
 
+  # trim whitespace
+  trimmed="$(sed -E -e 's/^ +//' -e 's/ +$//' <<< "$1")"
+
   # split command into parts and trim with sed
-  expanded="$(alias_for "$1" 2> /dev/null | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
+  expanded="$(alias_for "$trimmed" 2> /dev/null | tr '\n' ' ' | sed -E 's/(.{30}).+/\1…/')"
 
   echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL") ◂ $expanded\a"
 }
