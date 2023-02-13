@@ -22,7 +22,7 @@ const service = new TurndownService(settings);
 service.addRule('asciiImages', {
   filter: (node) => (
     node.nodeName === 'IMG' &&
-    node.getAttribute('src').match(/^(http|https):/)
+    node.getAttribute('src')?.match(/^(http|https):/)
   ),
 
   replacement: (content, node) => {
