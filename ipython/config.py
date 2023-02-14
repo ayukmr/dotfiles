@@ -13,7 +13,7 @@ def configure(c):
     c.TerminalInteractiveShell.highlighting_style = 'one-dark'
 
     # ipython logo as banner
-    c.TerminalInteractiveShell.banner1 = 'IP\33[34m[\33[0my\33[34m]\33[0m | IPython v8.3.0\n'
+    c.TerminalInteractiveShell.banner1 = 'IP\33[34m[\33[0my\33[34m]\33[0m | IPython\n'
 
     # set title string
     c.TerminalInteractiveShell.term_title_format = '{cwd} – ipython'
