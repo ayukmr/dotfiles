@@ -8,12 +8,12 @@ from IPython.terminal.prompts import Prompts, Token
 class Prompt(Prompts):
     # default prompt
     def in_prompt_tokens(self):
-        return [(Token.Prompt, '>> '),]
+        return [(Token.Prompt, '>> ')]
 
     # output prompt
     def out_prompt_tokens(self):
-        return [(Token.Prompt, '=> '),]
+        return [(Token.Prompt, '=> ')]
 
     # continuation prompt
     def continuation_prompt_tokens(self):
-        return [(Token.Prompt, '** '),]
+        return [(Token.Prompt, '** ')]
