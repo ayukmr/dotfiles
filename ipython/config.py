@@ -23,3 +23,6 @@ def configure(c):
 
     # enable truecolor
     c.TerminalInteractiveShell.true_color = True
+
+    # disable confirming exit
+    c.TerminalInteractiveShell.confirm_exit = False
