@@ -7,7 +7,7 @@ from IPython.terminal.prompts import Prompts, Token
 # custom prompt
 class Prompt(Prompts):
     # default prompt
-    def in_prompt_tokens(self):
+    def in_prompt_tokens(self, cli = None):
         return [(Token.Prompt, '>> ')]
 
     # output prompt
@@ -15,5 +15,5 @@ class Prompt(Prompts):
         return [(Token.Prompt, '=> ')]
 
     # continuation prompt
-    def continuation_prompt_tokens(self):
+    def continuation_prompt_tokens(self, cli = None, width = None):
         return [(Token.Prompt, '** ')]
