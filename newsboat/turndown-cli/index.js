@@ -30,7 +30,8 @@ service.addRule('asciiImages', {
     const nodeAlt = node.getAttribute('alt');
     const nodeSrc = node.getAttribute('src');
 
-    if (nodeAlt.length === 1) {
+    if (nodeAlt.match(/^\p{Emoji}$/u)) {
+      // return alt if emoji
       return nodeAlt;
     } else {
       // create ascii art
