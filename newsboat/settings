@@ -29,7 +29,7 @@ feedlist-format    " %t %> %U/%c  "
 articlelist-format " %?n?&? %t %> %D  "
 
 # list titles
-feedlist-title-format     "  Feeds (%u unread, %t total)%?T? - %T&? "
+feedlist-title-format     "  Feeds (%u unread, %t total)%?T? -  %T&? "
 articlelist-title-format  " %T (%u unread, %t total) - %U "
 searchresult-title-format "  Search Result (%u unread, %t total) "
 filebrowser-title-format  "  %?O?Open File&Save File? - %f "
