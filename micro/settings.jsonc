@@ -14,9 +14,6 @@
   // display dividers normally
   "divreverse": false,
 
-  // disable ftoptions plugin
-  "ftoptions": false,
-
   // create parents when writing file
   "mkparents": true,
 
