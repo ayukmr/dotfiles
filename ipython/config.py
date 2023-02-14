@@ -6,7 +6,6 @@ import sys
 from os.path import expanduser
 
 sys.path.append(expanduser('~/.cfg/ipython'))
-
 from prompt import Prompt
 
 def configure(c):
