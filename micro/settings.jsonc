@@ -1,5 +1,5 @@
 {
-  // use file's basename in tab
+  // use file basename in tabs
   "basename": true,
 
   // set colorscheme to one dark
@@ -8,16 +8,16 @@
   // enable git status in gutter
   "diffgutter": true,
 
-  // set chars for split borders
+  // split borders chars
   "divchars": "│—",
 
-  // don't display dividers as reverse
+  // display dividers normally
   "divreverse": false,
 
   // disable ftoptions plugin
   "ftoptions": false,
 
-  // create parent directories when writing file
+  // create parents when writing file
   "mkparents": true,
 
   // remove trailing whitespace
@@ -26,13 +26,13 @@
   // enable scrollbar
   "scrollbar": true,
 
-  // statusline on left
+  // status on left
   "statusformatl": " $(filename) $(modified)($(line),$(col)) $(status.paste)",
 
-  // statusline on right
+  // status on right
   "statusformatr": "$(opt:fileformat) | $(opt:encoding) | $(opt:filetype) ",
 
-  // enable tab-like movement for spaces
+  // tab-like movement for spaces
   "tabmovement": true,
 
   // convert tabs to spaces
