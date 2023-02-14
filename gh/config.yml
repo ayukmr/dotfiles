@@ -12,6 +12,3 @@ aliases:
 
 # preferred protocol
 git_protocol: https
-
-# enable prompt
-prompt: enabled
