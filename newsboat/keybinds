@@ -14,7 +14,7 @@ bind-key K prev-feed
 bind-key j next articlelist
 bind-key k prev articlelist
 
-# articles movement
+# pager articles movement
 bind-key J next article
 bind-key K prev article
 
