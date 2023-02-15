@@ -26,7 +26,7 @@ max-items 50
 
 # item titles
 feedlist-format    " %t %> %U/%c  "
-articlelist-format " %?n?&? %t %> %D  "
+articlelist-format " %?n?&? %t %> %?F? &?%D  "
 
 # list titles
 feedlist-title-format     "  Feeds (%u unread, %t total)%?T? -  %T&? "
