@@ -18,8 +18,5 @@ bind-key k prev articlelist
 bind-key J next article
 bind-key K prev article
 
-# bind space to enter
-bind-key SPACE open
-
 # open in w3m
 macro w set browser "w3m %u"; open-in-browser; set browser "open %u" -- "open article in w3m"
