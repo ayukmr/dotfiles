@@ -13,7 +13,6 @@ Library/
 yarn.lock
 .yarn-error.log
 yarn-error.log
-.next/
 build/
 node_modules/
 
