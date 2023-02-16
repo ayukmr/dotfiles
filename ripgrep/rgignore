@@ -9,7 +9,7 @@
 .DS_Store
 Library/
 
-# js
+# node
 .yarn-error.log
 yarn-error.log
 .next/
