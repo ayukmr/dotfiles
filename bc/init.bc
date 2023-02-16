@@ -2,8 +2,8 @@
 # === BC Init ===
 # ===============
 
-# two decimal places
-scale = 2
+# ten decimal places
+scale = 10
 
 # greatest common divisor
 define gcd(a, b) {
