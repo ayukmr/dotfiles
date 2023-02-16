@@ -7,8 +7,8 @@ config:
     - ~/Library/Application Support/Code/User
 
   link:
-    - ~/Library/Application Support/Code/User/settings.json:    settings.jsonc
-    - ~/Library/Application Support/Code/User/keybindings.json: keybindings.jsonc
+    - ~/Library/Application Support/Code/User: settings.json
+    - ~/Library/Application Support/Code/User: keybindings.json
 
 packages:
   packages:
