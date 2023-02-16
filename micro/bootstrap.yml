@@ -7,4 +7,4 @@ config:
     - ~/.config/micro
 
   link:
-    - ~/.config/micro/settings.json: settings.jsonc
+    - ~/.config/micro: settings.json
