@@ -30,7 +30,7 @@ path+="$HOME/.local/bin"
 export PATH
 
 # add homebrew completions
-fpath+="$(brew --prefix)/share/zsh/site-functions:$FPATH"
+fpath+="$(brew --prefix)/share/zsh/site-functions"
 
 # export fpath
 export FPATH
