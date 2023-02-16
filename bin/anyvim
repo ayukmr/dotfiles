@@ -4,7 +4,7 @@
 # === Open Vim or Neovim ===
 # ==========================
 
-if (( $+commands[nvim] )); then
+if [[ -n "${commands[nvim]}" ]]; then
   nvim $@
 else
   vim $@
