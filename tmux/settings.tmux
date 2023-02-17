@@ -9,19 +9,19 @@ set -g default-terminal xterm-256color
 set -g default-shell /bin/zsh
 
 # clock mode
-setw -g clock-mode-colour '#98c379'
-setw -g clock-mode-style  12
+set -g clock-mode-colour '#98c379'
+set -g clock-mode-style  12
 
 # pane border colors
 set -g pane-border-style        'fg=#3e4452'
 set -g pane-active-border-style 'fg=#98c379'
 
 # automatic windows
-setw -g automatic-rename on
-set  -g renumber-windows on
+set -g automatic-rename on
+set -g renumber-windows on
 
 # agressive resizing of windows
-setw -g aggressive-resize on
+set -g aggressive-resize on
 
 # display messages for 4 secs
 set -g display-time 4000
@@ -37,5 +37,5 @@ set -s escape-time 10
 set -g mode-style 'bg=#3e4452'
 
 # use one as base index
-set  -g base-index      1
-setw -g pane-base-index 1
+set -g base-index      1
+set -g pane-base-index 1

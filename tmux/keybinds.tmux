@@ -39,4 +39,4 @@ bind -n M-Up    select-pane -U
 bind -n M-Down  select-pane -D
 
 # vim keybinds
-set -wg mode-keys vi
+set -g mode-keys vi
