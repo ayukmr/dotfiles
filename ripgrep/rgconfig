@@ -2,7 +2,7 @@
 # === Ripgrep Config ===
 # ======================
 
-# only preview long columns
+# preview long columns
 --max-columns=150
 --max-columns-preview
 
