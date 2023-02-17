@@ -5,16 +5,16 @@
 -- =========================
 
 on run argv
-    set args to ""
+    set title to ""
 
-    -- get args as string
+    -- get title from args
     repeat with arg in argv
-        set args to args & space & arg
+        set title to title & space & arg
     end repeat
 
     set now to (do shell script "date +%I:%M:%S")
     set fmt to "Sent at " & now
 
     -- display notification
-    display notification (fmt as text) with title args
+    display notification (fmt as text) with title title
 end run
