@@ -282,10 +282,10 @@ end
 
 -- diagnostics config
 vim.diagnostic.config({
-  underline = true,
-  signs     = true,
-
+  underline    = true,
+  signs        = true,
   virtual_text = false,
+
   float = {
     source = 'always',
   },
