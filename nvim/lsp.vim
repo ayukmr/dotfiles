@@ -289,7 +289,6 @@ vim.diagnostic.config({
   float = {
     scope  = 'cursor',
     source = 'always',
-    focus  = false,
   },
 })
 EOF
