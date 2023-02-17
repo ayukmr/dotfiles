@@ -213,7 +213,7 @@ nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent> <Leader>lf :lua vim.lsp.buf.formatting()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
 
-nnoremap <silent> <M-d> :lua vim.diagnostic.open_float(nil, { scope = 'cursor', focus = false })<CR>
+nnoremap <silent> <M-d> :lua vim.diagnostic.open_float(nil)<CR>
 nnoremap <silent> [d :lua vim.diagnostic.goto_prev()<CR>
 nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
@@ -287,7 +287,9 @@ vim.diagnostic.config({
   virtual_text = false,
 
   float = {
+    scope  = 'cursor',
     source = 'always',
+    focus  = false,
   },
 })
 EOF
