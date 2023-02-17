@@ -2,12 +2,14 @@
 # === Newsboat URLs ===
 # =====================
 
-https://daringfireball.net/feeds/main "~⍟ Daring Fireball" tech news blog
-https://css-tricks.com/feed           "~ CSS Tricks"      dev
-https://stackoverflow.blog/feed       "~ The Overflow"    dev news
-https://github.blog/feed              "~ GitHub Blog"     dev news
-https://blog.rust-lang.org/feed       "~ Rust Blog"       dev
-https://reactjs.org/feed.xml          "~ React Blog"      dev
-https://panic.com/blog/feed           "~ Panic Blog"      tech dev blog
-https://hacks.mozilla.org/feed        "~ Mozilla Hacks"   dev
-https://webkit.org/blog/feed          "~ WebKit Blog"     dev
+# feeds
+https://daringfireball.net/feeds/main     "~⍟ Daring Fireball" tech news blog
+https://css-tricks.com/feed               "~ CSS Tricks"      dev
+https://feeds.macrumors.com/MacRumors-All "~ MacRumors Posts" tech news
+https://github.blog/feed                  "~ GitHub Blog"     dev  news
+https://webkit.org/blog/feed              "~ WebKit Blog"     dev
+https://blog.rust-lang.org/feed           "~ Rust Blog"       dev
+https://stackoverflow.blog/feed           "~ The Overflow"    dev news
+https://reactjs.org/feed.xml              "~ React Blog"      dev
+https://panic.com/blog/feed               "~ Panic Blog"      tech dev blog
+https://hacks.mozilla.org/feed            "~ Mozilla Hacks"   dev
