@@ -27,9 +27,9 @@ set backupskip=
 set backupskip+=/tmp/*
 set backupskip+=/private/tmp/*
 
-" use 4 spaces instead of tabs
-set tabstop=4
-set shiftwidth=4
+" use two spaces instead of tabs
+set tabstop=2
+set shiftwidth=2
 set shiftround
 set expandtab
 
