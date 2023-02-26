@@ -14,9 +14,8 @@ function _clear {
 }
 zle -N _clear
 
-# select completions
+# use vim keybinds for selecting completions
 zmodload zsh/complist
-
 bindkey -M menuselect h vi-backward-char
 bindkey -M menuselect k vi-up-line-or-history
 bindkey -M menuselect l vi-forward-char
