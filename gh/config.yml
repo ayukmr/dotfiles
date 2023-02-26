@@ -6,6 +6,7 @@
 aliases:
     rl: repo list
     rv: repo view
+    re: repo edit
     al: auth login
     rc: release create
     create: '!git create'
