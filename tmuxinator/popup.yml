@@ -1,0 +1,14 @@
+# =========================
+# === Tmux Popup Preset ===
+# =========================
+
+name: popup
+root: ~/
+
+# don't attach to terminal
+attach: false
+
+windows:
+  - shell:
+    # disable status for session
+    - tmux set -s status off

@@ -32,6 +32,12 @@ bind ] select-window -n
 bind N switch-client -p
 bind n switch-client -n
 
+# open or detach popup session
+bind C-p \
+  if-shell "[[ \"$(tmux display-message -p '#S')\" == 'popup' ]]" \
+    'detach' \
+    "popup -E -h 75% -w 75% 'tmuxinator start popup; tmux attach -t popup'"
+
 # switch panes
 bind -n M-Left  select-pane -L
 bind -n M-Right select-pane -R
