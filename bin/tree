@@ -7,12 +7,7 @@
 branch='├── '
 indent='    '
 dir="$(basename "$PWD")"
-
-if [[ -n "$1" ]]; then
-  depth="$1"
-else
-  depth=500
-fi
+depth="${1:-500}"
 
 # use sed to create tree
 tree="$(
