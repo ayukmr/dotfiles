@@ -2,15 +2,6 @@
 # === ZSH Keybinds ===
 # ====================
 
-# remove text from cursor to eol
-bindkey ^L kill-line
-
-# search history with query
-bindkey ^R history-incremental-search-backward
-
-# insert from command history
-bindkey ^N insert-last-word
-
 # clear screen
 bindkey -M main  ^K _clear
 bindkey -M vicmd ^K _clear
