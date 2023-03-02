@@ -6,6 +6,9 @@
 # === Options ===
 # ===============
 
+# disable beep
+unsetopt BEEP
+
 # ignore duplicate lines in history
 setopt HIST_IGNORE_DUPS
 
