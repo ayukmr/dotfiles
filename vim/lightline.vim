@@ -27,7 +27,7 @@ func! LightlineFiletype()
 endfunc
 
 func! LightlineTabChars()
-  let s = ''
+  let s:chars = ''
 
   " return if single tab
   if len(range(tabpagenr('$'))) < 2
@@ -35,12 +35,12 @@ func! LightlineTabChars()
   endif
 
   " add chars for tabs
-  for i in range(tabpagenr('$'))
-    let s .=
-      \ i + 1 == tabpagenr() ? '*' : '='
+  for s:index in range(tabpagenr('$'))
+    let s:chars .=
+      \ s:index + 1 == tabpagenr() ? '*' : '='
   endfor
 
-  return s
+  return s:chars
 endfunc
 
 " current git branch
