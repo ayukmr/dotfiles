@@ -6,7 +6,7 @@
 # === Options ===
 # ===============
 
-# disable beep
+# disable beeping
 unsetopt BEEP
 
 # ignore duplicate lines in history
