@@ -2,7 +2,7 @@
 # === Yarn Config ===
 # ===================
 
-# init fields in package.json
+# default fields
 initFields:
   type: module
   license: MIT
