@@ -4,6 +4,7 @@
 
 # init fields in package.json
 initFields:
+  type: module
   license: MIT
   private: true
 
