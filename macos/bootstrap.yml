@@ -95,7 +95,7 @@ scripts:
         : 'enabling quitting finder'
 
       - ? defaults write
-          NSGlobalDomain AppleShowAllExtensions
+          -g AppleShowAllExtensions
           -bool true
         : 'enabling showing file extensions'
 
@@ -105,7 +105,7 @@ scripts:
         : 'disabling warning on changing file extension'
 
       - ? defaults write
-          NSGlobalDomain NSToolbarTitleViewRolloverDelay
+          -g NSToolbarTitleViewRolloverDelay
           -float 0
         : 'disabling delay on hovering for icon'
 
@@ -234,28 +234,34 @@ scripts:
       # ==============
 
       - ? defaults write
-          NSGlobalDomain NSUseAnimatedFocusRing
+          -g NSUseAnimatedFocusRing
           -bool false
         : 'disabling focus ring animation'
 
       - ? defaults write
-          NSGlobalDomain AppleAccentColor
-          -string '-1'
-        : 'setting accent color to graphite'
-
-      - ? defaults write
-          NSGlobalDomain AppleActionOnDoubleClick
+          -g AppleActionOnDoubleClick
           -string 'Minimize'
         : 'enabling minimizing on double click on window title'
 
-      # =============
-      # === Other ===
-      # =============
+      - ? defaults write
+          -g NSColorSimulateHardwareAccent
+          -bool true
+        : 'enabling simulating hardware accents'
 
       - ? defaults write
-          com.microsoft.VSCode ApplePressAndHoldEnabled
-          -bool false
-        : 'enabling key-repeat in vscode'
+          -g NSColorSimulatedHardwareEnclosureNumber
+          -int 7
+        : 'adding purple accent highlight color'
+
+      - ? defaults write
+          -g AppleAccentColor
+          -string '-3'
+        : 'setting accent color to purple'
+
+      - ? defaults write
+          -g AppleHighlightColor
+          -string '-3'
+        : 'setting highlight color to purple'
 
       # ===============
       # === Killing ===
