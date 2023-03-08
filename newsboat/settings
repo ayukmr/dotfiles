@@ -5,7 +5,7 @@
 # open in gui browser
 browser "open %u"
 
-# use newsboat-pager
+# use custom pager
 html-renderer "cat"
 pager "~/.cfg/newsboat/pager %f"
 
