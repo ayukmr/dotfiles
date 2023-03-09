@@ -25,9 +25,6 @@ export LESS_TERMCAP_md="$(print -P '%B%F{blue}')"
 export LESS_TERMCAP_us="$(print -P '%F{green}')"
 export LESS_TERMCAP_ue="$(print -P '%f')"
 
-# bat theme
-export BAT_THEME='TwoDark'
-
 # fzf options
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 export FZF_DEFAULT_OPTS="
