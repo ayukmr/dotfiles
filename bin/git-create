@@ -7,14 +7,11 @@
 # init repo
 git init $@
 
-# create github repo
-gh repo create
-
 # add files
 git add .
 
 # commit files
 git commit -m 'Initialize repo'
 
-# push upstream
-git push -u origin main
+# create github repo
+gh repo create
