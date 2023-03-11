@@ -18,7 +18,7 @@ const settings = {
 // create service
 const service = new TurndownService(settings);
 
-// add rule for images with links
+// convert images to ascii art
 service.addRule('asciiImages', {
   filter: (node) => (
     node.nodeName === 'IMG' &&
