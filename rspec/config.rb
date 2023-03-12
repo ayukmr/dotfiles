@@ -3,9 +3,9 @@
 # ====================
 
 RSpec.configure do |c|
-  # enable color in output
-  c.color = true
+  # randomize tests order
+  c.order = :random
 
-  # format output as documentation
-  c.formatter = :documentation
+  # use documentation formatter
+  c.formatter = :doc
 end

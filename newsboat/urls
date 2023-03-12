@@ -13,3 +13,6 @@ https://stackoverflow.blog/feed           "~ The Overflow"    dev news
 https://reactjs.org/feed.xml              "~ React Blog"      dev
 https://panic.com/blog/feed               "~ Panic Blog"      tech dev blog
 https://hacks.mozilla.org/feed            "~ Mozilla Hacks"   dev
+
+# queries
+"query: Flagged Articles:flags != \"\""

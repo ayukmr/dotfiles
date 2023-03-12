@@ -7,7 +7,9 @@
 # ==============
 
 # load direnv
-eval "$(direnv hook zsh)"
+if [[ -n "${commands[direnv]}" ]]; then
+  eval "$(direnv hook zsh)"
+fi
 
 # ================================
 # === History Substring Search ===
@@ -26,7 +28,9 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
 # =============
 
 # load quark
-eval "$(quark hook zsh)"
+if [[ -n "${commands[quark]}" ]]; then
+  eval "$(quark hook zsh)"
+fi
 
 # ===========================
 # === Syntax Highlighting ===

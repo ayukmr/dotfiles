@@ -8,6 +8,7 @@ config:
 
   link:
     - ~/.config/ranger: rc.conf
+    - ~/.config/ranger: rifle.conf
 
   test:
     - '[[ ! -d ~/.config/ranger/plugins/devicons ]]':

@@ -2,9 +2,9 @@
 # === Mutt Mailcap ===
 # ====================
 
-# view html with w3m
+# view html using w3m
 text/html; w3m -I %{charset} -T text/html -cols 125; copiousoutput
 
-# view images with jp2a
-image/*; cat $@ | magick - -auto-orient jpg:- | jp2a --colors - | less -rc; needsterminal
-image/*; cat $@ | magick - -auto-orient jpg:- | jp2a --colors -; copiousoutput
+# view images using jp2a
+image/*; magick - -auto-orient jpg:- | jp2a --colors - | less -cR; needsterminal
+image/*; magick - -auto-orient jpg:- | jp2a --colors -; copiousoutput

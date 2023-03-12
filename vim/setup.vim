@@ -13,7 +13,7 @@ if has('termguicolors')
   set termguicolors
 endif
 
-" theme
+" use one dark theme
 let g:onedark_terminal_italics = 2
 colorscheme onedark
 

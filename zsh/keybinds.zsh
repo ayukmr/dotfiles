@@ -2,15 +2,6 @@
 # === ZSH Keybinds ===
 # ====================
 
-# remove text from cursor to eol
-bindkey ^L kill-line
-
-# search history with query
-bindkey ^R history-incremental-search-backward
-
-# insert from command history
-bindkey ^N insert-last-word
-
 # clear screen
 bindkey -M main  ^K _clear
 bindkey -M vicmd ^K _clear
@@ -23,9 +14,8 @@ function _clear {
 }
 zle -N _clear
 
-# select completions
+# use vim keybinds for selecting completions
 zmodload zsh/complist
-
 bindkey -M menuselect h vi-backward-char
 bindkey -M menuselect k vi-up-line-or-history
 bindkey -M menuselect l vi-forward-char

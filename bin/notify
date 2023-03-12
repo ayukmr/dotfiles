@@ -12,9 +12,9 @@ on run argv
         set title to title & space & arg
     end repeat
 
-    set now to (do shell script "date +%I:%M:%S")
-    set fmt to "Sent at " & now
+    set now  to (do shell script "date +%I:%M:%S")
+    set body to "Sent at " & now
 
     -- display notification
-    display notification (fmt as text) with title title
+    display notification body with title title
 end run

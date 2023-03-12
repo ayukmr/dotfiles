@@ -13,21 +13,21 @@ function spinner {
   pid=$!
   spin=(⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏)
 
-  back="$(( $(stty size | cut -d ' ' -f 2) - 19 ))"
+  width="$(( $(stty size | cut -d ' ' -f 2) - 19 ))"
 
   # hide cursor
   echo -n '\e[2J\e[1;1H\e[?25l' > /dev/stderr
 
   # show first frame of spinner
   print -nP "%B%K{magenta}%F{black} ${spin[0]} loading article" > /dev/stderr
-  repeat "$back" echo -n ' ' > /dev/stderr
+  repeat "$width" echo -n ' ' > /dev/stderr
   print -nP "%f%k%b" > /dev/stderr
 
   while kill -0 $pid &> /dev/null; do
     # show spinner
     for frame in "${spin[@]}"; do
       print -nP "\r%B%K{magenta}%F{black} $frame loading article" > /dev/stderr
-      repeat "$back" echo -n ' ' > /dev/stderr
+      repeat "$width" echo -n ' ' > /dev/stderr
       print -nP "%f%k%b" > /dev/stderr
 
       sleep 0.1
