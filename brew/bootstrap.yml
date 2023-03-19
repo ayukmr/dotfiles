@@ -48,6 +48,7 @@ packages:
       - w3m
       - glow
       - tldr
+      - tree
       - bottom
       - ranger
       - litecli
