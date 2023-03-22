@@ -10,6 +10,7 @@
 	s = status -s
 	l = log -n 20 --oneline
 
+	lg = log
 	sh = show
 	pl = pull
 	rs = reset
