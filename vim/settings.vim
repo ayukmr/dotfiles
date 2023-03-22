@@ -52,7 +52,7 @@ set numberwidth=4
 set signcolumn=number
 
 " show invisibles
-set listchars=tab:»\ ,eol:\ ,trail:·
+set listchars=tab:»\ ,trail:·
 set list
 
 " split pane to bottom right
