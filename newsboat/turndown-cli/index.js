@@ -50,6 +50,15 @@ service.addRule('asciiImages', {
   }
 });
 
+// convert image links into plain images
+service.addRule('imageLinks', {
+  filter: (node) => (
+    node.nodeName === 'A' &&
+    node.firstChild?.nodeName === 'IMG'
+  ),
+  replacement: (content) => `${content}\n\n`
+});
+
 // convert stdin into markdown
 process.stdin.on('data', (data) => {
   const markdown = service.turndown(data.toString());
