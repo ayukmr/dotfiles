@@ -20,14 +20,14 @@ function spinner {
 
   # show first frame of spinner
   print -nP "%B%K{magenta}%F{black} ${spin[0]} loading article" > /dev/stderr
-  repeat $width echo -n ' ' > /dev/stderr
+  jot -n -s '' -b ' ' $width > /dev/stderr
   print -nP "%f%k%b" > /dev/stderr
 
   while kill -0 $pid &> /dev/null; do
     # show spinner
     for frame in "${spin[@]}"; do
       print -nP "\r%B%K{magenta}%F{black} $frame loading article" > /dev/stderr
-      repeat $width echo -n ' ' > /dev/stderr
+      jot -n -s '' -b ' ' $width > /dev/stderr
       print -nP "%f%k%b" > /dev/stderr
 
       sleep 0.1
