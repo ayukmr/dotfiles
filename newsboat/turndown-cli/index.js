@@ -3,6 +3,8 @@
 // ====================
 
 const TurndownService = require('turndown');
+const { gfm } = require('turndown-plugin-gfm');
+
 const shell = require('shelljs');
 
 // override escaping
@@ -17,6 +19,9 @@ const settings = {
 
 // create service
 const service = new TurndownService(settings);
+
+// use github flavored markdown
+service.use(gfm);
 
 // convert images to ascii art
 service.addRule('asciiImages', {
