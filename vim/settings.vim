@@ -45,14 +45,14 @@ set laststatus=2
 set showtabline=2
 
 " line numbers
-set number
+set relativenumber
 set numberwidth=4
 
 " merge with signcolumn
 set signcolumn=number
 
 " show invisibles
-set listchars=tab:»\ ,eol:\ ,trail:·
+set listchars=tab:»\ ,trail:·
 set list
 
 " split pane to bottom right

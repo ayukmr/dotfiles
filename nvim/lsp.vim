@@ -266,7 +266,6 @@ capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 local servers = {
   'marksman',
   'pyright',
-  'ruby_ls',
   'rust_analyzer',
   'sourcekit',
   'tsserver',

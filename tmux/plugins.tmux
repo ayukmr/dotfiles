@@ -2,8 +2,14 @@
 # === Tmux Plugins ===
 # ====================
 
-# ================
-# === FZF Tmux ===
-# ================
+# ===============
+# === Fingers ===
+# ===============
 
-set-env -g TMUX_FZF_OPTIONS '-p -w 75% -h 75% --border none'
+# compact hint format
+set -g @fingers-hint-format      '#[fg=black,bg=green,bold]%s'
+set -g @fingers-highlight-format '#[fg=green,bold]%s'
+
+# uncompact hint format
+set -g @fingers-hint-format-nocompact      ' #[fg=black,bg=green,bold][%s]'
+set -g @fingers-highlight-format-nocompact '#[fg=green,bold]%s'

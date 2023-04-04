@@ -3,6 +3,8 @@
 // ====================
 
 const TurndownService = require('turndown');
+const { gfm } = require('turndown-plugin-gfm');
+
 const shell = require('shelljs');
 
 // override escaping
@@ -18,7 +20,10 @@ const settings = {
 // create service
 const service = new TurndownService(settings);
 
-// add rule for images with links
+// use github flavored markdown
+service.use(gfm);
+
+// convert images to ascii art
 service.addRule('asciiImages', {
   filter: (node) => (
     node.nodeName === 'IMG' &&
@@ -30,7 +35,7 @@ service.addRule('asciiImages', {
     const nodeAlt = node.getAttribute('alt');
     const nodeSrc = node.getAttribute('src');
 
-    if (nodeAlt.match(/^\p{Emoji}+$/u)) {
+    if (nodeAlt.match(/^\ufffd*\p{Emoji}+$/u)) {
       // return alt if emoji
       return nodeAlt;
     } else {
@@ -48,6 +53,15 @@ service.addRule('asciiImages', {
         : `\n${markdownImage}\n${content}`;
     }
   }
+});
+
+// convert image links into plain images
+service.addRule('imageLinks', {
+  filter: (node) => (
+    node.nodeName === 'A' &&
+    node.firstChild?.nodeName === 'IMG'
+  ),
+  replacement: (content) => `${content}\n\n`
 });
 
 // convert stdin into markdown
