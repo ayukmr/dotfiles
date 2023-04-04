@@ -9,8 +9,6 @@
 # layouts
 layouts:
   - tall
-  - 3column-left
-  - middle-wide
   - fullscreen
 
 # floating apps
