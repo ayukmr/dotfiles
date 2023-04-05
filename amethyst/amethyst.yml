@@ -31,31 +31,43 @@ enables-layout-hud-on-space-change: false
 # === Keybinds ===
 # ================
 
-# use ctrl-alt as mod1
+# use ctrl-alt as first mod
 mod1:
   - control
   - option
 
-# use ctrl-alt-shift as mod2
+# use ctrl-alt-shift as second mod
 mod2:
   - control
   - option
   - shift
 
-# use j for cw
-focus-cw:
-  mod: mod1
-  key: j
-
-swap-cw:
-  mod: mod2
-  key: j
-
-# use k for ccw
+# focus ccw
 focus-ccw:
   mod: mod1
-  key: k
+  key: up
 
+# swap ccw
 swap-ccw:
   mod: mod2
-  key: k
+  key: up
+
+# focus cw
+focus-cw:
+  mod: mod1
+  key: down
+
+# swap cw
+swap-cw:
+  mod: mod2
+  key: down
+
+# shrink main window
+shrink-main:
+  mod: mod1
+  key: left
+
+# expand main window
+expand-main:
+  mod: mod1
+  key: right
