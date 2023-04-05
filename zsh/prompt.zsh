@@ -57,7 +57,7 @@ function async_rprompt {
 function TRAPUSR1 {
   if [[ -f "/tmp/rprompt$ASYNC_PROC" ]]; then
     # get rprompt from file
-    RPROMPT="$(cat "/tmp/rprompt$ASYNC_PROC")"
+    RPROMPT="$(< "/tmp/rprompt$ASYNC_PROC")"
     rm "/tmp/rprompt$ASYNC_PROC"
   fi
 
