@@ -117,7 +117,7 @@ let g:sneak#absolute_dir = 1
 
 " sneak labels
 let g:sneak#label = 1
-let g:sneak#target_labels = 'asdgqwertyuiopzxcvbnmfASDGHKLQWERTYUIOPZXCVBNMFJ'
+let g:sneak#target_labels = 'fdsajkl;rewquiopFDSAJKL:REWQUIOP'
 
 " sneak highlights
 highlight! link Sneak          WildMenu
