@@ -65,7 +65,7 @@ set hidden
 " disable mouse
 set mouse=
 
-" vim intro message
+" disable intro message
 set shortmess=atI
 
 " disable error bells
