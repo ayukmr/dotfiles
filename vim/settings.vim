@@ -62,6 +62,9 @@ set splitright
 " keep hidden buffers
 set hidden
 
+" disable mouse
+set mouse=
+
 " vim intro message
 set shortmess=atI
 
