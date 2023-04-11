@@ -17,6 +17,9 @@ if !has('nvim')
   set viminfofile=~/.vim/viminfo
 endif
 
+" disable inserting comments
+auto BufEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
+
 " centralize directories
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
