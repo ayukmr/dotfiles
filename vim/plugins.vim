@@ -112,7 +112,7 @@ let g:lion_squeeze_spaces = 1
 " === Sneak ===
 " =============
 
-" absolute sneak direction
+" absolute direction
 let g:sneak#absolute_dir = 1
 
 " sneak labels
