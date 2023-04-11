@@ -150,6 +150,7 @@ let g:startify_commands = [
   \ { 'ff': 'Files'       },
   \ { 'fh': 'History'     },
   \ { 'pi': 'PlugInstall' },
+  \ { 'pu': 'PlugUpdate'  },
   \ { 'pc': 'PlugClean!'  },
 \]
 
