@@ -4,10 +4,10 @@
 # === Show Colors ===
 # ===================
 
-for i in {0..255}; do
-  print -nP "%K{$i}%F{black} ${(l:3:: :)i} %f%k"
+for color in {0..255}; do
+  print -nP "%K{$color}%F{black} ${(l:3:: :)color} %f%k"
 
-  if ! (( (i + 1) % 8 )); then
+  if ! (( (color + 1) % 8 )); then
     echo
   fi
 done
