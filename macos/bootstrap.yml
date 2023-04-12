@@ -153,25 +153,6 @@ scripts:
           -bool false
         : 'enabling defaulting to txt files'
 
-      # ================
-      # === Menu Bar ===
-      # ================
-
-      - ? defaults write
-          com.apple.menuextra.clock DateFormat
-          -string 'EEE MMM d  h:mm:ss a'
-        : 'changing time format in menu bar'
-
-      - ? defaults write
-          com.apple.screensaver askForPassword
-          -int 1
-        : 'enabling requiring password after screensaver'
-
-      - ? defaults write
-          com.apple.screensaver askForPasswordDelay
-          -int 0
-        : 'disabling password delay for screensaver'
-
       # ==============
       # === Safari ===
       # ==============
