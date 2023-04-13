@@ -6,5 +6,5 @@
 # load .env files
 load_dotenv = true
 
-# set pipefail options
+# use strict settings
 strict_env = true
