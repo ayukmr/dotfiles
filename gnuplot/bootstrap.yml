@@ -1,0 +1,7 @@
+# =========================
+# === Gnuplot Bootstrap ===
+# =========================
+
+config:
+  link:
+    - ~/.gnuplot: gnuplot
