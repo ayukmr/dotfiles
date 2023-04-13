@@ -24,7 +24,7 @@ output.lines.each do |line|
 end
 
 # terminal width
-width = `stty size`.split[1].to_i
+width = `tput cols`.to_i
 
 # get end of current week
 week_end = Date.today + (6 - Date.today.wday)

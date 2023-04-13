@@ -13,7 +13,7 @@ function spinner {
   pid=$!
   spin=(⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏)
 
-  width="$(( $(stty size | cut -d ' ' -f 2) - 18 ))"
+  width="$(( $(tput cols) - 18 ))"
 
   # hide cursor
   echo -n '\e[2J\e[1;1H\e[?25l' > /dev/stderr
