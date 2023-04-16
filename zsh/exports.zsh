@@ -60,6 +60,7 @@ export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
 
 # rubygems home
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+path+="$GEM_HOME/bin"
 
 # =============
 # === Shell ===

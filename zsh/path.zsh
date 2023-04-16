@@ -26,11 +26,15 @@ path+="$HOME/.cfg/bin"
 # binaries folder
 path+="$HOME/.local/bin"
 
+# homebrew env
+eval "$(brew shellenv)"
+path[1,0]="$HOMEBREW_PREFIX/opt/ruby/bin"
+
 # export path
 export PATH
 
 # add homebrew completions
-fpath+="$(brew --prefix)/share/zsh/site-functions"
+fpath+="$HOMEBREW_PREFIX/share/zsh/site-functions"
 
 # export fpath
 export FPATH
