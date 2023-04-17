@@ -29,7 +29,7 @@ if ARGV[1] == 'template'
     }"
   end
 
-  changes = output.join('')
+  changes = output.join
 
   File.write(ARGV[0], erb.result(binding))
 end
