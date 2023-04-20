@@ -31,12 +31,12 @@ enables-layout-hud-on-space-change: false
 # === Keybinds ===
 # ================
 
-# use ctrl-alt as first mod
+# define first mod
 mod1:
   - control
   - option
 
-# use ctrl-alt-shift as second mod
+# define second mod
 mod2:
   - control
   - option
