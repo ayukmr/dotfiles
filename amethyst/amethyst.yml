@@ -31,12 +31,12 @@ enables-layout-hud-on-space-change: false
 # === Keybinds ===
 # ================
 
-# use ctrl-alt as first mod
+# define first mod
 mod1:
   - control
   - option
 
-# use ctrl-alt-shift as second mod
+# define second mod
 mod2:
   - control
   - option
@@ -71,3 +71,13 @@ shrink-main:
 expand-main:
   mod: mod1
   key: right
+
+# focus first screen
+focus-screen-1:
+  mod: mod1
+  key: q
+
+# focus second screen
+focus-screen-2:
+  mod: mod1
+  key: w
