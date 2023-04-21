@@ -124,7 +124,7 @@ let g:lightline.component_type = {
 " components
 let g:lightline.component = {
   \ 'logo':     '',
-  \ 'lineinfo': '%2l:%-2c',
+  \ 'lineinfo': '%02l:%02c',
   \
   \ 'errors':   '%#LightlineErrors#%#LightlineLeft_active_2# %{LightlineErrors()}',
   \ 'warnings': '%#LightlineWarnings#%#LightlineLeft_active_2# %{LightlineWarnings()}',
