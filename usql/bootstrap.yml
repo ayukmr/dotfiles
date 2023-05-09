@@ -1,0 +1,7 @@
+# ======================
+# === USQL Bootstrap ===
+# ======================
+
+config:
+  link:
+    - ~/.usqlrc: usqlrc

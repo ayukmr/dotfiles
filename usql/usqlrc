@@ -1,0 +1,15 @@
+-- =================
+-- === USQL Init ===
+-- =================
+
+-- syntax style
+\set SYNTAX_HL_STYLE onedark
+
+-- time format
+\pset time RFC822
+
+-- line style
+\pset linestyle unicode
+
+-- prompt format
+\set PROMPT1 '%S%R%# '
