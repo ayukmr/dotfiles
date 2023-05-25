@@ -5,14 +5,14 @@
 # light green color
 define_color "lightgreen" 178 207 158
 
-# color headings
+# headings
 color "type=HEADINGS fg=BLACK bg=GREEN"
 color "type=HEADINGS_ODD fg=BLACK bg=lightgreen"
 
-# color selected cells
+# selected cells
 color "type=CELL_SELECTION fg=BLACK bg=BLUE"
 color "type=CELL_SELECTION_SC fg=BLACK bg=BLUE"
 
-# color messages
+# messages
 color "type=INFO_MSG fg=MAGENTA bg=BLACK"
 color "type=ERROR_MSG fg=RED bg=BLACK"
