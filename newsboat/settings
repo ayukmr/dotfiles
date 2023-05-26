@@ -3,11 +3,11 @@
 # =========================
 
 # open in gui browser
-browser "open %u"
+browser open
 
 # use custom pager
-html-renderer "cat"
-pager "~/.cfg/newsboat/pager %f"
+html-renderer cat
+pager ~/.cfg/newsboat/pager
 
 # automatically reload feeds
 auto-reload yes
