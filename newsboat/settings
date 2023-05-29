@@ -24,7 +24,7 @@ show-read-articles yes
 # keep 50 articles
 max-items 50
 
-# item titles
+# item formats
 feedlist-format    " %t %> %U/%c  "
 articlelist-format " %?n?&? %t %> %?F? &?%D  "
 
