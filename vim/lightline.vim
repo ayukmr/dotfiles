@@ -139,25 +139,14 @@ let g:lightline#bufferline#unnamed = '[No Name]'
 
 let s:colors = onedark#GetColors()
 
-if get(g:, 'onedark_termcolors', 256) == 16
-  let s:term_red         = s:colors.red.cterm16
-  let s:term_green       = s:colors.green.cterm16
-  let s:term_yellow      = s:colors.yellow.cterm16
-  let s:term_blue        = s:colors.blue.cterm16
-  let s:term_purple      = s:colors.purple.cterm16
-  let s:term_white       = s:colors.white.cterm16
-  let s:term_cursor_grey = s:colors.cursor_grey.cterm16
-  let s:term_visual_grey = s:colors.visual_grey.cterm16
-else
-  let s:term_red         = s:colors.red.cterm
-  let s:term_green       = s:colors.green.cterm
-  let s:term_yellow      = s:colors.yellow.cterm
-  let s:term_blue        = s:colors.blue.cterm
-  let s:term_purple      = s:colors.purple.cterm
-  let s:term_white       = s:colors.white.cterm
-  let s:term_cursor_grey = s:colors.cursor_grey.cterm
-  let s:term_visual_grey = s:colors.visual_grey.cterm
-endif
+let s:term_red         = s:colors.red.cterm
+let s:term_green       = s:colors.green.cterm
+let s:term_yellow      = s:colors.yellow.cterm
+let s:term_blue        = s:colors.blue.cterm
+let s:term_purple      = s:colors.purple.cterm
+let s:term_white       = s:colors.white.cterm
+let s:term_cursor_grey = s:colors.cursor_grey.cterm
+let s:term_visual_grey = s:colors.visual_grey.cterm
 
 let s:red         = [s:colors.red.gui,         s:term_red]
 let s:green       = [s:colors.green.gui,       s:term_green]
