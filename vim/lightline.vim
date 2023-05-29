@@ -26,29 +26,9 @@ func! LightlineFiletype()
     \ : ''
 endfunc
 
-func! LightlineTabChars()
-  let l:chars = ''
-
-  " return if single tab
-  if len(range(tabpagenr('$'))) < 2
-    return ''
-  endif
-
-  " add chars for tabs
-  for l:index in range(tabpagenr('$'))
-    let l:chars .=
-      \ l:index + 1 == tabpagenr() ? '*' : '='
-  endfor
-
-  return l:chars
-endfunc
-
-" current git branch
-func! LightlineGitBranch()
-  return ' ' . (strlen(gitbranch#name())
-    \ ? gitbranch#name()
-    \ : 'none'
-  \)
+# amount of tabs
+func! LightlineTabsCount()
+  return ' ' . tabpagenr() . '/' . tabpagenr('$')
 endfunc
 
 " lightline config
@@ -102,8 +82,7 @@ let g:lightline.inactive = {
 " functions
 let g:lightline.component_function = {
   \ 'filetype':  'LightlineFiletype',
-  \ 'tabchars':  'LightlineTabChars',
-  \ 'gitbranch': 'LightlineGitBranch',
+  \ 'tabscount': 'LightlineTabsCount',
 \}
 
 " color linter symbols
@@ -137,7 +116,7 @@ let g:lightline.tabline = {
   \   ['logo', 'buffers'],
   \ ],
   \ 'right': [
-  \   ['tabchars', 'gitbranch'],
+  \   ['tabscount'],
   \ ],
 \}
 
