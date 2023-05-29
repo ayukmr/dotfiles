@@ -89,7 +89,7 @@ Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
 " [polyglot] language syntax pack
-Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
+Plug 'sheerun/vim-polyglot', { 'as': 'polyglot', 'do': 'rm -r ./ftplugin' }
 
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
