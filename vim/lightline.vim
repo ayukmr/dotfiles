@@ -26,7 +26,7 @@ func! LightlineFiletype()
     \ : ''
 endfunc
 
-# amount of tabs
+" amount of tabs
 func! LightlineTabsCount()
   return ' ' . tabpagenr() . '/' . tabpagenr('$')
 endfunc
