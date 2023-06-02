@@ -1,0 +1,62 @@
+# ===================
+# === CMus Colors ===
+# ===================
+
+# messages
+set color_error=red
+set color_info=default
+
+# separator
+set color_separator=default
+
+# statusline
+set color_statusline_attr=bold
+set color_statusline_fg=black
+set color_statusline_bg=magenta
+
+# album title
+set color_titleline_attr=bold
+set color_titleline_fg=magenta
+set color_titleline_bg=black
+
+# window
+set color_win_attr=default
+set color_win_bg=default
+
+# window title
+set color_win_title_attr=bold
+set color_win_title_fg=black
+set color_win_title_bg=magenta
+
+# track window
+set color_trackwin_album_attr=bold
+set color_trackwin_album_fg=blue
+set color_trackwin_album_bg=default
+
+# window text
+set color_win_dir=default
+set color_win_fg=default
+
+# current track
+set color_win_cur_attr=bold
+set color_win_cur=yellow
+
+# selection
+set color_win_sel_attr=default
+set color_win_sel_fg=black
+set color_win_sel_bg=blue
+
+# inactive selection
+set color_win_inactive_sel_attr=default
+set color_win_inactive_sel_fg=default
+set color_win_inactive_sel_bg=default
+
+# current track and selection
+set color_win_cur_sel_attr=bold
+set color_win_cur_sel_fg=black
+set color_win_cur_sel_bg=blue
+
+# inactive current track and selection
+set color_win_inactive_cur_sel_attr=bold
+set color_win_inactive_cur_sel_fg=yellow
+set color_win_inactive_cur_sel_bg=default

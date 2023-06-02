@@ -1,0 +1,7 @@
+# =====================
+# === CMus Keybinds ===
+# =====================
+
+# disable quit confirmation
+unbind common q
+bind common q quit

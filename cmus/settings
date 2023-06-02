@@ -1,0 +1,21 @@
+# =====================
+# === CMus Settings ===
+# =====================
+
+# statusline format
+set format_statusline= %t %=%{?d?%{position} / %d} 
+
+# info format
+set format_current=  %l 
+
+# window title format
+set format_title=%t – cmus
+
+# playlist format
+set format_playlist= %t%= %d 
+
+# track window format
+set format_trackwin= %t%= %d 
+
+# sidebar width
+set tree_width_percent=20
