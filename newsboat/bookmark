@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+# =========================
+# === Newsboat Bookmark ===
+# =========================
+
+# get article info
+url="$1"
+title="$2"
+
+# get credentials
+email="$(jq -r .email ~/.config/newsboat/instapaper.json)"
+password="$(jq -r .password ~/.config/newsboat/instapaper.json)"
+
+# add bookmark
+curl -fsSL \
+  --data-urlencode "username=$email" \
+  --data-urlencode "password=$password" \
+  --data-urlencode "url=$url" \
+  --data-urlencode "title=$title" \
+  https://www.instapaper.com/api/add &> /dev/null
+
+if [[ $? != 0 ]]; then
+  # show error
+  echo 'Could not save article to Instapaper'
+fi

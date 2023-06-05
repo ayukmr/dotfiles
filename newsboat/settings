@@ -24,6 +24,10 @@ show-read-articles yes
 # keep 50 articles
 max-items 50
 
+# set bookmark command
+bookmark-cmd ~/.cfg/newsboat/bookmark
+bookmark-autopilot yes
+
 # item formats
 feedlist-format    " %t %> %U/%c  "
 articlelist-format " %?n?&? %t %> %?F? &?%D  "

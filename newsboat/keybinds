@@ -18,5 +18,8 @@ bind-key k prev articlelist
 bind-key J next article
 bind-key K prev article
 
-# open in w3m
+# open article in w3m
 macro w set browser "w3m %u"; open-in-browser; set browser "open %u" -- "open article in w3m"
+
+# save url to instapaper
+macro b bookmark; toggle-article-read -- "save url to instapaper"
