@@ -1,0 +1,7 @@
+# ========================
+# === HTTPie Bootstrap ===
+# ========================
+
+config:
+  link:
+    - ~/.config/httpie: config.json
