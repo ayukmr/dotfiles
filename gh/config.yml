@@ -4,11 +4,12 @@
 
 # aliases
 aliases:
-  rl: repo list
-  rv: repo view
-  re: repo edit
-  al: auth login
-  rc: release create
+  rl:  repo list
+  rv:  repo view
+  re:  repo edit
+  al:  auth login
+  rc:  release create
+  rpc: repo create
   create: '!git create'
 
 # preferred protocol
