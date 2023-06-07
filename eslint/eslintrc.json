@@ -22,43 +22,105 @@
   "extends": ["eslint:recommended"],
 
   "rules": {
-    // enforce using declarations
-    "no-unused-private-class-members": "warn",
+    // ==============
+    // === Unused ===
+    // ==============
+
     "no-unused-vars": "warn",
-    "no-unused-expressions": "warn",
     "no-unused-labels": "warn",
+    "no-unused-expressions": "warn",
+    "no-unused-private-class-members": "warn",
 
-    // enforce triple equals
-    "eqeqeq": "warn",
+    // ===================
+    // === Punctuation ===
+    // ===================
 
-    // enforce curly braces
-    "curly": "warn",
-
-    // enforce camelcase
-    "camelcase": "warn",
-
-    // disallow fallthrough for case
-    "no-fallthrough": "error",
-
-    // enforce semicolons
+    // use semicolons
     "semi": "warn",
 
-    // enforce wrapping for iifes
-    "wrap-iife": "error",
+    // use curly braces
+    "curly": "warn",
 
-    // enforce unnested ternary expressions
-    "no-nested-ternary": "warn",
+    // =================
+    // === Variables ===
+    // =================
 
-    // enforce consistent use of radix
-    "radix": "warn",
+    // use let and const
+    "no-var": "warn",
 
-    // enforce default params to be last
-    "default-param-last": "warn",
+    // declare one variable per line
+    "one-var": ["warn", "never"],
 
-    // enforce dot notation when possible
+    // prefer const variables
+    "prefer-const": "warn",
+
+    // =============
+    // === Style ===
+    // =============
+
+    // prefer single quotes
+    "quotes": ["warn", "single", { "avoidEscape": true }],
+
+    // use camelcase identifiers
+    "camelcase": "warn",
+
+    // prefer double quotes in jsx
+    "jsx-quotes": "warn",
+
+    // use spaced comments
+    "spaced-comment": [
+      "warn",
+      "always",
+      { "block": { "balanced": true } }
+    ],
+
+    // use uncapitalized comments
+    "capitalized-comments": ["warn", "never"],
+
+    // use spaces inside objects
+    "object-curly-spacing": ["warn", "always"],
+
+    // ==============
+    // === Syntax ===
+    // ==============
+
+    // use triple equals
+    "eqeqeq": "warn",
+
+    // parentheses around iifes
+    "wrap-iife": "warn",
+
+    // use dot notation
     "dot-notation": "warn",
 
-    // enforce uncapitalized comments
-    "capitalized-comments": ["warn", "never"]
+    // no extra semicolons
+    "no-extra-semi": "warn",
+
+    // no fallthrough for case
+    "no-fallthrough": "warn",
+
+    // use object shorthands
+    "object-shorthand": "warn",
+
+    // no nested ternary expressions
+    "no-nested-ternary": "warn",
+
+    // require default params to be last
+    "default-param-last": "warn",
+
+    // no unecessary ternary expressions
+    "no-unneeded-ternary": "warn",
+
+    // use operator assignment shorthands
+    "operator-assignment": "warn",
+
+    // no duplicate imports from same module
+    "no-duplicate-imports": "warn",
+
+    // prefer arrow callbacks
+    "prefer-arrow-callback": "warn",
+
+    // prefer exponentiation operator
+    "prefer-exponentiation-operator": "warn"
   }
 }
