@@ -27,8 +27,8 @@ func! LightlineFiletype()
 endfunc
 
 " amount of tabs
-func! LightlineTabsCount()
-  return ' ' . tabpagenr() . '/' . tabpagenr('$')
+func! LightlineTabNum()
+  return ' ' . tabpagenr()
 endfunc
 
 " lightline config
@@ -81,8 +81,8 @@ let g:lightline.inactive = {
 
 " functions
 let g:lightline.component_function = {
-  \ 'filetype':  'LightlineFiletype',
-  \ 'tabscount': 'LightlineTabsCount',
+  \ 'filetype': 'LightlineFiletype',
+  \ 'tabnum':   'LightlineTabNum',
 \}
 
 " color linter symbols
@@ -116,8 +116,8 @@ let g:lightline.tabline = {
   \   ['logo', 'buffers'],
   \ ],
   \ 'right': [
-  \   ['tabscount'],
-  \ ],
+  \   ['tabnum']
+  \ ]
 \}
 
 " refresh with timer
