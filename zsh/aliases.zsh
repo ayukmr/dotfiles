@@ -4,42 +4,46 @@
 
 # general aliases
 alias e='$EDITOR'
-alias rmd='rm -rf'
 alias bel='tput bel'
-alias rel='exec $SHELL -l'
-alias lst='cd - &> /dev/null'
-alias files='find . -type file'
+alias rel='exec -l zsh'
+alias qlm='qlmanage -p'
+alias fls='find . -type file'
 alias -- +x='chmod +x'
 
-# command aliases
-alias clr='clear'
-alias path='echo $PATH | tr -s ":" "\n"'
+# complex aliases
+alias bdg='tput bel && notify'
+alias path='tr -s ":" "\n" <<< "$PATH"'
 alias rmds='find . -name .DS_Store -type file -delete'
-alias badge='tput bel && notify'
-alias zgenr='zgen reset && exec $SHELL -l'
+alias zgnr='zgen reset && exec -l "$SHELL"'
 alias clear='tput reset && unset FIRST_LINE'
 
 # ls aliases
-alias l='ls -AhG'
-alias ll='ls -AlhG'
+alias l='gls -pA --color'
+alias ll='gls -lhpA --color'
+
+# recursive aliases
+alias rmr='rm -r'
+alias rmf='rm -rf'
+alias cpr='cp -r'
 
 # cd aliases
-alias cdf='cd $(pwdf)'
-alias home='cd ~'
-function back { cd ${(l:$1*3::../:)} }
-function mkcd { mkdir -p $@ && cd $_ }
+alias cdf='cd "$(pwdf)"'
+function mkcd { mkdir -p "$@" && cd "$_" }
 
-# dot aliases
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+# shorthands
+alias b='bat'
+alias bw='brew'
+alias cl='curl'
+alias clr='clear'
+alias drv='direnv'
+alias sha='sha1sum'
 
 # creation aliases
 alias mk='touch'
-alias mkd='mkdir -p'
+alias mkd='mkdir'
 
 # lang aliases
-alias js='node'
+alias nd='node'
 alias sw='swift'
 alias gr='go run .'
 alias osa='osascript'
@@ -50,21 +54,14 @@ alias ltc='litecli'
 
 # ruby aliases
 alias rb='ruby'
-alias rk='rake'
-alias bn='bundle'
-
-# crystal aliases
-alias sr='shards run'
-alias sb='shards build'
-alias si='shards install'
+alias ru='rackup'
+alias bnd='bundle'
 
 # python aliases
 alias py='python3'
-alias py2='python'
 alias ipy='ipython'
 
 # rust aliases
-alias rc='rustc'
 alias c='cargo'
 alias cr='cargo run'
 alias ct='cargo test'
@@ -77,10 +74,12 @@ alias cbr='cargo build --release'
 alias y='yarn'
 alias ya='yarn add'
 alias yd='yarn dev'
+alias yr='yarn run'
 alias ys='yarn start'
 alias yb='yarn build'
 alias yg='yarn global'
 alias ysv='yarn serve'
+alias yrm='yarn remove'
 alias yga='yarn global add'
 alias ybs='yarn build && yarn start'
 alias yrs='yarn run react-scripts start'
@@ -109,9 +108,11 @@ alias gcm='git commit -m'
 alias glo='git log --oneline'
 alias gdc='git diff --cached'
 
-# tmux aliases
+# tmux command aliases
 alias tm='tmux'
-alias tx='tmuxinator'
+alias tmx='tmuxinator'
+
+# tmux aliases
 alias td='tmux detach'
 alias tch='tmux clear-history'
 alias tls='tmux list-sessions'
@@ -121,13 +122,25 @@ alias v='anyvim'
 alias vi='vim'
 alias nv='nvim'
 
+# quark aliases
+alias qk='quark'
+alias ql='quark list'
+alias qcl='quark clean'
+
+# zest aliases
+alias zt='zest'
+alias ztc='zest config run'
+alias ztp='zest packages run'
+alias zts='zest script run'
+
 # tldr aliases
 alias tl='tldr'
 alias tlu='tldr --update'
 
+# httpie aliases
+alias hp='https'
+alias hpx='http'
+
 # system aliases
 alias svr='open -a ScreenSaverEngine'
 alias slp='pmset sleepnow &> /dev/null'
-
-# other aliases
-alias qk='quark'
