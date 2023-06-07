@@ -56,7 +56,7 @@ let g:lightline.mode_map = {
   \ 't':      'TMN',
 \}
 
-" statusline
+" active statusline
 let g:lightline.active = {
   \ 'left': [
   \   ['mode'],
@@ -70,6 +70,7 @@ let g:lightline.active = {
   \ ],
 \}
 
+" inactive statusline
 let g:lightline.inactive = {
   \ 'left': [
   \   ['filename', 'modified']
@@ -79,26 +80,20 @@ let g:lightline.inactive = {
   \ ],
 \}
 
-" functions
-let g:lightline.component_function = {
-  \ 'filetype': 'LightlineFiletype',
-  \ 'tabnum':   'LightlineTabNum',
+" tabline
+let g:lightline.tabline = {
+  \ 'left': [
+  \   ['logo', 'buffers'],
+  \ ],
+  \ 'right': [
+  \   ['tabnum']
+  \ ]
 \}
 
 " color linter symbols
 highlight LightlineErrors   ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2c323c
 highlight LightlineWarnings ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2c323c
 highlight LightlineInfo     ctermfg=39  ctermbg=236 guifg=#61afef guibg=#2c323c
-
-" bufferline component
-let g:lightline.component_expand = {
-  \ 'buffers': 'lightline#bufferline#buffers',
-\}
-
-" bufferline component type
-let g:lightline.component_type = {
-  \ 'buffers': 'tabsel',
-\}
 
 " components
 let g:lightline.component = {
@@ -110,14 +105,20 @@ let g:lightline.component = {
   \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
 \}
 
-" tabline
-let g:lightline.tabline = {
-  \ 'left': [
-  \   ['logo', 'buffers'],
-  \ ],
-  \ 'right': [
-  \   ['tabnum']
-  \ ]
+" functions
+let g:lightline.component_function = {
+  \ 'filetype': 'LightlineFiletype',
+  \ 'tabnum':   'LightlineTabNum',
+\}
+
+" bufferline component
+let g:lightline.component_expand = {
+  \ 'buffers': 'lightline#bufferline#buffers',
+\}
+
+" bufferline component type
+let g:lightline.component_type = {
+  \ 'buffers': 'tabsel',
 \}
 
 " refresh with timer
