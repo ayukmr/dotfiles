@@ -106,6 +106,9 @@ Plug 'mhinz/vim-startify', { 'as': 'startify' }
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
 
+" [targets] additional targets
+Plug 'wellle/targets.vim', { 'as': 'targets' }
+
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Nvim()
 
