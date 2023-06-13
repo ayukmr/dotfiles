@@ -81,3 +81,13 @@ focus-screen-1:
 focus-screen-2:
   mod: mod1
   key: w
+
+# throw to first screen
+throw-screen-1:
+  mod: mod2
+  key: q
+
+# throw to second screen
+throw-screen-2:
+  mod: mod2
+  key: w
