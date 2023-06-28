@@ -96,9 +96,6 @@ set noshowmode
 " don't wrap lines
 set nowrap
 
-" smoother ruby syntax
-set regexpengine=1
-
 " conceal level
 set conceallevel=2
 
