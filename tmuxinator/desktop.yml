@@ -15,4 +15,3 @@ windows:
         - btm
 
   - editor: <%= ENV['EDITOR'] %>
-  - feeds:  newsboat
