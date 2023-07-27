@@ -29,6 +29,6 @@
 
 	sth = stash
 	cfg = config
+	psu = push -u origin
 	rao = remote add origin
-	psu = push -u origin main
 	rsh = reset --soft HEAD~1
