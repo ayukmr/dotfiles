@@ -14,4 +14,4 @@ windows:
         - ranger
         - btm
 
-  - editor: <%= ENV['EDITOR'] %>
+  - editor: anyvim
