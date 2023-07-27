@@ -9,6 +9,7 @@
 # layouts
 layouts:
   - tall
+  - tall-right
   - fullscreen
 
 # floating apps
