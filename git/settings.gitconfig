@@ -45,3 +45,7 @@
 [url "https://github.com/"]
 	# alias for github
 	insteadOf = gh:
+
+[url "https://github.com/ayukmr/"]
+	# alias for ayukmr
+	insteadOf = ak:
