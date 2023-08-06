@@ -197,3 +197,20 @@ augroup plug_no_numbers
   " disable line numbers in vim plug buffer
   auto FileType vim-plug setlocal nonumber
 augroup END
+
+" ===============
+" === VimWiki ===
+" ===============
+
+" wiki location
+let g:vimwiki_list = [{'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+
+" keybinds prefix
+let g:vimwiki_map_prefix = '<Leader>v'
+
+" navigate links
+nnoremap [v <Plug>VimwikiPrevLink
+nnoremap ]v <Plug>VimwikiNextLink
+
+" toggle lists
+nnoremap <Leader>vl <Plug>VimwikiListToggle

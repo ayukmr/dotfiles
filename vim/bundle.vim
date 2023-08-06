@@ -11,6 +11,11 @@ func! Nvim(...)
     \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
 
+if !exists('g:load_vimwiki') || !g:load_vimwiki
+  " disable vimwiki
+  let g:loaded_vimwiki = 1
+endif
+
 call plug#begin('~/.vim/bundle')
 
 " [bbye] better :bd and :bw
@@ -117,5 +122,8 @@ Plug 'SirVer/ultisnips', Nvim()
 
 " [unimpaired] bracket mappings
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
+
+" [vimwiki] personal wiki in markdown
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
