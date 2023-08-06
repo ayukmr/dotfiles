@@ -72,5 +72,6 @@ packages:
       - iterm2
       - raycast
       - amethyst
+      - maestral
       - hammerspoon
       - netnewswire
