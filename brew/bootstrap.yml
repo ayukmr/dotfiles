@@ -26,6 +26,10 @@ packages:
 
   packages:
     - brew install:
+      # shells
+      - zsh
+      - bash
+
       # dev
       - gh
       - nvim
