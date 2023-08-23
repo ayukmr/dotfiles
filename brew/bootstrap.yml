@@ -73,10 +73,12 @@ packages:
 
     - brew install --cask:
       - iina
+      - stats
       - iterm2
       - raycast
       - amethyst
       - maestral
+      - shortcat
       - hiddenbar
+      - sf-symbols
       - hammerspoon
-      - netnewswire
