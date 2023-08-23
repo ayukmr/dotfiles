@@ -83,7 +83,7 @@ let g:lightline.inactive = {
 " tabline
 let g:lightline.tabline = {
   \ 'left': [
-  \   ['logo', 'buffers'],
+  \   ['buffers'],
   \ ],
   \ 'right': [
   \   ['tabnum']
@@ -92,7 +92,6 @@ let g:lightline.tabline = {
 
 " components
 let g:lightline.component = {
-  \ 'logo':     '',
   \ 'lineinfo': '%02l:%02c',
   \
   \ 'errors':   '%#DiagnosticError#%#LightlineLeft_active_2# %{LightlineErrors()}',
