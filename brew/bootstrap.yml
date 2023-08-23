@@ -56,7 +56,6 @@ packages:
       - bottom
       - ranger
       - litecli
-      - newsboat
       - diff-so-fancy
 
       # data tools
