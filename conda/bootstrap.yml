@@ -1,0 +1,7 @@
+# =======================
+# === Conda Bootstrap ===
+# =======================
+
+config:
+  link:
+    - ~/.condarc: condarc

@@ -1,0 +1,6 @@
+# ====================
+# === Conda Config ===
+# ====================
+
+# disable prompt info
+changeps1: False
