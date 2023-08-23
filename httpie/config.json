@@ -1,5 +1,7 @@
 {
   "default_options": [
+    "--follow",
+    "--timeout=60",
     "--style=one-dark"
   ]
 }
