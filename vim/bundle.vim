@@ -69,9 +69,6 @@ Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
 
-" [hy] hy syntax files
-Plug 'hylang/vim-hy', { 'as': 'hy' }
-
 " [lightline] enhanced statusline
 Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
 
