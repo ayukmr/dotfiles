@@ -11,11 +11,6 @@ func! Nvim(...)
     \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
 
-if !exists('g:load_vimwiki') || !g:load_vimwiki
-  " disable vimwiki
-  let g:loaded_vimwiki = 1
-endif
-
 call plug#begin('~/.vim/bundle')
 
 " [bbye] better :bd and :bw

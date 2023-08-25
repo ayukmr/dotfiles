@@ -208,6 +208,9 @@ let g:vimwiki_list = [{'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 " keybinds prefix
 let g:vimwiki_map_prefix = '<Leader>v'
 
+" disable global extension
+let g:vimwiki_global_ext = 0
+
 " navigate links
 nnoremap [v <Plug>VimwikiPrevLink
 nnoremap ]v <Plug>VimwikiNextLink
