@@ -22,7 +22,7 @@ set -g status-left '#[fg=#2c2e34 bg=#{?client_prefix,#61afef,#{?pane_in_mode,#98
 # right side
 set -g status-right-style  none
 set -g status-right-length 250
-set -g status-right '#T #[fg=#3e4452 bg=#2c323c]#[fg=#abb2bf bg=#3e4452]  #I:#P |  #S #[fg=#{?client_prefix,#61afef,#{?pane_in_mode,#98c379,#{?window_zoomed_flag,#e5c07b,#c678dd}}} bg=#3e4452]#[fg=#2c2e34 bg=#{?client_prefix,#61afef,#{?pane_in_mode,#98c379,#{?window_zoomed_flag,#e5c07b,#c678dd}}} bold] %I:%M '
+set -g status-right '#[fg=#3e4452 bg=#2c323c]#[fg=#abb2bf bg=#3e4452]  #I:#P |  #S #[fg=#{?client_prefix,#61afef,#{?pane_in_mode,#98c379,#{?window_zoomed_flag,#e5c07b,#c678dd}}} bg=#3e4452]#[fg=#2c2e34 bg=#{?client_prefix,#61afef,#{?pane_in_mode,#98c379,#{?window_zoomed_flag,#e5c07b,#c678dd}}} bold] %I:%M '
 
 # window tabs styles
 set -g window-status-separator ''
