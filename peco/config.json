@@ -4,11 +4,11 @@
   "InitialFilter":   "Fuzzy",
 
   "Style": {
-    "Basic":          ["default", "on_default"        ],
-    "SavedSelection": ["yellow",  "bold"              ],
-    "Selected":       ["black",   "on_magenta", "bold"],
-    "Matched":        ["blue",    "bold"              ],
-    "Query":          ["yellow"                       ]
+    "Basic":          ["default", "on_default"],
+    "SavedSelection": ["yellow",  "bold"],
+    "Selected":       ["black",   "on_blue", "bold"],
+    "Matched":        ["yellow",  "bold"],
+    "Query":          ["default"]
   },
 
   "Keymap": {
