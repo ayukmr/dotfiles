@@ -37,10 +37,6 @@ let g:lightline = {}
 " colorscheme
 let g:lightline.colorscheme = 'onedark'
 
-" separators
-let g:lightline.separator = { 'left': '', 'right': '' }
-let g:lightline.tabline_subseparator = { 'left': ')', 'right': '|' }
-
 " mode abbreviations
 let g:lightline.mode_map = {
   \ 'n':      'NML',
