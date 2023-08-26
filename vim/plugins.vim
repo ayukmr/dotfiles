@@ -211,6 +211,9 @@ let g:vimwiki_map_prefix = '<Leader>v'
 " disable global extension
 let g:vimwiki_global_ext = 0
 
+" disable emoji
+let g:vimwiki_emoji_enable = 0
+
 " navigate links
 nnoremap [v <Plug>VimwikiPrevLink
 nnoremap ]v <Plug>VimwikiNextLink
