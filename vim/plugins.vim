@@ -220,3 +220,17 @@ nnoremap ]v <Plug>VimwikiNextLink
 
 " toggle lists
 nnoremap <Leader>vl <Plug>VimwikiListToggle
+
+" search tags
+nnoremap <Leader>vt :call VimwikiTag()<CR>
+
+" search tags and open location list
+func VimwikiTag()
+  " search tags
+  execute 'VimwikiSearchTags ' . input('> ')
+
+  if !get(getloclist(0, { 'winid': 0 }), 'winid', 0)
+    " open location list
+    lopen
+  endif
+endfunc
