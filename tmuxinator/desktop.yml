@@ -15,4 +15,6 @@ windows:
         - btm
 
   - editor: anyvim
-  - wiki: anyvim -c 'let g:load_vimwiki = 1 | cd ~/wiki | VimwikiIndex'
+  - wiki:
+    - cd ~/wiki
+    - anyvim -c VimwikiIndex
