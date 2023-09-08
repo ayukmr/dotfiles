@@ -79,6 +79,9 @@ Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 
+" [plenary] utils for neovim lua
+Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
+
 " [polyglot] language syntax pack
 Plug 'sheerun/vim-polyglot', { 'as': 'polyglot', 'do': 'rm -r ftplugin after/ftplugin' }
 
