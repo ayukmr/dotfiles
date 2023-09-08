@@ -122,60 +122,6 @@ cmp.setup.cmdline(':', {
 })
 EOF
 
-" ================
-" === Dressing ===
-" ================
-
-" title highlight
-highlight! link FloatTitle Normal
-
-lua <<EOF
--- dressing module
-local dressing = require 'dressing'
-
--- setup dressing
-dressing.setup({
-  input = {
-    win_options = {
-      winblend = 0,
-    }
-  },
-  select = {
-    backend = 'builtin',
-    builtin = {
-      win_options = {
-        winblend = 0,
-      }
-    },
-  },
-})
-EOF
-
-" ==============
-" === Fidget ===
-" ==============
-
-" title highlight
-highlight! link FidgetTitle Label
-
-lua <<EOF
--- fidget module
-local fidget = require 'fidget'
-
--- setup fidget
-fidget.setup({
-  text = {
-    spinner = 'dots',
-  },
-  window = {
-    blend = 25,
-  },
-  fmt = {
-    stack_upwards = false,
-  },
-})
-EOF
-
 " =====================
 " === LSP Installer ===
 " =====================

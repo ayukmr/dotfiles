@@ -40,14 +40,8 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
-" [dressing] better ui for lsp
-Plug 'stevearc/dressing.nvim', Nvim({ 'as': 'dressing' })
-
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
-
-" [fidget] lsp status ui
-Plug 'j-hui/fidget.nvim', Nvim({ 'as': 'fidget' })
 
 " [fzf] fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
@@ -84,9 +78,6 @@ Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
 
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
-
-" [plenary] utils for neovim lua
-Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
 " [polyglot] language syntax pack
 Plug 'sheerun/vim-polyglot', { 'as': 'polyglot', 'do': 'rm -r ftplugin after/ftplugin' }
