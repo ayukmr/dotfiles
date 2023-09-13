@@ -86,13 +86,18 @@ let g:lightline.tabline = {
   \ ]
 \}
 
+" color linter symbols
+highlight LightlineError ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2c323c
+highlight LightlineWarn  ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2c323c
+highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#61afef guibg=#2c323c
+
 " components
 let g:lightline.component = {
   \ 'lineinfo': '%02l:%02c',
   \
-  \ 'errors':   '%#DiagnosticError#%#LightlineLeft_active_2# %{LightlineErrors()}',
-  \ 'warnings': '%#DiagnosticWarn#%#LightlineLeft_active_2# %{LightlineWarnings()}',
-  \ 'info':     '%#DiagnosticInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
+  \ 'errors':   '%#LightlineError#%#LightlineLeft_active_2# %{LightlineErrors()}',
+  \ 'warnings': '%#LightlineWarn#%#LightlineLeft_active_2# %{LightlineWarnings()}',
+  \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
 \}
 
 " functions
