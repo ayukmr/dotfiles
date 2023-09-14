@@ -1,9 +1,0 @@
-# ====================
-# === Tokei Config ===
-# ====================
-
-# columns width
-columns = 65
-
-# sort by lines
-sort = "lines"

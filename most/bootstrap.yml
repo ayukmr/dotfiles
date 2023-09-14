@@ -1,7 +1,0 @@
-# ======================
-# === Most Bootstrap ===
-# ======================
-
-config:
-  link:
-    - ~/.mostrc: mostrc
