@@ -27,5 +27,5 @@ scripts:
     test:
       - "[[ ! $(tail -n 2 ~/.cfg/hammerspoon/init.lua) == \"package.path = '../.cfg/colemak/hammerspoon/?.lua;' .. package.path\nrequire 'colemak'\" ]]":
           shell:
-            - ? echo "package.path = '../.cfg/colemak/hammerspoon/?.lua;' .. package.path\nrequire 'colemak'" >> ~/.cfg/hammerspoon/init.lua
+            - ? echo "package.path = os.getenv('HOME') .. '/.cfg/colemak/hammerspoon/?.lua;' .. package.path\nrequire 'colemak'" >> ~/.cfg/hammerspoon/init.lua
               : 'sourcing colemak.lua in hammerspoon config'

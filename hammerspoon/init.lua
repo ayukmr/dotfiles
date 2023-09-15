@@ -2,4 +2,4 @@
 -- === Hammerspoon Init ===
 -- ========================
 
-package.path = '../.cfg/hammerspoon/?.lua;' .. package.path
+package.path = os.getenv('HOME') .. '/.cfg/hammerspoon/?.lua;' .. package.path
