@@ -52,9 +52,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-# python config file
-export PYTHONSTARTUP="$HOME/.cfg/python/init.py"
-
 # ripgrep config location
 export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
 
