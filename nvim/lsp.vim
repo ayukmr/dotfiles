@@ -175,7 +175,7 @@ highlight! link NormalFloat Normal
 augroup lsp_info_background
   auto!
   " set background for lsp info
-  auto FileType lspinfo set winhighlight=NormalFloat:PMenu
+  auto FileType lspinfo set winhighlight=NormalFloat:Pmenu
 augroup END
 
 lua <<EOF
