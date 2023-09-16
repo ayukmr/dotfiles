@@ -71,13 +71,6 @@ cmp.setup({
     end,
   },
 
-  -- window style
-  window = {
-    documentation = {
-      winhighlight = 'Normal:Pmenu'
-    }
-  },
-
   -- completion keybinds
   mapping = cmp.mapping.preset.insert {
     ['<C-e>'] = cmp.mapping.abort(),
@@ -168,15 +161,6 @@ nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gr :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> gt :lua vim.lsp.buf.type_definition()<CR>
 nnoremap <silent> gi :lua vim.lsp.buf.implementation()<CR>
-
-" floating window background
-highlight! link NormalFloat Normal
-
-augroup lsp_info_background
-  auto!
-  " set background for lsp info
-  auto FileType lspinfo set winhighlight=NormalFloat:Pmenu
-augroup END
 
 lua <<EOF
 -- lsp modules
