@@ -19,6 +19,3 @@ window:
 key_bindings:
   # create new window
   - { key: N, mods: Command, action: CreateNewWindow }
-
-  # clear current log
-  - { key: L, mods: Control, action: ClearLogNotice  }
