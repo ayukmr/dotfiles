@@ -4,6 +4,7 @@
 
 # allow 256 colors
 set -g default-terminal xterm-256color
+set -ga terminal-overrides ',*256col*:Tc'
 
 # set default shell
 set -g default-shell /bin/zsh

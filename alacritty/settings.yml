@@ -16,6 +16,10 @@ window:
   # title
   title: Alacritty
 
+env:
+  # set colors
+  TERM: xterm-256color
+
 key_bindings:
   # create new window
   - { key: N, mods: Command, action: CreateNewWindow }
