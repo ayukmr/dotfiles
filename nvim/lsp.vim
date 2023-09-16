@@ -73,8 +73,9 @@ cmp.setup({
 
   -- window style
   window = {
-    completion    = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
+    documentation = {
+      winhighlight = 'Normal:Pmenu'
+    }
   },
 
   -- completion keybinds
@@ -134,7 +135,6 @@ local lsp_installer = require 'nvim-lsp-installer'
 lsp_installer.setup({
   automatic_installation = true,
   ui = {
-    border = 'rounded',
     icons = {
       server_installed   = '',
       server_pending     = '',
@@ -183,27 +183,7 @@ lua <<EOF
 local lspconfig    = require 'lspconfig'
 local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 
--- window border
-local border = {
-  {'╭', 'FloatBorder'},
-  {'─', 'FloatBorder'},
-  {'╮', 'FloatBorder'},
-  {'│', 'FloatBorder'},
-  {'╯', 'FloatBorder'},
-  {'─', 'FloatBorder'},
-  {'╰', 'FloatBorder'},
-  {'│', 'FloatBorder'},
-}
-
 local open_floating_preview = vim.lsp.util.open_floating_preview
-
--- open floating preview with custom border
-function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
-  opts = opts or {}
-  opts.border = opts.border or border
-
-  return open_floating_preview(contents, syntax, opts, ...)
-end
 
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
