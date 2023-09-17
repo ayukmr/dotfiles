@@ -57,7 +57,6 @@ let s:exact_icons['package.json'] = ''
 let s:pattern_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = s:pattern_icons
 
-let s:pattern_icons['\d;#FZF']     = ''
 let s:pattern_icons['.*webpack.*'] = 'ﰩ'
 
 " ===============
