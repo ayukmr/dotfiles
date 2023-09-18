@@ -3,5 +3,8 @@
 # ========================
 
 config:
+  dirs:
+    - ~/.config/httpie
+
   link:
     - ~/.config/httpie: config.json

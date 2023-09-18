@@ -3,5 +3,8 @@
 # ==========================
 
 config:
+  dirs:
+    - ~/.config/cmus
+
   files:
     - ~/.config/cmus/rc: 'source ~/.cfg/cmus/rc'
