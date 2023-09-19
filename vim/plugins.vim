@@ -50,9 +50,6 @@ let s:exact_icons['[plugins]'] = ''
 let s:exact_icons['.gitignore']     = ''
 let s:exact_icons['.gitattributes'] = ''
 
-let s:exact_icons['cargo.toml']   = ''
-let s:exact_icons['package.json'] = ''
-
 " pattern icons
 let s:pattern_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = s:pattern_icons
