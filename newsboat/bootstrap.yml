@@ -8,11 +8,6 @@ config:
 
   files:
     - ~/.config/newsboat/config: 'include "~/.cfg/newsboat/config"'
-    - ~/.config/newsboat/instapaper.json: |
-        {
-          "email":    "<email>",
-          "password": "<password>"
-        }
 
   link:
     - ~/.config/newsboat: urls
