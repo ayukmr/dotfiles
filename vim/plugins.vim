@@ -18,27 +18,20 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 let s:extension_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = s:extension_icons
 
-let s:extension_icons['kt']   = ''
 let s:extension_icons['ts']   = 'ﯤ'
 let s:extension_icons['cr']   = ''
 let s:extension_icons['erb']  = ''
 let s:extension_icons['toml'] = ''
 let s:extension_icons['lock'] = ''
 let s:extension_icons['tmux'] = ''
-let s:extension_icons['adoc'] = ''
 
 let s:extension_icons['svelte']      = ''
-let s:extension_icons['textile']     = ''
 let s:extension_icons['applescript'] = ''
 
 let s:extension_icons['yml']  = ''
 let s:extension_icons['yaml'] = ''
 
-let s:extension_icons['cson']  = ''
-let s:extension_icons['jsonc'] = ''
-
 let s:extension_icons['ttf'] = 'ﯔ'
-let s:extension_icons['otf'] = 'ﯔ'
 
 " exact icons
 let s:exact_icons = {}
