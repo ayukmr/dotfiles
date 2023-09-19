@@ -2,6 +2,10 @@
 # === Diff-So-Fancy Settings ===
 # ==============================
 
+[diff-so-fancy]
+	# ruler width
+	rulerWidth = 80
+
 [color "diff-highlight"]
 	# diff styles
 	oldNormal    = red bold
