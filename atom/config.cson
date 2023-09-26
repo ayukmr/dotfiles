@@ -20,7 +20,7 @@
   editor:
     # font
     defaultFontSize: 12
-    fontFamily: 'Cascadia NF, Menlo, Source Code Pro, monospace'
+    fontFamily: 'Cascadia NF'
     fontSize: 12
 
     # invisibles

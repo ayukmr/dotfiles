@@ -7,7 +7,7 @@
   // === General Settings ===
   // ========================
 
-  "editor.fontFamily": "Cascadia NF, Menlo, Source Code Pro, Courier, monospace",
+  "editor.fontFamily": "Cascadia NF",
   "editor.cursorStyle": "block",
   "workbench.colorTheme": "One Dark Pro",
   "workbench.productIconTheme": "fluent-icons",
