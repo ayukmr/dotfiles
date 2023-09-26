@@ -7,7 +7,7 @@ config:
     - ~/.config/newsboat
 
   files:
-    - ~/.config/newsboat/config: 'include "~/.cfg/newsboat/config"'
+    - ~/.config/newsboat/config: |
+        miniflux-token "<api-key>"
 
-  link:
-    - ~/.config/newsboat: urls
+        include "~/.cfg/newsboat/config"
