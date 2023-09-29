@@ -3,7 +3,7 @@
 # ====================
 
 [color]
-	# use color automatically
+	# automatic color
 	ui = auto
 
 [color "diff"]
@@ -39,7 +39,7 @@
 	colorMoved = plain
 
 [init]
-	# use main as default branch
+	# main as default branch
 	defaultBranch = main
 
 [url "https://github.com/"]

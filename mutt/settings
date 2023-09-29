@@ -5,14 +5,14 @@
 # disable wrap markers
 set markers = no
 
-# set signature
+# signature
 set signature = ~/.config/mutt/signature
 
 # state files
 set record    = ~/.cache/mutt/record
 set postponed = ~/.cache/mutt/postponed
 
-# set caches
+# caches
 set my_cache = ~/.cache/mutt/cache
 set message_cachedir = $my_cache
 set header_cache     = $my_cache
@@ -30,7 +30,7 @@ set attach_format = "  %?f?%f&No Name? %> %s  "
 # disable help line
 set help = no
 
-# set editor
+# mail editor
 set editor = "anyvim -c 'set laststatus=0' -c 'set showtabline=0' -c 'set nonumber' -c 'set foldcolumn=1'"
 
 # don't beep on errors

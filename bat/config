@@ -11,7 +11,7 @@
 # never wrap text
 --wrap never
 
-# use 4 char tabs
+# four char tabs
 --tabs 4
 
 # show line numbers

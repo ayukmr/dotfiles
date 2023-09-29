@@ -2,7 +2,7 @@
 # === Mutt Gmail ===
 # ==================
 
-# set name
+# real name
 set realname = $my_name
 
 # imap credentials

@@ -12,13 +12,13 @@ def configure(c):
     # disable banner
     c.TerminalIPythonApp.display_banner = False
 
-    # set colors
+    # colors
     c.TerminalInteractiveShell.highlighting_style = 'one-dark'
 
-    # set title string
+    # title string
     c.TerminalInteractiveShell.term_title_format = '{cwd} – ipython'
 
-    # set custom prompt
+    # custom prompt
     c.TerminalInteractiveShell.prompts_class = Prompt
 
     # enable truecolor

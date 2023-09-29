@@ -9,7 +9,7 @@ miniflux-url "https://reader.miniflux.app"
 # open in gui browser
 browser open
 
-# use custom pager
+# custom pager
 html-renderer cat
 pager ~/.cfg/newsboat/pager
 

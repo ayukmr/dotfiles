@@ -2,7 +2,7 @@
 # === Tmux Keybinds ===
 # =====================
 
-# set prefix to ctrl-s
+# ctrl-s prefix
 set -g prefix C-s
 
 # send prefix

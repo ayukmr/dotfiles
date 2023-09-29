@@ -34,7 +34,7 @@ zstyle ':completion:*' menu select
 # group completions under group name
 zstyle ':completion:*' group-name ''
 
-# use ls colors in file completions
+# ls colors in file completions
 zstyle ':completion:*:default' list-colors "${(s/:/)LS_COLORS}"
 
 # completion headers

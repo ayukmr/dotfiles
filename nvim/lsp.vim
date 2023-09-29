@@ -45,7 +45,7 @@ local symbols = {
 
 -- setup cmp
 cmp.setup({
-  -- use ultisnips
+  -- ultisnips snippets
   snippet = {
     expand = function(args)
       vim.fn['UltiSnips#Anon'](args.body)
@@ -93,7 +93,7 @@ cmp.setup({
     { name = 'path'      },
   }),
 
-  -- enable ghost text
+  -- ghost text
   experimental = {
     ghost_text = true,
   },

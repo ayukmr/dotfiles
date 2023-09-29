@@ -2,7 +2,7 @@
 # === Glow Config ===
 # ===================
 
-# use custom style
+# custom style
 style: ~/.cfg/glow/style.json
 
 # disable network

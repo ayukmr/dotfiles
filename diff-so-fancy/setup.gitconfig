@@ -3,9 +3,9 @@
 # ===========================
 
 [core]
-	# use diff-so-fancy for paging
+	# diff-so-fancy as pager
 	pager = diff-so-fancy | less -RX --tabs 4
 
 [interactive]
-	# use diff-so-fancy as diff filter
+	# diff-so-fancy as diff filter
 	diffFilter = diff-so-fancy --patch

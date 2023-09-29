@@ -25,12 +25,12 @@ function alias_for {
   fi
 }
 
-# set window title
+# window title
 function set_title {
   echo -n "\e]2;$(print -P '%1/') – $(basename "$SHELL")\a"
 }
 
-# set window title with command
+# window title with command
 function set_title_cmd {
   local expanded
 
@@ -50,5 +50,5 @@ add-zsh-hook preexec set_title_cmd
 add-zsh-hook chpwd   set_title
 add-zsh-hook precmd  set_title
 
-# set title
+# init title
 set_title

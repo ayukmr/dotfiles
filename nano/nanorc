@@ -8,21 +8,21 @@ set nowrap
 # automatically indent lines
 set autoindent
 
-# enable mouse control
+# mouse control
 set mouse
 
 # always show line info
 set const
 
-# enable smooth scrolling
+# smooth scrolling
 set smooth
 
-# use regex search by default
+# regex search by default
 set regexp
 
 # disable keybinds help
 set nohelp
 
-# enable four space tabs
+# four space tabs
 set tabsize 4
 set tabstospaces

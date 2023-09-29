@@ -37,6 +37,6 @@ set -s escape-time 10
 # highlighted text, selections
 set -g mode-style 'bg=#3e4452'
 
-# use one as base index
+# one as base index
 set -g base-index      1
 set -g pane-base-index 1

@@ -12,7 +12,7 @@ set bell-style none
 # case insensitive matching
 set completion-ignore-case on
 
-# use vim keybinds
+# vim keybinds
 set editing-mode vi
 
 # show character after files

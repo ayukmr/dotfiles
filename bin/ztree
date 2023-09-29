@@ -9,7 +9,7 @@ indent='    '
 dir="$(basename "$PWD")"
 depth="${1:-500}"
 
-# use sed to create tree
+# sed to create tree
 tree="$(
   find . -maxdepth "$depth" |
   sed -E \

@@ -20,7 +20,7 @@ const settings = {
 // create service
 const service = new TurndownService(settings);
 
-// use github flavored markdown
+// github flavored markdown
 service.use(gfm);
 
 // convert images to ascii art

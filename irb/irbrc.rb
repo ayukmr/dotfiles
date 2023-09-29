@@ -19,7 +19,7 @@ class String
   def underline; "\e[4m#{self}\e[24m" end
 end
 
-# set prompt
+# prompt
 IRB.conf[:PROMPT][:DEFAULT] = {
   PROMPT_I: "#{'%m'.red.bold}:#{'%i'.blue}> ",
   PROMPT_S: "#{'%m'.red.bold}:#{'%i'.blue}* ",

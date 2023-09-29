@@ -2,5 +2,5 @@
 # === Gnuplot Init ===
 # ====================
 
-# set output type
+# output type
 set terminal dumb

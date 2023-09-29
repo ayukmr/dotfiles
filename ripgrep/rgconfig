@@ -12,7 +12,7 @@
 # search hidden files
 --hidden
 
-# use smart case
+# smart case
 --smart-case
 
 # line number style

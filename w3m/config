@@ -14,7 +14,7 @@ history 50
 # don't confirm quitting
 confirm_qq 0
 
-# use vim keybinds
+# vim keybinds
 vi_prec_num 1
 
 # wrap searches

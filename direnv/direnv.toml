@@ -6,5 +6,5 @@
 # load .env files
 load_dotenv = true
 
-# use strict settings
+# strict settings
 strict_env = true

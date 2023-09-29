@@ -2,7 +2,7 @@
 -- === GHCi Init ===
 -- =================
 
--- set prompt
+-- prompt
 :set prompt      "\ESC[1m\ESC[35mghci\ESC[0m> "
 :set prompt-cont "\ESC[1m\ESC[35mghci\ESC[0m* "
 

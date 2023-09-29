@@ -2,7 +2,7 @@
 # === Tmux Bundle ===
 # ===================
 
-# set plugins directory
+# plugins directory
 set-env -g TMUX_PLUGIN_MANAGER_PATH '~/.tmux/bundle'
 
 set -g @tpm_plugins \

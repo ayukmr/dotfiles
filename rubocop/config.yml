@@ -6,7 +6,7 @@ AllCops:
   # enable new cops
   NewCops: enable
 
-  # set ruby version
+  # ruby version
   TargetRubyVersion: 3.1
 
 # allow no empty line after guard clause
@@ -21,19 +21,19 @@ Layout/HashAlignment:
 Layout/FirstArgumentIndentation:
   Enabled: false
 
-# set max block length
+# max block length
 Metrics/BlockLength:
   Max: 50
 
-# set max method length
+# max method length
 Metrics/MethodLength:
   Max: 50
 
-# set max class length
+# max class length
 Metrics/ClassLength:
   Max: 250
 
-# set max module length
+# max module length
 Metrics/ModuleLength:
   Max: 250
 
@@ -57,7 +57,7 @@ Style/SingleLineMethods:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-# set preferred name for errors
+# preferred name for errors
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 

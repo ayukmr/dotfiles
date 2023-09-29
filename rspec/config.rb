@@ -3,6 +3,6 @@
 # ====================
 
 RSpec.configure do |c|
-  # use documentation formatter
+  # documentation formatter
   c.formatter = :doc
 end

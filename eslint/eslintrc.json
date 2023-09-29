@@ -11,7 +11,7 @@
   },
 
   "parserOptions": {
-    // use latest ecma version
+    // latest ecma version
     "ecmaVersion": "latest",
 
     // treat source as module
@@ -35,17 +35,17 @@
     // === Punctuation ===
     // ===================
 
-    // use semicolons
+    // semicolons
     "semi": "warn",
 
-    // use curly braces
+    // curly braces
     "curly": "warn",
 
     // =================
     // === Variables ===
     // =================
 
-    // use let and const
+    // let and const
     "no-var": "warn",
 
     // declare one variable per line
@@ -61,36 +61,36 @@
     // prefer single quotes
     "quotes": ["warn", "single", { "avoidEscape": true }],
 
-    // use camelcase identifiers
+    // camelcase identifiers
     "camelcase": "warn",
 
     // prefer double quotes in jsx
     "jsx-quotes": "warn",
 
-    // use spaced comments
+    // spaced comments
     "spaced-comment": [
       "warn",
       "always",
       { "block": { "balanced": true } }
     ],
 
-    // use uncapitalized comments
+    // uncapitalized comments
     "capitalized-comments": ["warn", "never"],
 
-    // use spaces inside objects
+    // spaces inside objects
     "object-curly-spacing": ["warn", "always"],
 
     // ==============
     // === Syntax ===
     // ==============
 
-    // use triple equals
+    // triple equals
     "eqeqeq": "warn",
 
     // parentheses around iifes
     "wrap-iife": "warn",
 
-    // use dot notation
+    // dot notation
     "dot-notation": "warn",
 
     // no extra semicolons
@@ -99,7 +99,7 @@
     // no fallthrough for case
     "no-fallthrough": "warn",
 
-    // use object shorthands
+    // object shorthands
     "object-shorthand": "warn",
 
     // no nested ternary expressions
@@ -111,7 +111,7 @@
     // no unecessary ternary expressions
     "no-unneeded-ternary": "warn",
 
-    // use operator assignment shorthands
+    // operator assignment shorthands
     "operator-assignment": "warn",
 
     // no duplicate imports from same module
