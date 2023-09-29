@@ -50,5 +50,5 @@ add-zsh-hook preexec set_title_cmd
 add-zsh-hook chpwd   set_title
 add-zsh-hook precmd  set_title
 
-# init title
+# initialize title
 set_title
