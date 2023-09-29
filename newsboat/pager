@@ -39,7 +39,7 @@ function spinner {
 }
 
 # convert html to markdown
-markdown=$(~/.cfg/newsboat/turndown < "$1" & spinner)
+markdown="$(~/.cfg/newsboat/turndown < "$1" & spinner)"
 
 # remove blank code blocks
 sed -E 's/^(> )+$//' <<< "$markdown" |
