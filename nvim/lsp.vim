@@ -167,8 +167,6 @@ lua <<EOF
 local lspconfig    = require 'lspconfig'
 local cmp_nvim_lsp = require 'cmp_nvim_lsp'
 
-local open_floating_preview = vim.lsp.util.open_floating_preview
-
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
