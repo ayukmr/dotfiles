@@ -2,7 +2,7 @@
 " === Colemak for Vim ===
 " =======================
 
-" use colemak keymap
+" colemak keymap
 set keymap=colemak
 
 " escape from insert mode

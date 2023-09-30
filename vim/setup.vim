@@ -13,11 +13,11 @@ if has('termguicolors')
   set termguicolors
 endif
 
-" use one dark theme
+" one dark theme
 let g:onedark_terminal_italics = 2
 colorscheme onedark
 
-" enable syntax highlighting
+" syntax highlighting
 syntax on
 
 " search highlight

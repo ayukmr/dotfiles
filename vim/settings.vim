@@ -30,7 +30,7 @@ set backupskip=
 set backupskip+=/tmp/*
 set backupskip+=/private/tmp/*
 
-" use two spaces instead of tabs
+" two spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
 set shiftround
@@ -75,7 +75,7 @@ set shortmess=atI
 " disable error bells
 set belloff=all
 
-" use system clipboard
+" system clipboard
 set clipboard=unnamed
 
 " show window title

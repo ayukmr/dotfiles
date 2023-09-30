@@ -123,7 +123,7 @@ call timer_start(&updatetime, {-> lightline#update() }, { 'repeat': -1 })
 " === Lightline Bufferline ===
 " ============================
 
-" enable icons in bufferline tabs
+" icons in bufferline tabs
 let g:lightline#bufferline#enable_devicons = 1
 
 " set title for unnamed buffers

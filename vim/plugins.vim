@@ -151,14 +151,14 @@ let g:startify_lists = [
   \ { 'type': 'commands',  'header': startify#pad([' Commands' ])},
 \]
 
-" don't change to file directory
+" disable changing directory
 let g:startify_change_to_dir = 0
 
 " colors
 highlight! link StartifyBracket StartifyNumber
 highlight! link StartifySlash   StartifyPath
 
-" enable devicons for startify
+" icons in startify
 func! StartifyEntryFormat()
   return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
 endfunc
