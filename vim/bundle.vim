@@ -44,7 +44,7 @@ Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
 " [fzf] fuzzy finder
-Plug 'junegunn/fzf', { 'do': './install --all' }
+Plug 'junegunn/fzf'
 
 " [fzf-vim] fzf support for vim
 Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
