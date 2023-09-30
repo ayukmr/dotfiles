@@ -69,7 +69,7 @@ set hidden
 " disable mouse
 set mouse=
 
-" disable intro message
+" shortmess options
 set shortmess=atI
 
 " disable error bells
