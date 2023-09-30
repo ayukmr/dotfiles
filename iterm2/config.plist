@@ -1422,9 +1422,9 @@
     <key>TabsHaveCloseButton</key>
     <true/>
     <key>TerminalMargin</key>
-    <integer>7</integer>
+    <integer>5</integer>
     <key>TerminalVMargin</key>
-    <integer>7</integer>
+    <integer>5</integer>
     <key>ToolbeltTools</key>
     <array>
         <string>Recent Directories</string>
