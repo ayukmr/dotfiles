@@ -38,14 +38,14 @@ function spinner {
   echo -n '\e[?25h' > /dev/stderr
 }
 
+# remove header
+body="$(awk 'BEGIN {header=1} header && NF==0 {header=0} !header {print $0}' "$1")"
+
 # convert html to markdown
-markdown="$(node ~/.cfg/newsboat/turndown-cli/index.js < "$1" & spinner)"
+markdown="$(node ~/.cfg/newsboat/turndown-cli/index.js <<< "$body" & spinner)"
 
 # remove blank code blocks
 sed -E 's/^(> )+$//' <<< "$markdown" |
-
-# remove lines from newsboat
-tail -n +2 |
 
 # format markdown for viewing
 glow -w 175 -s ~/.cfg/glow/style.json - |
