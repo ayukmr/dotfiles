@@ -4,16 +4,9 @@
   "main": "index.js",
   "bin": "index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "node index.js",
-    "build": "pkg . --out-path build"
-  },
   "dependencies": {
     "shelljs": "^0.8.5",
     "turndown": "^7.1.1",
     "turndown-plugin-gfm": "^1.0.2"
-  },
-  "devDependencies": {
-    "pkg": "^5.7.0"
   }
 }
