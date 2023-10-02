@@ -41,7 +41,7 @@ service.addRule('asciiImages', {
     } else {
       // create ascii art
       const { code, stdout } = shell.exec(
-        `curl -fsSL --retry 0 '${nodeSrc}' | magick - -auto-orient jpg:- | jp2a --colors --border --width=80 -`,
+        `curl -fsSL --retry 0 '${nodeSrc}' | chafa -s 100x100`,
         { silent: true }
       );
 

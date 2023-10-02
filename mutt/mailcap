@@ -5,6 +5,6 @@
 # view html using w3m
 text/html; w3m -I %{charset} -T text/html -cols 125; copiousoutput
 
-# view images using jp2a
-image/*; magick - -auto-orient jpg:- | jp2a --colors - | less -cR; needsterminal
-image/*; magick - -auto-orient jpg:- | jp2a --colors -; copiousoutput
+# view images using chafa
+image/*; chafa | less -cR; needsterminal
+image/*; chafa; copiousoutput
