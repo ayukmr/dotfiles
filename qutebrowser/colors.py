@@ -3,13 +3,14 @@
 # ==========================
 
 # colors
-red    = '#e06c75'
-yellow = '#e5c07b'
-green  = '#98c379'
-blue   = '#61afef'
-
-# black
-black        = '#282c34'
+black   = '#2c313a'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#e5c07b'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#abb2bf'
 bright_black = '#5c6370'
 
 # base
@@ -44,7 +45,7 @@ c.colors.completion.scrollbar.fg = foreground
 c.colors.completion.scrollbar.bg = black
 
 # disabled context menu
-c.colors.contextmenu.disabled.fg = bright_black
+c.colors.contextmenu.disabled.fg = black
 c.colors.contextmenu.disabled.bg = selection
 
 # context menu
@@ -144,7 +145,7 @@ c.colors.statusbar.progress.bg = blue
 c.colors.statusbar.url.fg = foreground
 c.colors.statusbar.url.error.fg = red
 c.colors.statusbar.url.hover.fg = foreground
-c.colors.statusbar.url.success.http.fg = bright_black
+c.colors.statusbar.url.success.http.fg  = bright_black
 c.colors.statusbar.url.success.https.fg = green
 c.colors.statusbar.url.warn.fg = yellow
 
@@ -165,11 +166,11 @@ c.colors.tabs.even.fg = foreground
 c.colors.tabs.even.bg = black
 
 # even pinned tabs
-c.colors.tabs.pinned.even.fg = bright_black
+c.colors.tabs.pinned.even.fg = black
 c.colors.tabs.pinned.even.bg = green
 
 # odd pinned tabs
-c.colors.tabs.pinned.odd.fg = bright_black
+c.colors.tabs.pinned.odd.fg = black
 c.colors.tabs.pinned.odd.bg = green
 
 # even selected pinned tabs
