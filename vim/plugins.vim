@@ -205,7 +205,7 @@ nnoremap ]v <Plug>VimwikiNextLink
 nnoremap <Leader>vl <Plug>VimwikiListToggle
 
 " search tags
-nnoremap <Leader>vt :call VimwikiTag()<CR>
+nnoremap <silent> <Leader>vt :call VimwikiTag()<CR>
 
 " search tags and open location list
 func VimwikiTag()
