@@ -3,19 +3,31 @@
 # =====================
 
 [flags]
+# update rate
+rate = 1500
+
+# time values
 time_delta = 15000
-rate       = 1500
 default_time_value = 60000
 
+# default widget
 default_widget_type  = "proc"
 default_widget_count = 1
 
+# regex search
 regex = true
+
+# default colors
 color = "default"
-tree  = false
+
+# disable processes tree
+tree = false
+
+# use fahrenheit
 temperature_type = "fahrenheit"
 
 [colors]
+# cpu colors
 avg_cpu_color   = "cyan"
 cpu_core_colors = [
     "lightred",
@@ -26,53 +38,73 @@ cpu_core_colors = [
     "lightcyan",
 ]
 
+# title colors
 table_header_color = "lightblue"
 widget_title_color = "gray"
 
+# ram colors
 ram_color  = "lightmagenta"
 swap_color = "lightyellow"
 
+# network colors
 rx_color = "lightcyan"
 tx_color = "lightgreen"
 
+# border colors
 border_color             = "gray"
 highlighted_border_color = "lightblue"
 
+# text colors
 text_color          = "gray"
 selected_text_color = "black"
 selected_bg_color   = "lightblue"
 
+# battery colors
 high_battery_color   = "green"
 medium_battery_color = "yellow"
 low_battery_color    = "red"
 
+# graph color
 graph_color = "gray"
 
+# first row
 [[row]]
-    ratio = 5
-    [[row.child]]
-    type = "cpu"
+ratio = 5
 
+# cpu
+[[row.child]]
+type = "cpu"
+
+# second row
 [[row]]
-    ratio = 5
-    [[row.child]]
-        ratio = 5
-        type  = "network"
+ratio = 5
 
-    [[row.child]]
-        ratio = 2
+# network usage
+[[row.child]]
+ratio = 5
+type  = "network"
 
-        [[row.child.child]]
-            type = "disk"
+# split child
+[[row.child]]
+ratio = 2
 
-        [[row.child.child]]
-            type = "battery"
+# disk usage
+[[row.child.child]]
+type = "disk"
 
+# battery
+[[row.child.child]]
+type = "battery"
+
+# third row
 [[row]]
-    ratio = 6
-    [[row.child]]
-        type = "memory"
+ratio = 6
 
-    [[row.child]]
-        type    = "processes"
-        default = true
+# memory usage
+[[row.child]]
+type = "memory"
+
+# processes
+[[row.child]]
+type    = "processes"
+default = true
