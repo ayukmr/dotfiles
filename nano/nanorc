@@ -8,9 +8,6 @@ set nowrap
 # automatically indent lines
 set autoindent
 
-# mouse control
-set mouse
-
 # always show line info
 set const
 
