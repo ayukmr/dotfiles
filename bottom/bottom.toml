@@ -4,7 +4,7 @@
 
 [flags]
 time_delta = 15000
-rate       = 1000
+rate       = 1500
 default_time_value = 60000
 
 default_widget_type  = "proc"
