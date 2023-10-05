@@ -3,22 +3,6 @@
 # ========================
 
 colors:
-  search:
-    # matches
-    matches:
-      background: '#98c379'
-      foreground: '#282c34'
-
-        # focused match
-      focused_match:
-        background: '#e5c07b'
-        foreground: '#282c34'
-
-          # search bar
-        bar:
-          background: '#242830'
-          foreground: '#abb2bf'
-
   # primary colors
   primary:
     background: '#282c34'
@@ -45,3 +29,25 @@ colors:
     magenta: '#c678dd'
     cyan:    '#56b6c2'
     white:   '#abb2bf'
+
+  # cursor colors
+  cursor:
+    text:   '#282c34'
+    cursor: '#abb2bf'
+
+  # selection colors
+  selection:
+    text:       '#abb2bf'
+    background: '#3e4452'
+
+  # search colors
+  search:
+    # matches
+    matches:
+      background: '#e5c07b'
+      foreground: '#282c34'
+
+    # focused match
+    focused_match:
+      background: '#e5c07b'
+      foreground: '#282c34'
