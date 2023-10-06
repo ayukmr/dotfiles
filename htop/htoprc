@@ -32,6 +32,9 @@ show_cpu_usage=1
 # hide function bar
 hide_function_bar=2
 
+# disable mouse
+enable_mouse=0
+
 # header layout
 header_layout=two_50_50
 header_margin=1
