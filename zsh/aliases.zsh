@@ -80,9 +80,6 @@ alias yb='yarn build'
 alias yg='yarn global'
 alias ysv='yarn serve'
 alias yrm='yarn remove'
-alias yga='yarn global add'
-alias ybs='yarn build && yarn start'
-alias yrs='yarn run react-scripts start'
 
 # git aliases
 alias ga='git add'
