@@ -29,8 +29,8 @@ all_branches_collapsed=1
 cpu_count_from_one=1
 show_cpu_usage=1
 
-# hide function bar on <Esc>
-hide_function_bar=1
+# hide function bar
+hide_function_bar=2
 
 # header layout
 header_layout=two_50_50
