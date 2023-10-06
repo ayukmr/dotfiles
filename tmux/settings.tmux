@@ -6,7 +6,7 @@
 set -g default-terminal xterm-256color
 set -ga terminal-overrides ',*256col*:Tc'
 
-# set default shell
+# default shell
 set -g default-shell /bin/zsh
 
 # clock mode
@@ -27,7 +27,7 @@ set -g aggressive-resize on
 # display messages for 4 secs
 set -g display-time 4000
 
-# set window title
+# window title
 set -g set-titles on
 set -g set-titles-string '#T'
 
