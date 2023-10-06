@@ -19,11 +19,10 @@ endfunc
 
 " add file icon to filetype
 func! LightlineFiletype()
-  return winwidth(0) > 70
-    \ ? WebDevIconsGetFileTypeSymbol() . ' ' . (
+  return
+    \ WebDevIconsGetFileTypeSymbol() . ' ' . (
     \   strlen(&filetype) ? &filetype : 'none'
     \ )
-    \ : ''
 endfunc
 
 " amount of tabs
