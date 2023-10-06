@@ -35,7 +35,7 @@ service.addRule('asciiImages', {
     const nodeAlt = node.getAttribute('alt');
     const nodeSrc = node.getAttribute('src');
 
-    if (nodeAlt.match(/^\ufffd*\p{Emoji}+$/u)) {
+    if (nodeAlt?.match(/^\ufffd*\p{Emoji}+$/u)) {
       // return alt if emoji
       return nodeAlt;
     } else {
