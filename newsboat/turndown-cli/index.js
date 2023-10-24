@@ -41,7 +41,7 @@ service.addRule('asciiImages', {
     } else {
       // create ascii art
       const { code, stdout } = shell.exec(
-        `curl -fsSL --retry 0 '${nodeSrc}' | chafa -s 100x100`,
+        `curl -fsL --retry 0 '${nodeSrc}' | chafa -s 100x100`,
         { silent: true }
       );
 
