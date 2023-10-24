@@ -1,0 +1,10 @@
+# ======================
+# === Pter Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/pter
+
+  link:
+    - ~/.config/pter: pter.conf
