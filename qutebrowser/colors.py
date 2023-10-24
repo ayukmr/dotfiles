@@ -17,6 +17,9 @@ bright_black = '#5c6370'
 foreground = '#abb2bf'
 selection  = '#3e4452'
 
+# prefer dark mode
+c.colors.webpage.preferred_color_scheme = 'dark'
+
 # completion
 c.colors.completion.fg = foreground
 c.colors.completion.odd.bg  = black
