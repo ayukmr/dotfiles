@@ -17,3 +17,4 @@ windows:
   - wiki:
     - cd ~/wiki
     - anyvim -c VimwikiIndex
+  - feeds: newsboat
