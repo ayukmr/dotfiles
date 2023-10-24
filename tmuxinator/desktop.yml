@@ -14,7 +14,9 @@ windows:
         - btm
 
   - editor: anyvim
+
   - wiki:
     - cd ~/wiki
     - anyvim -c VimwikiIndex
+
   - feeds: newsboat
