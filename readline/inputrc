@@ -9,7 +9,7 @@
 # disable bell
 set bell-style none
 
-# case insensitive matching
+# insensitive case
 set completion-ignore-case on
 
 # vim keybinds
