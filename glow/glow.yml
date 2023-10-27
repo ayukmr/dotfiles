@@ -8,5 +8,5 @@ style: ~/.cfg/glow/style.json
 # disable network
 local: true
 
-# disable mouse support
+# disable mouse
 mouse: false
