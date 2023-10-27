@@ -70,8 +70,11 @@ Plug 'tommcdo/vim-lion', { 'as': 'lion' }
 " [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
-" [lsp-installer] installer for lsp servers
-Plug 'williamboman/nvim-lsp-installer', Nvim({ 'as': 'lsp-installer' })
+" [mason] installer for lsp and dap
+Plug 'williamboman/mason.nvim', Nvim({ 'as': 'mason' })
+
+" [mason-lspconfig] mason plugin for lspconfig
+Plug 'williamboman/mason-lspconfig.nvim', Nvim({ 'as': 'mason-lspconfig' })
 
 " [null-ls] use neovim as a language server
 Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }

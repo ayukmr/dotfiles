@@ -116,24 +116,31 @@ cmp.setup.cmdline(':', {
 })
 EOF
 
-" =====================
-" === LSP Installer ===
-" =====================
+" =============
+" === Mason ===
+" =============
 
 lua <<EOF
--- lsp installer module
-local lsp_installer = require 'nvim-lsp-installer'
+-- mason module
+local mason = require 'mason'
 
--- setup lsp installer
-lsp_installer.setup({
-  automatic_installation = true,
+-- setup mason
+mason.setup({
   ui = {
     icons = {
-      server_installed   = '',
-      server_pending     = '',
-      server_uninstalled = '',
+      package_installed   = '',
+      package_pending     = '',
+      package_uninstalled = '',
     },
   },
+})
+
+-- mason lspconfig module
+local mason_lspconfig = require 'mason-lspconfig'
+
+-- setup mason lspconfig
+mason_lspconfig.setup({
+  automatic_installation = true,
 })
 EOF
 
