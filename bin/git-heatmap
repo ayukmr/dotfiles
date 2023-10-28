@@ -20,7 +20,7 @@ output = `git log --pretty=format:%cd`
 
 # put commits into hash
 output.lines.each do |line|
-  commits[Date.parse(line.chomp)] += 1
+  commits[Date.parse(line.strip)] += 1
 end
 
 # terminal width
