@@ -7,6 +7,8 @@ config:
     - ~/.config/brew-aliases
 
   shell:
+    - brew analytics off: 'disabling analytics'
+
     - brew tap homebrew/aliases: 'tapping homebrew/aliases'
 
     - brew alias i=install:           'setting install alias'
