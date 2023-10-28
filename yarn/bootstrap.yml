@@ -24,6 +24,4 @@ packages:
       - typescript
 
       # tools
-      - serve
       - eslint
-      - vercel
