@@ -40,6 +40,9 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
+" [dressing] better ui interfaces
+Plug 'stevearc/dressing.nvim', Nvim({ 'as': 'dressing' })
+
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 

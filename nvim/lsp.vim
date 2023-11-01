@@ -116,6 +116,46 @@ cmp.setup.cmdline(':', {
 })
 EOF
 
+" ================
+" === Dressing ===
+" ================
+
+" border highlight
+highlight! link FloatBorder NormalFloat
+
+" cursor line highlight
+highlight DressingCursorLine ctermbg=237 guibg=#4a505e
+
+lua <<EOF
+-- dressing module
+local dressing = require 'dressing'
+
+-- dressing setup
+dressing.setup({
+  input = {
+    -- horizontal padding
+    border = { '', '', '', ' ' },
+    win_options = {
+      winblend = 0,
+    },
+  },
+  select = {
+    backend = { 'builtin' },
+    builtin = {
+      -- horizontal padding
+      border = { '', '', '', ' ' },
+
+      win_options = {
+        winblend = 0,
+
+        -- cursor line
+        winhighlight = 'CursorLine:DressingCursorLine',
+      },
+    },
+  },
+})
+EOF
+
 " =============
 " === Mason ===
 " =============
