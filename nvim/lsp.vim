@@ -17,14 +17,14 @@ local cmp = require 'cmp'
 -- symbols for items
 local symbols = {
   Text          = '',
-  Method        = '',
+  Method        = '',
   Function      = '',
   Constructor   = '',
   Field         = '',
   Variable      = '',
   Class         = '',
   Interface     = '',
-  Module        = '',
+  Module        = '',
   Property      = '',
   Unit          = '',
   Value         = '',
@@ -32,15 +32,15 @@ local symbols = {
   Keyword       = '',
   Snippet       = '',
   Color         = '',
-  File          = '',
+  File          = '',
   Reference     = '',
   Folder        = '',
   EnumMember    = '',
   Constant      = '',
   Struct        = 'פּ',
-  Event         = '',
+  Event         = '',
   Operator      = '',
-  TypeParameter = '',
+  TypeParameter = '',
 }
 
 -- setup cmp
