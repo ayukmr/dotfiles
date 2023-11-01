@@ -47,11 +47,20 @@ let s:exact_icons['.gitattributes'] = ''
 " === FZF Vim ===
 " ===============
 
+" spawn in bottom split
+let g:fzf_layout = { 'down': '30%' }
+
 " find files
 nnoremap <silent> - :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
 
 " find files in home
 nnoremap <silent> _ :Files ~<CR>
+
+augroup fzf_no_numbers
+  auto!
+  " disable line numbers in fzf buffer
+  auto FileType fzf setlocal nonumber nornu
+augroup END
 
 " ==================
 " === Git Gutter ===
