@@ -11,7 +11,7 @@ windows:
       panes:
         -
         - ranger
-        - btm
+        - htop
 
   - editor: anyvim
 
