@@ -18,7 +18,10 @@ if !has('nvim')
 endif
 
 " disable inserting comments
-auto BufEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
+augroup disable_comments
+  auto!
+  auto BufEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
+augroup END
 
 " centralize directories
 set backupdir=~/.vim/backups

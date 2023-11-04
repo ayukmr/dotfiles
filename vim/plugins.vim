@@ -56,9 +56,9 @@ nnoremap <silent> - :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())
 " find files in home
 nnoremap <silent> _ :Files ~<CR>
 
+" disable line numbers in fzf buffer
 augroup fzf_no_numbers
   auto!
-  " disable line numbers in fzf buffer
   auto FileType fzf setlocal nonumber nornu
 augroup END
 
@@ -184,10 +184,10 @@ nnoremap ]t gt
 " === Vim Plug ===
 " ================
 
+" disable line numbers in vim plug buffer
 augroup plug_no_numbers
   auto!
-  " disable line numbers in vim plug buffer
-  auto FileType vim-plug setlocal nonumber
+  auto FileType vim-plug setlocal nonumber norelativenumber
 augroup END
 
 " ===============
