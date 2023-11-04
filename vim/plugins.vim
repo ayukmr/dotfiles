@@ -104,22 +104,20 @@ let g:lion_squeeze_spaces = 1
 " === Sneak ===
 " =============
 
-" absolute direction
-let g:sneak#absolute_dir = 1
-
 " sneak labels
 let g:sneak#label = 1
-let g:sneak#target_labels = 'fdsajkl;rewquiopFDSAJKL:REWQUIOP'
 
-" sneak highlights
+" sneak colors
 highlight! link Sneak          WildMenu
 highlight! link SneakScope     Cursor
 highlight! link SneakLabel     WildMenu
 highlight! link SneakLabelMask Fg
 
-" sneak movement
-noremap [s <Plug>Sneak_,
-noremap ]s <Plug>Sneak_;
+" f and t mappings
+noremap f <Plug>Sneak_f
+noremap F <Plug>Sneak_F
+noremap t <Plug>Sneak_t
+noremap T <Plug>Sneak_T
 
 " ================
 " === Startify ===

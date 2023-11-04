@@ -9,5 +9,9 @@ set keymap=colemak
 iunmap jk
 inoremap we <Esc>
 
-" sneak labels
-let g:sneak#target_labels = 'tsraneiopfwqluy;TSRANEIOPFWQLUY:'
+" normal keymap in sneak
+augroup sneak_keymap
+  auto!
+  auto User SneakEnter setlocal keymap=
+  auto User SneakLeave setlocal keymap=colemak
+augroup END
