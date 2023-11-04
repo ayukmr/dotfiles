@@ -1,0 +1,54 @@
+{
+  "ver": "5.0.0",
+  "settings": {
+    "theme": "proton",
+    "density": "default",
+    "fontSize": "xxs",
+    "sidebarCSS": true,
+    "colorScheme": "ff",
+
+    "navBtnCount": false,
+    "tabsLvlDots": false,
+    "searchBarMode": "none",
+    "showNewTabBtns": false,
+
+    "ctxMenuNative": true,
+    "ctxMenuRenderIcons": false,
+
+    "animations": false,
+    "animationSpeed": "norm",
+
+    "hideEmptyPanels": false,
+    "skipEmptyPanels": false,
+    "containersSortByName": true,
+
+    "pinnedTabsPosition": "panel",
+    "pinnedTabsList": true,
+
+    "subPanelHistory": false,
+    "subPanelBookmarks": false,
+    "subPanelRecentlyClosedBar": false,
+
+    "warnOnMultiTabClose": "none",
+    "warnOnMultiBookmarkDelete": "none"
+  },
+  "keybindings": {
+    "_execute_sidebar_action": "MacCtrl+E",
+
+    "activate": "MacCtrl+Space",
+    "pin_tabs": "Alt+Shift+P",
+    "reset_selection": "Alt+R",
+
+    "next_panel": "Alt+Period",
+    "prev_panel": "Alt+Comma",
+
+    "new_tab_on_panel": null,
+    "new_tab_in_group": null,
+
+    "up": "Alt+Up",
+    "down": "Alt+Down",
+
+    "up_shift": "Alt+Shift+Up",
+    "down_shift": "Alt+Shift+Down"
+  }
+}

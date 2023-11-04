@@ -1,0 +1,7 @@
+# =========================
+# === Firefox Bootstrap ===
+# =========================
+
+config:
+  link:
+    - <%= Dir[File.expand_path('~/Library/Application Support/Firefox/Profiles/*/chrome')][0] %>: userChrome.css

@@ -1,0 +1,29 @@
+/* ====================== */
+/* === Firefox Styles === */
+/* ====================== */
+
+/* top bar margin */
+#nav-bar {
+  margin: 2px;
+}
+
+/* thinner border */
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+/* hide sidebar header */
+#sidebar-header {
+  display: none;
+}
+
+/* hide tab bar */
+#titlebar {
+  display: none;
+}
+
+/* hide page actions */
+#tracking-protection-icon-container,
+*[context='pageActionContextMenu'] {
+  display: none;
+}
