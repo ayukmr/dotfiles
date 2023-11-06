@@ -22,9 +22,6 @@
     "skipEmptyPanels": false,
     "containersSortByName": true,
 
-    "pinnedTabsPosition": "panel",
-    "pinnedTabsList": true,
-
     "subPanelHistory": false,
     "subPanelBookmarks": false,
     "subPanelRecentlyClosedBar": false,
