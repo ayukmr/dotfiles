@@ -32,20 +32,7 @@
   "keybindings": {
     "_execute_sidebar_action": "MacCtrl+E",
 
-    "activate": "MacCtrl+Space",
-    "pin_tabs": "Alt+Shift+P",
-    "reset_selection": "Alt+R",
-
-    "next_panel": "Alt+Period",
-    "prev_panel": "Alt+Comma",
-
-    "new_tab_on_panel": null,
-    "new_tab_in_group": null,
-
-    "up": "Alt+Up",
-    "down": "Alt+Down",
-
-    "up_shift": "Alt+Shift+Up",
-    "down_shift": "Alt+Shift+Down"
+    "next_panel": "MacCtrl+Period",
+    "prev_panel": "MacCtrl+Comma"
   }
 }
