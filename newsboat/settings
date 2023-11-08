@@ -19,6 +19,9 @@ auto-reload yes
 # reload every 30 mins
 reload-time 30
 
+# use multiple threads
+reload-threads 20
+
 # don't show bottom bar
 show-keymap-hint no
 
