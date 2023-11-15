@@ -6,6 +6,9 @@ config:
   dirs:
     - ~/.config/newsboat
 
+  link:
+    - ~/.config/newsboat: urls
+
   files:
     - ~/.config/newsboat/config: |
         miniflux-token "<api-key>"

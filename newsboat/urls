@@ -1,0 +1,6 @@
+# ========================
+# === Newsboat Queries ===
+# ========================
+
+# all articles
+"query:All Articles:unread == \"yes\" or unread == \"no\""
