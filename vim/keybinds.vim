@@ -2,7 +2,7 @@
 " === Vim Keybinds ===
 " ====================
 
-" set <Leader> to comma
+" set leader to comma
 let mapleader = ','
 
 " quick pane navigation
