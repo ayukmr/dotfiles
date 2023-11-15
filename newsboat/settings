@@ -31,6 +31,9 @@ show-read-articles yes
 # keep 100 articles
 max-items 100
 
+# prepopulate queries
+prepopulate-query-feeds yes
+
 # item formats
 feedlist-format    " %?n?&? %t %> %U/%c  "
 articlelist-format " %?n?&? %t %> %?F? &?%D  "
