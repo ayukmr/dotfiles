@@ -5,7 +5,7 @@
   "AutoHideCommandBar":         true,
   "AutoUpdateCheck":            true,
   "CategoryTrackListSortOrder": 0,
-  "ColorTheme":                 "one dark",
+  "ColorTheme":                 "theme",
 
   "DisableAlbumArtistFallback": false,
   "DisableCustomColors":        false,

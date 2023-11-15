@@ -10,4 +10,4 @@ config:
   link:
     - ~/.config/musikcube: settings.json
     - ~/.config/musikcube: hotkeys.json
-    - ~/.config/musikcube/themes: onedark.json
+    - ~/.config/musikcube/themes: theme.json
