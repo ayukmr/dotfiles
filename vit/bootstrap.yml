@@ -1,0 +1,12 @@
+# =====================
+# === VIT Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/vit
+    - ~/.config/vit/theme
+
+  link:
+    - ~/.config/vit: config.ini
+    - ~/.config/vit/theme: theme.py

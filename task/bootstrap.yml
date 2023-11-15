@@ -1,0 +1,10 @@
+# =============================
+# === TaskWarrior Bootstrap ===
+# =============================
+
+config:
+  dirs:
+    - ~/.config/task
+
+  link:
+    - ~/.config/task/taskrc: taskrc
