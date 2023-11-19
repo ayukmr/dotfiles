@@ -46,32 +46,22 @@ mod2:
 # focus ccw
 focus-ccw:
   mod: mod1
-  key: up
+  key: k
 
 # swap ccw
 swap-ccw:
   mod: mod2
-  key: up
+  key: k
 
 # focus cw
 focus-cw:
   mod: mod1
-  key: down
+  key: j
 
 # swap cw
 swap-cw:
   mod: mod2
-  key: down
-
-# shrink main window
-shrink-main:
-  mod: mod1
-  key: left
-
-# expand main window
-expand-main:
-  mod: mod1
-  key: right
+  key: j
 
 # focus first screen
 focus-screen-1:
