@@ -1,6 +1,0 @@
-# ====================
-# === Gnuplot Init ===
-# ====================
-
-# output type
-set terminal dumb

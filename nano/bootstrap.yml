@@ -1,7 +1,0 @@
-# ======================
-# === Nano Bootstrap ===
-# ======================
-
-config:
-  link:
-    - ~/.nanorc: nanorc
