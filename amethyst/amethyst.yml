@@ -20,7 +20,7 @@ floating:
   - com.apple.systempreferences
   - com.apple.QuickTimePlayer
 
-# 5px window margins
+# window margins
 window-margins: true
 smart-window-margins: false
 window-margin-size: 5
