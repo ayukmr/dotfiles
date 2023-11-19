@@ -25,7 +25,7 @@ window-margins: true
 smart-window-margins: false
 window-margin-size: 5
 
-# disable showing layout when changing spaces
+# hide layout hud
 enables-layout-hud-on-space-change: false
 
 # ================
