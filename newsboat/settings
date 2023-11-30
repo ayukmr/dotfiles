@@ -36,7 +36,7 @@ prepopulate-query-feeds yes
 
 # item formats
 feedlist-format    " %?n?&? %t %> %U/%c  "
-articlelist-format " %?n?&? %t %> %?F? &?%D  "
+articlelist-format " %?n?&? %t %> %?F? &?%?T?%T &%D ? "
 
 # list titles
 feedlist-title-format     " %?T? %T& Feeds? (%u unread, %t total) "
