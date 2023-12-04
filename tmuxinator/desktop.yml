@@ -14,9 +14,8 @@ windows:
         - htop
 
   - editor: anyvim
+  - tasks: vit
 
   - wiki:
     - cd ~/wiki
     - anyvim -c VimwikiIndex
-
-  - feeds: newsboat
