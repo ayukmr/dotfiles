@@ -6,6 +6,9 @@
 " === Cmp Completion ===
 " ======================
 
+" max completion items
+set pumheight=25
+
 " highlight matching text
 highlight CmpItemAbbrMatch      cterm=bold gui=bold
 highlight CmpItemAbbrMatchFuzzy cterm=bold gui=bold
