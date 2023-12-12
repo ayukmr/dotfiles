@@ -127,7 +127,7 @@ EOF
 highlight! link FloatBorder NormalFloat
 
 " cursor line highlight
-highlight DressingCursorLine ctermbg=237 guibg=#4a505e
+highlight DressingCursorLine ctermbg=237 guibg=#424245
 
 lua <<EOF
 -- dressing module

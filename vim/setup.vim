@@ -13,8 +13,25 @@ if has('termguicolors')
   set termguicolors
 endif
 
-" one dark theme
+" allow italics
 let g:onedark_terminal_italics = 2
+
+" color overrides
+let g:onedark_color_overrides = {
+  \ 'background':     { 'gui': '#272729', 'cterm': '235', 'cterm16': 'NONE' },
+  \ 'white':          { 'gui': '#b1b3b3', 'cterm': '145', 'cterm16': '15'   },
+  \ 'black':          { 'gui': '#272729', 'cterm': '235', 'cterm16': '0'    },
+  \ 'foreground':     { 'gui': '#b1b3b3', 'cterm': '145', 'cterm16': '15'   },
+  \ 'vertsplit':      { 'gui': '#373739', 'cterm': '237', 'cterm16': '7'    },
+  \ 'menu_grey':      { 'gui': '#373739', 'cterm': '237', 'cterm16': '8'    },
+  \ 'comment_grey':   { 'gui': '#575759', 'cterm': '59',  'cterm16': '7'    },
+  \ 'gutter_fg_grey': { 'gui': '#575759', 'cterm': '59',  'cterm16': '8'    },
+  \ 'cursor_grey':    { 'gui': '#2d2d2f', 'cterm': '236', 'cterm16': '8'    },
+  \ 'visual_grey':    { 'gui': '#373739', 'cterm': '237', 'cterm16': '8'    },
+  \ 'special_grey':   { 'gui': '#373739', 'cterm': '238', 'cterm16': '8'    },
+\}
+
+" one dark theme
 colorscheme onedark
 
 " syntax highlighting
@@ -29,7 +46,7 @@ highlight! link jsxClosePunct  Fg
 highlight! link jsxCloseString Fg
 
 " cursor color
-highlight Cursor ctermfg=235 ctermbg=145 guifg=#282c34 guibg=#abb2bf
+highlight Cursor ctermfg=235 ctermbg=145 guifg=#272729 guibg=#b1b3b3
 
 " change cursor depending on mode
 let &t_SI = "\e[6 q"

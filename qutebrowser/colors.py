@@ -3,19 +3,19 @@
 # ==========================
 
 # colors
-black   = '#2c313a'
+black   = '#272729'
 red     = '#e06c75'
 green   = '#98c379'
 yellow  = '#e5c07b'
 blue    = '#61afef'
 magenta = '#c678dd'
 cyan    = '#56b6c2'
-white   = '#abb2bf'
+white   = '#b1b3b3'
 bright_black = '#5c6370'
 
 # base
-foreground = '#abb2bf'
-selection  = '#3e4452'
+foreground = '#b1b3b3'
+selection  = '#373739'
 
 # prefer dark mode
 c.colors.webpage.preferred_color_scheme = 'dark'
