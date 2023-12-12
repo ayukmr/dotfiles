@@ -25,6 +25,9 @@ window-margins: true
 smart-window-margins: false
 window-margin-size: 5
 
+# move mouse to focus
+mouse-follows-focus: true
+
 # hide layout hud
 enables-layout-hud-on-space-change: false
 
