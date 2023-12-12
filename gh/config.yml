@@ -2,11 +2,14 @@
 # === GitHub CLI Config ===
 # =========================
 
-# aliases
 aliases:
-  rl:  repo list
-  rv:  repo view
-  re:  repo edit
+  # repo aliases
+  r:  repo
+  rl: repo list
+  rv: repo view
+  re: repo edit
+
+  # other aliases
   al:  auth login
   rc:  release create
   rpc: repo create
