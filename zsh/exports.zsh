@@ -35,7 +35,7 @@ export FZF_DEFAULT_OPTS="
   --marker '*'
   --preview-window noborder
 
-  --color bg:#282c34,bg+:#282c34,fg:#abb2bf,fg+:#c2c7d1
+  --color bg:#272729,bg+:#272729,fg:#b1b3b3,fg+:#b1b3b3
   --color hl:#61afef,hl+:#5fd7ff,spinner:#e5c07b,info:#56b6c2
   --color pointer:#61afef,marker:#61afef,header:#c678dd,prompt:#c678dd
 "
