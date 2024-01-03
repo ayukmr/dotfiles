@@ -2,28 +2,172 @@
 /* === Firefox Styles === */
 /* ====================== */
 
-/* top bar margin */
-#nav-bar {
-  margin: 2px;
-}
-
-/* thinner border */
-#navigator-toolbox {
-  border-bottom: none !important;
-}
+/* =============== */
+/* === General === */
+/* =============== */
 
 /* hide sidebar header */
 #sidebar-header {
   display: none;
 }
 
+/* =============== */
+/* === Toolbar === */
+/* =============== */
+
+/* hide border */
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+/* toolbar buttons margin */
+.titlebar-buttonbox {
+  margin: 10px !important;
+}
+
+/* tabs toolbar */
+#TabsToolbar {
+  padding: 3px 3px 3px 0;
+  border-bottom: none !important;
+}
+
 /* hide tab bar */
-#titlebar {
+.toolbar-items > * {
   display: none;
 }
 
+/* browser sidebar */
+#sidebar-box {
+  width:   250px !important;
+  padding: 1px 4px;
+  background: #282828;
+}
+
+/* urlbar */
+#urlbar {
+  font-size: small !important;
+  overflow: hidden;
+
+  --urlbar-height: 32px !important;
+  --urlbar-toolbar-height: 42px !important;
+}
+
+/* expand completions */
+#urlbar[breakout-extend] {
+  width: 35vw !important;
+}
+
+/* urlbar container */
+#urlbar-container {
+  --urlbar-container-height: 40px !important;
+  width: fit-content !important;
+}
+
 /* hide page actions */
-#tracking-protection-icon-container,
-*[context='pageActionContextMenu'] {
+#urlbar-input-container > :not(.urlbar-input-box),
+.urlbar-input-box > :not(#urlbar-input) {
   display: none;
+}
+
+/* add input padding */
+#urlbar-input {
+  padding: 0 5px !important;
+}
+
+/* darken url placeholder */
+#urlbar-input::placeholder {
+  opacity: 35% !important;
+}
+
+/* clean up nav bar */
+#nav-bar-customization-target > :not(#urlbar-container, .unified-extensions-item),
+#PanelUI-button,
+#private-browsing-indicator-with-label > label {
+  display: none;
+}
+
+/* private browsing icon margin */
+#private-browsing-indicator-with-label {
+  margin: 8px !important;
+}
+
+/* extensions button */
+#TabsToolbar .toolbarbutton-icon {
+  padding: 7px !important;
+  width:   30px !important;
+  height:  30px !important;
+}
+
+/* remove excess padding */
+#TabsToolbar .toolbarbutton-badge-stack {
+  padding: 0 !important;
+}
+
+/* background */
+#tabbrowser-tabpanels {
+  background: #282828 !important;
+}
+
+/* nav bar */
+#nav-bar {
+  box-shadow: none !important;
+  margin: -5px 0 11px 0;
+}
+
+/* ======================= */
+/* === Extensions Menu === */
+/* ======================= */
+
+/* extensions menu */
+#unified-extensions-view .panel-header,
+#unified-extensions-view .unified-extensions-item-contents,
+#unified-extensions-view .unified-extensions-item-menu-button,
+#unified-extensions-manage-extensions,
+#unified-extensions-view toolbarseparator {
+  display: none !important;
+}
+
+/* remove margin */
+#unified-extensions-view .toolbarbutton-badge-stack,
+#unified-extensions-view .unified-extensions-item-icon {
+  margin: 0 !important;
+}
+
+/* remove margin */
+#unified-extensions-view .unified-extensions-list {
+  max-width: max-content;
+}
+
+/* fit icons width */
+#unified-extensions-view {
+  width: fit-content !important;
+}
+
+/* arrange icons as grid */
+#unified-extensions-view #unified-extensions-area,
+#unified-extensions-view .unified-extensions-list {
+  padding: 4px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, auto);
+}
+
+/* inactive extensions border */
+#unified-extensions-view #unified-extensions-area {
+  border-bottom: 1px solid #75747a4d !important;
+}
+
+/* icon margin */
+panelview .unified-extensions-item {
+  margin: 2px !important;
+}
+
+/* icon size */
+panelview .unified-extensions-item image {
+  width:  16px !important;
+  height: 16px !important;
+}
+
+/* icon padding */
+panelview .unified-extensions-item > toolbarbutton {
+  padding: 7px !important;
 }

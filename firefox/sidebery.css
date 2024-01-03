@@ -10,22 +10,44 @@
   --font: 11.5px system-ui;
 
   /* apply system font */
-  --ctx-menu-font:           var(--font);
-  --bookmarks-bookmark-font: var(--font);
-  --bookmarks-folder-font:   var(--font);
-  --tabs-count-font:         var(--font);
   --tabs-font:               var(--font);
+  --ctx-menu-font:           var(--font);
+  --tabs-count-font:         var(--font);
+  --bookmarks-folder-font:   var(--font);
+  --bookmarks-bookmark-font: var(--font);
 
   /* remove drop shadows */
-  --active-el-shadow:      none;
-  --ctx-menu-shadow:       none;
-  --nav-btn-active-shadow: none;
   --popup-shadow:          none;
+  --ctx-menu-shadow:       none;
+  --active-el-shadow:      none;
+  --nav-btn-active-shadow: none;
+  --tabs-activated-shadow: none;
   --bookmarks-expanded-folder-shadow: none;
-  --tabs-activated-shadow: inset 0 0 0 1px rgb(80, 80, 80);
+
+  /* highlight color */
+  --toolbar-el-overlay-hover-bg: #333333;
 }
 
 * {
   /* font weight */
   font-weight: 450 !important;
+}
+
+/* move box to bottom */
+.top-horizontal-box {
+  position: absolute;
+  bottom: -2px;
+}
+
+/* add background to buttons */
+#nav_bar {
+  width: 75px;
+  border-radius: 7px;
+  background: var(--frame-bg);
+}
+
+/* container highlight */
+.ctx {
+  border-radius: var(--tabs-border-radius);
+  right: 4px !important;
 }
