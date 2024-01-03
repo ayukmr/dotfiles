@@ -1,0 +1,30 @@
+/* ===================== */
+/* === Vimium Styles === */
+/* ===================== */
+
+/* hint marker */
+div > .vimiumHintMarker {
+  padding: 2px 4px 2px 4px;
+  background: rgb(230, 206, 91);
+  border: 1px solid #333333;
+  box-shadow: none;
+}
+
+/* hint marker text */
+div > .vimiumHintMarker span {
+  font-family: system-ui;
+  color: #000;
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: none;
+}
+
+/* selected hint marker */
+div > .vimiumHintMarker:has(> .matchingCharacter) {
+  background: rgb(149, 217, 251);
+}
+
+/* selected hint marker text */
+div > .vimiumHintMarker > .matchingCharacter {
+  color: #000;
+}
