@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+# =========================
+# === Run Window Action ===
+# =========================
+
+# options
+type="$1"
+dir="$2"
+else="$3"
+
+# current layout
+layout="$(yabai -m query --spaces --space mouse | jq -r '.type')"
+
+if [[ "$layout" == stack ]]; then
+  # use stack version
+  mod='stack.'
+fi
+
+# run action
+yabai -m window "--$type" "$mod$dir" || yabai -m window "--$type" "$mod$else"

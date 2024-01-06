@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+# =====================
+# === Toggle Layout ===
+# =====================
+
+# current layout
+current="$(yabai -m query --spaces --space mouse | jq -r '.type')"
+
+# toggle layout
+if [[ "$current" == bsp ]]; then
+  layout=stack
+else
+  layout=bsp
+fi
+
+# swap layout
+yabai -m space --layout "$layout"

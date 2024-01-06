@@ -1,0 +1,12 @@
+# =======================
+# === Yabai Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.config/yabai
+
+  files:
+    - ~/.config/yabai/yabairc: |
+        #!/usr/bin/env zsh
+        source ~/.cfg/yabai/yabairc

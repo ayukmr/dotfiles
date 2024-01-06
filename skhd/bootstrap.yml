@@ -1,0 +1,10 @@
+# ======================
+# === SKHD Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/skhd
+
+  files:
+    - ~/.config/skhd/skhdrc: '.load "<%= ENV['HOME'] %>/.cfg/skhd/skhdrc"'
