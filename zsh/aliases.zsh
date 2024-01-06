@@ -32,6 +32,7 @@ function mkcd { mkdir -p "$@" && cd "$_" }
 
 # shorthands
 alias b='bat'
+alias t='task'
 alias bw='brew'
 alias cl='curl'
 alias clr='clear'
