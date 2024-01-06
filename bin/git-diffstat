@@ -9,4 +9,4 @@ for filter in A C D M R T U X B; do
   while read -r line; do
     print -P "%F{red}$filter%f | $line"
   done
-done
+done | column -t -s ' | '
