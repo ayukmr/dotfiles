@@ -13,8 +13,8 @@ window:
     x: 5
     y: 5
 
-  # window title
-  title: Alacritty
+  # hide title bar
+  decorations: None
 
   # meta key
   option_as_alt: OnlyLeft
