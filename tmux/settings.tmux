@@ -34,7 +34,7 @@ set -g set-titles-string '#T'
 # fix vim lagging
 set -s escape-time 10
 
-# highlighted text, selections
+# highlighted text
 set -g mode-style 'bg=#373739'
 
 # one as base index
