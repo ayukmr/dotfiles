@@ -53,7 +53,7 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
 # escape from insert mode
 ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'
 
-# visual selection highlight
+# visual selection
 ZVM_VI_HIGHLIGHT_FOREGROUND='#b1b3b3'
 ZVM_VI_HIGHLIGHT_BACKGROUND='#373739'
 
