@@ -12,7 +12,7 @@ set tab-size = 4
 # smart case for searching
 set ignore-case = smart-case
 
-# utf-8 line graphics
+# nicer line graphics
 set line-graphics = utf-8
 
 # truncation character
