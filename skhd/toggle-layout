@@ -14,5 +14,5 @@ else
   layout=bsp
 fi
 
-# swap layout
+# switch layout
 yabai -m space --layout "$layout"
