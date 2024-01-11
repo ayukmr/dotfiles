@@ -96,6 +96,13 @@ cmp.setup({
     { name = 'path'      },
   }),
 
+  -- disable scrollbar
+  window = {
+    completion = {
+      scrollbar = false,
+    },
+  },
+
   -- ghost text
   experimental = {
     ghost_text = true,
