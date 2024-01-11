@@ -104,13 +104,13 @@ let g:lion_squeeze_spaces = 1
 " === Sneak ===
 " =============
 
-" sneak labels
+" show labels
 let g:sneak#label = 1
 
 " prompt
 let g:sneak#prompt = '> '
 
-" sneak colors
+" colors
 highlight! link Sneak          WildMenu
 highlight! link SneakScope     Cursor
 highlight! link SneakLabel     WildMenu
