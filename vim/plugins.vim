@@ -199,7 +199,7 @@ augroup END
 " ===============
 
 " wiki location
-let g:vimwiki_list = [{ 'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md' }]
+let g:vimwiki_list = [{ 'path': '~/wiki' }]
 
 " keybinds prefix
 let g:vimwiki_map_prefix = '<Leader>v'
