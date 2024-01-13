@@ -39,10 +39,10 @@ bind C-p \
     "popup -E -h 75% -w 75% 'tmuxinator start popup; tmux attach -t popup'"
 
 # switch panes
-bind -n M-Left  select-pane -L
-bind -n M-Right select-pane -R
-bind -n M-Up    select-pane -U
-bind -n M-Down  select-pane -D
+bind -n M-h select-pane -L
+bind -n M-j select-pane -D
+bind -n M-k select-pane -U
+bind -n M-l select-pane -R
 
 # vim keybinds
 set -g mode-keys vi
