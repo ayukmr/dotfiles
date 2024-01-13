@@ -199,10 +199,10 @@ EOF
 " ==================
 
 " signs for diagnostics
-sign define DiagnosticSignError text=>> texthl=DiagnosticSignError linehl= numhl=
-sign define DiagnosticSignWarn  text=-- texthl=DiagnosticSignWarn  linehl= numhl=
-sign define DiagnosticSignInfo  text=-- texthl=DiagnosticSignInfo  linehl= numhl=
-sign define DiagnosticSignHint  text=-- texthl=DiagnosticSignHint  linehl= numhl=
+sign define DiagnosticSignError text=>> texthl=DiagnosticSignError
+sign define DiagnosticSignWarn  text=-- texthl=DiagnosticSignWarn
+sign define DiagnosticSignInfo  text=-- texthl=DiagnosticSignInfo
+sign define DiagnosticSignHint  text=-- texthl=DiagnosticSignHint
 
 " lsp keybinds
 nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
