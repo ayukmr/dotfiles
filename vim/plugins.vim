@@ -217,6 +217,10 @@ nnoremap <Leader>vl <Plug>VimwikiListToggle
 " search tags
 nnoremap <silent> <Leader>vt :call VimwikiTag()<CR>
 
+" header levels
+nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
+nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
+
 " search tags and open location list
 func VimwikiTag()
   " search tags
