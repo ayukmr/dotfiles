@@ -5,23 +5,27 @@
 font:
   # normal
   normal:
-    family: Cascadia NF
+    family: Hack Nerd Font Mono
     style:  Regular
 
   # bold
   bold:
-    family: Cascadia NF
+    family: Hack Nerd Font Mono
     style:  Bold
 
   # italic
   italic:
-    family: Cascadia NF
+    family: Hack Nerd Font Mono
     style:  Italic
 
   # bold and italic
   bold_italic:
-    family: Cascadia NF
+    family: Hack Nerd Font Mono
     style:  Italic
+
+  # characters offset
+  offset:
+    y: 1
 
   # font size
   size: 12

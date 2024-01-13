@@ -7,7 +7,7 @@
   // === General Settings ===
   // ========================
 
-  "editor.fontFamily": "Cascadia NF",
+  "editor.fontFamily": "Hack Nerd Font Mono",
   "editor.cursorStyle": "block",
   "workbench.colorTheme": "One Dark Pro",
   "workbench.productIconTheme": "fluent-icons",

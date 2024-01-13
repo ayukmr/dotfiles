@@ -19,12 +19,12 @@ set header_cache     = $my_cache
 
 # statusline formats
 set status_format  = "  %n new / %m total "
-set pager_format   = "  %s - %n "
-set compose_format = "  %a attachments (%l bytes) "
+set pager_format   = " 󰇮 %s - %n "
+set compose_format = " 󰏫 %a attachments (%l bytes) "
 
 # rows formats
-set index_format  = "  %s %> %{%b %d}  "
-set folder_format = "  %f %> %?m?%m &? "
+set index_format  = " 󰇮 %s %> %{%b %d} 󰱆 "
+set folder_format = " 󰉋 %f %> %?m?%m 󰇮&? "
 set attach_format = "  %?f?%f&No Name? %> %s  "
 
 # disable help line

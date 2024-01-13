@@ -772,7 +772,7 @@
                 <real>0.87843137979507446</real>
             </dict>
             <key>Badge Font</key>
-            <string>CascadiaNF-Regular</string>
+            <string>HackNFM-Regular</string>
             <key>Badge Max Height</key>
             <real>0.0</real>
             <key>Badge Max Width</key>
@@ -1212,7 +1212,7 @@
             <key>Non-ASCII Anti Aliased</key>
             <true/>
             <key>Normal Font</key>
-            <string>CascadiaNF-Regular 12</string>
+            <string>HackNFM-Regular 12</string>
             <key>Only The Default BG Color Uses Transparency</key>
             <false/>
             <key>Open Toolbelt</key>
@@ -1291,7 +1291,7 @@
                     <key>auto-rainbow style</key>
                     <integer>0</integer>
                     <key>font</key>
-                    <string>CascadiaNF-Regular 12</string>
+                    <string>HackNFM-Regular 12</string>
                     <key>remove empty components</key>
                     <true/>
                 </dict>

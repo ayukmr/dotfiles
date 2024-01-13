@@ -20,8 +20,8 @@ local cmp = require 'cmp'
 -- symbols for items
 local symbols = {
   Text          = '',
-  Method        = '',
-  Function      = '',
+  Method        = '󰅲',
+  Function      = '󰅲',
   Constructor   = '',
   Field         = '',
   Variable      = '',
@@ -30,20 +30,20 @@ local symbols = {
   Module        = '',
   Property      = '',
   Unit          = '',
-  Value         = '',
+  Value         = '',
   Enum          = '',
   Keyword       = '',
   Snippet       = '',
   Color         = '',
-  File          = '',
+  File          = '󰈤',
   Reference     = '',
-  Folder        = '',
+  Folder        = '󰉋',
   EnumMember    = '',
-  Constant      = '',
-  Struct        = 'פּ',
+  Constant      = '󰏿',
+  Struct        = '󰙅',
   Event         = '',
-  Operator      = '',
-  TypeParameter = '',
+  Operator      = '󰍘',
+  TypeParameter = '󰍻',
 }
 
 -- setup cmp

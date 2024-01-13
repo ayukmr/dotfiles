@@ -20,7 +20,7 @@
   editor:
     # font
     defaultFontSize: 12
-    fontFamily: 'Cascadia NF'
+    fontFamily: 'Hack Nerd Font Mono'
     fontSize: 12
 
     # invisibles

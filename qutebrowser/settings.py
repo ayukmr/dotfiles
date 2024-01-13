@@ -3,7 +3,7 @@
 # ============================
 
 # font family
-c.fonts.default_family = 'Cascadia NF'
+c.fonts.default_family = 'Hack Nerd Font Mono'
 
 # tabs position
 c.tabs.position = 'left'

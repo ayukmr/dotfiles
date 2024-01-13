@@ -18,20 +18,22 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 let s:extension_icons = {}
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = s:extension_icons
 
-let s:extension_icons['ts']   = 'ﯤ'
-let s:extension_icons['cr']   = ''
+let s:extension_icons['cs']   = ''
+let s:extension_icons['ts']   = '󰛦'
+let s:extension_icons['js']   = '󰎙'
+let s:extension_icons['cr']   = ''
 let s:extension_icons['erb']  = ''
-let s:extension_icons['toml'] = ''
+let s:extension_icons['xml']  = ''
+let s:extension_icons['toml'] = '󰅪'
 let s:extension_icons['lock'] = ''
 let s:extension_icons['tmux'] = ''
+let s:extension_icons['wiki'] = '󰏫'
+let s:extension_icons['gitconfig'] = '󰊢'
 
-let s:extension_icons['svelte']      = ''
-let s:extension_icons['applescript'] = ''
+let s:extension_icons['svelte']      = ''
+let s:extension_icons['applescript'] = '󰀵'
 
-let s:extension_icons['yml']  = ''
-let s:extension_icons['yaml'] = ''
-
-let s:extension_icons['ttf'] = 'ﯔ'
+let s:extension_icons['ttf'] = '󰛖'
 
 " exact icons
 let s:exact_icons = {}
@@ -40,8 +42,8 @@ let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = s:exact_icons
 let s:exact_icons['brewfile']  = ''
 let s:exact_icons['[plugins]'] = ''
 
-let s:exact_icons['.gitignore']     = ''
-let s:exact_icons['.gitattributes'] = ''
+let s:exact_icons['.gitignore']     = '󰊢'
+let s:exact_icons['.gitattributes'] = '󰊢'
 
 " ===============
 " === FZF Vim ===
