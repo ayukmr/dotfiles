@@ -9,7 +9,8 @@ config:
   shell:
     - brew analytics off: 'disabling analytics'
 
-    - brew tap homebrew/aliases: 'tapping homebrew/aliases'
+    - brew tap homebrew/aliases:    'tapping homebrew/aliases'
+    - brew tap homebrew/cask-fonts: 'tapping homebrew/cask-fonts'
 
     - brew alias i=install:           'setting install alias'
     - brew alias ic='install --cask': 'setting cask install alias'
@@ -84,3 +85,4 @@ packages:
       - hiddenbar
       - sf-symbols
       - hammerspoon
+      - font-hack-nerd-font
