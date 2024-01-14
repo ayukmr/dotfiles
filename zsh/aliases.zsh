@@ -62,6 +62,10 @@ alias bnd='bundle'
 alias py='python3'
 alias ipy='ipython'
 
+# crystal aliases
+alias s='shards'
+alias sr='shards run'
+
 # rust aliases
 alias c='cargo'
 alias cr='cargo run'
