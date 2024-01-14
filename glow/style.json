@@ -62,8 +62,8 @@
   },
 
   "task": {
-    "ticked":   " ",
-    "unticked": " "
+    "ticked":   "󰄲 ",
+    "unticked": "󰄱 "
   },
 
   "link": {
