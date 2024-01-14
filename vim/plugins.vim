@@ -158,7 +158,7 @@ let g:startify_bookmarks = [
 
 " list headers
 let g:startify_lists = [
-  \ { 'type': 'dir',       'header': startify#pad(['ﱮ Files'    ])},
+  \ { 'type': 'dir',       'header': startify#pad(['󰉋 Files'    ])},
   \ { 'type': 'sessions',  'header': startify#pad([' Sessions' ])},
   \ { 'type': 'bookmarks', 'header': startify#pad([' Bookmarks'])},
   \ { 'type': 'commands',  'header': startify#pad([' Commands' ])},
