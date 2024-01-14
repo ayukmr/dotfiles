@@ -35,9 +35,9 @@ export FZF_DEFAULT_OPTS="
   --marker '*'
   --preview-window noborder
 
-  --color bg:#272729,bg+:#272729,fg:#b1b3b3,fg+:#b1b3b3
-  --color hl:#61afef,hl+:#5fd7ff,spinner:#e5c07b,info:#56b6c2
-  --color pointer:#61afef,marker:#61afef,header:#c678dd,prompt:#c678dd
+  --color bg:#1f1f1f,bg+:#1f1f1f,fg:#a9a9a9,fg+:#a9a9a9
+  --color hl:#519fdf,hl+:#46a6b2,spinner:#d5b06b,info:#56b6c2
+  --color pointer:#519fdf,marker:#519fdf,header:#b668cd,prompt:#b668cd
 "
 
 # homebrew styling

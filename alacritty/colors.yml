@@ -5,49 +5,49 @@
 colors:
   # primary colors
   primary:
-    foreground: '#b1b3b3'
-    background: '#272729'
+    foreground: '#a9a9a9'
+    background: '#1f1f1f'
 
   # normal colors
   normal:
-    black:   '#2d2d2f'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#e5c07b'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#b1b3b3'
+    black:   '#252525'
+    red:     '#d05c65'
+    green:   '#88b369'
+    yellow:  '#d5b06b'
+    blue:    '#519fdf'
+    magenta: '#b668cd'
+    cyan:    '#46a6b2'
+    white:   '#a9a9a9'
 
   # bright colors
   bright:
-    black:   '#575759'
-    red:     '#e06c75'
-    green:   '#98c379'
-    yellow:  '#e5c07b'
-    blue:    '#61afef'
-    magenta: '#c678dd'
-    cyan:    '#56b6c2'
-    white:   '#b1b3b3'
+    black:   '#474747'
+    red:     '#d05c65'
+    green:   '#88b369'
+    yellow:  '#d5b06b'
+    blue:    '#519fdf'
+    magenta: '#b668cd'
+    cyan:    '#46a6b2'
+    white:   '#a9a9a9'
 
   # cursor colors
   cursor:
-    text:   '#272729'
-    cursor: '#b1b3b3'
+    text:   '#1e1e1e'
+    cursor: '#a9a9a9'
 
   # selection colors
   selection:
-    text:       '#b1b3b3'
-    background: '#373739'
+    text:       '#a9a9a9'
+    background: '#303030'
 
   # search colors
   search:
     # matches
     matches:
-      background: '#e5c07b'
-      foreground: '#272729'
+      background: '#d5b06b'
+      foreground: '#252525'
 
     # focused match
     focused_match:
-      background: '#e5c07b'
-      foreground: '#272729'
+      background: '#d5b06b'
+      foreground: '#252525'

@@ -86,9 +86,9 @@ let g:lightline.tabline = {
 \}
 
 " color linter symbols
-highlight LightlineError ctermfg=204 ctermbg=236 guifg=#e06c75 guibg=#2d2d2f
-highlight LightlineWarn  ctermfg=180 ctermbg=236 guifg=#e5c07b guibg=#2d2d2f
-highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#61afef guibg=#2d2d2f
+highlight LightlineError ctermfg=204 ctermbg=236 guifg=#d05c65 guibg=#252525
+highlight LightlineWarn  ctermfg=180 ctermbg=236 guifg=#d5b06b guibg=#252525
+highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#519fdf guibg=#252525
 
 " components
 let g:lightline.component = {
