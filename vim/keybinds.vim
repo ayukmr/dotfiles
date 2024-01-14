@@ -12,8 +12,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " unhighlight search
-nnoremap <silent> <C-i> :nohlsearch<CR>
-nnoremap <silent> <Tab> :nohlsearch<CR>
+nnoremap <silent> <C-n> :nohlsearch<CR>
 
 " motions without copying
 nnoremap <Leader>d "_d
