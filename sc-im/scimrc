@@ -5,7 +5,7 @@
 # truncate values
 set truncate
 
-# ignore case in searches
+# insensitive case
 set ignorecase
 
 # recalculate values
