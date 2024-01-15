@@ -1,0 +1,10 @@
+# =======================
+# === Kitty Bootstrap ===
+# =======================
+
+config:
+  dirs:
+    - ~/.config/kitty
+
+  files:
+    - ~/.config/kitty: 'include ~/.cfg/kitty/kitty.conf'
