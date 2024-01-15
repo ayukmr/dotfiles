@@ -10,24 +10,24 @@ foreground = "#a9a9a9"
 # normal colors
 [colors.normal]
 black   = "#252525"
-blue    = "#519fdf"
-cyan    = "#46a6b2"
-green   = "#88b369"
-magenta = "#b668cd"
 red     = "#d05c65"
-white   = "#a9a9a9"
+green   = "#88b369"
 yellow  = "#d5b06b"
+blue    = "#519fdf"
+magenta = "#b668cd"
+cyan    = "#46a6b2"
+white   = "#a9a9a9"
 
 # bright colors
 [colors.bright]
 black   = "#474747"
-blue    = "#519fdf"
-cyan    = "#46a6b2"
-green   = "#88b369"
-magenta = "#b668cd"
 red     = "#d05c65"
-white   = "#a9a9a9"
+green   = "#88b369"
 yellow  = "#d5b06b"
+blue    = "#519fdf"
+magenta = "#b668cd"
+cyan    = "#46a6b2"
+white   = "#a9a9a9"
 
 # cursor colors
 [colors.cursor]
