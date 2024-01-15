@@ -1,0 +1,30 @@
+# ==========================
+# === Alacritty Settings ===
+# ==========================
+
+[window]
+# hide title bar
+decorations = "None"
+
+# meta key
+option_as_alt = "OnlyLeft"
+
+# preset dimensions
+[window.dimensions]
+columns = 160
+lines   = 48
+
+# window padding
+[window.padding]
+x = 5
+y = 5
+
+[env]
+# term colors
+TERM = "xterm-256color"
+
+# create new window
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key    = "N"
+mods   = "Command"

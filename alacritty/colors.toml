@@ -1,0 +1,50 @@
+# ========================
+# === Alacritty Colors ===
+# ========================
+
+# primary colors
+[colors.primary]
+background = "#1f1f1f"
+foreground = "#a9a9a9"
+
+# normal colors
+[colors.normal]
+black   = "#252525"
+blue    = "#519fdf"
+cyan    = "#46a6b2"
+green   = "#88b369"
+magenta = "#b668cd"
+red     = "#d05c65"
+white   = "#a9a9a9"
+yellow  = "#d5b06b"
+
+# bright colors
+[colors.bright]
+black   = "#474747"
+blue    = "#519fdf"
+cyan    = "#46a6b2"
+green   = "#88b369"
+magenta = "#b668cd"
+red     = "#d05c65"
+white   = "#a9a9a9"
+yellow  = "#d5b06b"
+
+# cursor colors
+[colors.cursor]
+cursor = "#a9a9a9"
+text   = "#1e1e1e"
+
+# selection colors
+[colors.selection]
+background = "#303030"
+text       = "#a9a9a9"
+
+# matches color
+[colors.search.matches]
+background = "#d5b06b"
+foreground = "#252525"
+
+# focused match colors
+[colors.search.focused_match]
+background = "#d5b06b"
+foreground = "#252525"

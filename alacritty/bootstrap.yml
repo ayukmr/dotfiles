@@ -7,6 +7,5 @@ config:
     - ~/.config/alacritty
 
   files:
-    - ~/.config/alacritty/alacritty.yml: |
-        import:
-          - ~/.cfg/alacritty/alacritty.yml
+    - ~/.config/alacritty/alacritty.toml: |
+        import = ["~/.cfg/alacritty/alacritty.toml"]

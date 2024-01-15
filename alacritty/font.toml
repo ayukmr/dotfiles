@@ -1,0 +1,31 @@
+# ======================
+# === Alacritty Font ===
+# ======================
+
+[font]
+# font size
+size = 12
+
+# normal
+[font.normal]
+family = "Hack Nerd Font Mono"
+style  = "Regular"
+
+# bold
+[font.bold]
+family = "Hack Nerd Font Mono"
+style  = "Bold"
+
+# italic
+[font.italic]
+family = "Hack Nerd Font Mono"
+style  = "Italic"
+
+# bold and italic
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+# characters offset
+[font.offset]
+y = 1

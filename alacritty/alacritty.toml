@@ -1,0 +1,9 @@
+# ========================
+# === Alacritty Config ===
+# ========================
+
+import = [
+    "~/.cfg/alacritty/settings.toml",
+    "~/.cfg/alacritty/font.toml",
+    "~/.cfg/alacritty/colors.toml"
+]
