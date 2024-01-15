@@ -2,6 +2,15 @@
 # === SC-IM Config ===
 # ====================
 
+# truncate values
+set truncate
+
+# ignore case in searches
+set ignorecase
+
+# recalculate values
+set autocalc
+
 # light green color
 define_color "lightgreen" 178 207 158
 
