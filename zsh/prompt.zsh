@@ -43,7 +43,7 @@ function git_info {
 # load rprompt async
 function async_rprompt {
   function async {
-    echo "$(git_info)" > "/tmp/rprompt$$"
+    git_info > "/tmp/rprompt$$"
 
     # signal to update prompt
     kill -s USR1 $$
