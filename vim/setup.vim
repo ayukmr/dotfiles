@@ -57,6 +57,12 @@ highlight! link jsxCloseString Fg
 " cursor color
 highlight Cursor ctermfg=235 ctermbg=145 guifg=#1f1f1f guibg=#a9a9a9
 
+" disable line numbers in quickfix buffer
+augroup quickfix_no_numbers
+  auto!
+  auto FileType qf setlocal nonumber norelativenumber foldcolumn=1
+augroup END
+
 " change cursor depending on mode
 let &t_SI = "\e[6 q"
 let &t_SR = "\e[4 q"
