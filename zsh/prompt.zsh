@@ -68,7 +68,7 @@ function TRAPUSR1 {
   unset ASYNC_PROC
 
   # redraw prompt
-  zle .reset-prompt
+  zle && zle .reset-prompt
 }
 
 add-zsh-hook precmd async_rprompt
