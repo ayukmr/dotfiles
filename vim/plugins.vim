@@ -49,14 +49,14 @@ let s:exact_icons['.gitattributes'] = '󰊢'
 " === Dirvish ===
 " ===============
 
+" view parent directory
+nnoremap + <Plug>(dirvish_up)
+
 " disable line numbers in dirvish buffer
 augroup dirvish_no_numbers
   auto!
   auto FileType dirvish setlocal nonumber norelativenumber foldcolumn=1
 augroup END
-
-" view parent directory
-nnoremap + <Plug>(dirvish_up)
 
 " ===============
 " === FZF Vim ===
