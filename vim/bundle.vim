@@ -40,6 +40,9 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
+" [dirvish] directory viewer
+Plug 'justinmk/vim-dirvish', { 'as': 'dirvish' }
+
 " [dressing] better ui interfaces
 Plug 'stevearc/dressing.nvim', Nvim({ 'as': 'dressing' })
 
