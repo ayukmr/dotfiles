@@ -81,7 +81,7 @@ let g:lightline.tabline = {
   \   ['buffers'],
   \ ],
   \ 'right': [
-  \   ['tabnum']
+  \   ['tabnum'],
   \ ]
 \}
 
