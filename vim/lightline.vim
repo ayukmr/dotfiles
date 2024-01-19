@@ -132,8 +132,10 @@ let g:lightline#bufferline#unnamed = '[No Name]'
 " === One Dark ===
 " ================
 
+" default colors
 let s:colors = onedark#GetColors()
 
+" term colors
 let s:term_red         = s:colors.red.cterm
 let s:term_green       = s:colors.green.cterm
 let s:term_yellow      = s:colors.yellow.cterm
@@ -143,6 +145,7 @@ let s:term_white       = s:colors.white.cterm
 let s:term_cursor_grey = s:colors.cursor_grey.cterm
 let s:term_visual_grey = s:colors.visual_grey.cterm
 
+" gui colors
 let s:red         = [s:colors.red.gui,         s:term_red]
 let s:green       = [s:colors.green.gui,       s:term_green]
 let s:yellow      = [s:colors.yellow.gui,      s:term_yellow]
@@ -152,32 +155,52 @@ let s:white       = [s:colors.white.gui,       s:term_white]
 let s:cursor_grey = [s:colors.cursor_grey.gui, s:term_cursor_grey]
 let s:visual_grey = [s:colors.visual_grey.gui, s:term_visual_grey]
 
-let s:palette = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
+" define palette
+let s:palette = {}
 
-let s:palette.normal.left  = [[s:cursor_grey, s:green, 'bold'], [s:white, s:visual_grey]]
-let s:palette.normal.right = [[s:cursor_grey, s:green, 'bold'], [s:white, s:visual_grey]]
+" normal
+let s:palette.normal = {
+  \ 'left':   [[s:cursor_grey, s:green, 'bold'], [s:white, s:visual_grey]],
+  \ 'middle': [[s:white, s:cursor_grey]],
+  \ 'right':  [[s:cursor_grey, s:green, 'bold'], [s:white, s:visual_grey]],
+  \
+  \ 'warning': [[s:cursor_grey, s:yellow]],
+  \ 'error':   [[s:cursor_grey, s:red]],
+\}
 
-let s:palette.inactive.left  = [[s:cursor_grey, s:white], [s:cursor_grey, s:white]]
-let s:palette.inactive.right = [[s:cursor_grey, s:white], [s:cursor_grey, s:white]]
+" inactive
+let s:palette.inactive = {
+  \ 'left':   [[s:cursor_grey, s:white], [s:cursor_grey, s:white]],
+  \ 'middle': [[s:white, s:cursor_grey]],
+  \ 'right':  [[s:cursor_grey, s:white], [s:cursor_grey, s:white]],
+\}
 
-let s:palette.insert.left  = [[s:cursor_grey, s:blue, 'bold'], [s:white, s:visual_grey]]
-let s:palette.insert.right = [[s:cursor_grey, s:blue, 'bold'], [s:white, s:visual_grey]]
+" insert mode
+let s:palette.insert = {
+  \ 'left':  [[s:cursor_grey, s:blue, 'bold'], [s:white, s:visual_grey]],
+  \ 'right': [[s:cursor_grey, s:blue, 'bold'], [s:white, s:visual_grey]],
+\}
 
-let s:palette.replace.left  = [[s:cursor_grey, s:red, 'bold'], [s:white, s:visual_grey]]
-let s:palette.replace.right = [[s:cursor_grey, s:red, 'bold'], [s:white, s:visual_grey]]
+" replace mode
+let s:palette.replace = {
+  \ 'left':  [[s:cursor_grey, s:red, 'bold'], [s:white, s:visual_grey]],
+  \ 'right': [[s:cursor_grey, s:red, 'bold'], [s:white, s:visual_grey]],
+\}
 
-let s:palette.visual.left  = [[s:cursor_grey, s:yellow, 'bold'], [s:white, s:visual_grey]]
-let s:palette.visual.right = [[s:cursor_grey, s:yellow, 'bold'], [s:white, s:visual_grey]]
+" visual mode
+let s:palette.visual = {
+  \ 'left':  [[s:cursor_grey, s:yellow, 'bold'], [s:white, s:visual_grey]],
+  \ 'right': [[s:cursor_grey, s:yellow, 'bold'], [s:white, s:visual_grey]],
+\}
 
-let s:palette.normal.middle   = [[s:white, s:cursor_grey]]
-let s:palette.inactive.middle = [[s:white, s:cursor_grey]]
+" tabline
+let s:palette.tabline = {
+  \ 'left':   [[s:white, s:visual_grey]],
+  \ 'middle': [[s:white, s:cursor_grey]],
+  \
+  \ 'right':  [[s:purple,      s:visual_grey, 'bold']],
+  \ 'tabsel': [[s:cursor_grey, s:purple,      'bold']],
+\}
 
-let s:palette.tabline.left   = [[s:white,       s:visual_grey]]
-let s:palette.tabline.tabsel = [[s:cursor_grey, s:purple, 'bold']]
-let s:palette.tabline.middle = [[s:white,       s:cursor_grey]]
-let s:palette.tabline.right  = [[s:purple,      s:visual_grey, 'bold']]
-
-let s:palette.normal.warning = [[s:cursor_grey, s:yellow]]
-let s:palette.normal.error   = [[s:cursor_grey, s:red]]
-
+" flatten palette
 let g:lightline#colorscheme#onedark#palette = lightline#colorscheme#flatten(s:palette)
