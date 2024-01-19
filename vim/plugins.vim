@@ -62,7 +62,7 @@ nnoremap <silent> _ :Files ~<CR>
 " disable line numbers in fzf buffer
 augroup fzf_no_numbers
   auto!
-  auto FileType fzf setlocal nonumber nornu
+  auto FileType fzf setlocal nonumber norelativenumber
 augroup END
 
 " ==================
