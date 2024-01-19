@@ -204,15 +204,18 @@ sign define DiagnosticSignWarn  text=-- texthl=DiagnosticSignWarn
 sign define DiagnosticSignInfo  text=-- texthl=DiagnosticSignInfo
 sign define DiagnosticSignHint  text=-- texthl=DiagnosticSignHint
 
-" lsp keybinds
+" leader keybinds
 nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <Leader>lf :lua vim.lsp.buf.formatting()<CR>
+nnoremap <silent> <Leader>lf :lua vim.lsp.buf.format()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
+nnoremap <silent> <leader>lL :lua vim.diagnostic.setloclist()<CR>
 
-nnoremap <silent> <M-d> :lua vim.diagnostic.open_float(nil)<CR>
+" diagnostic keybinds
+nnoremap <silent> <M-d> :lua vim.diagnostic.open_float()<CR>
 nnoremap <silent> [d :lua vim.diagnostic.goto_prev()<CR>
 nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
+" buffer keybinds
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gr :lua vim.lsp.buf.references()<CR>
