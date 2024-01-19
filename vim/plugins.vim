@@ -230,14 +230,14 @@ nnoremap ]v <Plug>VimwikiNextLink
 nnoremap <Leader>vl <Plug>VimwikiListToggle
 
 " search tags
-nnoremap <silent> <Leader>vt :call VimwikiFZF()<CR>
+nnoremap <silent> <Leader>vt :call <SID>vimwiki_fzf()<CR>
 
 " header levels
 nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
 nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
 
 " search tags using fzf
-func! VimwikiFZF()
+func! s:vimwiki_fzf()
   " get tags
   let l:all_tags = systemlist(['rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', '/Users/ayukuma/wiki'])
   let l:tags = uniq(sort(l:all_tags))
@@ -245,13 +245,13 @@ func! VimwikiFZF()
   " select using fzf
   call fzf#run({
     \ 'source': l:tags,
-    \ 'sink':   funcref('VimwikiOnTag'),
+    \ 'sink':   funcref('s:vimwiki_on_tag'),
     \ 'down':   '30%',
   \})
 endfunc
 
 " on fzf tag selection
-func! VimwikiOnTag(query)
+func! s:vimwiki_on_tag(query)
   " search tags
   exec 'VimwikiSearchTags ' . a:query
 
