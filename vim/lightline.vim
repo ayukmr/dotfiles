@@ -135,25 +135,16 @@ let g:lightline#bufferline#unnamed = '[No Name]'
 " default colors
 let s:colors = onedark#GetColors()
 
-" term colors
-let s:term_red         = s:colors.red.cterm
-let s:term_green       = s:colors.green.cterm
-let s:term_yellow      = s:colors.yellow.cterm
-let s:term_blue        = s:colors.blue.cterm
-let s:term_purple      = s:colors.purple.cterm
-let s:term_white       = s:colors.white.cterm
-let s:term_cursor_grey = s:colors.cursor_grey.cterm
-let s:term_visual_grey = s:colors.visual_grey.cterm
-
-" gui colors
-let s:red         = [s:colors.red.gui,         s:term_red]
-let s:green       = [s:colors.green.gui,       s:term_green]
-let s:yellow      = [s:colors.yellow.gui,      s:term_yellow]
-let s:blue        = [s:colors.blue.gui,        s:term_blue]
-let s:purple      = [s:colors.purple.gui,      s:term_purple]
-let s:white       = [s:colors.white.gui,       s:term_white]
-let s:cursor_grey = [s:colors.cursor_grey.gui, s:term_cursor_grey]
-let s:visual_grey = [s:colors.visual_grey.gui, s:term_visual_grey]
+" colors
+let s:red    = [s:colors.red.gui,    s:colors.red.cterm]
+let s:green  = [s:colors.green.gui,  s:colors.green.cterm]
+let s:yellow = [s:colors.yellow.gui, s:colors.yellow.cterm]
+let s:blue   = [s:colors.blue.gui,   s:colors.blue.cterm]
+let s:cyan   = [s:colors.cyan.gui,   s:colors.cyan.cterm]
+let s:purple = [s:colors.purple.gui, s:colors.purple.cterm]
+let s:white  = [s:colors.white.gui,  s:colors.white.cterm]
+let s:cursor_grey = [s:colors.cursor_grey.gui, s:colors.cursor_grey.cterm]
+let s:visual_grey = [s:colors.visual_grey.gui, s:colors.visual_grey.cterm]
 
 " define palette
 let s:palette = {}
