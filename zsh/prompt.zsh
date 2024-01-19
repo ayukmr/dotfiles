@@ -7,37 +7,39 @@ function git_info {
   local info
   local branch
 
-  if git status &> /dev/null; then
-    info=''
-
-    # stashed files
-    if [[ -n "$(git stash list)" ]]; then
-      info+='$'
-    fi
-
-    # staged files
-    if ! git diff --cached --quiet; then
-      info+='+'
-    fi
-
-    # modified files
-    if ! git diff --no-ext-diff --quiet; then
-      info+='!'
-    fi
-
-    # untracked files
-    if [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
-      info+='?'
-    fi
-
-    # format info
-    if [[ -n "$info" ]]; then
-      info="%B%F{magenta}:%F{red}[$info]"
-    fi
-
-    branch="%B%F{magenta}$(git symbolic-ref --short HEAD)"
-    echo "$branch%f%b$info%f%b"
+  if ! git status &> /dev/null; then
+    return
   fi
+
+  info=''
+
+  # stashed files
+  if [[ -n "$(git stash list)" ]]; then
+    info+='\$'
+  fi
+
+  # staged files
+  if ! git diff --cached --quiet; then
+    info+='+'
+  fi
+
+  # modified files
+  if ! git diff --no-ext-diff --quiet; then
+    info+='!'
+  fi
+
+  # untracked files
+  if [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
+    info+='?'
+  fi
+
+  # format info
+  if [[ -n "$info" ]]; then
+    info="%F{magenta}%f %F{red}$info%f"
+  fi
+
+  branch="%F{magenta}󰘬 %B%F{magenta}$(git symbolic-ref --short HEAD)%f"
+  echo "%B$branch$info%b"
 }
 
 # load rprompt async
@@ -55,12 +57,15 @@ function async_rprompt {
 
 # trap usr1 signal
 function TRAPUSR1 {
-  if [[ -f "/tmp/rprompt$ASYNC_PROC" ]]; then
-    RPROMPT="$(< "/tmp/rprompt$ASYNC_PROC")"
-    rm "/tmp/rprompt$ASYNC_PROC"
+  if [[ ! -f "/tmp/rprompt$ASYNC_PROC" ]]; then
+    return
   fi
 
-  ASYNC_PROC=0
+  # rprompt from file
+  RPROMPT="$(< "/tmp/rprompt$ASYNC_PROC")"
+
+  rm "/tmp/rprompt$ASYNC_PROC"
+  unset ASYNC_PROC
 
   # redraw prompt
   zle .reset-prompt
@@ -68,8 +73,21 @@ function TRAPUSR1 {
 
 add-zsh-hook precmd async_rprompt
 
+# prompt directory
+function prompt_pwd {
+  local dir="$(print -P '%~')"
+
+  if [[ "$dir" == '~' ]]; then
+    # add slash
+    echo '~/'
+  else
+    echo "$dir"
+  fi
+}
+
 # prompt
-PROMPT='%B%F{blue}%~%(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red})>%f%b '
+setopt PROMPT_SUBST
+PROMPT='%B%F{blue}$(prompt_pwd)%(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red})>%f%b '
 
 # pad if not first line
 function pad_prompt {
