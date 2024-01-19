@@ -230,16 +230,30 @@ nnoremap ]v <Plug>VimwikiNextLink
 nnoremap <Leader>vl <Plug>VimwikiListToggle
 
 " search tags
-nnoremap <silent> <Leader>vt :call VimwikiTag()<CR>
+nnoremap <silent> <Leader>vt :call VimwikiFZF()<CR>
 
 " header levels
 nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
 nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
 
-" search tags and open location list
-func VimwikiTag()
+" search tags using fzf
+func! VimwikiFZF()
+  " get tags
+  let l:all_tags = systemlist(['rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', '/Users/ayukuma/wiki'])
+  let l:tags = uniq(sort(l:all_tags))
+
+  " select using fzf
+  call fzf#run({
+    \ 'source': l:tags,
+    \ 'sink':   funcref('VimwikiOnTag'),
+    \ 'down':   '30%',
+  \})
+endfunc
+
+" on fzf tag selection
+func! VimwikiOnTag(query)
   " search tags
-  execute 'VimwikiSearchTags ' . input('> ')
+  exec 'VimwikiSearchTags ' . a:query
 
   if !get(getloclist(0, { 'winid': 0 }), 'winid', 0)
     " open location list
