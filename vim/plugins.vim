@@ -77,9 +77,9 @@ augroup fzf_no_numbers
   auto FileType fzf setlocal nonumber norelativenumber
 augroup END
 
-" ==================
-" === Git Gutter ===
-" ==================
+" =================
+" === GitGutter ===
+" =================
 
 " gitgutter symbols
 let g:gitgutter_sign_added                   = '++'
