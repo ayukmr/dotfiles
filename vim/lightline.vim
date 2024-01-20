@@ -85,11 +85,6 @@ let g:lightline.tabline = {
   \ ]
 \}
 
-" color linter symbols
-highlight LightlineError ctermfg=204 ctermbg=236 guifg=#d05c65 guibg=#252525
-highlight LightlineWarn  ctermfg=180 ctermbg=236 guifg=#d5b06b guibg=#252525
-highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#519fdf guibg=#252525
-
 " components
 let g:lightline.component = {
   \ 'lineinfo': '%02l:%02c',

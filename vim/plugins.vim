@@ -100,9 +100,6 @@ nnoremap ]g :GitGutterNextHunk<CR>
 " === Highlighted Yank ===
 " ========================
 
-" highlight color
-highlight! link HighlightedyankRegion Search
-
 " mapping for vim
 if !exists('##TextYankPost')
   noremap y <Plug>(highlightedyank)
@@ -124,12 +121,6 @@ let g:sneak#label = 1
 
 " prompt
 let g:sneak#prompt = '> '
-
-" colors
-highlight! link Sneak          WildMenu
-highlight! link SneakScope     Cursor
-highlight! link SneakLabel     WildMenu
-highlight! link SneakLabelMask Fg
 
 " f and t mappings
 noremap f <Plug>Sneak_f
@@ -178,10 +169,6 @@ let g:startify_lists = [
 
 " disable changing directory
 let g:startify_change_to_dir = 0
-
-" colors
-highlight! link StartifyBracket StartifyNumber
-highlight! link StartifySlash   StartifyPath
 
 " icons in startify
 func! StartifyEntryFormat()
