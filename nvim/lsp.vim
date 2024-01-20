@@ -9,10 +9,6 @@
 " max completion items
 set pumheight=25
 
-" highlight matching text
-highlight CmpItemAbbrMatch      cterm=bold gui=bold
-highlight CmpItemAbbrMatchFuzzy cterm=bold gui=bold
-
 lua <<EOF
 -- cmp module
 local cmp = require 'cmp'
@@ -129,12 +125,6 @@ EOF
 " ================
 " === Dressing ===
 " ================
-
-" border highlight
-highlight! link FloatBorder NormalFloat
-
-" cursor line highlight
-highlight DressingCursorLine ctermbg=237 guibg=#393939
 
 lua <<EOF
 -- dressing module
