@@ -23,6 +23,17 @@ augroup disable_comments
   auto BufEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
 augroup END
 
+" fold ellipsis
+func! s:fold_text()
+  return getline(v:foldstart) . ' …'
+endfunc
+
+" fold styling
+set foldtext=<SID>fold_text()
+set fillchars=fold:\ 
+set foldmethod=syntax
+set foldlevelstart=2
+
 " centralize directories
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
