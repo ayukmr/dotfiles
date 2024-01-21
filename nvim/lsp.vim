@@ -7,7 +7,7 @@
 " ======================
 
 " max completion items
-set pumheight=25
+set pumheight=15
 
 lua <<EOF
 -- cmp module
