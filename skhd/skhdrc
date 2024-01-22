@@ -20,5 +20,13 @@ alt + cmd + shift - 0x25 : yabai -m window --warp east
 alt + ctrl + shift - 0x04 : yabai -m window --space prev
 alt + ctrl + shift - 0x25 : yabai -m window --space next
 
+# focus displays
+alt + ctrl - 0x0C : yabai -m display --focus 1
+alt + ctrl - 0x0D : yabai -m display --focus 2
+
+# move window to display
+alt + ctrl + shift - 0x0C : yabai -m window --display 1
+alt + ctrl + shift - 0x0D : yabai -m window --display 2
+
 # toggle layout
 alt + ctrl - space : ~/.cfg/skhd/toggle-layout
