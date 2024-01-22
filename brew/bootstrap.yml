@@ -76,8 +76,8 @@ packages:
 
     - brew install --cask:
       - iina
+      - kitty
       - stats
-      - iterm2
       - raycast
       - amethyst
       - maestral
