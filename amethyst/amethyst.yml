@@ -14,11 +14,11 @@ layouts:
 
 # floating apps
 floating:
-  - com.apple.archiveutility
-  - com.apple.DigitalColorMeter
   - com.valvesoftware.steam
-  - com.apple.systempreferences
+  - com.apple.archiveutility
   - com.apple.QuickTimePlayer
+  - com.apple.DigitalColorMeter
+  - com.apple.systempreferences
 
 # window margins
 window-margins: true
