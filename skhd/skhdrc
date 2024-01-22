@@ -2,25 +2,25 @@
 # === SKHD Config ===
 # ===================
 
-# focus windows
+# focus window
 alt + ctrl - 0x28 : ~/.cfg/skhd/window-action focus prev last
 alt + ctrl - 0x26 : ~/.cfg/skhd/window-action focus next first
 
-# swap windows
+# swap window
 alt + ctrl + shift - 0x28 : ~/.cfg/skhd/window-action swap prev last
 alt + ctrl + shift - 0x26 : ~/.cfg/skhd/window-action swap next first
 
-# warp windows
+# warp window
 alt + cmd + shift - 0x04 : yabai -m window --warp west
 alt + cmd + shift - 0x28 : yabai -m window --warp north
 alt + cmd + shift - 0x26 : yabai -m window --warp south
 alt + cmd + shift - 0x25 : yabai -m window --warp east
 
-# move spaces
+# move to space
 alt + ctrl + shift - 0x04 : yabai -m window --space prev
 alt + ctrl + shift - 0x25 : yabai -m window --space next
 
-# focus displays
+# focus display
 alt + ctrl - 0x0C : yabai -m display --focus 1
 alt + ctrl - 0x0D : yabai -m display --focus 2
 
