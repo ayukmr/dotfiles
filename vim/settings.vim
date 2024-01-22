@@ -24,7 +24,7 @@ augroup disable_comments
 augroup END
 
 " fold ellipsis
-func! s:fold_text()
+func! s:fold_text() abort
   return getline(v:foldstart) . ' …'
 endfunc
 

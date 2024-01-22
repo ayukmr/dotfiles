@@ -171,7 +171,7 @@ let g:startify_lists = [
 let g:startify_change_to_dir = 0
 
 " icons in startify
-func! StartifyEntryFormat()
+func! StartifyEntryFormat() abort
   return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
 endfunc
 
@@ -224,7 +224,7 @@ nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
 nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
 
 " search tags using fzf
-func! s:vimwiki_fzf()
+func! s:vimwiki_fzf() abort
   " get tags
   let l:all_tags = systemlist(['rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', '/Users/ayukuma/wiki'])
   let l:tags = uniq(sort(l:all_tags))
@@ -238,7 +238,7 @@ func! s:vimwiki_fzf()
 endfunc
 
 " on fzf tag selection
-func! s:vimwiki_on_tag(query)
+func! s:vimwiki_on_tag(query) abort
   " search tags
   exec 'VimwikiSearchTags ' . a:query
 

@@ -38,7 +38,7 @@ let g:onedark_color_overrides = {
 colorscheme onedark
 
 " set highlights
-func! s:set_highlights()
+func! s:set_highlights() abort
   " search highlight
   highlight! link IncSearch Search
 

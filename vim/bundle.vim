@@ -3,7 +3,7 @@
 " ==================
 
 " enable plugin on condition
-func! Nvim(...)
+func! Nvim(...) abort
   let opts = get(a:000, 0, {})
 
   return has('nvim')

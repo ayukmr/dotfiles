@@ -3,22 +3,22 @@
 " =================
 
 " linter errors count for lightline
-func! LightlineErrors()
+func! LightlineErrors() abort
   return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })')
 endfunc
 
 " linter warnings count for lightline
-func! LightlineWarnings()
+func! LightlineWarnings() abort
   return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.WARN })')
 endfunc
 
 " linter info count for lightline
-func! LightlineInfo()
+func! LightlineInfo() abort
   return luaeval('#vim.diagnostic.get(0, { severity = vim.diagnostic.severity.INFO })')
 endfunc
 
 " add file icon to filetype
-func! LightlineFiletype()
+func! LightlineFiletype() abort
   return
     \ WebDevIconsGetFileTypeSymbol() . ' ' . (
     \   strlen(&filetype) ? &filetype : 'none'
