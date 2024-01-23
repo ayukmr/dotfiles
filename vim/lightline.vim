@@ -123,6 +123,10 @@ let g:lightline#bufferline#enable_devicons = 1
 " set title for unnamed buffers
 let g:lightline#bufferline#unnamed = '[No Name]'
 
+" buffer movement
+nnoremap <silent> [b :call lightline#bufferline#go_previous()<CR>
+nnoremap <silent> ]b :call lightline#bufferline#go_next()<CR>
+
 " ================
 " === One Dark ===
 " ================
