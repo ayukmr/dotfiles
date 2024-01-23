@@ -104,10 +104,10 @@ set smartindent
 " highlight current line
 set cursorline
 
-" don't show mode
+" hide mode
 set noshowmode
 
-" don't wrap lines
+" disable wrapping
 set nowrap
 
 " conceal level
