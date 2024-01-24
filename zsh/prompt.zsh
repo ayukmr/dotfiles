@@ -15,7 +15,7 @@ function git_info {
 
   # stashed files
   if [[ -n "$(git stash list)" ]]; then
-    info+='\$'
+    info+='$'
   fi
 
   # staged files
@@ -74,7 +74,6 @@ function TRAPUSR1 {
 add-zsh-hook precmd async_rprompt
 
 # prompt
-setopt PROMPT_SUBST
 PROMPT='%B%F{blue}%~%(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red}) ❯%f%b '
 
 # pad if not first line
