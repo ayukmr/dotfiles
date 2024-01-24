@@ -2,7 +2,7 @@
 # === ZSH Setup ===
 # =================
 
-# don't show inverted %
+# hide inverted %
 PROMPT_EOL_MARK=''
 
 # get command from alias
