@@ -63,7 +63,7 @@ augroup END
 " ===============
 
 " spawn in bottom split
-let g:fzf_layout = { 'down': '30%' }
+let g:fzf_layout = { 'down': '15' }
 
 " find files
 nnoremap <silent> - :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
