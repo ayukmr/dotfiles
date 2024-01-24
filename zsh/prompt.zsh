@@ -73,21 +73,9 @@ function TRAPUSR1 {
 
 add-zsh-hook precmd async_rprompt
 
-# prompt directory
-function prompt_pwd {
-  local dir="$(print -P '%~')"
-
-  if [[ "$dir" == '~' ]]; then
-    # add slash
-    echo '~/'
-  else
-    echo "$dir"
-  fi
-}
-
 # prompt
 setopt PROMPT_SUBST
-PROMPT='%B%F{blue}$(prompt_pwd)%(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red})>%f%b '
+PROMPT='%B%F{blue}%~%(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red}) ❯%f%b '
 
 # pad if not first line
 function pad_prompt {
