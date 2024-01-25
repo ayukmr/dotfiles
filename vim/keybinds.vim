@@ -6,7 +6,7 @@
 let mapleader = ','
 
 " key timeout
-set timeoutlen=100
+set timeoutlen=200
 
 " quick pane navigation
 nnoremap <C-h> <C-w>h
