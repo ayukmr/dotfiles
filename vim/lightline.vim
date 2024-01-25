@@ -124,8 +124,8 @@ let g:lightline#bufferline#enable_devicons = 1
 let g:lightline#bufferline#unnamed = '[No Name]'
 
 " buffer movement
-nnoremap <silent> [b :call lightline#bufferline#go_previous()<CR>
-nnoremap <silent> ]b :call lightline#bufferline#go_next()<CR>
+nnoremap <silent> [b :<C-u>call lightline#bufferline#go_relative(-v:count1)<CR>
+nnoremap <silent> ]b :<C-u>call lightline#bufferline#go_relative(v:count1)<CR>
 
 " ================
 " === One Dark ===
