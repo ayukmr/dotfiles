@@ -5,6 +5,9 @@
 " set leader to comma
 let mapleader = ','
 
+" key timeout
+set timeoutlen=100
+
 " quick pane navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
