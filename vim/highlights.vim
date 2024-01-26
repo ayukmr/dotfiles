@@ -71,6 +71,10 @@ func! s:set_highlights() abort
   highlight! link StartifyBracket StartifyNumber
   highlight! link StartifySlash   StartifyPath
 
+  " vimwiki syntax
+  highlight VimwikiHeader1 cterm=bold      ctermfg=114 gui=bold      guifg=#88b369
+  highlight VimwikiLink    cterm=underline ctermfg=39  gui=underline guifg=#519fdf
+
   if has('nvim')
     " cmp matching text
     highlight CmpItemAbbrMatch      cterm=bold gui=bold
