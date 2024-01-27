@@ -5,7 +5,7 @@
 # print info
 function print_info {
   # custom title
-  prin " $(color 2)$(whoami) $(color 7)@$(color 2) $(uname | tr '[:upper:]' '[:lower:]')"
+  prin "$(color 2)$(whoami) $(color 7)@$(color 2) $(uname | tr '[:upper:]' '[:lower:]')"
 
   # fetch info
   info ' os ' distro
