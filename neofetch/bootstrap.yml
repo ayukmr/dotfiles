@@ -7,4 +7,4 @@ config:
     - ~/.config/neofetch
 
   files:
-    - ~/.config/neofetch/config.conf: 'source ~/.cfg/neofetch/config.conf'
+    - ~/.config/neofetch/config.conf: 'source ~/.cfg/neofetch/config.zsh'
