@@ -6,5 +6,5 @@ config:
   dirs:
     - ~/.config/neofetch
 
-  link:
-    - ~/.config/neofetch: config.conf
+  files:
+    - ~/.config/neofetch/config.conf: 'source ~/.cfg/neofetch/config.conf'
