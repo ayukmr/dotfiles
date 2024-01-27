@@ -98,11 +98,6 @@ cmp.setup({
       scrollbar = false,
     },
   },
-
-  -- ghost text
-  experimental = {
-    ghost_text = true,
-  },
 })
 
 -- search completion
