@@ -22,5 +22,5 @@ let &t_SI = "\e[6 q"
 let &t_SR = "\e[4 q"
 let &t_EI = "\e[1 q"
 
-" set update time
+" update time
 set updatetime=100

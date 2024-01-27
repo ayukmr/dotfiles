@@ -5,14 +5,14 @@
 " set title
 set title
 
-" set titlestring
+" titlestring format
 if has('nvim')
   set titlestring=%t\ –\ nvim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 else
   set titlestring=%t\ –\ vim\ ◂\ %{strlen(&filetype)?&filetype:'none'}
 endif
 
-" set viminfo location
+" viminfo location
 if !has('nvim')
   set viminfofile=~/.vim/viminfo
 endif

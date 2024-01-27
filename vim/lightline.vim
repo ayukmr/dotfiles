@@ -120,7 +120,7 @@ call timer_start(&updatetime, {-> lightline#update() }, { 'repeat': -1 })
 " icons in bufferline tabs
 let g:lightline#bufferline#enable_devicons = 1
 
-" set title for unnamed buffers
+" title for unnamed buffers
 let g:lightline#bufferline#unnamed = '[No Name]'
 
 " buffer movement

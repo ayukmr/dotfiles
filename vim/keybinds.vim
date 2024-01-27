@@ -2,7 +2,7 @@
 " === Vim Keybinds ===
 " ====================
 
-" set leader to comma
+" comma as leader
 let mapleader = ','
 
 " key timeout
