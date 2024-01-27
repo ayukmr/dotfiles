@@ -123,9 +123,37 @@ let g:lightline#bufferline#enable_devicons = 1
 " title for unnamed buffers
 let g:lightline#bufferline#unnamed = '[No Name]'
 
+" select buffer by number
+nnoremap <silent> <Leader><Leader> :call <SID>bufferline_select_keybind()<CR>
+
 " buffer movement
 nnoremap <silent> [b :<C-u>call lightline#bufferline#go_relative(-v:count1)<CR>
 nnoremap <silent> ]b :<C-u>call lightline#bufferline#go_relative(v:count1)<CR>
+
+" buffer select keybind
+func! s:bufferline_select_keybind() abort
+  " show numbers
+  let g:lightline#bufferline#enable_devicons = 0
+  let g:lightline#bufferline#show_number = 2
+
+  call lightline#bufferline#reload()
+
+  " select buffer
+  call timer_start(0, funcref('s:bufferline_select'))
+endfunc
+
+" select buffer by number
+func! s:bufferline_select(_) abort
+  " jump to buffer
+  let l:input = nr2char(getchar())
+  call lightline#bufferline#go(l:input)
+
+  " show icons
+  let g:lightline#bufferline#enable_devicons = 1
+  let g:lightline#bufferline#show_number = 0
+
+  call lightline#bufferline#reload()
+endfunc
 
 " ================
 " === One Dark ===
