@@ -1,0 +1,10 @@
+# ==========================
+# === Neofetch Bootstrap ===
+# ==========================
+
+config:
+  dirs:
+    - ~/.config/neofetch
+
+  link:
+    - ~/.config/neofetch: config.conf
