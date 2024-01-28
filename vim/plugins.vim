@@ -99,9 +99,15 @@ let g:gitgutter_sign_modified_removed        = '~-'
 " disable clobbering
 let g:gitgutter_sign_allow_clobber = 0
 
+" disable by default
+let g:gitgutter_enabled = 0
+
 " hunk movement
 nnoremap [g :GitGutterPrevHunk<CR>
 nnoremap ]g :GitGutterNextHunk<CR>
+
+" toggle gitgutter
+nnoremap <silent> <Leader>G :GitGutterToggle<CR>
 
 " ========================
 " === Highlighted Yank ===
