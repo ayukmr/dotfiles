@@ -91,13 +91,6 @@ cmp.setup({
     { name = 'buffer'    },
     { name = 'path'      },
   }),
-
-  -- disable scrollbar
-  window = {
-    completion = {
-      scrollbar = false,
-    },
-  },
 })
 
 -- search completion
