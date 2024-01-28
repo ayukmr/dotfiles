@@ -70,8 +70,8 @@ set numberwidth=4
 set signcolumn=number
 
 " show invisibles
-set listchars=trail:·
 set list
+set listchars=trail:·
 
 " split pane to bottom right
 set splitbelow
