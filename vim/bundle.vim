@@ -16,6 +16,9 @@ call plug#begin('~/.vim/bundle')
 " [bbye] better :bd and :bw
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
+" [better-escape] insert mode escaping
+Plug 'jdhao/better-escape.vim', { 'as': 'better-escape' }
+
 " [cmp] completion
 Plug 'hrsh7th/nvim-cmp', Nvim({ 'as': 'cmp' })
 

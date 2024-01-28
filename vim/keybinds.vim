@@ -5,9 +5,6 @@
 " comma as leader
 let mapleader = ','
 
-" key timeout
-set timeoutlen=350
-
 " quick pane navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -39,6 +36,3 @@ xnoremap <Leader>s "_s
 " write file
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
-
-" escape from insert mode
-inoremap jk <Esc>

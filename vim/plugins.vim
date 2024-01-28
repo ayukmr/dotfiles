@@ -10,6 +10,13 @@
 nnoremap <silent> <Leader>q :Bdelete<CR>
 nnoremap <silent> <Leader>Q :Bdelete!<CR>
 
+" =====================
+" === Better Escape ===
+" =====================
+
+" escape shortcut
+let g:better_escape_shortcut = 'jk'
+
 " ================
 " === DevIcons ===
 " ================

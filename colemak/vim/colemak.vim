@@ -5,9 +5,8 @@
 " colemak keymap
 set keymap=colemak
 
-" escape from insert mode
-iunmap jk
-inoremap we <Esc>
+" better escape shortcut
+let g:better_escape_shortcut = 'wf'
 
 " normal keymap in sneak
 augroup sneak_keymap
