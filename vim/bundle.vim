@@ -13,6 +13,9 @@ endfunc
 
 call plug#begin('~/.vim/bundle')
 
+" [sneak] quicker movement
+Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
+
 " [bbye] better :bd and :bw
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
@@ -96,9 +99,6 @@ Plug 'sheerun/vim-polyglot', { 'as': 'polyglot', 'do': 'rm -r ftplugin after/ftp
 
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
-
-" [sneak] quicker movement
-Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
 " [snippets] snippets for ultisnips
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
