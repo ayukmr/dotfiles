@@ -58,9 +58,6 @@ Plug 'junegunn/fzf'
 " [fzf-vim] fzf support for vim
 Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
 
-" [gitbranch] get current git branch
-Plug 'itchyny/vim-gitbranch', { 'as': 'gitbranch' }
-
 " [gitgutter] show git status in gutter
 Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 
