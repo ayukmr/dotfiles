@@ -105,15 +105,6 @@ let g:gitgutter_enabled = 0
 " toggle gitgutter
 nnoremap <silent> <Leader>G :GitGutterToggle<CR>
 
-" ========================
-" === Highlighted Yank ===
-" ========================
-
-" mapping for vim
-if !exists('##TextYankPost')
-  noremap y <Plug>(highlightedyank)
-endif
-
 " ============
 " === Lion ===
 " ============
