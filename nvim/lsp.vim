@@ -57,6 +57,9 @@ cmp.setup({
       -- show icons for kinds
       item.kind = symbols[item.kind]
 
+      -- hide item menu
+      item.menu = ''
+
       -- truncate string
       local old_abbr = item.abbr
       item.abbr = string.sub(item.abbr, 1, 25)
