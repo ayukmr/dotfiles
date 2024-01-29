@@ -232,6 +232,10 @@ nnoremap <silent> <Leader>vt :call <SID>vimwiki_fzf()<CR>
 nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
 nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
 
+" normalize links
+nnoremap <Leader>v+ <Plug>VimwikiNormalizeLink
+vnoremap <Leader>v+ <Plug>VimwikiNormalizeLinkVisual
+
 " search tags using fzf
 func! s:vimwiki_fzf() abort
   " get tags
