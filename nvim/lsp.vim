@@ -57,16 +57,24 @@ cmp.setup({
       -- show icons for kinds
       item.kind = symbols[item.kind]
 
-      -- hide item menu
-      item.menu = ''
+      -- truncate text
+      function truncate(text)
+        truncated = string.sub(text, 1, 25)
 
-      -- truncate string
-      local old_abbr = item.abbr
-      item.abbr = string.sub(item.abbr, 1, 25)
+        if truncated ~= text then
+          -- add ellipsis
+          truncated = truncated .. '…'
+        end
 
-      -- add ellipses if truncated
-      if item.abbr ~= old_abbr then
-        item.abbr = item.abbr .. '…'
+        return truncated
+      end
+
+      -- truncate item
+      item.abbr = truncate(item.abbr)
+
+      if item.menu then
+        -- truncate menu
+        item.menu = truncate(item.menu)
       end
 
       return item
