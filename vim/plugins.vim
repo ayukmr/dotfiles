@@ -164,8 +164,8 @@ let g:startify_commands = [
 
 " bookmarked files
 let g:startify_bookmarks = [
-  \ { 'vs': '~/.cfg/vim/setup.vim'   },
-  \ { 'vp': '~/.cfg/vim/plugins.vim' },
+  \ { 'vo': '~/org/tasks.org' },
+  \ { 'vi': '~/wiki/index.md' },
 \]
 
 " list headers
