@@ -18,7 +18,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # colors for ls
 export LSCOLORS='ExFxxxDxBxhxhxhxhxcxcx'
-export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/lscolors.txt)"
+export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/LS_COLORS)"
 
 # colorize man pages
 export LESS_TERMCAP_md="$(print -P '%B%F{blue}')"
