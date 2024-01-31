@@ -43,7 +43,7 @@ local symbols = {
 }
 
 -- setup cmp
-cmp.setup({
+cmp.setup {
   -- ultisnips snippets
   snippet = {
     expand = function(args)
@@ -96,13 +96,13 @@ cmp.setup({
   },
 
   -- completion sources
-  sources = cmp.config.sources({
+  sources = cmp.config.sources {
     { name = 'nvim_lsp'  },
     { name = 'ultisnips' },
     { name = 'buffer'    },
     { name = 'path'      },
-  }),
-})
+  },
+}
 
 -- search completion
 cmp.setup.cmdline('/', {
@@ -130,7 +130,7 @@ lua <<EOF
 local dressing = require 'dressing'
 
 -- dressing setup
-dressing.setup({
+dressing.setup {
   input = {
     -- horizontal padding
     border = { '', '', '', ' ' },
@@ -152,7 +152,7 @@ dressing.setup({
       },
     },
   },
-})
+}
 EOF
 
 " =============
@@ -164,7 +164,7 @@ lua <<EOF
 local mason = require 'mason'
 
 -- setup mason
-mason.setup({
+mason.setup {
   ui = {
     icons = {
       package_installed   = '',
@@ -172,15 +172,15 @@ mason.setup({
       package_uninstalled = '',
     },
   },
-})
+}
 
 -- mason lspconfig module
 local mason_lspconfig = require 'mason-lspconfig'
 
 -- setup mason lspconfig
-mason_lspconfig.setup({
+mason_lspconfig.setup {
   automatic_installation = true,
-})
+}
 EOF
 
 " ==================
@@ -231,13 +231,13 @@ local servers = {
 
 -- add lsp servers
 for _, lsp in pairs(servers) do
-  lspconfig[lsp].setup({
+  lspconfig[lsp].setup {
     capabilities = capabilities,
-  })
+  }
 end
 
 -- diagnostics config
-vim.diagnostic.config({
+vim.diagnostic.config {
   underline    = true,
   signs        = true,
   virtual_text = false,
@@ -246,7 +246,7 @@ vim.diagnostic.config({
     scope  = 'cursor',
     source = 'always',
   },
-})
+}
 EOF
 
 " ===============
@@ -258,12 +258,11 @@ lua <<EOF
 local null_ls = require 'null-ls'
 
 -- setup null-ls
-null_ls.setup({
+null_ls.setup {
   sources = {
     null_ls.builtins.diagnostics.eslint,
-    null_ls.builtins.diagnostics.rubocop,
   },
-})
+}
 EOF
 
 " =================
