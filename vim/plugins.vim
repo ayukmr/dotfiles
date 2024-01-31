@@ -112,6 +112,13 @@ nnoremap <silent> <Leader>G :GitGutterToggle<CR>
 " squeeze spaces
 let g:lion_squeeze_spaces = 1
 
+" ===============
+" === MatchUp ===
+" ===============
+
+" hide offscreen matches
+let g:matchup_matchparen_offscreen = {}
+
 " =============
 " === Sneak ===
 " =============

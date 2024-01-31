@@ -55,6 +55,12 @@ Plug 'stevearc/dressing.nvim', Nvim({ 'as': 'dressing' })
 " [editorconfig] editorconfig support
 Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
+" [eunuch] unix commands
+Plug 'tpope/vim-eunuch', { 'as': 'eunuch' }
+
+" [fugitive] git wrapper
+Plug 'tpope/vim-fugitive', { 'as': 'fugitive' }
+
 " [fzf] fuzzy finder
 Plug 'junegunn/fzf'
 
@@ -66,6 +72,9 @@ Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
+
+" [indent-object] text objects for indentation
+Plug 'michaeljsmith/vim-indent-object', { 'as': 'indent-object' }
 
 " [lightline] enhanced statusline
 Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
@@ -85,6 +94,9 @@ Plug 'williamboman/mason.nvim', Nvim({ 'as': 'mason' })
 " [mason-lspconfig] mason plugin for lspconfig
 Plug 'williamboman/mason-lspconfig.nvim', Nvim({ 'as': 'mason-lspconfig' })
 
+" [matchup] enhanced matchit
+Plug 'andymass/vim-matchup', { 'as': 'matchup' }
+
 " [none-ls] use neovim as a language server
 Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 
@@ -102,6 +114,9 @@ Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 
 " [snippets] snippets for ultisnips
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
+
+" [splitjoin] split and join lines
+Plug 'andrewradev/splitjoin.vim', { 'as': 'splitjoin' }
 
 " [startify] start screen
 Plug 'mhinz/vim-startify', { 'as': 'startify' }
