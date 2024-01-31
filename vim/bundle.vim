@@ -85,8 +85,8 @@ Plug 'williamboman/mason.nvim', Nvim({ 'as': 'mason' })
 " [mason-lspconfig] mason plugin for lspconfig
 Plug 'williamboman/mason-lspconfig.nvim', Nvim({ 'as': 'mason-lspconfig' })
 
-" [null-ls] use neovim as a language server
-Plug 'jose-elias-alvarez/null-ls.nvim', { 'as': 'null-ls' }
+" [none-ls] use neovim as a language server
+Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
