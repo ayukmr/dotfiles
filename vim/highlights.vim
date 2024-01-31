@@ -42,6 +42,10 @@ func! s:set_highlights() abort
   " search highlight
   highlight! link IncSearch Search
 
+  " menu selections
+  highlight PmenuSel cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
+  highlight! link WildMenu PmenuSel
+
   " jsx tag highlights
   highlight! link jsxOpenPunct   Fg
   highlight! link jsxClosePunct  Fg
@@ -62,10 +66,10 @@ func! s:set_highlights() abort
   highlight! link HighlightedyankRegion Search
 
   " sneak colors
-  highlight! link Sneak          WildMenu
+  highlight! link Sneak          PmenuSel
+  highlight! link SneakLabel     PmenuSel
   highlight! link SneakScope     Cursor
-  highlight! link SneakLabel     WildMenu
-  highlight! link SneakLabelMask Fg
+  highlight! link SneakLabelMask Normal
 
   " startify colors
   highlight! link StartifyBracket StartifyNumber
