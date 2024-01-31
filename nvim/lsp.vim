@@ -194,22 +194,23 @@ sign define DiagnosticSignInfo  text=-- texthl=DiagnosticSignInfo
 sign define DiagnosticSignHint  text=-- texthl=DiagnosticSignHint
 
 " leader keybinds
-nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent> <Leader>lf :lua vim.lsp.buf.format()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
-nnoremap <silent> <leader>lL :lua vim.diagnostic.setloclist()<CR>
+nnoremap <silent> <Leader>lR :lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <leader>ld :lua vim.diagnostic.setloclist()<CR>
+nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol()<CR>
+
+" buffer keybinds
+nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gI :lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> gT :lua vim.lsp.buf.type_definition()<CR>
 
 " diagnostic keybinds
 nnoremap <silent> <M-d> :lua vim.diagnostic.open_float()<CR>
 nnoremap <silent> [d :lua vim.diagnostic.goto_prev()<CR>
 nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
-
-" buffer keybinds
-nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> gr :lua vim.lsp.buf.references()<CR>
-nnoremap <silent> gt :lua vim.lsp.buf.type_definition()<CR>
-nnoremap <silent> gi :lua vim.lsp.buf.implementation()<CR>
 
 lua <<EOF
 -- lsp modules
