@@ -112,6 +112,9 @@ Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 
+" [rsi] readline keybinds
+Plug 'tpope/vim-rsi', { 'as': 'rsi' }
+
 " [snippets] snippets for ultisnips
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
