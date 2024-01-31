@@ -230,7 +230,9 @@ vnoremap <Leader>v+ <Plug>VimwikiNormalizeLinkVisual
 " search tags using fzf
 func! s:vimwiki_fzf() abort
   " get tags
-  let l:all_tags = systemlist(['rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', '/Users/ayukuma/wiki'])
+  let l:all_tags = systemlist([
+    \ 'rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', '/Users/ayukuma/wiki'
+  \])
   let l:tags = uniq(sort(l:all_tags))
 
   " select using fzf
