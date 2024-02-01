@@ -66,10 +66,9 @@ func! s:set_highlights() abort
   highlight! link HighlightedyankRegion Search
 
   " sneak colors
-  highlight! link Sneak          PmenuSel
-  highlight! link SneakLabel     PmenuSel
-  highlight! link SneakScope     Cursor
-  highlight! link SneakLabelMask Normal
+  highlight! link Sneak      PmenuSel
+  highlight! link SneakLabel PmenuSel
+  highlight! link SneakScope Cursor
 
   " startify colors
   highlight! link StartifyBracket StartifyNumber
