@@ -103,7 +103,9 @@ let g:gitgutter_sign_allow_clobber = 0
 let g:gitgutter_enabled = 0
 
 " toggle gitgutter
-nnoremap <silent> <Leader>G :GitGutterToggle<CR>
+nnoremap <silent> ]og :GitGutterDisable<CR>
+nnoremap <silent> [og :GitGutterEnable<CR>
+nnoremap <silent> yog :GitGutterToggle<CR>
 
 " ============
 " === Lion ===
