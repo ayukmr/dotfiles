@@ -25,11 +25,6 @@ func! LightlineFiletype() abort
     \ )
 endfunc
 
-" amount of tabs
-func! LightlineTabNum()
-  return ' ' . tabpagenr()
-endfunc
-
 " lightline config
 let g:lightline = {}
 
@@ -88,6 +83,7 @@ let g:lightline.tabline = {
 " components
 let g:lightline.component = {
   \ 'lineinfo': '%02l:%02c',
+  \ 'tabnum':   ' %{tabpagenr()}',
   \
   \ 'errors':   '%#LightlineError#%#LightlineLeft_active_2# %{LightlineErrors()}',
   \ 'warnings': '%#LightlineWarn#%#LightlineLeft_active_2# %{LightlineWarnings()}',
@@ -97,7 +93,6 @@ let g:lightline.component = {
 " functions
 let g:lightline.component_function = {
   \ 'filetype': 'LightlineFiletype',
-  \ 'tabnum':   'LightlineTabNum',
 \}
 
 " bufferline component
