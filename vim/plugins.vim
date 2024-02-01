@@ -73,7 +73,7 @@ augroup END
 let g:fzf_layout = { 'down': '15' }
 
 " find files
-nnoremap <silent> - :call fzf#vim#files(expand('%:h:h'), fzf#vim#with_preview())<CR>
+nnoremap <silent> - :call fzf#vim#files(FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'), fzf#vim#with_preview())<CR>
 
 " find files in home
 nnoremap <silent> _ :Files ~<CR>
@@ -120,6 +120,20 @@ let g:lion_squeeze_spaces = 1
 
 " hide offscreen matches
 let g:matchup_matchparen_offscreen = {}
+
+" ==============
+" === Rooter ===
+" ==============
+
+" disable automatic switching
+let g:rooter_manual_only = 1
+
+" root patterns
+let g:rooter_patterns = [
+  \ '.git',
+  \ 'Makefile', 'Gemfile', 'Cargo.toml', 'package.json', 'shard.yml',
+  \ '=wiki', '=org',
+\]
 
 " =============
 " === Sneak ===

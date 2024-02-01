@@ -112,6 +112,9 @@ Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 
+" [rooter] project root based on files
+Plug 'airblade/vim-rooter', { 'as': 'rooter' }
+
 " [rsi] readline keybinds
 Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 
