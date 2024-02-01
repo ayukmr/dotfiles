@@ -43,6 +43,9 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips', Nvim({ 'as': 'cmp-ultisnips' })
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 
+" [conjoin] remove join separators
+Plug 'flwyd/vim-conjoin', { 'as': 'conjoin' }
+
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
