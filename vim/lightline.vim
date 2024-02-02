@@ -111,9 +111,6 @@ let g:lightline.component_type = {
   \ 'buffers': 'tabsel',
 \}
 
-" refresh with timer
-call timer_start(&updatetime, {-> lightline#update() }, { 'repeat': -1 })
-
 " ============================
 " === Lightline Bufferline ===
 " ============================
