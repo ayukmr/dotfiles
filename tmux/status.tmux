@@ -25,7 +25,7 @@ set -g status-right-length 250
 set -g status-right '#T #[fg=#a9a9a9 bg=#303030]  #I:#P |  #S #[fg=#252525 bg=#{?client_prefix,#519fdf,#{?pane_in_mode,#88b369,#{?window_zoomed_flag,#e5c07b,#b668cd}}} bold] %I:%M '
 
 # window tabs styles
-set -g window-status-separator ''
+set -g window-status-separator '|'
 set -g window-status-style          'fg=#a9a9a9 bg=#252525'
 set -g window-status-activity-style 'fg=#a9a9a9 bg=#252525'
 set -g window-status-bell-style     'fg=#a9a9a9 bg=#252525'
