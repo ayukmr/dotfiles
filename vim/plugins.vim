@@ -74,7 +74,8 @@ let g:fzf_layout = { 'down': '15' }
 
 " find files
 nnoremap <silent> - :call fzf#vim#files(
-  \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'), fzf#vim#with_preview()
+  \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
+  \ fzf#vim#with_preview(),
 \)<CR>
 
 " find files in home
