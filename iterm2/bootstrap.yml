@@ -1,7 +1,0 @@
-# ========================
-# === iTerm2 Bootstrap ===
-# ========================
-
-config:
-  link:
-    - ~/Library/Preferences/com.googlecode.iterm2.plist: config.plist
