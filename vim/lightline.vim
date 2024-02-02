@@ -25,6 +25,12 @@ func! LightlineFiletype() abort
     \ )
 endfunc
 
+" current git branch
+func! LightlineBranch() abort
+  let l:branch = FugitiveHead()
+  return empty(l:branch) ? '' : '󰘬 ' . l:branch
+endfunc
+
 " lightline config
 let g:lightline = {}
 
@@ -76,14 +82,13 @@ let g:lightline.tabline = {
   \   ['buffers'],
   \ ],
   \ 'right': [
-  \   ['tabnum'],
+  \   ['branch'],
   \ ]
 \}
 
 " components
 let g:lightline.component = {
   \ 'lineinfo': '%02l:%02c',
-  \ 'tabnum':   ' %{tabpagenr()}',
   \
   \ 'errors':   '%#LightlineError#%#LightlineLeft_active_2# %{LightlineErrors()}',
   \ 'warnings': '%#LightlineWarn#%#LightlineLeft_active_2# %{LightlineWarnings()}',
@@ -93,6 +98,7 @@ let g:lightline.component = {
 " functions
 let g:lightline.component_function = {
   \ 'filetype': 'LightlineFiletype',
+  \ 'branch':   'LightlineBranch',
 \}
 
 " bufferline component
