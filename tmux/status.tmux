@@ -32,5 +32,5 @@ set -g window-status-bell-style     'fg=#a9a9a9 bg=#252525'
 set -g window-status-current-style  'fg=#a9a9a9 bg=#252525'
 
 # window tabs
-set -g window-status-format ' #I:#W '
-set -g window-status-current-format '#[fg=#a9a9a9 bg=#303030 bold] #I:#W '
+set -g window-status-format ' #W '
+set -g window-status-current-format '#[fg=#a9a9a9 bg=#303030 bold] #W '
