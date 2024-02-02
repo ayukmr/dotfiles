@@ -21,14 +21,14 @@ endfunc
 func! LightlineFiletype() abort
   return
     \ WebDevIconsGetFileTypeSymbol() . ' ' . (
-    \   strlen(&filetype) ? &filetype : 'none'
+    \   !empty(&filetype) ? &filetype : 'none'
     \ )
 endfunc
 
 " current git branch
 func! LightlineBranch() abort
   let l:branch = FugitiveHead()
-  return empty(l:branch) ? '' : '󰘬 ' . l:branch
+  return !empty(l:branch) ? '󰘬 ' . l:branch : ''
 endfunc
 
 " lightline config
