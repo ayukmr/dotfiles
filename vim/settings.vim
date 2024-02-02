@@ -84,7 +84,7 @@ set hidden
 set mouse=
 
 " shortmess options
-set shortmess=atI
+set shortmess=at
 
 " disable error bells
 set belloff=all

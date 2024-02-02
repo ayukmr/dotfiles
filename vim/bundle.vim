@@ -128,9 +128,6 @@ Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', { 'as': 'splitjoin' }
 
-" [startify] start screen
-Plug 'mhinz/vim-startify', { 'as': 'startify' }
-
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
 

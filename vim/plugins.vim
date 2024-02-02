@@ -154,53 +154,6 @@ noremap F <Plug>Sneak_F
 noremap t <Plug>Sneak_t
 noremap T <Plug>Sneak_T
 
-" ================
-" === Startify ===
-" ================
-
-" startify header
-let g:startify_custom_header = startify#pad([
-  \ '                             .   ',
-  \ '           \ | /            ==   ',
-  \ '            \|/           =====/ ',
-  \ '     /""""""===""""""\___/  /    ',
-  \ '~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ ~~ ~~~',
-  \ '     \_____  o          __/      ',
-  \ '      \    \         __/         ',
-  \ '        \____\______/            ',
-\])
-
-" starting commands
-let g:startify_commands = [
-  \ { 'ff': 'Files'       },
-  \ { 'fh': 'History'     },
-  \ { 'pi': 'PlugInstall' },
-  \ { 'pu': 'PlugUpdate'  },
-  \ { 'pc': 'PlugClean!'  },
-\]
-
-" bookmarked files
-let g:startify_bookmarks = [
-  \ { 'vo': '~/org/tasks.org' },
-  \ { 'vi': '~/wiki/index.md' },
-\]
-
-" list headers
-let g:startify_lists = [
-  \ { 'type': 'dir',       'header': startify#pad(['󰉋 Files'    ])},
-  \ { 'type': 'sessions',  'header': startify#pad([' Sessions' ])},
-  \ { 'type': 'bookmarks', 'header': startify#pad([' Bookmarks'])},
-  \ { 'type': 'commands',  'header': startify#pad([' Commands' ])},
-\]
-
-" disable changing directory
-let g:startify_change_to_dir = 0
-
-" icons in startify
-func! StartifyEntryFormat() abort
-  return "WebDevIconsGetFileTypeSymbol(absolute_path) . ' ' . entry_path"
-endfunc
-
 " ==================
 " === Unimpaired ===
 " ==================
