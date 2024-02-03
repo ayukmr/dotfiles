@@ -83,6 +83,9 @@ set hidden
 " disable mouse
 set mouse=
 
+" update time
+set updatetime=100
+
 " shortmess options
 set shortmess=at
 
