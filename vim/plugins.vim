@@ -62,7 +62,7 @@ nnoremap + <Plug>(dirvish_up)
 " disable line numbers in dirvish buffer
 augroup dirvish_no_numbers
   auto!
-  auto FileType dirvish setlocal nonumber norelativenumber foldcolumn=1
+  auto FileType dirvish setlocal nonumber norelativenumber
 augroup END
 
 " ===============
