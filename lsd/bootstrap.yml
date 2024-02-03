@@ -8,4 +8,4 @@ config:
 
   link:
     - ~/.config/lsd/config.yaml: config.yml
-    - ~/.config/lsd/icons.yaml: icons.yml
+    - ~/.config/lsd/icons.yaml:  icons.yml
