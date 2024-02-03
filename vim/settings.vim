@@ -89,6 +89,9 @@ set fillchars+=vert:│
 " update time
 set updatetime=100
 
+" keyword dashes
+set iskeyword+=-
+
 " shortmess options
 set shortmess=atI
 
