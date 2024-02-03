@@ -1,0 +1,6 @@
+# ==================
+# === LSD Config ===
+# ==================
+
+# show indicators
+indicators: true

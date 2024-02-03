@@ -1,0 +1,32 @@
+# =================
+# === LSD Icons ===
+# =================
+
+filetype:
+  # common
+  dir:        󰉋
+  file:       
+  pipe:       
+  socket:     󱎔
+  executable: 
+
+  # symlink
+  symlink-dir:  
+  symlink-file: 
+
+  # device
+  device-char:  
+  device-block: 󰆧
+
+  # special
+  special: 
+
+# exact
+name:
+  .gitignore:       󰊢
+  gitignore_global: 󰊢
+
+# extensions
+extension:
+  cr:  
+  log: 

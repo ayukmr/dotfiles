@@ -1,0 +1,11 @@
+# =====================
+# === LSD Bootstrap ===
+# =====================
+
+config:
+  dirs:
+    - ~/.config/lsd
+
+  link:
+    - ~/.config/lsd: config.yml
+    - ~/.config/lsd: icons.yml

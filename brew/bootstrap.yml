@@ -52,10 +52,10 @@ packages:
       # viewers
       - bat
       - fzf
+      - lsd
       - w3m
       - glow
       - tldr
-      - tree
       - bottom
       - ranger
       - litecli

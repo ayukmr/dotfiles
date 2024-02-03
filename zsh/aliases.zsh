@@ -18,8 +18,9 @@ alias zgnr='zgen reset && exec -l "$SHELL"'
 alias clear='tput reset && unset FIRST_LINE'
 
 # ls aliases
-alias l='gls -pA --color'
-alias ll='gls -lhpA --color'
+alias l='lsd -A'
+alias ll='lsd -lA'
+alias lt='lsd -A --tree'
 
 # recursive aliases
 alias rmr='rm -r'
