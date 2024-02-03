@@ -46,6 +46,9 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 " [conjoin] remove join separators
 Plug 'flwyd/vim-conjoin', { 'as': 'conjoin' }
 
+" [delimitmate] automatic delimiters
+Plug 'Raimondi/delimitMate', { 'as': 'delimitmate' }
+
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }
 
