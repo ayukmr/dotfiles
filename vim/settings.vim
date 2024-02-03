@@ -32,7 +32,7 @@ endfunc
 set foldtext=<SID>fold_text()
 set fillchars=fold:\ 
 set foldmethod=syntax
-set foldlevelstart=2
+set nofoldenable
 
 " centralize directories
 set backupdir=~/.vim/backups
