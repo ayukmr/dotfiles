@@ -87,7 +87,7 @@ set mouse=
 set updatetime=100
 
 " shortmess options
-set shortmess=at
+set shortmess=atI
 
 " disable error bells
 set belloff=all
