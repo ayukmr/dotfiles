@@ -7,5 +7,5 @@ config:
     - ~/.config/lsd
 
   link:
-    - ~/.config/lsd: config.yml
-    - ~/.config/lsd: icons.yml
+    - ~/.config/lsd/config.yaml: config.yml
+    - ~/.config/lsd/icons.yaml: icons.yml
