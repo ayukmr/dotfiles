@@ -35,7 +35,7 @@ function git_info {
 
   # format info
   if [[ -n "$info" ]]; then
-    info="%F{magenta}%f %F{red}$info%f"
+    info=" %F{red}$info%f"
   fi
 
   branch="%F{magenta}󰘬 %B%F{magenta}$(git symbolic-ref --short HEAD)%f"
