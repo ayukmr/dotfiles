@@ -11,8 +11,18 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" select edited
+noremap gV `[v`]
+
+" yank to end of line
+map Y y$
+
 " unhighlight search
 nnoremap <silent> <C-n> :nohlsearch<CR>
+
+" write file
+nnoremap <Leader>w :write<CR>
+nnoremap <Leader>W :noauto write<CR>
 
 " motions without copying
 nnoremap <Leader>d "_d
@@ -30,9 +40,5 @@ xnoremap <Leader>X "_X
 nnoremap <Leader>c "_c
 xnoremap <Leader>c "_c
 
-nnoremap <Leader>s "_s
-xnoremap <Leader>s "_s
-
-" write file
-nnoremap <Leader>w :write<CR>
-nnoremap <Leader>W :noauto write<CR>
+nnoremap <Leader>C "_C
+xnoremap <Leader>C "_C
