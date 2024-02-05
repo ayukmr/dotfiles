@@ -144,6 +144,6 @@ Plug 'SirVer/ultisnips', Nvim()
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
 " [vimwiki] personal wiki in markdown
-Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
 
 call plug#end()
