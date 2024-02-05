@@ -59,7 +59,7 @@ let s:exact_icons['.gitattributes'] = '󰊢'
 " view parent directory
 nnoremap + <Plug>(dirvish_up)
 
-" disable line numbers in dirvish buffer
+" disable line numbers
 augroup dirvish_no_numbers
   auto!
   auto FileType dirvish setlocal nonumber norelativenumber
@@ -81,7 +81,7 @@ nnoremap <silent> - :call fzf#vim#files(
 " find files in home
 nnoremap <silent> _ :Files ~<CR>
 
-" disable line numbers in fzf buffer
+" disable line numbers
 augroup fzf_no_numbers
   auto!
   auto FileType fzf setlocal nonumber norelativenumber
@@ -166,7 +166,7 @@ nnoremap ]t gt
 " === Vim Plug ===
 " ================
 
-" disable line numbers in vim plug buffer
+" disable line numbers
 augroup plug_no_numbers
   auto!
   auto FileType vim-plug setlocal nonumber norelativenumber
