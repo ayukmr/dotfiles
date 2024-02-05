@@ -62,7 +62,7 @@ nnoremap + <Plug>(dirvish_up)
 " disable line numbers
 augroup dirvish_no_numbers
   auto!
-  auto FileType dirvish setlocal nonumber norelativenumber
+  auto FileType dirvish setlocal nonumber
 augroup END
 
 " ===============
@@ -84,7 +84,7 @@ nnoremap <silent> _ :Files ~<CR>
 " disable line numbers
 augroup fzf_no_numbers
   auto!
-  auto FileType fzf setlocal nonumber norelativenumber
+  auto FileType fzf setlocal nonumber
 augroup END
 
 " =================
@@ -169,7 +169,7 @@ nnoremap ]t gt
 " disable line numbers
 augroup plug_no_numbers
   auto!
-  auto FileType vim-plug setlocal nonumber norelativenumber
+  auto FileType vim-plug setlocal nonumber
 augroup END
 
 " ===============

@@ -63,7 +63,6 @@ set showtabline=2
 
 " line numbers
 set number
-set relativenumber
 set numberwidth=4
 
 " merge with signcolumn

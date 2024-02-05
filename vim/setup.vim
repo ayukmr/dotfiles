@@ -14,7 +14,7 @@ syntax on
 " disable line numbers in quickfix buffer
 augroup quickfix_no_numbers
   auto!
-  auto FileType qf setlocal nonumber norelativenumber
+  auto FileType qf setlocal nonumber
 augroup END
 
 " change cursor depending on mode
@@ -31,7 +31,7 @@ func! s:custom_intro() abort
 
   " buffer setup
   enew
-  setlocal nonumber norelativenumber signcolumn=number
+  setlocal nonumber signcolumn=number
   setlocal bufhidden=wipe buftype=nofile
   setlocal nocursorcolumn nocursorline
   setlocal nolist noswapfile

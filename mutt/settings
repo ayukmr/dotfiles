@@ -31,7 +31,7 @@ set attach_format = "  %?f?%f&No Name? %> %s  "
 set help = no
 
 # mail editor
-set editor = "anyvim -c 'set nonumber norelativenumber signcolumn=no laststatus=0 showtabline=0'"
+set editor = "anyvim -c 'set nonumber signcolumn=no laststatus=0 showtabline=0'"
 
 # don't beep on errors
 set beep = no
