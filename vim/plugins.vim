@@ -94,6 +94,12 @@ augroup fzf_no_numbers
   auto FileType fzf setlocal nonumber
 augroup END
 
+" disable fzf statusline
+augroup fzf_no_statusline
+  auto!
+  auto User FzfStatusLine :
+augroup END
+
 " =================
 " === GitGutter ===
 " =================
