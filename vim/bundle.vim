@@ -109,6 +109,9 @@ Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 
+" [pasta] automatic paste indentation
+Plug 'ku1ik/vim-pasta', { 'as': 'pasta' }
+
 " [plenary] utils for neovim lua
 Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
