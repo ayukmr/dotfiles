@@ -57,7 +57,7 @@ set smartcase
 set incsearch
 set gdefault
 
-" always show statusline and tabline
+" always show lines
 set laststatus=2
 set showtabline=2
 
