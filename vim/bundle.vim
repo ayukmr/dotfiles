@@ -22,7 +22,7 @@ Plug 'moll/vim-bbye', { 'as': 'bbye' }
 " [better-escape] insert mode escaping
 Plug 'jdhao/better-escape.vim', { 'as': 'better-escape' }
 
-" [cmp] lsp completion
+" [cmp] extensible completion
 Plug 'hrsh7th/nvim-cmp', Nvim({ 'as': 'cmp' })
 
 " [cmp-buffer] completion using buffer words
@@ -70,7 +70,7 @@ Plug 'tpope/vim-fugitive', { 'as': 'fugitive' }
 " [fzf] fuzzy finder
 Plug 'junegunn/fzf'
 
-" [fzf-vim] fzf support for vim
+" [fzf-vim] fzf commands
 Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
 
 " [gitgutter] show git status in gutter
