@@ -76,6 +76,9 @@ Plug 'junegunn/fzf.vim', { 'as': 'fzf-vim' }
 " [gitgutter] show git status in gutter
 Plug 'airblade/vim-gitgutter', { 'as': 'gitgutter' }
 
+" [goyo] centered editing view
+Plug 'junegunn/goyo.vim', { 'as': 'goyo' }
+
 " [highlighted-yank] highlight yank commands
 Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
 

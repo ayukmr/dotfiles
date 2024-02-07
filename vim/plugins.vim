@@ -124,6 +124,69 @@ nnoremap <silent> [og :GitGutterEnable<CR>
 nnoremap <silent> yog :GitGutterToggle<CR>
 
 " ============
+" === Goyo ===
+" ============
+
+" sizing
+let g:goyo_height='90%'
+let g:goyo_width='100'
+
+" setup goyo
+augroup goyo_setup
+  auto!
+  auto User GoyoEnter call s:goyo_enter()
+  auto User GoyoLeave call s:goyo_leave()
+augroup END
+
+" on goyo enter
+func! s:goyo_enter() abort
+  " fix nontext highlight
+  highlight NonText ctermfg=238 guifg=#303030
+
+  " buffer options
+  set wrap
+  set linebreak
+  set signcolumn=no
+
+  " show tabline
+  let g:lightline.enable = {
+    \ 'statusline': 0,
+    \ 'tabline':    1,
+  \}
+  set showtabline=2
+  call lightline#enable()
+
+  " move visually
+  noremap j gj
+  noremap k gk
+  noremap 0 g0
+  noremap ^ g^
+  noremap $ g$
+endfunc
+
+" on goyo leave
+func! s:goyo_leave() abort
+  " revert buffer
+  set nowrap
+  set nolinebreak
+  set number signcolumn=number
+
+  " show both lines
+  let g:lightline.enable = {
+    \ 'statusline': 1,
+    \ 'tabline':    1,
+  \}
+  call lightline#enable()
+
+  " move normally
+  nunmap j
+  nunmap k
+  nunmap 0
+  nunmap ^
+  nunmap $
+endfunc
+
+" ============
 " === Lion ===
 " ============
 
