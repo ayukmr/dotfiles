@@ -223,7 +223,7 @@ vnoremap <Leader>v+ <Plug>VimwikiNormalizeLinkVisual
 func! s:vimwiki_fzf() abort
   " get tags
   let l:all_tags = systemlist([
-    \ 'rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', FindRootDirectory()
+    \ 'rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', FindRootDirectory(),
   \])
   let l:tags = uniq(sort(l:all_tags))
 
