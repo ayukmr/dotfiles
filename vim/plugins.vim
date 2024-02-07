@@ -131,6 +131,9 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 let g:goyo_height='90%'
 let g:goyo_width='100'
 
+" line numbers
+let g:goyo_linenr = 1
+
 " setup goyo
 augroup goyo_setup
   auto!
@@ -143,10 +146,8 @@ func! s:goyo_enter() abort
   " fix nontext highlight
   highlight NonText ctermfg=238 guifg=#303030
 
-  " buffer options
-  set wrap
-  set linebreak
-  set signcolumn=no
+  " text wrapping
+  set wrap linebreak
 
   " show tabline
   let g:lightline.enable = {
@@ -166,10 +167,8 @@ endfunc
 
 " on goyo leave
 func! s:goyo_leave() abort
-  " revert buffer
-  set nowrap
-  set nolinebreak
-  set number signcolumn=number
+  " disable wrapping
+  set nowrap nolinebreak
 
   " show both lines
   let g:lightline.enable = {
