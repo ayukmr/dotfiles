@@ -203,9 +203,6 @@ let g:matchup_matchparen_offscreen = {}
 " === Rooter ===
 " ==============
 
-" disable automatic switching
-let g:rooter_manual_only = 1
-
 " root patterns
 let g:rooter_patterns = [
   \ '.git',
