@@ -31,14 +31,14 @@ xnoremap <Leader>d "_d
 nnoremap <Leader>D "_D
 xnoremap <Leader>D "_D
 
-nnoremap <Leader>x "_x
-xnoremap <Leader>x "_x
-
-nnoremap <Leader>X "_X
-xnoremap <Leader>X "_X
-
 nnoremap <Leader>c "_c
 xnoremap <Leader>c "_c
 
 nnoremap <Leader>C "_C
 xnoremap <Leader>C "_C
+
+nnoremap <Leader>x "_x
+xnoremap <Leader>x "_x
+
+nnoremap <Leader>X "_X
+xnoremap <Leader>X "_X
