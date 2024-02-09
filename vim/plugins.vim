@@ -44,7 +44,6 @@ let s:extension_icons['xml']  = ''
 let s:extension_icons['toml'] = '󰅪'
 let s:extension_icons['lock'] = ''
 let s:extension_icons['tmux'] = ''
-let s:extension_icons['wiki'] = ''
 let s:extension_icons['svelte']      = ''
 let s:extension_icons['gitconfig']   = '󰊢'
 let s:extension_icons['applescript'] = '󰀵'
@@ -192,6 +191,40 @@ endfunc
 " squeeze spaces
 let g:lion_squeeze_spaces = 1
 
+" ================
+" === Markdown ===
+" ================
+
+" allow latex
+let g:vim_markdown_math = 1
+
+" show strikethrough
+let g:vim_markdown_strikethrough = 1
+
+" links without extension
+let g:vim_markdown_no_extensions_in_markdown = 1
+
+" disable list indentation
+let g:vim_markdown_new_list_item_indent = 0
+
+" disable default keybinds
+let g:vim_markdown_no_default_key_mappings = 1
+
+" filetype keybinds
+augroup markdown_keybinds
+  auto!
+  auto FileType markdown call s:markdown_keybinds()
+augroup END
+
+" define markdown keybinds
+func! s:markdown_keybinds()
+  " create bullet
+  nnoremap <buffer> <CR> A<CR>
+
+  " go to link
+  nnoremap <buffer> gF <Plug>Markdown_EditUrlUnderCursor
+endfunc
+
 " ===============
 " === MatchUp ===
 " ===============
@@ -243,64 +276,3 @@ augroup plug_no_numbers
   auto!
   auto FileType vim-plug setlocal nonumber
 augroup END
-
-" ===============
-" === VimWiki ===
-" ===============
-
-" wiki location
-let g:vimwiki_list = [{ 'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md' }]
-
-" keybinds prefix
-let g:vimwiki_map_prefix = '<Leader>v'
-
-" disable global extension
-let g:vimwiki_global_ext = 0
-
-" disable emoji
-let g:vimwiki_emoji_enable = 0
-
-" navigate links
-nnoremap [v <Plug>VimwikiPrevLink
-nnoremap ]v <Plug>VimwikiNextLink
-
-" toggle lists
-nnoremap <Leader>vl <Plug>VimwikiListToggle
-
-" search tags
-nnoremap <silent> <Leader>vt :call <SID>vimwiki_fzf()<CR>
-
-" header levels
-nnoremap <Leader>vhj <Plug>VimwikiRemoveHeaderLevel
-nnoremap <Leader>vhk <Plug>VimwikiAddHeaderLevel
-
-" normalize links
-nnoremap <Leader>v+ <Plug>VimwikiNormalizeLink
-vnoremap <Leader>v+ <Plug>VimwikiNormalizeLinkVisual
-
-" search tags using fzf
-func! s:vimwiki_fzf() abort
-  " get tags
-  let l:all_tags = systemlist([
-    \ 'rg', '-o', '-I', '--no-column', '-r', '$1', ':([\w-]+):', FindRootDirectory(),
-  \])
-  let l:tags = uniq(sort(l:all_tags))
-
-  " select using fzf
-  call fzf#run({
-    \ 'source': l:tags,
-    \ 'sink':   funcref('s:vimwiki_on_tag'),
-    \ 'down':   '30%',
-  \})
-endfunc
-
-" on fzf tag selection
-func! s:vimwiki_on_tag(query) abort
-  " search tags
-  exec 'VimwikiSearchTags ' . a:query
-
-  if !get(getloclist(0, { 'winid': 0 }), 'winid', 0)
-    " open location list
-    lopen
-  endif
-endfunc

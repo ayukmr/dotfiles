@@ -149,7 +149,4 @@ Plug 'SirVer/ultisnips', Nvim()
 " [unimpaired] bracket mappings
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
-" [vimwiki] personal wiki in markdown
-Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
-
 call plug#end()

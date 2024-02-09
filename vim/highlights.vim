@@ -70,9 +70,6 @@ func! s:set_highlights() abort
   highlight! link SneakLabel PmenuSel
   highlight! link SneakScope Cursor
 
-  " vimwiki syntax
-  highlight VimwikiLink cterm=underline ctermfg=39 gui=underline guifg=#519fdf
-
   if has('nvim')
     " cmp matching text
     highlight CmpItemAbbrMatch      cterm=bold gui=bold
