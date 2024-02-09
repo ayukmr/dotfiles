@@ -146,7 +146,7 @@ Plug 'wellle/targets.vim', { 'as': 'targets' }
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Nvim()
 
-" [unimpaired] bracket mappings
+" [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
 call plug#end()
