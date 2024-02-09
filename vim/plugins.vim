@@ -217,7 +217,7 @@ augroup markdown_keybinds
 augroup END
 
 " define markdown keybinds
-func! s:markdown_keybinds()
+func! s:markdown_keybinds() abort
   " create bullet
   nnoremap <buffer> <CR> A<CR>
 
