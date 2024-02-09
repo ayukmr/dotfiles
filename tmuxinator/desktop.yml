@@ -14,8 +14,6 @@ windows:
         - htop
 
   - editor: anyvim
-  - tasks: vit
-
   - wiki:
     - cd ~/wiki
-    - anyvim -c VimwikiIndex
+    - anyvim ~/wiki/index.md
