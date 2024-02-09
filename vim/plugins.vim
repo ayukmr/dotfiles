@@ -222,7 +222,7 @@ func! s:markdown_keybinds()
   nnoremap <buffer> <CR> A<CR>
 
   " go to link
-  nnoremap <buffer> gF <Plug>Markdown_EditUrlUnderCursor
+  nnoremap <buffer> gf <Plug>Markdown_EditUrlUnderCursor
 endfunc
 
 " ===============
