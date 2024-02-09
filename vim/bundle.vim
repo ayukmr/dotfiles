@@ -143,6 +143,9 @@ Plug 'tpope/vim-surround', { 'as': 'surround' }
 " [targets] additional targets
 Plug 'wellle/targets.vim', { 'as': 'targets' }
 
+" [treesitter] enhanced syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', { 'as': 'treesitter', 'do': ':TSUpdate' }
+
 " [ultisnips] snippets manager
 Plug 'SirVer/ultisnips', Nvim()
 
