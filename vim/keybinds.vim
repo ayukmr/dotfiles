@@ -24,6 +24,33 @@ nnoremap <silent> <C-n> :nohlsearch <Bar> diffupdate<CR>
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
 
+if !has('nvim')
+  " record macro
+  func! s:record_macro() abort
+    let l:register = nr2char(getchar())
+
+    " validate register
+    if l:register =~ '[0-9a-zA-Z"]'
+      let s:last_macro = l:register
+      execute 'normal! q' . s:last_macro
+    endif
+  endfunc
+
+  " execute last macro
+  func! s:last_macro() abort
+    if exists('s:last_macro')
+      execute 'normal! @' . s:last_macro
+    endif
+  endfunc
+
+  " record macro
+  noremap <silent> <expr> q
+    \ empty(reg_recording()) ? ':call <SID>record_macro()<CR>' : 'q'
+
+  " execute last macro
+  nnoremap <silent> Q :call <SID>last_macro()<CR>
+endif
+
 " motions without copying
 nnoremap <Leader>d "_d
 xnoremap <Leader>d "_d
