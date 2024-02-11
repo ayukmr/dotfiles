@@ -18,7 +18,7 @@ noremap gV `[v`]
 map Y y$
 
 " unhighlight search
-nnoremap <silent> <C-n> :nohlsearch<CR>
+nnoremap <silent> <C-n> :nohlsearch <Bar> diffupdate<CR>
 
 " write file
 nnoremap <Leader>w :write<CR>
