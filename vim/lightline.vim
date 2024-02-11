@@ -25,12 +25,6 @@ func! LightlineFiletype() abort
     \ )
 endfunc
 
-" current git branch
-func! LightlineBranch() abort
-  let l:branch = FugitiveHead()
-  return !empty(l:branch) ? '󰘬 ' . l:branch : ''
-endfunc
-
 " lightline config
 let g:lightline = {}
 
@@ -82,8 +76,14 @@ let g:lightline.tabline = {
   \   ['buffers'],
   \ ],
   \ 'right': [
-  \   ['branch'],
+  \   ['tabs'],
   \ ]
+\}
+
+" single tab
+let g:lightline.tab = {
+  \ 'active':   ['tabnum'],
+  \ 'inactive': ['tabnum'],
 \}
 
 " components
@@ -98,7 +98,6 @@ let g:lightline.component = {
 " functions
 let g:lightline.component_function = {
   \ 'filetype': 'LightlineFiletype',
-  \ 'branch':   'LightlineBranch',
 \}
 
 " bufferline component
@@ -186,8 +185,8 @@ let s:palette.tabline = {
   \ 'left':   [[s:white, s:visual_grey]],
   \ 'middle': [[s:white, s:cursor_grey]],
   \
-  \ 'right':  [[s:purple,      s:visual_grey, 'bold']],
-  \ 'tabsel': [[s:cursor_grey, s:purple,      'bold']],
+  \ 'right':  [[s:white,       s:visual_grey]],
+  \ 'tabsel': [[s:cursor_grey, s:purple, 'bold']],
 \}
 
 " flatten palette
