@@ -90,9 +90,9 @@ let g:lightline.tabline = {
 let g:lightline.component = {
   \ 'lineinfo': '%02l:%02c',
   \
-  \ 'errors':   '%#LightlineError#%#LightlineLeft_active_2# %{LightlineErrors()}',
-  \ 'warnings': '%#LightlineWarn#%#LightlineLeft_active_2# %{LightlineWarnings()}',
-  \ 'info':     '%#LightlineInfo#%#LightlineLeft_active_2# %{LightlineInfo()}',
+  \ 'errors':   '%#LightlineError#%#LightlineMiddle_normal# %{LightlineErrors()}',
+  \ 'warnings': '%#LightlineWarn#%#LightlineMiddle_normal# %{LightlineWarnings()}',
+  \ 'info':     '%#LightlineInfo#%#LightlineMiddle_normal# %{LightlineInfo()}',
 \}
 
 " functions
