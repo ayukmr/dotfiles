@@ -163,6 +163,10 @@ EOF
 " === LuaSnip ===
 " ===============
 
+" movement keybinds
+inoremap <C-k> <Cmd>lua require('luasnip').jump(-1)<CR>
+inoremap <C-j> <Cmd>lua require('luasnip').jump(1)<CR>
+
 lua <<EOF
 -- snipmate loader
 local snipmate_loader = require 'luasnip.loaders.from_snipmate'
