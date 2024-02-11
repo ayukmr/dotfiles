@@ -24,6 +24,10 @@ nnoremap <silent> <C-n> :nohlsearch <Bar> diffupdate<CR>
 nnoremap <Leader>w :write<CR>
 nnoremap <Leader>W :noauto write<CR>
 
+" ==========================
+" === Execute Last Macro ===
+" ==========================
+
 if !has('nvim')
   " record macro
   func! s:record_macro() abort
@@ -51,7 +55,10 @@ if !has('nvim')
   nnoremap <silent> Q :call <SID>last_macro()<CR>
 endif
 
-" motions without copying
+" ==========================
+" === Black Hole Motions ===
+" ==========================
+
 nnoremap <Leader>d "_d
 xnoremap <Leader>d "_d
 
