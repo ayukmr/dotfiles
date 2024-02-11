@@ -259,6 +259,16 @@ noremap F <Plug>Sneak_F
 noremap t <Plug>Sneak_t
 noremap T <Plug>Sneak_T
 
+" ====================
+" === Speed Dating ===
+" ====================
+
+" add org date format
+augroup org_date_format
+  auto!
+  auto VimEnter * SpeedDatingFormat %Y-%m-%d %a
+augroup END
+
 " ==================
 " === Unimpaired ===
 " ==================

@@ -134,6 +134,9 @@ Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 " [snippets] snippets for ultisnips
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
+" [speeddating] better dating
+Plug 'tpope/vim-speeddating', { 'as': 'speeddating' }
+
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', { 'as': 'splitjoin' }
 
