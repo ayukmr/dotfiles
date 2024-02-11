@@ -31,14 +31,14 @@ Plug 'hrsh7th/cmp-buffer', Nvim()
 " [cmp-cmdline] completion for command line
 Plug 'hrsh7th/cmp-cmdline', Nvim()
 
+" [cmp-luasnip] completion using ultisnips
+Plug 'saadparwaiz1/cmp_luasnip', Nvim({ 'as': 'cmp-luasnip' })
+
 " [cmp-nvim-lsp] completion using nvim lsp
 Plug 'hrsh7th/cmp-nvim-lsp', Nvim()
 
 " [cmp-path] completion for paths
 Plug 'hrsh7th/cmp-path', Nvim()
-
-" [cmp-ultisnips] completion using ultisnips
-Plug 'quangnguyen30192/cmp-nvim-ultisnips', Nvim({ 'as': 'cmp-ultisnips' })
 
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
@@ -97,6 +97,9 @@ Plug 'tommcdo/vim-lion', { 'as': 'lion' }
 " [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
+" [luasnip] snippets manager
+Plug 'L3MON4D3/LuaSnip', Nvim({ 'as': 'luasnip' })
+
 " [mason] installer for lsp and dap
 Plug 'williamboman/mason.nvim', Nvim({ 'as': 'mason' })
 
@@ -131,7 +134,7 @@ Plug 'airblade/vim-rooter', { 'as': 'rooter' }
 " [rsi] readline keybinds
 Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 
-" [snippets] snippets for ultisnips
+" [snippets] snippets for luasnip
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
 " [speeddating] better dating
@@ -148,9 +151,6 @@ Plug 'wellle/targets.vim', { 'as': 'targets' }
 
 " [treesitter] enhanced syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', { 'as': 'treesitter', 'do': ':TSUpdate' }
-
-" [ultisnips] snippets manager
-Plug 'SirVer/ultisnips', Nvim()
 
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }

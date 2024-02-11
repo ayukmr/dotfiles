@@ -47,7 +47,11 @@ cmp.setup {
   -- ultisnips snippets
   snippet = {
     expand = function(args)
-      vim.fn['UltiSnips#Anon'](args.body)
+      -- luasnip module
+      local luasnip = require 'luasnip'
+
+      -- expand snippet
+      luasnip.lsp_expand(args.body)
     end,
   },
 
@@ -97,10 +101,10 @@ cmp.setup {
 
   -- completion sources
   sources = cmp.config.sources {
-    { name = 'nvim_lsp'  },
-    { name = 'ultisnips' },
-    { name = 'buffer'    },
-    { name = 'path'      },
+    { name = 'nvim_lsp' },
+    { name = 'luasnip'  },
+    { name = 'buffer'   },
+    { name = 'path'     },
   },
 }
 
@@ -153,6 +157,18 @@ dressing.setup {
     },
   },
 }
+EOF
+
+" ===============
+" === LuaSnip ===
+" ===============
+
+lua <<EOF
+-- snipmate loader
+local snipmate_loader = require 'luasnip.loaders.from_snipmate'
+
+-- load snippets
+snipmate_loader.lazy_load()
 EOF
 
 " =============
@@ -265,10 +281,3 @@ null_ls.setup {
   },
 }
 EOF
-
-" =================
-" === UltiSnips ===
-" =================
-
-" disable expand trigger
-let g:UltiSnipsExpandTrigger = '<Plug>(ultisnips-expand)'
