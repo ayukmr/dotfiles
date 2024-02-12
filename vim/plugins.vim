@@ -286,3 +286,13 @@ augroup plug_no_numbers
   auto!
   auto FileType vim-plug setlocal nonumber
 augroup END
+
+" =================
+" === Wikigraph ===
+" =================
+
+" focus file in graph
+augroup wikigraph_focus
+  auto!
+  auto BufEnter *.md call wikigraph#focus_file()
+augroup END

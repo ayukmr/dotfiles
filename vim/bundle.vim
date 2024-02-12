@@ -155,4 +155,7 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'as': 'treesitter', 'do': ':TSUpdate' 
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
+" [wikigraph] personal wiki graph
+Plug 'ayukmr/wikigraph'
+
 call plug#end()
