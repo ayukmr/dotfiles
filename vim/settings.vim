@@ -76,7 +76,7 @@ set hidden
 " disable mouse
 set mouse=
 
-" comment formatting
+" text formatting
 set formatoptions=tcqj
 
 " split line
