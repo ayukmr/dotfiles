@@ -17,12 +17,6 @@ if !has('nvim')
   set viminfofile=~/.vim/viminfo
 endif
 
-" disable inserting comments
-augroup disable_comments
-  auto!
-  auto BufEnter * set formatoptions-=c formatoptions-=r formatoptions-=o
-augroup END
-
 " fold ellipsis
 func! s:fold_text() abort
   return getline(v:foldstart) . ' …'
@@ -81,6 +75,9 @@ set hidden
 
 " disable mouse
 set mouse=
+
+" comment formatting
+set formatoptions=tcqj
 
 " split line
 set fillchars+=vert:│
