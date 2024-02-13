@@ -9,13 +9,10 @@ packages:
 
   packages:
     - yarn global add:
-      # langs
-      - less
-      - sass
+      # coffeescript
       - coffeescript
 
       # typescript
-      - tsc
       - ts-node
       - typescript
 
