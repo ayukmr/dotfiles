@@ -81,11 +81,14 @@ let g:fzf_layout = { 'down': '15' }
 " find files
 nnoremap <silent> - :call fzf#vim#files(
   \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
-  \ fzf#vim#with_preview(),
+  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" }),
 \)<CR>
 
 " find files in home
-nnoremap <silent> _ :Files ~<CR>
+nnoremap <silent> _ :call fzf#vim#files(
+  \ expand('~'),
+  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" }),
+\)<CR>
 
 " disable line numbers
 augroup fzf_no_numbers
