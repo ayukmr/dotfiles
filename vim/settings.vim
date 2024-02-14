@@ -28,7 +28,7 @@ set fillchars+=fold:\
 set foldmethod=syntax
 set foldlevelstart=99
 
-" centralize directories
+" centralize files
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undos
