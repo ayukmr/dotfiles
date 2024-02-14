@@ -64,7 +64,7 @@ set signcolumn=number
 
 " show invisibles
 set list
-set listchars=tab:\ \ ,trail:·
+set listchars=tab:\>\ ,trail:·
 
 " split pane to bottom right
 set splitbelow
