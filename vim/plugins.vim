@@ -90,6 +90,11 @@ nnoremap <silent> _ :call fzf#vim#files(
   \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" }),
 \)<CR>
 
+" select buffer
+nnoremap <silent> <Leader><Leader> :call fzf#vim#buffers(
+  \ '', fzf#vim#with_preview({ 'options': "--prompt '❯ '" })
+\)<CR>
+
 " disable line numbers
 augroup fzf_no_numbers
   auto!
