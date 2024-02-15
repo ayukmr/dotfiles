@@ -95,6 +95,12 @@ nnoremap <silent> <Leader><Leader> :call fzf#vim#buffers(
   \ '', fzf#vim#with_preview({ 'options': "--prompt '❯ '" })
 \)<CR>
 
+" find text
+nnoremap <silent> <Leader>G :call fzf#vim#grep2(
+  \ 'rg --column --line-number --no-heading --smart-case --color always -- ', '',
+  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" })
+\)<CR>
+
 " disable line numbers
 augroup fzf_no_numbers
   auto!
