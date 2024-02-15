@@ -26,7 +26,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "gutter",
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.accessibilitySupport": "off",
   "editor.suggestSelection": "first",
@@ -35,7 +35,7 @@
   "editor.cursorBlinking": "phase",
   "editor.matchBrackets": "near",
   "editor.suggest.showIcons": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.codeLens": false,
 
   // =========================
