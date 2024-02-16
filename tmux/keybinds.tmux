@@ -9,7 +9,7 @@ set -g prefix C-s
 bind C-s send-prefix
 
 # reload config
-bind r source ~/.config/tmux/tmux.conf \; display 'config reloaded!'
+bind R source ~/.config/tmux/tmux.conf \; display 'config reloaded!'
 
 # copy mode
 bind a copy-mode
