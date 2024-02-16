@@ -40,3 +40,6 @@ set -g mode-style 'bg=#303030'
 # one as base index
 set -g base-index      1
 set -g pane-base-index 1
+
+# scrollback size
+set -g history-limit 32768
