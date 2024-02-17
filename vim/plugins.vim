@@ -141,8 +141,8 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 " ============
 
 " sizing
+let g:goyo_width='115'
 let g:goyo_height='90%'
-let g:goyo_width='100'
 
 " line numbers
 let g:goyo_linenr = 1
