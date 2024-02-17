@@ -22,6 +22,9 @@ Plug 'moll/vim-bbye', { 'as': 'bbye' }
 " [better-escape] insert mode escaping
 Plug 'jdhao/better-escape.vim', { 'as': 'better-escape' }
 
+" [closetag] automatically close html tags
+Plug 'alvan/vim-closetag', { 'as': 'closetag' }
+
 " [cmp] extensible completion
 Plug 'hrsh7th/nvim-cmp', Nvim({ 'as': 'cmp' })
 
