@@ -246,6 +246,13 @@ endfunc
 " hide offscreen matches
 let g:matchup_matchparen_offscreen = {}
 
+" ===========
+" === Org ===
+" ===========
+
+" state keywords
+let g:org_state_keywords = ['TODO', 'NEXT', 'PROG', 'BLKD', 'DONE']
+
 " ==============
 " === Rooter ===
 " ==============
