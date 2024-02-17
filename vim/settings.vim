@@ -89,7 +89,7 @@ set updatetime=100
 set iskeyword+=-
 
 " shortmess options
-set shortmess=atI
+set shortmess=atIF
 
 " disable error bells
 set belloff=all
