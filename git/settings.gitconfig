@@ -38,6 +38,10 @@
 	# enable moved color
 	colorMoved = plain
 
+[merge]
+	# three way diff
+	conflictStyle = zdiff3
+
 [init]
 	# main as default branch
 	defaultBranch = main
