@@ -10,15 +10,15 @@
 	right-arrow = →
 
 	# file labels
-	file-added-label    = added:
-	file-removed-label  = removed:
-	file-modified-label = modified:
-	file-copied-label   = copied:
-	file-renamed-label  = renamed:
+	file-added-label    = +
+	file-removed-label  = -
+	file-modified-label = ~
+	file-copied-label   = =
+	file-renamed-label  = →
 
 	# files style
 	file-style            = blue bold
-	file-decoration-style = blue ul ol
+	file-decoration-style = blue ul
 
 	# headings style
 	commit-decoration-style = yellow ul ol
