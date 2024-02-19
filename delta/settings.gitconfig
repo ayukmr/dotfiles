@@ -3,6 +3,9 @@
 # ======================
 
 [delta]
+	# four space tabs
+	tabs = 4
+
 	# bat syntax theme
 	syntax-theme = TwoDark
 
