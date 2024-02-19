@@ -3,29 +3,27 @@
 # ======================
 
 [delta]
-	# show line numbers
-	line-numbers = true
-
-	# side-by-side mode
-	side-by-side = true
+	# bat syntax theme
+	syntax-theme = TwoDark
 
 	# moved arrow
 	right-arrow = →
 
 	# file labels
-	file-added-label    = [+]
-	file-removed-label  = [-]
-	file-modified-label = [~]
-	file-copied-label   = [=]
-	file-renamed-label  = [→]
+	file-added-label    = added:
+	file-removed-label  = removed:
+	file-modified-label = modified:
+	file-copied-label   = copied:
+	file-renamed-label  = renamed:
 
 	# files style
-	file-style            = magenta bold
-	file-decoration-style = magenta bold ul
+	file-style            = blue bold
+	file-decoration-style = blue ul ol
 
 	# headings style
-	commit-decoration-style      = yellow bold ol ul
-	hunk-header-decoration-style = blue ol ul
+	commit-decoration-style = yellow ul ol
+	hunk-header-style = bold line-number syntax
+	hunk-header-decoration-style = box
 
 	# line numbers style
 	line-numbers-zero-style  = white
