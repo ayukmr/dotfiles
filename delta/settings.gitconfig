@@ -24,7 +24,7 @@
 	file-decoration-style = blue ul
 
 	# headings style
-	commit-decoration-style = yellow ul ol
+	commit-decoration-style = yellow ul
 	hunk-header-style = bold line-number syntax
 	hunk-header-decoration-style = box
 
