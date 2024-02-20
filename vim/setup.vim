@@ -13,8 +13,8 @@ syntax on
 
 " disable line numbers in quickfix buffer
 augroup quickfix_no_numbers
-  auto!
-  auto FileType qf setlocal nonumber
+  au!
+  au FileType qf setlocal nonumber
 augroup END
 
 " change cursor depending on mode
@@ -81,6 +81,6 @@ endfunc
 
 " show custom intro
 augroup custom_intro
-  auto!
-  auto VimEnter * call s:custom_intro()
+  au!
+  au VimEnter * call s:custom_intro()
 augroup END

@@ -85,8 +85,8 @@ endfunc
 
 " set highlights on theme change
 augroup set_highlights
-  auto!
-  auto ColorScheme onedark call s:set_highlights()
+  au!
+  au ColorScheme onedark call s:set_highlights()
 augroup END
 
 " initialize highlights

@@ -67,8 +67,8 @@ nnoremap + <Plug>(dirvish_up)
 
 " disable line numbers
 augroup dirvish_no_numbers
-  auto!
-  auto FileType dirvish setlocal nonumber
+  au!
+  au FileType dirvish setlocal nonumber
 augroup END
 
 " ===============
@@ -103,14 +103,14 @@ nnoremap <silent> <Leader>G :call fzf#vim#grep2(
 
 " disable line numbers
 augroup fzf_no_numbers
-  auto!
-  auto FileType fzf setlocal nonumber
+  au!
+  au FileType fzf setlocal nonumber
 augroup END
 
 " disable fzf statusline
 augroup fzf_no_statusline
-  auto!
-  auto User FzfStatusLine :
+  au!
+  au User FzfStatusLine :
 augroup END
 
 " =================
@@ -149,9 +149,9 @@ let g:goyo_linenr = 1
 
 " setup goyo
 augroup goyo_setup
-  auto!
-  auto User GoyoEnter call s:goyo_enter()
-  auto User GoyoLeave call s:goyo_leave()
+  au!
+  au User GoyoEnter call s:goyo_enter()
+  au User GoyoLeave call s:goyo_leave()
 augroup END
 
 " on goyo enter
@@ -226,8 +226,8 @@ let g:vim_markdown_no_default_key_mappings = 1
 
 " filetype keybinds
 augroup markdown_keybinds
-  auto!
-  auto FileType markdown call s:markdown_keybinds()
+  au!
+  au FileType markdown call s:markdown_keybinds()
 augroup END
 
 " define markdown keybinds
@@ -286,8 +286,8 @@ noremap T <Plug>Sneak_T
 
 " add org date format
 augroup org_date_format
-  auto!
-  auto VimEnter * SpeedDatingFormat %Y-%m-%d %a
+  au!
+  au VimEnter * SpeedDatingFormat %Y-%m-%d %a
 augroup END
 
 " ==================
@@ -304,8 +304,8 @@ nnoremap ]t gt
 
 " disable line numbers
 augroup plug_no_numbers
-  auto!
-  auto FileType vim-plug setlocal nonumber
+  au!
+  au FileType vim-plug setlocal nonumber
 augroup END
 
 " =================
@@ -314,6 +314,6 @@ augroup END
 
 " focus file in graph
 augroup wikigraph_focus
-  auto!
-  auto BufEnter *.md call wikigraph#focus_file()
+  au!
+  au BufEnter *.md call wikigraph#focus_file()
 augroup END
