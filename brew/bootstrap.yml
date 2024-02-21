@@ -60,7 +60,7 @@ packages:
       - ranger
       - litecli
       - newsboat
-      - diff-so-fancy
+      - git-delta
 
       # data tools
       - jq
