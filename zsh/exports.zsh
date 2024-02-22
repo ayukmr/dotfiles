@@ -39,11 +39,12 @@ export FZF_DEFAULT_OPTS="
   --ellipsis '…'
 
   --info inline-right
-  --preview-window noborder
+  --preview-window border-left
 
   --color bg:#1f1f1f,bg+:#252525,fg:#909090,fg+:#a9a9a9
   --color hl:#519fdf,hl+:#46a6b2,spinner:#d5b06b,info:#56b6c2
-  --color pointer:#519fdf,marker:#d5b06b,gutter:#1f1f1f,header:#46a6b2,prompt:#b668cd
+  --color pointer:#519fdf,marker:#d5b06b,header:#46a6b2,prompt:#b668cd
+  --color gutter:#1f1f1f,border:#909090
 "
 
 # homebrew styling

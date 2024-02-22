@@ -75,8 +75,8 @@ augroup END
 " === FZF Vim ===
 " ===============
 
-" spawn in bottom split
-let g:fzf_layout = { 'down': '15' }
+" float styling
+let $FZF_DEFAULT_OPTS = $FZF_DEFAULT_OPTS . '--border sharp --padding 0,1,0,0'
 
 " find files
 nnoremap <silent> - :call fzf#vim#files(
