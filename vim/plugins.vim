@@ -78,6 +78,11 @@ augroup END
 " float styling
 let $FZF_DEFAULT_OPTS = $FZF_DEFAULT_OPTS . '--border sharp --padding 0,1,0,0'
 
+" window size
+let g:fzf_layout = {
+  \ 'window': { 'width': 0.75, 'height': 0.6 }
+\}
+
 " find files
 nnoremap <silent> - :call fzf#vim#files(
   \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
