@@ -143,7 +143,7 @@ dressing.setup {
     },
   },
   select = {
-    backend = { 'builtin' },
+    backend = 'builtin',
     builtin = {
       -- horizontal padding
       border = { '', '', '', ' ' },
