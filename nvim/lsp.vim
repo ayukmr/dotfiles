@@ -148,6 +148,9 @@ dressing.setup {
       -- horizontal padding
       border = { '', '', '', ' ' },
 
+      -- show at cursor
+      relative = 'cursor',
+
       win_options = {
         winblend = 0,
 
