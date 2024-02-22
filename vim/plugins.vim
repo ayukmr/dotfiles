@@ -86,25 +86,19 @@ let g:fzf_layout = {
 " find files
 nnoremap <silent> - :call fzf#vim#files(
   \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
-  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" }),
+  \ fzf#vim#with_preview(),
 \)<CR>
 
 " find files in home
 nnoremap <silent> _ :call fzf#vim#files(
-  \ expand('~'),
-  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" }),
+  \ expand('~'), fzf#vim#with_preview(),
 \)<CR>
 
 " select buffer
-nnoremap <silent> <Leader><Leader> :call fzf#vim#buffers(
-  \ '', fzf#vim#with_preview({ 'options': "--prompt '❯ '" })
-\)<CR>
+nnoremap <silent> <Leader><Leader> :Buffers<CR>
 
 " find text
-nnoremap <silent> <Leader>G :call fzf#vim#grep2(
-  \ 'rg --column --line-number --no-heading --smart-case --color always -- ', '',
-  \ fzf#vim#with_preview({ 'options': "--prompt '❯ '" })
-\)<CR>
+nnoremap <silent> <Leader>G :RG<CR>
 
 " disable line numbers
 augroup fzf_no_numbers
