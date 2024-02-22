@@ -246,6 +246,9 @@ endfunc
 " hide offscreen matches
 let g:matchup_matchparen_offscreen = {}
 
+" match end sign
+let g:matchup_matchparen_end_sign = '◂'
+
 " ===========
 " === Org ===
 " ===========
