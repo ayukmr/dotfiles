@@ -51,6 +51,9 @@ export FZF_DEFAULT_OPTS="
 export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ENV_HINTS=1
 
+# disable venv prompt
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # =============
 # === Files ===
 # =============
