@@ -100,6 +100,9 @@ Plug 'tommcdo/vim-lion', { 'as': 'lion' }
 " [lspconfig] configs for neovim lsp
 Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
+" [lspfuzzy] fzf for lsp
+Plug 'ojroques/nvim-lspfuzzy', { 'as': 'lspfuzzy' }
+
 " [luasnip] snippets manager
 Plug 'L3MON4D3/LuaSnip', Nvim({ 'as': 'luasnip' })
 

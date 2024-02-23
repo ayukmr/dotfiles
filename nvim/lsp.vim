@@ -163,6 +163,21 @@ dressing.setup {
 }
 EOF
 
+" ================
+" === LSPFuzzy ===
+" ================
+
+" workspace diagnostics
+nnoremap <silent> <leader>ld :LspDiagnosticsAll<CR>
+
+lua <<EOF
+-- lspfuzzy module
+local lspfuzzy = require 'lspfuzzy'
+
+-- setup lspfuzzy
+lspfuzzy.setup()
+EOF
+
 " ===============
 " === LuaSnip ===
 " ===============
@@ -222,8 +237,7 @@ nnoremap <silent> <Leader>lf :lua vim.lsp.buf.format()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
 nnoremap <silent> <Leader>lR :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <leader>ld :lua vim.diagnostic.setloclist()<CR>
-nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol('')<CR>
 
 " buffer keybinds
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
