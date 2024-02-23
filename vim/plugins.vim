@@ -100,18 +100,6 @@ nnoremap <silent> <Leader><Leader> :Buffers<CR>
 " find text
 nnoremap <silent> <Leader>G :RG<CR>
 
-" disable line numbers
-augroup fzf_no_numbers
-  au!
-  au FileType fzf setlocal nonumber
-augroup END
-
-" disable fzf statusline
-augroup fzf_no_statusline
-  au!
-  au User FzfStatusLine :
-augroup END
-
 " =================
 " === GitGutter ===
 " =================
