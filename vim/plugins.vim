@@ -90,9 +90,7 @@ nnoremap <silent> - :call fzf#vim#files(
 \)<CR>
 
 " find files in home
-nnoremap <silent> _ :call fzf#vim#files(
-  \ expand('~'), fzf#vim#with_preview(),
-\)<CR>
+nnoremap <silent> _ :Files ~<CR>
 
 " select buffer
 nnoremap <silent> <Leader><Leader> :Buffers<CR>
