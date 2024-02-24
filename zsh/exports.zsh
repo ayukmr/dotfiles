@@ -35,7 +35,7 @@ export FZF_DEFAULT_OPTS="
 
   --prompt   '❯ '
   --pointer  '>'
-  --marker   '*'
+  --marker   '+'
   --ellipsis '…'
 
   --info inline-right
