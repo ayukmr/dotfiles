@@ -4,7 +4,7 @@
 
 -- terminal window filter
 terminalFilter =
-    hs.window.filter.new { 'iTerm2', 'Terminal', 'Alacritty', 'Hyper' }
+    hs.window.filter.new { 'Alacritty', 'kitty' }
 
 -- colemak when unfocused
 terminalFilter:subscribe(hs.window.filter.windowUnfocused, function()
