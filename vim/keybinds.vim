@@ -15,7 +15,7 @@ nnoremap <C-l> <C-w>l
 noremap gV `[v`]
 
 " yank to end of line
-map Y y$
+nnoremap Y y$
 
 " unhighlight search
 nnoremap <silent> <C-n> :nohlsearch <Bar> diffupdate<CR>
