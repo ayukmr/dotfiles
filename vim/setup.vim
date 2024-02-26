@@ -11,6 +11,12 @@ set background=dark
 " syntax highlighting
 syntax on
 
+" equalize windows sizes
+augroup equalize_windows
+  au!
+  au VimResized * wincmd =
+augroup END
+
 " disable line numbers in quickfix buffer
 augroup quickfix_no_numbers
   au!
