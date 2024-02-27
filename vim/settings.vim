@@ -73,6 +73,9 @@ set splitright
 " keep hidden buffers
 set hidden
 
+" retain cursor column
+set nostartofline
+
 " disable mouse
 set mouse=
 
@@ -81,6 +84,9 @@ set formatoptions=tcqj
 
 " split line
 set fillchars+=vert:│
+
+" scroll by single chars
+set sidescroll=1
 
 " update time
 set updatetime=100
