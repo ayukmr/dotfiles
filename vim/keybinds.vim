@@ -17,6 +17,9 @@ noremap gV `[v`]
 " yank to end of line
 nnoremap Y y$
 
+" repeat last substitution
+nnoremap <silent> & :&&<CR>
+
 " unhighlight search
 nnoremap <silent> <C-n> :nohlsearch <Bar> diffupdate<CR>
 
