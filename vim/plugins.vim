@@ -232,7 +232,7 @@ endfunc
 let g:matchup_matchparen_offscreen = {}
 
 " match end sign
-let g:matchup_matchparen_end_sign = '◂'
+let g:matchup_matchparen_end_sign = '⯇'
 
 " ===========
 " === Org ===
