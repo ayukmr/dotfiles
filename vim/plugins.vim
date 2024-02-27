@@ -95,9 +95,6 @@ nnoremap <silent> _ :Files ~<CR>
 " select buffer
 nnoremap <silent> <Leader><Leader> :Buffers<CR>
 
-" find text
-nnoremap <silent> <Leader>G :RG<CR>
-
 " =================
 " === GitGutter ===
 " =================
