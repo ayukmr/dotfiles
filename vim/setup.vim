@@ -44,7 +44,7 @@ func! s:custom_intro() abort
 
   " highlight title
   highlight IntroTitle cterm=bold ctermfg=39 gui=bold guifg=#519fdf
-  call matchadd('IntroTitle', '\v\zs. N?VIM v\d\.\d(\.\d)?\ze')
+  call matchadd('IntroTitle', '\v\zs. N?VIM v\d+\.\d+(\.\d+)?\ze')
 
   " map keys
   nnoremap <buffer> <silent> q :quitall!<CR>
