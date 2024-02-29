@@ -231,13 +231,6 @@ let g:matchup_matchparen_offscreen = {}
 " match end sign
 let g:matchup_matchparen_end_sign = '⯇'
 
-" ===========
-" === Org ===
-" ===========
-
-" state keywords
-let g:org_state_keywords = ['TODO', 'NEXT', 'PROG', 'BLKD', 'DONE']
-
 " ==============
 " === Rooter ===
 " ==============
