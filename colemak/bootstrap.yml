@@ -11,21 +11,21 @@ scripts:
       - ~/.vim/keymap/colemak.vim: vim/keymap.vim
 
     test:
-      - "[[ ! $(tail -n 1 ~/.cfg/vim/vimrc.vim) == 'source ~/.cfg/colemak/vim/colemak.vim' ]]":
+      - "[[ \"$(tail -n 1 ~/.cfg/vim/vimrc.vim)\" != 'source ~/.cfg/colemak/vim/colemak.vim' ]]":
           shell:
             - ? echo 'source ~/.cfg/colemak/vim/colemak.vim' >> ~/.cfg/vim/vimrc.vim
               : 'sourcing colemak.vim in vimrc'
 
   qutebrowser:
     test:
-      - "[[ ! $(tail -n 1 ~/.cfg/qutebrowser/config.py) == \"config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))\" ]]":
+      - "[[ \"$(tail -n 1 ~/.cfg/qutebrowser/config.py)\" != \"config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))\" ]]":
           shell:
             - ? echo "config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))" >> ~/.cfg/qutebrowser/config.py
               : 'sourcing colemak.py in qutebrowser config'
 
   hammerspoon:
     test:
-      - "[[ ! $(tail -n 2 ~/.cfg/hammerspoon/init.lua) == 'package.path = os.getenv(\"HOME\") .. \"/.cfg/colemak/hammerspoon/?.lua;\" .. package.path\nrequire \"colemak\"' ]]":
+      - "[[ \"$(tail -n 2 ~/.cfg/hammerspoon/init.lua)\" != 'package.path = os.getenv(\"HOME\") .. \"/.cfg/colemak/hammerspoon/?.lua;\" .. package.path\nrequire \"colemak\"' ]]":
           shell:
             - ? echo 'package.path = os.getenv("HOME") .. "/.cfg/colemak/hammerspoon/?.lua;" .. package.path\nrequire "colemak"' >> ~/.cfg/hammerspoon/init.lua
               : 'sourcing colemak.lua in hammerspoon config'
