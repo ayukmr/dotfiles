@@ -11,35 +11,35 @@ set pumheight=15
 
 lua <<EOF
 -- cmp module
-local cmp = require 'cmp'
+local cmp = require "cmp"
 
 -- symbols for items
 local symbols = {
-  Text          = '',
-  Method        = '󰅲',
-  Function      = '󰅲',
-  Constructor   = '',
-  Field         = '',
-  Variable      = '',
-  Class         = '',
-  Interface     = '󰠱',
-  Module        = '󰆧',
-  Property      = '',
-  Unit          = '',
-  Value         = '',
-  Enum          = '󰓻',
-  Keyword       = '',
-  Snippet       = '󰆐',
-  Color         = '',
-  File          = '󰈤',
-  Reference     = '',
-  Folder        = '󰉋',
-  EnumMember    = '󰓻',
-  Constant      = '󰏿',
-  Struct        = '󰙅',
-  Event         = '',
-  Operator      = '󰍘',
-  TypeParameter = '',
+  Text          = "",
+  Method        = "󰅲",
+  Function      = "󰅲",
+  Constructor   = "",
+  Field         = "",
+  Variable      = "",
+  Class         = "",
+  Interface     = "󰠱",
+  Module        = "󰆧",
+  Property      = "",
+  Unit          = "",
+  Value         = "",
+  Enum          = "󰓻",
+  Keyword       = "",
+  Snippet       = "󰆐",
+  Color         = "",
+  File          = "󰈤",
+  Reference     = "",
+  Folder        = "󰉋",
+  EnumMember    = "󰓻",
+  Constant      = "󰏿",
+  Struct        = "󰙅",
+  Event         = "",
+  Operator      = "󰍘",
+  TypeParameter = "",
 }
 
 -- setup cmp
@@ -48,7 +48,7 @@ cmp.setup {
   snippet = {
     expand = function(args)
       -- luasnip module
-      local luasnip = require 'luasnip'
+      local luasnip = require "luasnip"
 
       -- expand snippet
       luasnip.lsp_expand(args.body)
@@ -67,7 +67,7 @@ cmp.setup {
 
         if truncated ~= text then
           -- add ellipsis
-          truncated = truncated .. '…'
+          truncated = truncated .. "…"
         end
 
         return truncated
@@ -87,40 +87,40 @@ cmp.setup {
 
   -- completion keybinds
   mapping = cmp.mapping.preset.insert {
-    ['<C-e>'] = cmp.mapping.abort(),
+    ["<C-e>"] = cmp.mapping.abort(),
 
-    ['<Tab>']   = cmp.mapping.select_next_item(),
-    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    ["<Tab>"]   = cmp.mapping.select_next_item(),
+    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
 
-    ['<CR>']   = cmp.mapping.confirm { select = true },
-    ['<M-CR>'] = cmp.mapping.complete(),
+    ["<CR>"]   = cmp.mapping.confirm { select = true },
+    ["<M-CR>"] = cmp.mapping.complete(),
 
-    ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-d>'] = cmp.mapping.scroll_docs(4),
+    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-d>"] = cmp.mapping.scroll_docs(4),
   },
 
   -- completion sources
   sources = cmp.config.sources {
-    { name = 'nvim_lsp' },
-    { name = 'luasnip'  },
-    { name = 'buffer'   },
-    { name = 'path'     },
+    { name = "nvim_lsp" },
+    { name = "luasnip"  },
+    { name = "buffer"   },
+    { name = "path"     },
   },
 }
 
 -- search completion
-cmp.setup.cmdline({ '/', '?' }, {
+cmp.setup.cmdline({ "/", "?" }, {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
-    { name = 'buffer' },
+    { name = "buffer" },
   },
 })
 
 -- command completion
-cmp.setup.cmdline(':', {
+cmp.setup.cmdline(":", {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources {
-    { name = 'cmdline' },
+    { name = "cmdline" },
   },
 })
 EOF
@@ -131,32 +131,32 @@ EOF
 
 lua <<EOF
 -- dressing module
-local dressing = require 'dressing'
+local dressing = require "dressing"
 
 -- dressing setup
 dressing.setup {
   input = {
     -- horizontal padding
-    border = { '', '', '', ' ' },
+    border = { "", "", "", " " },
     win_options = {
       winblend = 0,
     },
   },
 
   select = {
-    backend = 'builtin',
+    backend = "builtin",
     builtin = {
       -- horizontal padding
-      border = { '', '', '', ' ' },
+      border = { "", "", "", " " },
 
       -- show at cursor
-      relative = 'cursor',
+      relative = "cursor",
 
       win_options = {
         winblend = 0,
 
         -- cursor line
-        winhighlight = 'CursorLine:DressingCursorLine',
+        winhighlight = "CursorLine:DressingCursorLine",
       },
     },
   },
@@ -172,7 +172,7 @@ nnoremap <silent> <leader>ld :LspDiagnosticsAll<CR>
 
 lua <<EOF
 -- lspfuzzy module
-local lspfuzzy = require 'lspfuzzy'
+local lspfuzzy = require "lspfuzzy"
 
 -- setup lspfuzzy
 lspfuzzy.setup()
@@ -183,12 +183,12 @@ EOF
 " ===============
 
 " movement keybinds
-inoremap <C-k> <Cmd>lua require('luasnip').jump(-1)<CR>
-inoremap <C-j> <Cmd>lua require('luasnip').jump(1)<CR>
+inoremap <C-k> <Cmd>lua require("luasnip").jump(-1)<CR>
+inoremap <C-j> <Cmd>lua require("luasnip").jump(1)<CR>
 
 lua <<EOF
 -- snipmate loader
-local snipmate_loader = require 'luasnip.loaders.from_snipmate'
+local snipmate_loader = require "luasnip.loaders.from_snipmate"
 
 -- load snippets
 snipmate_loader.lazy_load()
@@ -200,25 +200,25 @@ EOF
 
 lua <<EOF
 -- mason module
-local mason = require 'mason'
+local mason = require "mason"
 
 -- setup mason
 mason.setup {
   ui = {
     icons = {
-      package_installed   = '',
-      package_pending     = '',
-      package_uninstalled = '',
+      package_installed   = "",
+      package_pending     = "",
+      package_uninstalled = "",
     },
   },
 }
 
 -- mason lspconfig module
-local mason_lspconfig = require 'mason-lspconfig'
+local mason_lspconfig = require "mason-lspconfig"
 
 -- setup mason lspconfig
 mason_lspconfig.setup {
-  automatic_installation = true,
+  -- automatic_installation = true,
 }
 EOF
 
@@ -237,7 +237,7 @@ nnoremap <silent> <Leader>lf :lua vim.lsp.buf.format()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
 nnoremap <silent> <Leader>lR :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol('')<CR>
+nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol("")<CR>
 
 " buffer keybinds
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
@@ -252,20 +252,20 @@ nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
 lua <<EOF
 -- lsp modules
-local lspconfig    = require 'lspconfig'
-local cmp_nvim_lsp = require 'cmp_nvim_lsp'
+local lspconfig    = require "lspconfig"
+local cmp_nvim_lsp = require "cmp_nvim_lsp"
 
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 local servers = {
-  'marksman',
-  'pyright',
-  'rust_analyzer',
-  'sourcekit',
-  'tsserver',
-  'vimls',
+  "marksman",
+  "pyright",
+  "rust_analyzer",
+  "sourcekit",
+  "tsserver",
+  "vimls",
 }
 
 -- add lsp servers
@@ -282,8 +282,8 @@ vim.diagnostic.config {
   virtual_text = false,
 
   float = {
-    scope  = 'cursor',
-    source = 'always',
+    scope  = "cursor",
+    source = "always",
   },
 }
 EOF
@@ -294,7 +294,7 @@ EOF
 
 lua <<EOF
 -- null-ls module
-local null_ls = require 'null-ls'
+local null_ls = require "null-ls"
 
 -- setup null-ls
 null_ls.setup {
