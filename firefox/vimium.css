@@ -5,7 +5,7 @@
 /* hint marker */
 div > .vimiumHintMarker {
   padding: 2px 4px 2px 4px;
-  background: rgb(230, 206, 91);
+  background: #e6ce5b;
   border: 1px solid #333333;
   box-shadow: none;
 }
@@ -13,7 +13,7 @@ div > .vimiumHintMarker {
 /* hint marker text */
 div > .vimiumHintMarker span {
   font-family: system-ui;
-  color: #000;
+  color: #000000;
   font-weight: bold;
   font-size: 11px;
   text-shadow: none;
@@ -21,10 +21,10 @@ div > .vimiumHintMarker span {
 
 /* selected hint marker */
 div > .vimiumHintMarker:has(> .matchingCharacter) {
-  background: rgb(149, 217, 251);
+  background: #95d9fb;
 }
 
 /* selected hint marker text */
 div > .vimiumHintMarker > .matchingCharacter {
-  color: #000;
+  color: #000000;
 }
