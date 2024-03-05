@@ -1,0 +1,47 @@
+# =====================
+# === Iosevka Build ===
+# =====================
+
+[buildPlans.Iosevka]
+# font name
+family = "Iosevka"
+
+# styling
+spacing = "term"
+serifs  = "sans"
+noCvSs  = true
+
+# glyph names
+exportGlyphNames = false
+
+[buildPlans.Iosevka.variants]
+# pragmata pro style
+inherits = "ss08"
+
+[buildPlans.Iosevka.variants.design]
+# uppercase
+capital-q = "crossing"
+
+# lowercase
+f = "flat-hook-serifless"
+i = "serifed-semi-tailed"
+j = "flat-hook-serifed"
+l = "serifed-semi-tailed"
+t = "flat-hook"
+
+# symbols
+zero       = "reverse-slashed-split"
+paren      = "normal"
+percent    = "rings-continuous-slash"
+underscore = "above-baseline"
+
+# ligatures
+lig-plus-chain       = "with-notch"
+lig-double-arrow-bar = "with-notch"
+lig-single-arrow-bar = "with-notch"
+
+[buildPlans.Iosevka.widths.Normal]
+# base font
+css   = "normal"
+shape = 550
+menu  = 5
