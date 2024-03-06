@@ -16,7 +16,7 @@ call plug#begin('~/.vim/bundle')
 " [sneak] quicker movement
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
-" [bbye] better :bd and :bw
+" [bbye] better buffer delete and wipeout
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
 " [better-escape] insert mode escaping
