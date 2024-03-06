@@ -67,6 +67,9 @@ Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 " [eunuch] unix commands
 Plug 'tpope/vim-eunuch', { 'as': 'eunuch' }
 
+" [exchange] exchange text
+Plug 'tommcdo/vim-exchange', { 'as': 'exchange' }
+
 " [fugitive] git wrapper
 Plug 'tpope/vim-fugitive', { 'as': 'fugitive' }
 
