@@ -1,0 +1,30 @@
+" ======================
+" === Tridactyl Init ===
+" ======================
+
+" custom theme
+colors theme
+
+" keep new tab page
+set newtab about:newtab
+
+" force qwerty
+set keyboardlayoutforce true
+
+" escape input
+set escapehatchsidebarhack false
+bind --mode=browser <C-q> escapehatch
+
+" searching
+bind / fillcmdline find
+bind ? fillcmdline find -?
+
+" search navigation
+bind n findnext 1
+bind N findnext -1
+
+" unhighlight search
+bind <C-n> nohlsearch
+
+" open in new tab
+bind O fillcmdline tabopen

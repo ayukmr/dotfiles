@@ -1,0 +1,90 @@
+/* ======================= */
+/* === Tridactyl Theme === */
+/* ======================= */
+
+:root {
+  /* base colors */
+  --tridactyl-bg: #1e1e1e;
+  --tridactyl-fg: #ffffff;
+
+  /* font family */
+  --tridactyl-font-family: 'Hack Nerd Font Mono', monospace;
+  --tridactyl-font-family-sans: system-ui;
+
+  /* border radius */
+  --tridactyl-border-radius: 4px;
+
+  /* mode status */
+  --tridactyl-status-font-size: 12px;
+  --tridactyl-status-border: 2px solid #282828;
+  --tridactyl-status-border-radius: 4px;
+
+  /* focused option */
+  --tridactyl-of-fg: var(--tridactyl-bg);
+  --tridactyl-of-bg: #519fdf;
+
+  /* hints */
+  --tridactyl-hint-bg:      none;
+  --tridactyl-hint-outline: none;
+  --tridactyl-hintspan-fg:  var(--tridactyl-bg);
+  --tridactyl-hintspan-bg:  #e6ce5b;
+
+  /* active hint */
+  --tridactyl-hint-active-fg: #333333;
+  --tridactyl-hint-active-bg: #006e51;
+  --tridactyl-hint-active-outline: none;
+
+  /* command line */
+  --tridactyl-cmdl-bg: #282828;
+  --tridactyl-cmdl-line-height:    1.6;
+  --tridactyl-cmplt-option-height: 1.4em;
+
+  /* command line font */
+  --tridactyl-cmdl-font-family:  var(--tridactyl-font-family);
+  --tridactyl-cmplt-font-family: var(--tridactyl-font-family);
+
+  /* header */
+  --tridactyl-header-first-bg:  #282828;
+  --tridactyl-header-second-bg: #282828;
+  --tridactyl-header-third-bg:  #282828;
+}
+
+/* mode status */
+:root .TridactylStatusIndicator {
+  /* bold font */
+  font-weight: bold !important;
+
+  /* spacing */
+  position: fixed !important;
+  bottom:   10px  !important;
+  right:    10px  !important;
+
+  /* padding */
+  padding: 3px 5px !important;
+}
+
+/* private mode status */
+:root .TridactylStatusIndicator.TridactylPrivate {
+  /* inherit colors */
+  color:      inherit !important;
+  background: inherit !important;
+  border:     inherit !important;
+}
+
+/* focused option */
+:root .focused {
+  /* bold font */
+  font-weight: bold;
+}
+
+/* focused url */
+:root .focused .url {
+  /* base color */
+  color: var(--tridactyl-of-fg);
+}
+
+/* completions parent */
+:root.TridactylOwnNamespace body:has(#completions) {
+  /* black background */
+  background: #000000;
+}

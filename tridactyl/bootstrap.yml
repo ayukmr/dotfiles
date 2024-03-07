@@ -1,0 +1,12 @@
+# ===========================
+# === Tridactyl Bootstrap ===
+# ===========================
+
+config:
+  dirs:
+    - ~/.config/tridactyl
+    - ~/.config/tridactyl/themes
+
+  link:
+    - ~/.config/tridactyl: tridactylrc
+    - ~/.config/tridactyl/themes: theme.css
