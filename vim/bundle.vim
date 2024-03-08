@@ -16,6 +16,9 @@ call plug#begin('~/.vim/bundle')
 " [sneak] quicker movement
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
+" [asterisk] improved star motions
+Plug 'haya14busa/vim-asterisk', { 'as': 'asterisk' }
+
 " [bbye] better buffer delete and wipeout
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 

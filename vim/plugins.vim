@@ -2,6 +2,20 @@
 " === Vim Plugins ===
 " ===================
 
+" ================
+" === Asterisk ===
+"=================
+
+" keybinds
+map *   <Plug>(asterisk-*)
+map #   <Plug>(asterisk-#)
+map g*  <Plug>(asterisk-g*)
+map g#  <Plug>(asterisk-g#)
+map z*  <Plug>(asterisk-z*)
+map z#  <Plug>(asterisk-z#)
+map gz* <Plug>(asterisk-gz*)
+map gz# <Plug>(asterisk-gz#)
+
 " ==================
 " === Buffer Bye ===
 " ==================
