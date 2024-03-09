@@ -158,6 +158,9 @@ Plug 'tpope/vim-speeddating', { 'as': 'speeddating' }
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', { 'as': 'splitjoin' }
 
+" [staff] minimal task format
+Plug 'ayukmr/staff'
+
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
 
