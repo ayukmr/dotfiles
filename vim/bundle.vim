@@ -16,6 +16,9 @@ call plug#begin('~/.vim/bundle')
 " [sneak] quicker movement
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
+" [abolish] word variant commands
+Plug 'tpope/vim-abolish', { 'as': 'abolish' }
+
 " [asterisk] improved star motions
 Plug 'haya14busa/vim-asterisk', { 'as': 'asterisk' }
 
