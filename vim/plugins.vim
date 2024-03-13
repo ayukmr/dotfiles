@@ -38,6 +38,9 @@ let g:better_escape_shortcut = 'jk'
 " matching pairs
 let delimitMate_matchpairs = "(:),[:],{:}"
 
+" expand return
+let delimitMate_expand_cr = 1
+
 " ================
 " === DevIcons ===
 " ================
@@ -84,6 +87,13 @@ augroup dirvish_no_numbers
   au!
   au FileType dirvish setlocal nonumber
 augroup END
+
+" ==============
+" === Eunuch ===
+" ==============
+
+" disable maps
+let g:eunuch_no_maps = 1
 
 " ===============
 " === FZF Vim ===
