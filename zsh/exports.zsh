@@ -65,7 +65,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
 # ripgrep config location
-export RIPGREP_CONFIG_PATH="$HOME/.cfg/ripgrep/rgconfig"
+export RIPGREP_CONFIG_PATH="$HOME/.cfg/rg/rgconfig"
 
 # rubygems home
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
