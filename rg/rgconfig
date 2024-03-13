@@ -16,9 +16,6 @@
 --colors=line:fg:blue
 --colors=line:style:bold
 
-# column number style
---colors=column:fg:cyan
-
 # match style
 --colors=match:fg:green
 
