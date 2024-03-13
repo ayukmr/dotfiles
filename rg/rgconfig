@@ -17,7 +17,7 @@
 --colors=line:style:bold
 
 # match style
---colors=match:fg:green
+--colors=match:fg:red
 
 # path style
 --colors=path:style:bold
