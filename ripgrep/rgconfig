@@ -6,9 +6,6 @@
 --max-columns=150
 --max-columns-preview
 
-# show column numbers
---column
-
 # search hidden files
 --hidden
 
