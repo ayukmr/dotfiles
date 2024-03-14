@@ -1,32 +1,32 @@
 {
   "ver": "5.0.0",
   "settings": {
-    "theme": "proton",
-    "density": "default",
-    "fontSize": "xxs",
-    "sidebarCSS": true,
+    "theme":       "proton",
+    "density":     "default",
+    "fontSize":    "xxs",
+    "sidebarCSS":  true,
     "colorScheme": "ff",
 
-    "navBtnCount": false,
-    "tabsLvlDots": false,
-    "searchBarMode": "none",
+    "navBtnCount":    false,
+    "tabsLvlDots":    false,
+    "searchBarMode":  "none",
     "showNewTabBtns": false,
 
-    "ctxMenuNative": true,
+    "ctxMenuNative":      true,
     "ctxMenuRenderIcons": false,
 
-    "animations": false,
+    "animations":     false,
     "animationSpeed": "norm",
 
     "hideEmptyPanels": false,
     "skipEmptyPanels": false,
     "containersSortByName": true,
 
-    "subPanelHistory": false,
+    "subPanelHistory":   false,
     "subPanelBookmarks": false,
     "subPanelRecentlyClosedBar": false,
 
-    "warnOnMultiTabClose": "none",
+    "warnOnMultiTabClose":       "none",
     "warnOnMultiBookmarkDelete": "none"
   },
   "keybindings": {
