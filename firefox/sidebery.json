@@ -1,5 +1,6 @@
 {
   "ver": "5.0.0",
+
   "settings": {
     "theme":       "proton",
     "density":     "default",
@@ -29,6 +30,7 @@
     "warnOnMultiTabClose":       "none",
     "warnOnMultiBookmarkDelete": "none"
   },
+
   "keybindings": {
     "_execute_sidebar_action": "MacCtrl+E",
 
