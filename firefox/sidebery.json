@@ -32,9 +32,9 @@
   },
 
   "keybindings": {
-    "_execute_sidebar_action": "MacCtrl+E",
+    "_execute_sidebar_action": "MacCtrl+Shift+E",
 
-    "next_panel": "MacCtrl+Period",
-    "prev_panel": "MacCtrl+Comma"
+    "next_panel": "MacCtrl+Alt+Period",
+    "prev_panel": "MacCtrl+Alt+Comma"
   }
 }
