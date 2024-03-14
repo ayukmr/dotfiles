@@ -3,7 +3,7 @@
 " ===================
 
 " font
-set guifont=Hack\ Nerd\ Font\ Mono:h12
+set guifont=Iosevka\ Nerd\ Font\ Mono:h12
 
 " gui settings
 set guioptions-=e
