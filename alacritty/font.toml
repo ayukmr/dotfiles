@@ -24,7 +24,7 @@ style  = "Italic"
 # bold and italic
 [font.bold_italic]
 family = "Hack Nerd Font Mono"
-style = "Bold Italic"
+style  = "Bold Italic"
 
 # characters offset
 [font.offset]
