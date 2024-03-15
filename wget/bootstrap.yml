@@ -1,7 +1,0 @@
-# ======================
-# === Wget Bootstrap ===
-# ======================
-
-config:
-  link:
-    - ~/.wgetrc: wgetrc
