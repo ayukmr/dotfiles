@@ -11,7 +11,7 @@ display_lineinfo 1
 # store 50 sites
 history 50
 
-# disable quit confirm
+# disable quit confirmation
 confirm_qq 0
 
 # vim keybinds
