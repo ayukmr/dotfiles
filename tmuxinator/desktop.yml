@@ -14,6 +14,7 @@ windows:
         - htop
 
   - editor: anyvim
+
   - wiki:
     - cd ~/wiki
     - anyvim ~/wiki/index.md
