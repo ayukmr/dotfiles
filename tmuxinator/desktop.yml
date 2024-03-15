@@ -17,4 +17,4 @@ windows:
 
   - wiki:
     - cd ~/wiki
-    - anyvim ~/wiki/index.md
+    - anyvim index.md
