@@ -19,3 +19,7 @@ set format_trackwin= %t%= %d
 
 # sidebar width
 set tree_width_percent=20
+
+# disable quit confirmation
+unbind common q
+bind common q quit
