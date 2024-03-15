@@ -40,6 +40,7 @@ colorscheme onedark
 " set highlights
 func! s:set_highlights() abort
   " search highlight
+  highlight! Search cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
   highlight! link IncSearch Search
 
   " menu selections
