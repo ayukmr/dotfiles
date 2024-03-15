@@ -12,7 +12,7 @@ unsetopt BEEP
 # ignore duplicate lines in history
 setopt HIST_IGNORE_DUPS
 
-# don't save lines starting with space in history
+# skip lines starting with space in history
 setopt HIST_IGNORE_SPACE
 
 # incrementally update history

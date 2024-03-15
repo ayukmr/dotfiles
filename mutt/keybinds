@@ -8,5 +8,5 @@ bind pager j      next-line
 bind pager <Up>   previous-line
 bind pager <Down> next-line
 
-# don't wait for keypress
+# disable waiting for key
 set wait_key = no

@@ -33,7 +33,7 @@ set help = no
 # mail editor
 set editor = "anyvim -c 'set nonumber signcolumn=no laststatus=0 showtabline=0'"
 
-# don't beep on errors
+# disable error bells
 set beep = no
 
 # view html automatically

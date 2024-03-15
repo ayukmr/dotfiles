@@ -22,7 +22,7 @@ reload-time 30
 # use multiple threads
 reload-threads 20
 
-# don't show bottom bar
+# hide bottom bar
 show-keymap-hint no
 
 # show read articles
