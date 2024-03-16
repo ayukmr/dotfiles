@@ -62,6 +62,9 @@ set numberwidth=4
 " merge with signcolumn
 set signcolumn=number
 
+" allowed backspacing
+set backspace=indent,eol,start
+
 " show invisibles
 set list
 set listchars=tab:\>\ ,trail:·
