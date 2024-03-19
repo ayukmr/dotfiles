@@ -23,14 +23,7 @@
 	# status colors
 	untracked = magenta
 
-[commit]
-	# template for commit message
-	template = ~/.cfg/git/gitmessage
-
 [core]
-	# global git hooks
-	hooksPath = ~/.cfg/git/hooks
-
 	# global gitignore
 	excludesFile = ~/.cfg/git/gitignore
 
