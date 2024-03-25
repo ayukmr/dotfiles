@@ -13,3 +13,7 @@
 
 # vim swaps
 .*.swp
+
+# env setup
+.env
+.envrc
