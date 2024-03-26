@@ -14,6 +14,9 @@ noCvSs  = true
 # glyph names
 exportGlyphNames = false
 
+# disable ligatures
+noLigation = true
+
 [buildPlans.Iosevka.variants]
 # pragmata pro style
 inherits = "ss08"
