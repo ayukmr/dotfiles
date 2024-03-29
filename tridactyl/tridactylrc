@@ -28,3 +28,6 @@ bind <C-n> nohlsearch
 
 " open in new tab
 bind O fillcmdline tabopen
+
+" ignore mode
+blacklistadd tldraw.com
