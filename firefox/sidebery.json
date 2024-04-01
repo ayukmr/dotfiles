@@ -18,6 +18,7 @@
 
     "animations":     false,
     "animationSpeed": "norm",
+    "tabSwitchDelay": 0,
 
     "hideEmptyPanels": false,
     "skipEmptyPanels": false,
