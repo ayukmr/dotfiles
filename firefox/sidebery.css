@@ -51,3 +51,8 @@
   border-radius: var(--tabs-border-radius);
   right: 4px !important;
 }
+
+/* hide flash animation */
+.flash-fx {
+  display: none;
+}

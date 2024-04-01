@@ -16,8 +16,8 @@
     "ctxMenuNative":      true,
     "ctxMenuRenderIcons": false,
 
-    "animations":     false,
-    "animationSpeed": "norm",
+    "animations":     true,
+    "animationSpeed": "fast",
     "tabSwitchDelay": 0,
 
     "hideEmptyPanels": false,
