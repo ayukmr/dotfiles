@@ -171,7 +171,7 @@ Plug 'tpope/vim-surround', { 'as': 'surround' }
 Plug 'wellle/targets.vim', { 'as': 'targets' }
 
 " [treesitter] enhanced syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter', { 'as': 'treesitter', 'do': ':TSUpdate' }
+Plug 'nvim-treesitter/nvim-treesitter', Nvim({ 'as': 'treesitter', 'do': ':TSUpdate' })
 
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
