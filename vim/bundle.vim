@@ -152,6 +152,12 @@ Plug 'airblade/vim-rooter', { 'as': 'rooter' }
 " [rsi] readline keybinds
 Plug 'tpope/vim-rsi', { 'as': 'rsi' }
 
+" [sexp] s-expression motions
+Plug 'guns/vim-sexp', { 'as': 'sexp', 'for': 'clojure' }
+
+" [sexp-mappings] better sexp mappings
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'as': 'sexp-mappings', 'for': 'clojure' }
+
 " [snippets] snippets for luasnip
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
