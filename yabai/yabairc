@@ -9,10 +9,10 @@ yabai -m config layout bsp
 
 # window padding
 yabai -m config     \
-  top_padding    10 \
-  bottom_padding 10 \
-  left_padding   10 \
-  right_padding  10 \
+  top_padding    25 \
+  bottom_padding 25 \
+  left_padding   25 \
+  right_padding  25 \
   window_gap     10
 
 # move mouse to focus
