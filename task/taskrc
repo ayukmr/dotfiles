@@ -12,7 +12,7 @@ data.location = ~/.local/share/task
 # vit report
 report.vit.sort    = urgency-
 report.vit.filter  = status:pending -WAITING limit:page
-report.vit.labels  = ID,Acv,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description
+report.vit.labels  = ID,Acv,Age,Deps,P,Project,Tags,Recur,S,Due,Until,Description
 report.vit.columns = id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description
 
 # priority urgencies
