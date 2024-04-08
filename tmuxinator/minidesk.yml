@@ -1,6 +1,6 @@
-# ===========================
-# === Tmux Desktop Preset ===
-# ===========================
+# ============================
+# === Tmux Minidesk Preset ===
+# ============================
 
 name: desktop
 root: ~/
@@ -10,12 +10,7 @@ windows:
       layout: 6c2a,203x58,0,0{101x58,0,0,0,101x58,102,0[101x29,102,0,4,101x28,102,30,5]}
       panes:
         -
+        -
         - vit
-        - htop
 
   - editor: anyvim
-  - tasks:  vit
-
-  - wiki:
-    - cd ~/wiki
-    - anyvim index.md

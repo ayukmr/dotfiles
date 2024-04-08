@@ -1,0 +1,13 @@
+# =========================
+# === Tmux Aside Preset ===
+# =========================
+
+name: aside
+root: ~/
+
+windows:
+  - shell: ~
+
+  - wiki:
+    - cd wiki
+    - anyvim index.md
