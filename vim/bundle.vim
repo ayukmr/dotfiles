@@ -22,6 +22,9 @@ Plug 'tpope/vim-abolish', { 'as': 'abolish' }
 " [asterisk] improved star motions
 Plug 'haya14busa/vim-asterisk', { 'as': 'asterisk' }
 
+" [auto-pairs] automatic delimiters
+Plug 'jiangmiao/auto-pairs', { 'as': 'auto-pairs' }
+
 " [bbye] better buffer delete and wipeout
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
@@ -54,9 +57,6 @@ Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 
 " [conjoin] remove join separators
 Plug 'flwyd/vim-conjoin', { 'as': 'conjoin' }
-
-" [delimitmate] automatic delimiters
-Plug 'Raimondi/delimitMate', { 'as': 'delimitmate' }
 
 " [devicons] icons for filetypes
 Plug 'ryanoasis/vim-devicons', { 'as': 'devicons' }

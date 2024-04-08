@@ -31,16 +31,6 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 " escape shortcut
 let g:better_escape_shortcut = 'jk'
 
-" ===================
-" === DelimitMate ===
-" ===================
-
-" matching pairs
-let delimitMate_matchpairs = "(:),[:],{:}"
-
-" expand return
-let delimitMate_expand_cr = 1
-
 " ================
 " === DevIcons ===
 " ================
