@@ -7,7 +7,7 @@
 # ================
 
 # data location
-data.location = ~/.local/share/task
+data.location = $XDG_DATA_HOME/task
 
 # vit report
 report.vit.sort    = urgency-
