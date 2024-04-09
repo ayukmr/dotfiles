@@ -103,7 +103,7 @@ color.sync.changed  = bold cyan
 color.sync.rejected = bold red
 
 # tags
-color.tagged = blue
+color.tagged   = blue
 color.tag.next = blue
 
 # priority
