@@ -25,4 +25,3 @@ treesitter.setup {
   },
 }
 EOF
-
