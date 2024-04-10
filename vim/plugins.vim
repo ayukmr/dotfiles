@@ -255,7 +255,7 @@ let g:matchup_matchparen_end_sign = '⯇'
 let g:rooter_patterns = [
   \ '.git',
   \ 'Makefile', 'Gemfile', 'Cargo.toml', 'package.json', 'shard.yml',
-  \ '=wiki', '=org',
+  \ '=wiki',
 \]
 
 " =============
