@@ -124,9 +124,6 @@ Plug 'williamboman/mason-lspconfig.nvim', Nvim({ 'as': 'mason-lspconfig' })
 " [matchup] enhanced matchit
 Plug 'andymass/vim-matchup', { 'as': 'matchup' }
 
-" [ninja-feet] end of text objects
-Plug 'tommcdo/vim-ninja-feet', { 'as': 'ninja-feet' }
-
 " [none-ls] use neovim as a language server
 Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 
