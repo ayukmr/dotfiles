@@ -28,6 +28,8 @@ urgency.user.tag.OVERDUE.coefficient  = 8
 alias.cal = calendar
 alias.bdn = burndown
 alias.burndown = burndown.daily
+alias.hist = ghistory
+alias.ghistory = ghistory.daily
 
 # disable week number
 displayweeknumber = 0
