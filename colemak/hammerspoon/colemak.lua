@@ -3,8 +3,7 @@
 -- ===========================
 
 -- terminal window filter
-terminalFilter =
-    hs.window.filter.new { "kitty", "Alacritty" }
+terminalFilter = hs.window.filter.new { "kitty" }
 
 -- colemak when unfocused
 terminalFilter:subscribe(
