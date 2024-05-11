@@ -1,0 +1,10 @@
+# ========================
+# === Sioyek Bootstrap ===
+# ========================
+
+config:
+  dirs:
+    - ~/Library/Application Support/sioyek
+
+  files:
+    - ~/Library/Application Support/sioyek/prefs_user.config: 'source ~/.cfg/sioyek/prefs.config'
