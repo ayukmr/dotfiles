@@ -32,7 +32,7 @@ white   = "#a9a9a9"
 # cursor
 [colors.cursor]
 cursor = "#a9a9a9"
-text   = "#1e1e1e"
+text   = "#1f1f1f"
 
 # selection
 [colors.selection]
