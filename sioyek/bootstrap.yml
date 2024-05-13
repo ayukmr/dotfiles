@@ -8,3 +8,6 @@ config:
 
   files:
     - ~/Library/Application Support/sioyek/prefs_user.config: 'source ~/.cfg/sioyek/prefs.config'
+
+  link:
+    - ~/Library/Application Support/sioyek/keys_user.config: keys.config
