@@ -9,8 +9,7 @@ config:
   shell:
     - brew analytics off: 'disabling analytics'
 
-    - brew tap homebrew/aliases:    'tapping homebrew/aliases'
-    - brew tap homebrew/cask-fonts: 'tapping homebrew/cask-fonts'
+    - brew tap homebrew/aliases: 'tapping homebrew/aliases'
 
     - brew alias i=install:           'setting install alias'
     - brew alias ic='install --cask': 'setting cask install alias'
@@ -46,7 +45,6 @@ packages:
       - ruby
       - rust
       - yarn
-      - golang
       - python
 
       # viewers
@@ -59,7 +57,6 @@ packages:
       - bottom
       - ranger
       - litecli
-      - newsboat
       - git-delta
 
       # data tools
@@ -74,13 +71,15 @@ packages:
       - coreutils
       - moreutils
 
+      # window manager
+      - koekeishiya/formulae/yabai
+
     - brew install --cask:
       - iina
       - kitty
       - stats
+      - sioyek
       - raycast
-      - amethyst
-      - maestral
       - shortcat
       - hiddenbar
       - sf-symbols
