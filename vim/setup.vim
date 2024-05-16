@@ -36,7 +36,6 @@ func! s:custom_intro() abort
   endif
 
   " buffer setup
-  enew
   setlocal nonumber signcolumn=number
   setlocal bufhidden=wipe buftype=nofile
   setlocal nocursorcolumn nocursorline
