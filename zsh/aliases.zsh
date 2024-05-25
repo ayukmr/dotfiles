@@ -49,7 +49,6 @@ alias mkd='mkdir'
 # lang aliases
 alias nd='node'
 alias sw='swift'
-alias gr='go run .'
 alias osa='osascript'
 
 # sqlite aliases
