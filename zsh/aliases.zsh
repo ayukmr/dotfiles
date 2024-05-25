@@ -29,7 +29,10 @@ alias cpr='cp -r'
 
 # cd aliases
 alias cdf='cd "$(pwdf)"'
-function mkcd { mkdir -p "$@" && cd "$_" }
+
+function mkcd {
+  mkdir -p "$@" && cd "$_"
+}
 
 # shorthands
 alias b='bat'
