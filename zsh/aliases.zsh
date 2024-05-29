@@ -28,8 +28,6 @@ alias rmf='rm -rf'
 alias cpr='cp -r'
 
 # cd aliases
-alias cdf='cd "$(pwdf)"'
-
 function mkcd {
   mkdir -p "$@" && cd "$_"
 }
