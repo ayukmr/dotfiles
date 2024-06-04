@@ -15,6 +15,10 @@ set keyboardlayoutforce true
 set escapehatchsidebarhack false
 bind --mode=browser <C-q> escapehatch
 
+" unbind tab closing
+unbind d
+unbind D
+
 " searching
 bind / fillcmdline find
 bind ? fillcmdline find -?
