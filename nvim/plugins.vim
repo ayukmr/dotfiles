@@ -8,11 +8,11 @@
 
 lua <<EOF
 -- treesitter module
-local treesitter = require 'nvim-treesitter.configs'
+local treesitter = require "nvim-treesitter.configs"
 
 -- setup treesitter
 treesitter.setup {
-  ensure_installed = 'all',
+  ensure_installed = "all",
 
   highlight = {
     enable = true,
