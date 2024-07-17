@@ -40,7 +40,7 @@
 #sidebar-box {
   width:   275px !important;
   padding: 1px 4px;
-  background: #282828;
+  background: #282828 !important;
 }
 
 /* url bar */
@@ -64,8 +64,17 @@
 }
 
 /* hide page actions */
-#urlbar-input-container > :not(.urlbar-input-box),
-.urlbar-input-box > :not(#urlbar-input) {
+#page-action-buttons {
+  display: none;
+}
+
+/* hide tracking protection badge */
+#tracking-protection-icon-container {
+  display: none;
+}
+
+/* hide identity badge */
+#identity-box {
   display: none;
 }
 
@@ -112,6 +121,7 @@
 #nav-bar {
   box-shadow: none !important;
   margin: -5px 0 10px 0;
+  border-top: none !important;
 }
 
 /* ======================= */
