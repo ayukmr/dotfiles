@@ -127,6 +127,9 @@ Plug 'andymass/vim-matchup', { 'as': 'matchup' }
 " [none-ls] use neovim as a language server
 Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 
+" [none-ls-extras] extra sources for null ls
+Plug 'nvimtools/none-ls-extras.nvim', { 'as': 'none-ls-extras' }
+
 " [onedark] one dark theme
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 
