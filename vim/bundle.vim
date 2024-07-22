@@ -43,7 +43,7 @@ Plug 'hrsh7th/cmp-buffer', Nvim()
 " [cmp-cmdline] completion for command line
 Plug 'hrsh7th/cmp-cmdline', Nvim()
 
-" [cmp-luasnip] completion using ultisnips
+" [cmp-luasnip] completion using luasnip
 Plug 'saadparwaiz1/cmp_luasnip', Nvim({ 'as': 'cmp-luasnip' })
 
 " [cmp-nvim-lsp] completion using nvim lsp
