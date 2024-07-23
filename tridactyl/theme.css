@@ -36,7 +36,8 @@
 
   /* command line */
   --tridactyl-cmdl-bg: #282828;
-  --tridactyl-cmdl-line-height:    1.6;
+  --tridactyl-cmdl-font-size:   10pt;
+  --tridactyl-cmdl-line-height: 1.6;
   --tridactyl-cmplt-option-height: 1.4em;
 
   /* command line font */
@@ -81,6 +82,12 @@
 :root .focused .url {
   /* base color */
   color: var(--tridactyl-of-fg);
+}
+
+/* completions */
+:root #completions > div > table {
+  /* increase font size */
+  font-size: 10pt;
 }
 
 /* completions parent */
