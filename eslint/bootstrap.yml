@@ -4,4 +4,4 @@
 
 config:
   link:
-    - ~/.eslintrc.json: eslintrc.json
+    - ~/: eslint.config.mjs
