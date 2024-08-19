@@ -215,6 +215,11 @@ scripts:
       # ==============
 
       - ? defaults write
+          -g com.apple.mouse.linear
+          -bool true
+        : 'disabling mouse acceleration'
+
+      - ? defaults write
           -g NSUseAnimatedFocusRing
           -bool false
         : 'disabling focus ring animation'
