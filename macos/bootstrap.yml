@@ -208,7 +208,7 @@ scripts:
       - ? defaults write
           -g ApplePressAndHoldEnabled
           -bool false
-        : 'disable accents menu when holding key'
+        : 'disabling accent menu when holding key'
 
       # ==============
       # === Global ===
