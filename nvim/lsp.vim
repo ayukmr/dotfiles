@@ -44,7 +44,7 @@ local symbols = {
 
 -- setup cmp
 cmp.setup {
-  -- ultisnips snippets
+  -- luasnip snippets
   snippet = {
     expand = function(args)
       -- luasnip module
