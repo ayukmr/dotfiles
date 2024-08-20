@@ -92,7 +92,7 @@ cmp.setup {
     ["<Tab>"]   = cmp.mapping.select_next_item(),
     ["<S-Tab>"] = cmp.mapping.select_prev_item(),
 
-    ["<CR>"]   = cmp.mapping.confirm { select = true },
+    ["<CR>"]   = cmp.mapping.confirm(),
     ["<M-CR>"] = cmp.mapping.complete(),
 
     ["<C-u>"] = cmp.mapping.scroll_docs(-4),
