@@ -2,11 +2,20 @@
 " === Vim Bundle ===
 " ==================
 
-" enable plugin on condition
+" neovim only plugins
 func! Nvim(...) abort
   let opts = get(a:000, 0, {})
 
   return has('nvim')
+    \ ? opts
+    \ : extend(opts, { 'on': [], 'for': [] })
+endfunc
+
+" vim only plugins
+func! Vim(...) abort
+  let opts = get(a:000, 0, {})
+
+  return !has('nvim')
     \ ? opts
     \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
@@ -131,7 +140,10 @@ Plug 'nvimtools/none-ls.nvim', { 'as': 'none-ls' }
 Plug 'nvimtools/none-ls-extras.nvim', { 'as': 'none-ls-extras' }
 
 " [onedark] one dark theme
-Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
+Plug 'joshdick/onedark.vim', Vim({ 'as': 'onedark' })
+
+" [onedark-nvim] one dark theme for neovim
+Plug 'navarasu/onedark.nvim', Nvim({ 'as': 'onedark-nvim' })
 
 " [pasta] automatic paste indentation
 Plug 'ku1ik/vim-pasta', { 'as': 'pasta' }

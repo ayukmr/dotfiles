@@ -128,19 +128,16 @@ nnoremap <silent> ]b :<C-u>call lightline#bufferline#go_relative(v:count1)<CR>
 " === One Dark ===
 " ================
 
-" default colors
-let s:colors = onedark#GetColors()
-
 " colors
-let s:red    = [s:colors.red.gui,    s:colors.red.cterm]
-let s:green  = [s:colors.green.gui,  s:colors.green.cterm]
-let s:yellow = [s:colors.yellow.gui, s:colors.yellow.cterm]
-let s:blue   = [s:colors.blue.gui,   s:colors.blue.cterm]
-let s:cyan   = [s:colors.cyan.gui,   s:colors.cyan.cterm]
-let s:purple = [s:colors.purple.gui, s:colors.purple.cterm]
-let s:white  = [s:colors.white.gui,  s:colors.white.cterm]
-let s:cursor_grey = [s:colors.cursor_grey.gui, s:colors.cursor_grey.cterm]
-let s:visual_grey = [s:colors.visual_grey.gui, s:colors.visual_grey.cterm]
+let s:red    = ['#d05c65', 204]
+let s:green  = ['#88b369', 114]
+let s:yellow = ['#d5b06b', 180]
+let s:blue   = ['#519fdf', 39]
+let s:cyan   = ['#46a6b2', 38]
+let s:purple = ['#b668cd', 170]
+let s:white  = ['#a9a9a9', 145]
+let s:cursor_grey = ['#252525', 236]
+let s:visual_grey = ['#303030', 237]
 
 " define palette
 let s:palette = {}

@@ -2,6 +2,11 @@
 " === Vim Highlights ===
 " ======================
 
+" only run in vim
+if has('nvim')
+  finish
+endif
+
 " enable gui colors
 if has('termguicolors')
   set termguicolors
@@ -40,7 +45,7 @@ colorscheme onedark
 " set highlights
 func! s:set_highlights() abort
   " search highlight
-  highlight! Search cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
+  highlight Search cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
   highlight! link IncSearch Search
 
   " menu selections
@@ -63,13 +68,13 @@ func! s:set_highlights() abort
   highlight LightlineWarn  ctermfg=180 ctermbg=236 guifg=#d5b06b guibg=#252525
   highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#519fdf guibg=#252525
 
-  " yank color
-  highlight! link HighlightedyankRegion Search
-
   " sneak colors
   highlight! link Sneak      PmenuSel
   highlight! link SneakLabel PmenuSel
   highlight! link SneakScope Cursor
+
+  " yank color
+  highlight! link HighlightedyankRegion Search
 
   if has('nvim')
     " cmp matching text
