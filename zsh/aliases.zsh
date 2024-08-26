@@ -66,6 +66,16 @@ alias ipy='ipython'
 alias s='shards'
 alias sr='shards run'
 
+# flutter aliases
+alias f='flutter'
+alias fr='flutter run'
+alias fb='flutter build'
+alias fe='flutter emulator'
+alias fel='flutter emulator --launch'
+alias fp='flutter pub'
+alias fpg='flutter pub get'
+alias fpa='flutter pub add'
+
 # rust aliases
 alias c='cargo'
 alias cr='cargo run'

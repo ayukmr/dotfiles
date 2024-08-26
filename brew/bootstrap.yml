@@ -61,7 +61,6 @@ packages:
 
       # data tools
       - jq
-      - gawk
       - wget
       - direnv
       - httpie

@@ -80,6 +80,13 @@ augroup dirvish_no_numbers
   au FileType dirvish setlocal nonumber
 augroup END
 
+" ====================
+" === EditorConfig ===
+" ====================
+
+" disable line length column
+let g:EditorConfig_disable_rules = ['max_line_length']
+
 " ==============
 " === Eunuch ===
 " ==============
