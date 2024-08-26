@@ -2,11 +2,20 @@
 " === Vim Bundle ===
 " ==================
 
-" enable plugin on condition
+" neovim exclusive
 func! Nvim(...) abort
   let opts = get(a:000, 0, {})
 
   return has('nvim')
+    \ ? opts
+    \ : extend(opts, { 'on': [], 'for': [] })
+endfunc
+
+" vim exclusive
+func! Vim(...) abort
+  let opts = get(a:000, 0, {})
+
+  return !has('nvim')
     \ ? opts
     \ : extend(opts, { 'on': [], 'for': [] })
 endfunc
@@ -165,7 +174,7 @@ Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 Plug 'tpope/vim-speeddating', { 'as': 'speeddating' }
 
 " [splitjoin] split and join lines
-Plug 'andrewradev/splitjoin.vim', { 'as': 'splitjoin' }
+Plug 'andrewradev/splitjoin.vim', Vim({ 'as': 'splitjoin' })
 
 " [staff] minimal task format
 Plug 'ayukmr/staff'
@@ -178,6 +187,9 @@ Plug 'wellle/targets.vim', { 'as': 'targets' }
 
 " [treesitter] enhanced syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', Nvim({ 'as': 'treesitter', 'do': ':TSUpdate' })
+
+" [treesj] splitjoin using treesitter
+Plug 'Wansmer/treesj', Nvim()
 
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
