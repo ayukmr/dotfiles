@@ -12,6 +12,7 @@ aliases:
   # other aliases
   al:  auth login
   rc:  release create
+  pc:  pr create
   rpc: repo create
 
 # preferred protocol
