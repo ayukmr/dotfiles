@@ -2,6 +2,10 @@
 " === Neovim Highlights ===
 " =========================
 
+" ================
+" === One Dark ===
+" ================
+
 " theme config
 let g:onedark_config = {
   \ 'ending_tildes': 1,
@@ -75,3 +79,26 @@ augroup END
 
 " initialize highlights
 call s:set_highlights()
+
+" ==================
+" === Treesitter ===
+" ==================
+
+lua <<EOF
+-- treesitter module
+local treesitter = require "nvim-treesitter.configs"
+
+-- setup treesitter
+treesitter.setup {
+  ensure_installed = "all",
+
+  highlight = {
+    enable = true,
+  },
+
+  -- matchup support
+  matchup = {
+    enable = true,
+  },
+}
+EOF
