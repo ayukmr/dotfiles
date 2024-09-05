@@ -35,7 +35,7 @@
   "keybindings": {
     "_execute_sidebar_action": "MacCtrl+Shift+E",
 
-    "switch_to_panel_0":  "MacCtrl+Alt+1",
-    "switch_to_panel_1": "MacCtrl+Alt+2"
+    "switch_to_panel_0":  "MacCtrl+1",
+    "switch_to_panel_1": "MacCtrl+2"
   }
 }
