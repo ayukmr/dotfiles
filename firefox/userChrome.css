@@ -3,15 +3,6 @@
 /* ====================== */
 
 /* =============== */
-/* === General === */
-/* =============== */
-
-/* hide sidebar header */
-#sidebar-header {
-  display: none;
-}
-
-/* =============== */
 /* === Toolbar === */
 /* =============== */
 
@@ -41,6 +32,11 @@
   width:   300px !important;
   padding: 1px 4px;
   background: #282828 !important;
+}
+
+/* hide sidebar header */
+#sidebar-header {
+  display: none;
 }
 
 /* url bar */
