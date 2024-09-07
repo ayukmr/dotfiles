@@ -3,7 +3,7 @@
 // =================================
 
 // run after startup
-_ucUtils.startupFinished().then(() => {
+UC_API.Runtime.startupFinished().then(() => {
   const sidebar = document.getElementById('sidebar-box');
   const toolbar = document.getElementById('navigator-toolbox');
 
