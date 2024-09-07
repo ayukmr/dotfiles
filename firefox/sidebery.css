@@ -46,10 +46,9 @@
   background: var(--frame-bg);
 }
 
-/* container highlight */
+/* hide container highlight */
 .ctx {
-  border-radius: var(--tabs-border-radius);
-  right: 4px !important;
+  display: none;
 }
 
 /* hide flash animation */
