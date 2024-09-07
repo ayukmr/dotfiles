@@ -12,6 +12,7 @@
     "tabsLvlDots":    false,
     "searchBarMode":  "none",
     "showNewTabBtns": false,
+    "pinnedTabsPosition": "top",
 
     "ctxMenuNative":      true,
     "ctxMenuRenderIcons": false,
@@ -20,6 +21,7 @@
     "animationSpeed": "fast",
     "tabSwitchDelay": 0,
 
+    "hideInact":       true,
     "hideEmptyPanels": false,
     "skipEmptyPanels": false,
     "containersSortByName": true,

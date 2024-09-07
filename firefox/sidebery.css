@@ -55,3 +55,28 @@
 .flash-fx {
   display: none;
 }
+
+/* pinned tabs */
+.PinnedTabsBar {
+  /* bottom margin */
+  margin-bottom: 4px;
+
+  /* align tabs */
+  display: flex;
+  gap: 8px !important;
+  justify-content: center;
+}
+
+/* wide pinned tabs */
+.PinnedTabsBar .tab-wrapper {
+  width: 20%;
+  flex-grow: 1;
+}
+.PinnedTabsBar .Tab {
+  width: 100%;
+}
+
+/* pinned tabs background */
+.PinnedTabsBar .Tab[data-active="false"] .body {
+  background: #2d2d2d;
+}
