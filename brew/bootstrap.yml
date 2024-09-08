@@ -40,6 +40,14 @@ packages:
       - tmux
       - tmuxinator
 
+      # taskwarrior
+      - task
+      - vit
+
+      # yabai
+      - koekeishiya/formulae/yabai
+      - koekeishiya/formulae/skhd
+
       # langs
       - node
       - ruby
@@ -57,6 +65,7 @@ packages:
       - bottom
       - ranger
       - litecli
+      - neofetch
       - git-delta
 
       # data tools
@@ -64,20 +73,22 @@ packages:
       - wget
       - direnv
       - httpie
+      - fortune
       - ripgrep
+      - syncthing
 
       # tools
       - coreutils
       - moreutils
 
-      # window manager
-      - koekeishiya/formulae/yabai
-
     - brew install --cask:
       - iina
       - kitty
       - stats
+      - steam
+      - beeper
       - sioyek
+      - firefox
       - raycast
       - shortcat
       - sf-symbols
