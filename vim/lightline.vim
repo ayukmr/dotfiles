@@ -72,12 +72,8 @@ let g:lightline.inactive = {
 
 " tabline
 let g:lightline.tabline = {
-  \ 'left': [
-  \   ['buffers'],
-  \ ],
-  \ 'right': [
-  \   ['tabs'],
-  \ ]
+  \ 'left':  [['buffers']],
+  \ 'right': [['tabs']],
 \}
 
 " single tab
