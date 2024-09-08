@@ -105,6 +105,11 @@ scripts:
         : 'disabling warning on changing file extension'
 
       - ? defaults write
+          com.apple.finder DisableAllAnimations
+          -bool true
+        : 'disabling opening animations'
+
+      - ? defaults write
           -g NSToolbarTitleViewRolloverDelay
           -float 0
         : 'disabling delay on hovering for icon'
