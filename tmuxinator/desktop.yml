@@ -11,7 +11,7 @@ windows:
       panes:
         -
         -
-        - htop
+        - bottom
 
   - editor: anyvim
   - tasks:  vit

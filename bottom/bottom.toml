@@ -69,36 +69,13 @@ graph_color = "gray"
 
 # first row
 [[row]]
-ratio = 5
 
-# cpu
+# cpu usage
 [[row.child]]
 type = "cpu"
 
 # second row
 [[row]]
-ratio = 5
-
-# network usage
-[[row.child]]
-ratio = 5
-type  = "network"
-
-# split child
-[[row.child]]
-ratio = 2
-
-# disk usage
-[[row.child.child]]
-type = "disk"
-
-# battery
-[[row.child.child]]
-type = "battery"
-
-# third row
-[[row]]
-ratio = 6
 
 # memory usage
 [[row.child]]
