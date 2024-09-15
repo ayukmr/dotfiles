@@ -22,7 +22,7 @@ export LESS_TERMCAP_us="$(print -P '%F{green}')"
 export LESS_TERMCAP_ue="$(print -P '%f')"
 
 # fzf options
-export FZF_DEFAULT_COMMAND="rg --files --hidden"
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_OPTS="
   --exact
   --reverse
