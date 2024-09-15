@@ -13,6 +13,9 @@ export EDITOR='anyvim'
 # === Commands ===
 # ================
 
+# colors for lsd
+export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/LS_COLORS)"
+
 # colorize man pages
 export LESS_TERMCAP_md="$(print -P '%B%F{blue}')"
 export LESS_TERMCAP_us="$(print -P '%F{green}')"
