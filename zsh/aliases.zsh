@@ -11,7 +11,6 @@ alias -- +x='chmod +x'
 alias path='tr -s ":" "\n" <<< "$PATH"'
 alias rmds='find . -name .DS_Store -type file -delete'
 alias zgnr='zgen reset && exec -l "$SHELL"'
-alias clear='tput reset && unset FIRST_LINE'
 
 # ls aliases
 alias l='lsd'
@@ -26,7 +25,6 @@ alias cpr='cp -r'
 # shorthands
 alias b='bat'
 alias so='source'
-alias clr='clear'
 alias drv='direnv'
 
 # creation aliases
