@@ -3,13 +3,10 @@
 # ================
 
 # defaults
-path=('/usr/local/bin' '/usr/bin' '/bin' '/usr/sbin' '/sbin')
+path=('/opt/homebrew/bin' '/usr/local/bin' '/usr/bin' '/bin' '/usr/sbin' '/sbin')
 
 # golang binaries
 path+="$HOME/go/bin"
-
-# python binaries
-path+="$HOME/Library/Python/3.8/bin"
 
 # rust binaries
 path+="$HOME/.cargo/bin"

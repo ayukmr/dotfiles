@@ -9,16 +9,9 @@
 # editor
 export EDITOR='anyvim'
 
-# disable deprecation message in bash
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
 # ================
 # === Commands ===
 # ================
-
-# colors for ls
-export LSCOLORS='ExFxxxDxBxhxhxhxhxcxcx'
-export LS_COLORS="$(tr '\n' ':' < ~/.cfg/zsh/LS_COLORS)"
 
 # colorize man pages
 export LESS_TERMCAP_md="$(print -P '%B%F{blue}')"
@@ -69,7 +62,6 @@ export RIPGREP_CONFIG_PATH="$HOME/.cfg/rg/rgconfig"
 
 # rubygems home
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-path+="$GEM_HOME/bin"
 
 # =============
 # === Shell ===
