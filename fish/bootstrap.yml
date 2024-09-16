@@ -1,0 +1,13 @@
+# ======================
+# === Fish Bootstrap ===
+# ======================
+
+config:
+  dirs:
+    - ~/.config/fish
+
+  files:
+    - ~/.config/fish/config.fish: |
+        if status is-interactive
+          source ~/.cfg/fish/config.fish
+        end
