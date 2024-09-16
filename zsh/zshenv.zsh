@@ -3,8 +3,8 @@
 # =======================
 
 # zsh files
-export ZDOTDIR="$HOME/.zsh"
-export ZSH_CACHE_DIR="$HOME/.zsh/cache"
+export ZDOTDIR=~/.zsh
+export ZSH_CACHE_DIR=~/.zsh/cache
 
 # load add-zsh-hook
 autoload -Uz add-zsh-hook

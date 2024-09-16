@@ -3,7 +3,7 @@
 # ==================
 
 # plugins location
-ZGEN_DIR="$HOME/.zsh/bundle"
+ZGEN_DIR=~/.zsh/bundle
 
 source ~/.zsh/zgen/zgen.zsh
 

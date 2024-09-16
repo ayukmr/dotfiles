@@ -6,22 +6,22 @@
 path=('/opt/homebrew/bin' '/usr/local/bin' '/usr/bin' '/bin' '/usr/sbin' '/sbin')
 
 # golang binaries
-path+="$HOME/go/bin"
+path+=~/go/bin
 
 # rust binaries
-path+="$HOME/.cargo/bin"
+path+=~/.cargo/bin
 
 # ruby binaries
 path+="$GEM_HOME/bin"
 
 # yarn binaries
-path+="$HOME/.yarn/bin"
+path+=~/.yarn/bin
 
 # config binaries
-path+="$HOME/.cfg/bin"
+path+=~/.cfg/bin
 
 # binaries folder
-path+="$HOME/.local/bin"
+path+=~/.local/bin
 
 # homebrew env
 eval "$(brew shellenv)"
