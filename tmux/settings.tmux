@@ -7,7 +7,7 @@ set -g default-terminal xterm-256color
 set -ga terminal-overrides ',*256col*:Tc'
 
 # default shell
-set -g default-shell /bin/zsh
+set -g default-shell /opt/homebrew/bin/fish
 
 # clock mode
 set -g clock-mode-colour '#88b369'
