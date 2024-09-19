@@ -7,5 +7,5 @@ source ~/.cfg/fish/exports.fish
 source ~/.cfg/fish/setup.fish
 source ~/.cfg/fish/theme.fish
 source ~/.cfg/fish/prompt.fish
-source ~/.cfg/fish/abbrs.fish
+source ~/.cfg/fish/aliases.fish
 source ~/.cfg/fish/keybinds.fish
