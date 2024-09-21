@@ -11,8 +11,5 @@ config:
 
 packages:
   packages:
-    - cargo install:
-      - evcxr_repl
-
     - cargo install --git:
       - https://github.com/XAMPPRocky/tokei.git tokei
