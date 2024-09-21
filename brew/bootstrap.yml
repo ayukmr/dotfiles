@@ -30,6 +30,7 @@ packages:
     - brew install:
       # shells
       - zsh
+      - fish
       - bash
 
       # dev
@@ -75,6 +76,7 @@ packages:
       - httpie
       - fortune
       - ripgrep
+      - miniserve
       - syncthing
 
       # tools
@@ -87,6 +89,7 @@ packages:
       - stats
       - steam
       - beeper
+      - rocket
       - sioyek
       - firefox
       - raycast
