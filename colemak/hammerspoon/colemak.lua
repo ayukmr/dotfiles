@@ -2,11 +2,11 @@
 -- === Hammerspoon Colemak ===
 -- ===========================
 
--- terminal window filter
-terminalFilter = hs.window.filter.new { "kitty" }
+-- qwerty window filter
+qwertyFilter = hs.window.filter.new { "kitty", "sioyek" }
 
 -- colemak when unfocused
-terminalFilter:subscribe(
+qwertyFilter:subscribe(
     hs.window.filter.windowUnfocused,
     function()
         hs.keycodes.setLayout("Colemak")
@@ -14,7 +14,7 @@ terminalFilter:subscribe(
 )
 
 -- qwerty when focused
-terminalFilter:subscribe(
+qwertyFilter:subscribe(
     hs.window.filter.windowFocused,
     function()
         hs.keycodes.setLayout("ABC")
