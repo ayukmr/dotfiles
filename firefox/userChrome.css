@@ -32,11 +32,35 @@
   width:   300px !important;
   padding: 1px 4px;
   background: #282828 !important;
+
+  transition: margin 0.1s ease-in-out;
 }
 
 /* hide sidebar header */
 #sidebar-header {
   display: none;
+}
+
+/* sidebar closing animation */
+#sidebar-box[hidden='true'] {
+  display: flex !important;
+  margin-left: -300px !important;
+}
+
+/* hide toolbar buttons when closed */
+.titlebar-buttonbox-container {
+  transition: visibility 0.05s;
+}
+#sidebar-box[hidden='true'] .titlebar-buttonbox-container {
+  visibility: hidden;
+}
+
+/* hide url bar when closed */
+#urlbar {
+  transition: visibility 0.05s;
+}
+#sidebar-box[hidden='true'] #urlbar {
+  visibility: hidden;
 }
 
 /* url bar */
