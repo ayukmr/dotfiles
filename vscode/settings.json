@@ -8,6 +8,7 @@
   // ========================
 
   "editor.fontFamily": "Iosevka Nerd Font Mono",
+  "editor.fontSize": 14,
   "editor.cursorStyle": "block",
   "workbench.colorTheme": "One Dark Pro",
   "workbench.productIconTheme": "fluent-icons",
