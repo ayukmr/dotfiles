@@ -173,9 +173,6 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'as': 'sexp-mappings', 'for
 " [snippets] snippets for luasnip
 Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
-" [speeddating] better dating
-Plug 'tpope/vim-speeddating', { 'as': 'speeddating' }
-
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', Vim({ 'as': 'splitjoin' })
 
