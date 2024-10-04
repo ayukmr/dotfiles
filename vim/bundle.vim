@@ -124,6 +124,9 @@ Plug 'ojroques/nvim-lspfuzzy', { 'as': 'lspfuzzy' }
 " [luasnip] snippets manager
 Plug 'L3MON4D3/LuaSnip', Nvim({ 'as': 'luasnip' })
 
+" [markdown] markdown support
+Plug 'preservim/vim-markdown', { 'as': 'markdown' }
+
 " [mason] installer for lsp and dap
 Plug 'williamboman/mason.nvim', Nvim({ 'as': 'mason' })
 
@@ -153,7 +156,7 @@ Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
 " [polyglot] language syntax pack
 let g:polyglot_disabled = ['sensible']
-Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
+Plug 'sheerun/vim-polyglot', Vim({ 'as': 'polyglot' })
 
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
