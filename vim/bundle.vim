@@ -25,9 +25,6 @@ call plug#begin('~/.vim/bundle')
 " [sneak] quicker movement
 Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 
-" [abolish] word variant commands
-Plug 'tpope/vim-abolish', { 'as': 'abolish' }
-
 " [asterisk] improved star motions
 Plug 'haya14busa/vim-asterisk', { 'as': 'asterisk' }
 
@@ -81,9 +78,6 @@ Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
 " [eunuch] unix commands
 Plug 'tpope/vim-eunuch', { 'as': 'eunuch' }
-
-" [exchange] exchange text
-Plug 'tommcdo/vim-exchange', { 'as': 'exchange' }
 
 " [fugitive] git wrapper
 Plug 'tpope/vim-fugitive', { 'as': 'fugitive' }
@@ -178,9 +172,6 @@ Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', Vim({ 'as': 'splitjoin' })
-
-" [staff] minimal task format
-Plug 'ayukmr/staff'
 
 " [surround] edit surroundings
 Plug 'tpope/vim-surround', { 'as': 'surround' }
