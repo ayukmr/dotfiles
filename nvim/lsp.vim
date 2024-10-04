@@ -241,7 +241,8 @@ nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol("")<CR>
 
 " buffer keybinds
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
-nnoremap <silent> gD :lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gd :lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gD <C-w>v:lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gI :lua vim.lsp.buf.implementation()<CR>
 nnoremap <silent> gT :lua vim.lsp.buf.type_definition()<CR>
 
