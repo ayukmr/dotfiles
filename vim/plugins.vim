@@ -22,7 +22,6 @@ map gz# <Plug>(asterisk-gz#)
 
 " delete buffer
 nnoremap <silent> <Leader>q :Bdelete<CR>
-nnoremap <silent> <Leader>Q :Bdelete!<CR>
 
 " =====================
 " === Better Escape ===

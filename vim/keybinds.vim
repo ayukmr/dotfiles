@@ -17,6 +17,9 @@ noremap gV `[v`]
 " yank to end of line
 nnoremap Y y$
 
+" close window
+nnoremap <silent> <Leader>Q :q<CR>
+
 " repeat last substitution
 nnoremap <silent> & :&&<CR>
 
