@@ -36,7 +36,7 @@
 
   /* command line */
   --tridactyl-cmdl-bg: #282828;
-  --tridactyl-cmdl-font-size:   10pt;
+  --tridactyl-cmdl-font-size:   16px;
   --tridactyl-cmdl-line-height: 1.6;
   --tridactyl-cmplt-option-height: 1.4em;
 
@@ -52,21 +52,17 @@
 
 /* mode status */
 :root .TridactylStatusIndicator {
-  /* bold font */
   font-weight: bold !important;
 
-  /* spacing */
   position: fixed !important;
   bottom:   10px  !important;
   right:    10px  !important;
 
-  /* padding */
   padding: 3px 5px !important;
 }
 
 /* private mode status */
 :root .TridactylStatusIndicator.TridactylPrivate {
-  /* inherit colors */
   color:      inherit !important;
   background: inherit !important;
   border:     inherit !important;
@@ -74,24 +70,62 @@
 
 /* focused option */
 :root .focused {
-  /* bold font */
   font-weight: bold;
 }
 
 /* focused url */
 :root .focused .url {
-  /* base color */
   color: var(--tridactyl-of-fg);
 }
 
 /* completions */
+:root #completions {
+  border: none !important;
+
+  /* move to top */
+  order: 2;
+}
+
+/* completions table */
 :root #completions > div > table {
-  /* increase font size */
-  font-size: 10pt;
+  padding:   16px;
+  font-size: 14px;
 }
 
 /* completions parent */
 :root.TridactylOwnNamespace body:has(#completions) {
-  /* black background */
-  background: #000000;
+  background: #282828;
+}
+
+/* hide colon */
+:root #tridactyl-colon::before {
+  content: '';
+}
+
+/* command line input */
+:root #tridactyl-input {
+  padding: 10px 16px;
+}
+
+/* completions header */
+:root #completions .sectionHeader {
+  font-size:  14px;
+  background: none;
+  padding:    16px 16px 0 16px !important;
+}
+
+/* completion options */
+:root #completions .optionContainer {
+  padding-top: 10px;
+}
+
+/* command line wrapper */
+:root #cmdline_iframe {
+  position: fixed !important;
+
+  top:   25% !important;
+  left:  10% !important;
+  width: 80% !important;
+
+  filter: drop-shadow(0px 0px 20px #000000) !important;
 }
