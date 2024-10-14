@@ -116,7 +116,7 @@ Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 Plug 'ojroques/nvim-lspfuzzy', { 'as': 'lspfuzzy' }
 
 " [luasnip] snippets manager
-Plug 'L3MON4D3/LuaSnip', Nvim({ 'as': 'luasnip' })
+Plug 'l3mon4d3/luasnip', Nvim({ 'as': 'luasnip' })
 
 " [markdown] markdown support
 Plug 'preservim/vim-markdown', { 'as': 'markdown' }
