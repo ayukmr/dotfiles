@@ -96,5 +96,5 @@ alias vi='vim'
 alias nv='nvim'
 
 # httpie aliases
-alias hp='https'
+alias hps='https'
 alias hpx='http'
