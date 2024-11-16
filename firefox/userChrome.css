@@ -32,6 +32,7 @@
   width:   300px !important;
   padding: 1px 4px;
   background: #282828 !important;
+  z-index: 1000;
 
   transition: margin 0.1s ease-in-out;
 }
