@@ -16,13 +16,6 @@ scripts:
             - ? echo 'source ~/.cfg/colemak/vim/colemak.vim' >> ~/.cfg/vim/vimrc.vim
               : 'sourcing colemak.vim in vimrc'
 
-  qutebrowser:
-    test:
-      - "[[ \"$(tail -n 1 ~/.cfg/qutebrowser/config.py)\" != \"config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))\" ]]":
-          shell:
-            - ? echo "config.source(expanduser('~/.cfg/colemak/qutebrowser/colemak.py'))" >> ~/.cfg/qutebrowser/config.py
-              : 'sourcing colemak.py in qutebrowser config'
-
   hammerspoon:
     test:
       - "[[ \"$(tail -n 2 ~/.cfg/hammerspoon/init.lua)\" != 'package.path = os.getenv(\"HOME\") .. \"/.cfg/colemak/hammerspoon/?.lua;\" .. package.path\nrequire \"colemak\"' ]]":

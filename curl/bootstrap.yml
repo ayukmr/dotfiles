@@ -1,7 +1,0 @@
-# ======================
-# === Curl Bootstrap ===
-# ======================
-
-config:
-  link:
-    - ~/.curlrc: curlrc
