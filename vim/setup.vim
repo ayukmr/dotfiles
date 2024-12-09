@@ -40,6 +40,7 @@ func! s:custom_intro() abort
   setlocal bufhidden=wipe buftype=nofile
   setlocal nocursorcolumn nocursorline
   setlocal nolist noswapfile
+  setlocal filetype=intro
 
   " highlight title
   highlight IntroTitle cterm=bold ctermfg=39 gui=bold guifg=#519fdf
@@ -49,6 +50,23 @@ func! s:custom_intro() abort
   nnoremap <buffer> <silent> q :quitall!<CR>
   nnoremap <buffer> <silent> e :enew<CR>
   nnoremap <buffer> <silent> i :enew<CR>i
+
+  " display message
+  call s:display_message()
+endfunc
+
+" display intro message
+func! s:display_message() abort
+  " return if file specified and is not intro
+  if &filetype != 'intro' && (argc() || line2byte('$') != -1)
+    return
+  endif
+
+  " allow modifications
+  setlocal modifiable
+
+  " clear buffer
+  silent! execute '%delete _'
 
   " format version
   if has('nvim')
@@ -87,5 +105,6 @@ endfunc
 " show custom intro
 augroup custom_intro
   au!
-  au VimEnter * call s:custom_intro()
+  au VimEnter   * call s:custom_intro()
+  au WinResized * call s:display_message()
 augroup END
