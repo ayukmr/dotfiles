@@ -30,28 +30,3 @@ IRB.conf[:PROMPT][:DEFAULT] = {
 
 # auto indent
 IRB.conf[:AUTO_INDENT] = true
-
-# copy to clipboard
-def pbcopy(input)
-  str = input.to_s
-  IO.popen('pbcopy', 'w') { |f| f << str }
-  str
-end
-
-# get clipboard value
-def pbpaste
-  `pbpaste`
-end
-
-# object utils
-class Object
-  # read documentation for method
-  def ri(method = nil)
-    unless method && method =~ /^[A-Z]/
-      cls = is_a?(Class) ? name : self.class.name
-      method = [cls, method].compact.join('#')
-    end
-
-    system 'ri', method.to_s
-  end
-end
