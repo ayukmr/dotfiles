@@ -58,7 +58,7 @@ endfunc
 " display intro message
 func! s:display_message() abort
   " return if file specified and is not intro
-  if &filetype != 'intro' && (argc() || line2byte('$') != -1)
+  if &filetype != 'intro'
     return
   endif
 
