@@ -2,127 +2,109 @@
 " === Neovim LSP ===
 " ==================
 
-" ======================
-" === Cmp Completion ===
-" ======================
+" ========================
+" === Blink Completion ===
+" ========================
 
 " max completion items
 set pumheight=15
 
 lua <<EOF
--- cmp module
-local cmp = require "cmp"
+-- blink module
+local blink_cmp = require "blink.cmp"
 
--- symbols for items
+-- symbols for kinds
 local symbols = {
-  Text          = "",
-  Method        = "󰅲",
-  Function      = "󰅲",
-  Constructor   = "",
-  Field         = "",
-  Variable      = "",
-  Class         = "",
-  Interface     = "󰠱",
-  Module        = "󰆧",
-  Property      = "",
-  Unit          = "",
-  Value         = "",
-  Enum          = "󰓻",
-  Keyword       = "",
-  Snippet       = "󰆐",
-  Color         = "",
-  File          = "󰈤",
-  Reference     = "",
+  Text        = "",
+  Method      = "󰅲",
+  Function    = "󰅲",
+  Constructor = "",
+
+  Field    = "",
+  Variable = "",
+  Property = "",
+
+  Class     = "",
+  Interface = "󰠱",
+  Struct    = "󰙅",
+  Module    = "󰆧",
+
+  Unit       = "",
+  Value      = "",
+  Enum       = "󰓻",
+  EnumMember = "󰓻",
+
+  Keyword  = "",
+  Constant = "󰏿",
+
+  Snippet   = "󰆐",
+  Color     = "",
+  File      = "󰈤",
+  Reference = "",
+
   Folder        = "󰉋",
-  EnumMember    = "󰓻",
-  Constant      = "󰏿",
-  Struct        = "󰙅",
   Event         = "",
   Operator      = "󰍘",
   TypeParameter = "",
 }
 
--- setup cmp
-cmp.setup {
-  -- luasnip snippets
-  snippet = {
-    expand = function(args)
-      -- luasnip module
-      local luasnip = require "luasnip"
+-- setup blink
+blink_cmp.setup {
+  appearance = {
+    -- use cmp highlights
+    use_nvim_cmp_as_default = true,
 
-      -- expand snippet
-      luasnip.lsp_expand(args.body)
-    end,
+    -- icons for kinds
+    kind_icons = symbols,
   },
 
-  -- formatting for items
-  formatting = {
-    format = function(_, item)
-      -- show icons for kinds
-      item.kind = symbols[item.kind]
+  completion = {
+    keyword = {
+      -- select surroundings
+      range = "full",
+    },
 
-      -- truncate text
-      function truncate(text)
-        truncated = string.sub(text, 1, 25)
+    list = {
+      -- require manual selection
+      selection = "auto_insert",
+    },
 
-        if truncated ~= text then
-          -- add ellipsis
-          truncated = truncated .. "…"
-        end
+    menu = {
+      -- remove minimum width
+      min_width = 1,
 
-        return truncated
-      end
+      draw = {
+        -- items format
+        columns = {
+          { "label", "kind_icon", gap = 1 },
+        },
 
-      -- truncate item
-      item.abbr = truncate(item.abbr)
+        components = {
+          label = {
+            -- reduce max width
+            width = { fill = true, max = 35 },
+          },
+        },
+      },
+    },
+  },
 
-      if item.menu then
-        -- truncate menu
-        item.menu = truncate(item.menu)
-      end
-
-      return item
-    end,
+  -- function signatures
+  signature = {
+    enabled = true,
   },
 
   -- completion keybinds
-  mapping = cmp.mapping.preset.insert {
-    ["<C-e>"] = cmp.mapping.abort(),
+  keymap = {
+    ["<CR>"] = { "accept", "fallback" },
 
-    ["<Tab>"]   = cmp.mapping.select_next_item(),
-    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+    ["<Tab>"]   = { "select_next", "fallback" },
+    ["<S-Tab>"] = { "select_prev", "fallback" },
 
-    ["<CR>"]   = cmp.mapping.confirm(),
-    ["<M-CR>"] = cmp.mapping.complete(),
-
-    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
-    ["<C-d>"] = cmp.mapping.scroll_docs(4),
-  },
-
-  -- completion sources
-  sources = cmp.config.sources {
-    { name = "nvim_lsp" },
-    { name = "luasnip"  },
-    { name = "buffer"   },
-    { name = "path"     },
+    ["<C-j>"] = { "snippet_forward",  "fallback" },
+    ["<C-k>"] = { "snippet_backward", "fallback" },
   },
 }
-
--- search completion
-cmp.setup.cmdline({ "/", "?" }, {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = "buffer" },
-  },
-})
-
--- command completion
-cmp.setup.cmdline(":", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources {
-    { name = "cmdline" },
-  },
-})
 EOF
 
 " ================
@@ -176,22 +158,6 @@ local lspfuzzy = require "lspfuzzy"
 
 -- setup lspfuzzy
 lspfuzzy.setup()
-EOF
-
-" ===============
-" === LuaSnip ===
-" ===============
-
-" movement keybinds
-inoremap <C-k> <Cmd>lua require("luasnip").jump(-1)<CR>
-inoremap <C-j> <Cmd>lua require("luasnip").jump(1)<CR>
-
-lua <<EOF
--- snipmate loader
-local snipmate_loader = require "luasnip.loaders.from_snipmate"
-
--- load snippets
-snipmate_loader.lazy_load()
 EOF
 
 " =============
@@ -253,12 +219,12 @@ nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
 lua <<EOF
 -- lsp modules
-local lspconfig    = require "lspconfig"
-local cmp_nvim_lsp = require "cmp_nvim_lsp"
+local lspconfig = require "lspconfig"
+local blink_cmp = require "blink.cmp"
 
 -- capabilities for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+capabilities = blink_cmp.get_lsp_capabilities(capabilities)
 
 local servers = {
   "clangd",

@@ -34,26 +34,11 @@ Plug 'moll/vim-bbye', { 'as': 'bbye' }
 " [better-escape] insert mode escaping
 Plug 'jdhao/better-escape.vim', { 'as': 'better-escape' }
 
+" [blink-cmp] fast completion
+Plug 'saghen/blink.cmp', Nvim({ 'as': 'blink-cmp', 'tag': '*' })
+
 " [closetag] automatically close html tags
 Plug 'alvan/vim-closetag', { 'as': 'closetag' }
-
-" [cmp] extensible completion
-Plug 'hrsh7th/nvim-cmp', Nvim({ 'as': 'cmp' })
-
-" [cmp-buffer] completion using buffer words
-Plug 'hrsh7th/cmp-buffer', Nvim()
-
-" [cmp-cmdline] completion for command line
-Plug 'hrsh7th/cmp-cmdline', Nvim()
-
-" [cmp-luasnip] completion using luasnip
-Plug 'saadparwaiz1/cmp_luasnip', Nvim({ 'as': 'cmp-luasnip' })
-
-" [cmp-nvim-lsp] completion using nvim lsp
-Plug 'hrsh7th/cmp-nvim-lsp', Nvim()
-
-" [cmp-path] completion for paths
-Plug 'hrsh7th/cmp-path', Nvim()
 
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
@@ -75,6 +60,9 @@ Plug 'editorconfig/editorconfig-vim', { 'as': 'editorconfig' }
 
 " [eunuch] unix commands
 Plug 'tpope/vim-eunuch', { 'as': 'eunuch' }
+
+" [friendly-snippets] snippets for blink
+Plug 'rafamadriz/friendly-snippets', Nvim()
 
 " [fugitive] git wrapper
 Plug 'tpope/vim-fugitive', { 'as': 'fugitive' }
@@ -114,9 +102,6 @@ Plug 'neovim/nvim-lspconfig', Nvim({ 'as': 'lspconfig' })
 
 " [lspfuzzy] fzf for lsp
 Plug 'ojroques/nvim-lspfuzzy', { 'as': 'lspfuzzy' }
-
-" [luasnip] snippets manager
-Plug 'l3mon4d3/luasnip', Nvim({ 'as': 'luasnip' })
 
 " [markdown] markdown support
 Plug 'preservim/vim-markdown', { 'as': 'markdown' }
@@ -166,9 +151,6 @@ Plug 'guns/vim-sexp', { 'as': 'sexp', 'for': 'clojure' }
 
 " [sexp-mappings] better sexp mappings
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'as': 'sexp-mappings', 'for': 'clojure' }
-
-" [snippets] snippets for luasnip
-Plug 'honza/vim-snippets', Nvim({ 'as': 'snippets' })
 
 " [splitjoin] split and join lines
 Plug 'andrewradev/splitjoin.vim', Vim({ 'as': 'splitjoin' })
