@@ -183,7 +183,7 @@ Plug 'wellle/targets.vim', { 'as': 'targets' }
 Plug 'nvim-treesitter/nvim-treesitter', Nvim({ 'as': 'treesitter', 'do': ':TSUpdate' })
 
 " [treesj] splitjoin using treesitter
-Plug 'Wansmer/treesj', Nvim()
+Plug 'wansmer/treesj', Nvim()
 
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
