@@ -64,6 +64,13 @@ func! s:set_highlights() abort
   highlight! link SneakLabel PmenuSel
   highlight! link SneakScope Cursor
 
+  " cmp matching text
+  highlight CmpItemAbbrMatch      cterm=bold ctermfg=39 gui=bold guifg=#519fdf
+  highlight CmpItemAbbrMatchFuzzy cterm=bold ctermfg=39 gui=bold guifg=#519fdf
+
+  " float cursor line
+  highlight DressingCursorLine ctermbg=237 guibg=#393939
+
   " concealed text
   highlight clear Conceal
 
@@ -72,15 +79,6 @@ func! s:set_highlights() abort
 
   " quickfix selection
   highlight QuickFixLine cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
-
-  if has('nvim')
-    " cmp matching text
-    highlight CmpItemAbbrMatch      cterm=bold ctermfg=39 gui=bold guifg=#519fdf
-    highlight CmpItemAbbrMatchFuzzy cterm=bold ctermfg=39 gui=bold guifg=#519fdf
-
-    " float cursor line
-    highlight DressingCursorLine ctermbg=237 guibg=#393939
-  endif
 endfunc
 
 " set highlights on theme change

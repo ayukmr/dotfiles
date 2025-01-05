@@ -75,18 +75,6 @@ func! s:set_highlights() abort
 
   " yank color
   highlight! link HighlightedyankRegion Search
-
-  if has('nvim')
-    " cmp matching text
-    highlight CmpItemAbbrMatch      cterm=bold gui=bold
-    highlight CmpItemAbbrMatchFuzzy cterm=bold gui=bold
-
-    " float border
-    highlight! link FloatBorder NormalFloat
-
-    " float cursor line
-    highlight DressingCursorLine ctermbg=237 guibg=#393939
-  endif
 endfunc
 
 " set highlights on theme change
