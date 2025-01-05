@@ -28,9 +28,6 @@ Plug 'justinmk/vim-sneak', { 'as': 'sneak' }
 " [asterisk] improved star motions
 Plug 'haya14busa/vim-asterisk', { 'as': 'asterisk' }
 
-" [auto-pairs] automatic delimiters
-Plug 'jiangmiao/auto-pairs', { 'as': 'auto-pairs' }
-
 " [bbye] better buffer delete and wipeout
 Plug 'moll/vim-bbye', { 'as': 'bbye' }
 
@@ -99,6 +96,9 @@ Plug 'machakann/vim-highlightedyank', { 'as': 'highlighted-yank' }
 
 " [indent-object] text objects for indentation
 Plug 'michaeljsmith/vim-indent-object', { 'as': 'indent-object' }
+
+" [lexima] automatic delimiters
+Plug 'cohama/lexima.vim', { 'as': 'lexima' }
 
 " [lightline] enhanced statusline
 Plug 'itchyny/lightline.vim', { 'as': 'lightline' }
