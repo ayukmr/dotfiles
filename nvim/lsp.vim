@@ -133,7 +133,7 @@ lua <<EOF
 -- dressing module
 local dressing = require "dressing"
 
--- dressing setup
+-- setup dressing
 dressing.setup {
   input = {
     -- horizontal padding
