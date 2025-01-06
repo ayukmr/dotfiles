@@ -19,4 +19,7 @@ UC_API.Runtime.startupFinished().then(() => {
   tabsToolbar.prepend(privateIcon);
   tabsToolbar.append(...extensionItems);
   tabsToolbar.append(extensionButton);
+
+  // remove null text
+  tabsToolbar.childNodes[0].remove();
 });

@@ -112,12 +112,12 @@
 /* clean up nav bar */
 #nav-bar-customization-target > :not(#urlbar-container, .unified-extensions-item),
 #PanelUI-button,
-#private-browsing-indicator-with-label > label {
+.private-browsing-indicator-with-label > label {
   display: none;
 }
 
 /* private browsing icon margin */
-#private-browsing-indicator-with-label {
+.private-browsing-indicator-with-label {
   margin: 8px !important;
 }
 
