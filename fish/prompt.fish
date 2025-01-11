@@ -13,7 +13,7 @@ function fish_prompt
         set stat_color (set_color red)
     end
 
-    string join '' -- (set_color --bold) (set_color blue) (prompt_pwd) (set_color normal) ' ' $stat_color '❯' (set_color normal) ' '
+    string join '' -- (set_color --bold) (set_color blue) (prompt_pwd) (set_color normal) ' ' $stat_color '❭' (set_color normal) ' '
 end
 
 # git info shown

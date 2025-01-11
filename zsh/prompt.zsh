@@ -74,7 +74,7 @@ function TRAPUSR1 {
 add-zsh-hook precmd async_rprompt
 
 # prompt
-PROMPT='%B%F{blue}%~%f %(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red})❯%f%b '
+PROMPT='%B%F{blue}%~%f %(1j.%F{magenta}*%f.)%(?.%F{green}.%F{red})❭%f%b '
 
 # pad if not first line
 function pad_prompt {
