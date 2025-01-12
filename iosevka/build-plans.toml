@@ -27,9 +27,8 @@ capital-q = "crossing"
 
 # lowercase
 f = "flat-hook-serifless"
-i = "serifed-semi-tailed"
 j = "flat-hook-serifed"
-l = "serifed-semi-tailed"
+l = "serifed"
 t = "flat-hook"
 
 # symbols
@@ -46,5 +45,5 @@ lig-single-arrow-bar = "with-notch"
 [buildPlans.Iosevka.widths.Normal]
 # base font
 css   = "normal"
-shape = 550
+shape = 500
 menu  = 5
