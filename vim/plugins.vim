@@ -71,7 +71,13 @@ let s:exact_icons['.gitattributes'] = '󰊢'
 " ===============
 
 " view parent directory
-nnoremap + <Plug>(dirvish_up)
+nnoremap \| <Plug>(dirvish_up)
+
+" buffer parent keybind
+augroup dirvish_parent_keybind
+  au!
+  au FileType dirvish nnoremap <buffer> - <Plug>(dirvish_up)
+augroup END
 
 " disable line numbers
 augroup dirvish_no_numbers
@@ -105,17 +111,17 @@ let g:fzf_layout = {
   \ 'window': { 'width': 0.75, 'height': 0.6 }
 \}
 
+" select buffer
+nnoremap <silent> - :Buffers<CR>
+
 " find files
-nnoremap <silent> - :call fzf#vim#files(
+nnoremap <silent> _ :call fzf#vim#files(
   \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
   \ fzf#vim#with_preview(),
 \)<CR>
 
 " find files in home
-nnoremap <silent> _ :Files ~<CR>
-
-" select buffer
-nnoremap <silent> <Leader><Leader> :Buffers<CR>
+nnoremap <silent> + :Files ~<CR>
 
 " =================
 " === GitGutter ===
