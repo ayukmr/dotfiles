@@ -51,7 +51,7 @@ local symbols = {
 -- setup blink
 blink_cmp.setup {
   appearance = {
-    -- use cmp highlights
+    -- cmp highlights
     use_nvim_cmp_as_default = true,
 
     -- icons for kinds
@@ -59,14 +59,20 @@ blink_cmp.setup {
   },
 
   completion = {
-    keyword = {
-      -- select surroundings
-      range = "full",
+    list = {
+      selection = {
+        -- require manual selection
+        preselect = false,
+
+        -- show inline completion
+        auto_insert = true,
+      },
     },
 
-    list = {
-      -- require manual selection
-      selection = "auto_insert",
+    documentation = {
+      -- show automatically
+      auto_show = true,
+      auto_show_delay_ms = 0,
     },
 
     menu = {
@@ -87,11 +93,6 @@ blink_cmp.setup {
         },
       },
     },
-  },
-
-  -- function signatures
-  signature = {
-    enabled = true,
   },
 
   -- completion keybinds
