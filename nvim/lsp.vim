@@ -15,7 +15,7 @@ local blink_cmp = require "blink.cmp"
 
 -- symbols for kinds
 local symbols = {
-  Text        = "",
+  Text        = "󰦨",
   Method      = "󰅲",
   Function    = "󰅲",
   Constructor = "",
@@ -34,8 +34,8 @@ local symbols = {
   Enum       = "󰓻",
   EnumMember = "󰓻",
 
-  Keyword  = "",
-  Constant = "󰏿",
+  Keyword  = "",
+  Constant = "",
 
   Snippet   = "󰆐",
   Color     = "",
