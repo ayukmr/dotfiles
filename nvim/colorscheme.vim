@@ -40,10 +40,9 @@ colorscheme onedark
 " set highlights
 func! s:set_highlights() abort
   " search highlight
-  highlight Search cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
-  highlight! link IncSearch  Search
-  highlight! link CurSearch  Search
-  highlight! link Substitute Search
+  highlight Search    ctermfg=235 ctermbg=180 guifg=#1f1f1f guibg=#d5b06b
+  highlight CurSearch cterm=bold ctermfg=235 ctermbg=180 gui=bold guifg=#1f1f1f guibg=#d5b06b
+  highlight! link IncSearch CurSearch
 
   " menu selections
   highlight PmenuSel cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
@@ -60,9 +59,10 @@ func! s:set_highlights() abort
   highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#519fdf guibg=#252525
 
   " sneak colors
-  highlight! link Sneak      PmenuSel
-  highlight! link SneakLabel PmenuSel
-  highlight! link SneakScope Cursor
+  highlight Sneak        ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
+  highlight SneakCurrent cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
+  highlight! link SneakLabel SneakCurrent
+  highlight! link SneakScope CursorLine
 
   " cmp matching text
   highlight CmpItemAbbrMatch      cterm=bold ctermfg=39 gui=bold guifg=#519fdf
