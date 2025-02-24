@@ -138,7 +138,7 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 
 " sizing
 let g:goyo_width='115'
-let g:goyo_height='90%'
+let g:goyo_height='100%'
 
 " line numbers
 let g:goyo_linenr = 1
@@ -152,46 +152,30 @@ augroup END
 
 " on goyo enter
 func! s:goyo_enter() abort
+  " enable wrapping
+  call Wrap()
+
   " fix nontext highlight
   highlight NonText ctermfg=238 guifg=#303030
 
-  " text wrapping
-  set wrap linebreak
+  " hide tabline
+  call lightline#disable()
 
-  " show tabline
-  let g:lightline.enable = {
-    \ 'statusline': 0,
-    \ 'tabline':    1,
-  \}
+  " hide tabline background
+  highlight! link TabLineFill Normal
+
+  " clear tabline
   set showtabline=2
-  call lightline#enable()
-
-  " move visually
-  noremap j gj
-  noremap k gk
-  noremap 0 g0
-  noremap ^ g^
-  noremap $ g$
+  set tabline=\ 
 endfunc
 
 " on goyo leave
 func! s:goyo_leave() abort
   " disable wrapping
-  set nowrap nolinebreak
+  call NoWrap()
 
-  " show both lines
-  let g:lightline.enable = {
-    \ 'statusline': 1,
-    \ 'tabline':    1,
-  \}
+  " show tabline
   call lightline#enable()
-
-  " move normally
-  nunmap j
-  nunmap k
-  nunmap 0
-  nunmap ^
-  nunmap $
 endfunc
 
 " ============
