@@ -22,13 +22,10 @@
 	pf = push -f
 	co = checkout
 	ds = diffstat
-	sl = shortlog
 	cm = commit -m
 	lo = log --oneline
 	dc = diff --cached
 
 	sth = stash
-	cfg = config
-	psu = push -u origin
 	rao = remote add origin
 	rsh = reset --soft HEAD~1
