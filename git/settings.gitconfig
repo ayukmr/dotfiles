@@ -39,6 +39,14 @@
 	# main as default branch
 	defaultBranch = main
 
+[pull]
+	# rebase local commits
+	rebase = true
+
+[push]
+	# automatically setup remote
+	autoSetupRemote = true
+
 [url "https://github.com/"]
 	# alias for github
 	insteadOf = gh:
