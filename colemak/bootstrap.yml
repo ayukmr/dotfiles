@@ -16,9 +16,9 @@ scripts:
             - ? echo 'source ~/.cfg/colemak/vim/colemak.vim' >> ~/.cfg/vim/vimrc.vim
               : 'sourcing colemak.vim in vimrc'
 
-  hammerspoon:
+  yabai:
     test:
-      - "[[ \"$(tail -n 2 ~/.cfg/hammerspoon/init.lua)\" != 'package.path = os.getenv(\"HOME\") .. \"/.cfg/colemak/hammerspoon/?.lua;\" .. package.path\nrequire \"colemak\"' ]]":
+      - "[[ \"$(tail -n 1 ~/.cfg/yabai/yabairc)\" != 'source ~/.cfg/colemak/yabai/colemak.zsh' ]]":
           shell:
-            - ? echo 'package.path = os.getenv("HOME") .. "/.cfg/colemak/hammerspoon/?.lua;" .. package.path\nrequire "colemak"' >> ~/.cfg/hammerspoon/init.lua
-              : 'sourcing colemak.lua in hammerspoon config'
+            - ? echo 'source ~/.cfg/colemak/yabai/colemak.zsh' >> ~/.cfg/yabai/yabairc
+              : 'sourcing colemak.zsh in yabairc'
