@@ -6,8 +6,15 @@
 	# four space tabs
 	tabs = 4
 
+	# side by side mode
+	side-by-side = true
+
 	# bat syntax theme
 	syntax-theme = TwoDark
+
+	# line numbers
+	line-numbers-left-format  = " "
+	line-numbers-right-format = " │ "
 
 	# moved arrow
 	right-arrow = →
@@ -26,7 +33,7 @@
 	# headings style
 	commit-decoration-style = yellow ul
 	hunk-header-style = bold line-number syntax
-	hunk-header-decoration-style = box ul
+	hunk-header-decoration-style = box
 
 	# line numbers style
 	line-numbers-zero-style  = white
@@ -34,7 +41,7 @@
 	line-numbers-minus-style = red bold
 
 	# changes style
-	plus-style       = green bold
-	minus-style      = red bold
+	plus-style       = white "#2f3e24"
+	minus-style      = white "#482023"
 	plus-emph-style  = black green bold
 	minus-emph-style = black red bold
