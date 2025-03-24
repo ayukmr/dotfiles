@@ -29,7 +29,7 @@ set -x FZF_DEFAULT_OPTS "
 
   --no-scrollbar
 
-  --prompt   '❭ '
+  --prompt   '❱ '
   --pointer  '>'
   --marker   '+'
   --ellipsis '…'
