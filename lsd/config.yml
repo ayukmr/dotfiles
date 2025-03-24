@@ -5,9 +5,6 @@
 # show hidden
 display: almost-all
 
-# show indicators
-indicators: true
-
 # date format
 date: '+%d %b %y %I:%M %p'
 
