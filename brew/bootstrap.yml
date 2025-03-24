@@ -60,12 +60,9 @@ packages:
       - bat
       - fzf
       - lsd
-      - w3m
-      - glow
       - tldr
       - bottom
       - ranger
-      - litecli
       - neofetch
       - git-delta
 
@@ -84,15 +81,11 @@ packages:
       - moreutils
 
     - brew install --cask:
-      - iina
       - kitty
-      - stats
       - steam
       - beeper
-      - rocket
       - sioyek
       - firefox
       - raycast
       - shortcat
       - sf-symbols
-      - jordanbaird-ice
