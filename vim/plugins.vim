@@ -101,13 +101,12 @@ let g:fzf_layout = {
 nnoremap <silent> - :Buffers<CR>
 
 " find files
-nnoremap <silent> _ :call fzf#vim#files(
-  \ FindRootDirectory() != '' ? FindRootDirectory() : expand('%:h'),
-  \ fzf#vim#with_preview(),
-\)<CR>
-
-" find files in home
+nnoremap <silent> _ :Files<CR>
 nnoremap <silent> + :Files ~<CR>
+
+" ripgrep search
+nnoremap <silent> <Leader>- :Rg<CR>
+nnoremap <silent> <Leader>_ <C-w>v:Rg<CR>
 
 " =================
 " === GitGutter ===
