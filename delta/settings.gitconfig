@@ -41,7 +41,7 @@
 	line-numbers-minus-style = red bold
 
 	# changes style
-	plus-style       = white "#2f3e24"
-	minus-style      = white "#482023"
+	plus-style       = white "#31392b"
+	minus-style      = white "#382b2c"
 	plus-emph-style  = black green bold
 	minus-emph-style = black red bold
