@@ -30,7 +30,7 @@
 /* browser sidebar */
 #sidebar-box {
   width:   300px !important;
-  padding: 1px 4px;
+  padding: 1px 0 1px 4px;
   background: #282828 !important;
   z-index: 1000;
 
@@ -82,6 +82,7 @@
 #urlbar-container {
   --urlbar-container-height: 40px !important;
   width: fit-content !important;
+  margin-right: 0 !important;
 }
 
 /* hide page actions */
@@ -136,6 +137,47 @@
 /* background */
 #tabbrowser-tabpanels {
   background: #282828 !important;
+}
+
+/* content border */
+#tabbrowser-tabpanels::after {
+  content: '';
+  position: absolute;
+
+  box-sizing: border-box;
+  pointer-events: none;
+
+  width:  calc(100% + 10px);
+  height: calc(100% + 10px);
+
+  top:  -5px;
+  left: -5px;
+
+  border: 14px solid #282828;
+  border-radius: 20px;
+}
+
+/* border shadow */
+#tabbrowser-tabpanels::before {
+  content: '';
+  position: absolute;
+
+  z-index: 99;
+  pointer-events: none;
+
+  width:  calc(100% - 18px);
+  height: calc(100% - 18px);
+
+  top:  9px;
+  left: 9px;
+
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0.1px rgba(0, 0, 0, 0.5);
+}
+
+/* adjust for border */
+.browserSidebarContainer {
+  border: 9px solid transparent;
 }
 
 /* nav bar */

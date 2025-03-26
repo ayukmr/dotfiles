@@ -56,9 +56,16 @@
   display: none;
 }
 
+/* remove right margin */
+.Tab {
+  width: calc(100% - var(--tabs-margin));
+  margin-right: 0;
+}
+
 /* pinned tabs */
 .PinnedTabsBar {
   margin-bottom: 4px;
+  padding-right: 0 !important;
 
   /* align tabs */
   display: flex;
