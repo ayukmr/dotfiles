@@ -139,9 +139,6 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 let g:goyo_width='115'
 let g:goyo_height='100%'
 
-" line numbers
-let g:goyo_linenr = 1
-
 " setup goyo
 augroup goyo_setup
   au!
@@ -166,6 +163,9 @@ func! s:goyo_enter() abort
   " clear tabline
   set showtabline=2
   set tabline=\ 
+
+  " hide cursor line
+  set nocursorline
 endfunc
 
 " on goyo leave
@@ -175,6 +175,9 @@ func! s:goyo_leave() abort
 
   " show tabline
   call lightline#enable()
+
+  " show cursor line
+  set cursorline
 endfunc
 
 " ============
