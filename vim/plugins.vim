@@ -180,6 +180,9 @@ func! s:goyo_leave() abort
   set cursorline
 endfunc
 
+" toggle goyo
+nnoremap <silent> <Leader>G :Goyo<CR>
+
 " ============
 " === Lion ===
 " ============
