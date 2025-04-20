@@ -24,9 +24,7 @@ export LESS_TERMCAP_ue="$(print -P '%f')"
 # fzf options
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_OPTS="
-  --exact
   --reverse
-
   --no-scrollbar
 
   --prompt   '$(print -P '%B%b')❱ '

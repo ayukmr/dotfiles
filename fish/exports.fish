@@ -24,9 +24,7 @@ set -x LESS_TERMCAP_ue (set_color normal)
 # fzf options
 set -x FZF_DEFAULT_COMMAND 'rg --files --hidden'
 set -x FZF_DEFAULT_OPTS "
-  --exact
   --reverse
-
   --no-scrollbar
 
   --prompt   '$(set_color --bold)$(set_color normal)❱ '
