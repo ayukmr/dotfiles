@@ -183,6 +183,21 @@ endfunc
 " toggle goyo
 nnoremap <silent> <Leader>G :Goyo<CR>
 
+" ==============
+" === Lexima ===
+" ==============
+
+" inline latex
+call lexima#add_rule({'char': '$',    'input_after': '$',           'filetype': 'markdown'})
+call lexima#add_rule({'char': '$',    'at': '\%#\$',   'leave': 1,  'filetype': 'markdown'})
+call lexima#add_rule({'char': '<BS>', 'at': '\$\%#\$', 'delete': 1, 'filetype': 'markdown'})
+
+" crystal
+call lexima#add_rule(lexima#endwise_rule#make_rule('^\s*\%(module\|def\|class\|if\|unless\|for\|while\|until\|case\)\>\%(.*[^.:@$]\<end\>\)\@!.*\%#$', 'end', 'crystal', []))
+call lexima#add_rule(lexima#endwise_rule#make_rule('^\s*\%(begin\)\s*\%#$', 'end', 'crystal', []))
+call lexima#add_rule(lexima#endwise_rule#make_rule('\%(^\s*#.*\)\@<!do\%(\s*|.*|\)\?\s*\%#$', 'end', 'crystal', []))
+call lexima#add_rule(lexima#endwise_rule#make_rule('\<\%(if\|unless\)\>.*\%#$', 'end', 'crystal', 'crystalConditionalExpression'))
+
 " ============
 " === Lion ===
 " ============
