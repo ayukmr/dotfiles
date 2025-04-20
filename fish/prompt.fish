@@ -4,16 +4,23 @@
 
 # main prompt
 function fish_prompt
-    set -l stat_color
+    set -l status_color
 
     # status color
     if [ $status = 0 ]
-        set stat_color (set_color green)
+        set status_color (set_color green)
     else
-        set stat_color (set_color red)
+        set status_color (set_color red)
     end
 
-    string join '' -- (set_color --bold) (set_color blue) (prompt_pwd) (set_color normal) ' ' $stat_color '❱' (set_color normal) ' '
+    set -l jobs_indicator
+
+    # jobs indicator
+    if jobs | count &> /dev/null
+        set jobs_indicator '*'
+    end
+
+    string join '' -- (set_color --bold) (set_color blue) (prompt_pwd) (set_color normal) ' ' (set_color magenta) $jobs_indicator $status_color '❱' (set_color normal) ' '
 end
 
 # git info shown
