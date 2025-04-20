@@ -53,11 +53,6 @@ func! s:set_highlights() abort
   highlight PmenuSel cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
   highlight! link WildMenu PmenuSel
 
-  " jsx tag highlights
-  highlight! link jsxOpenPunct   Fg
-  highlight! link jsxClosePunct  Fg
-  highlight! link jsxCloseString Fg
-
   " remove background
   highlight clear Normal
 
@@ -72,11 +67,19 @@ func! s:set_highlights() abort
   " sneak colors
   highlight Sneak        ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
   highlight SneakCurrent cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
-  highlight! link SneakLabel SneakCurrent
+  highlight SneakLabel   ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
   highlight! link SneakScope CursorLine
 
   " yank color
   highlight! link HighlightedyankRegion Search
+
+  " jsx tag highlights
+  highlight! link jsxOpenPunct   Fg
+  highlight! link jsxClosePunct  Fg
+  highlight! link jsxCloseString Fg
+
+  " crystal strings
+  highlight! link crystalStringDelimiter String
 endfunc
 
 " set highlights on theme change
