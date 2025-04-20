@@ -1,6 +1,0 @@
-# ===================
-# === CMus Config ===
-# ===================
-
-source ~/.cfg/cmus/settings
-source ~/.cfg/cmus/colors

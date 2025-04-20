@@ -1,7 +1,0 @@
-# ============================
-# === Diff-So-Fancy Config ===
-# ============================
-
-[include]
-	path = ~/.cfg/diff-so-fancy/setup.gitconfig
-	path = ~/.cfg/diff-so-fancy/settings.gitconfig
