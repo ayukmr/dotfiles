@@ -29,7 +29,7 @@ export FZF_DEFAULT_OPTS="
 
   --no-scrollbar
 
-  --prompt   '❱ '
+  --prompt   '$(print -P '%B%b')❱ '
   --pointer  '>'
   --marker   '+'
   --ellipsis '…'

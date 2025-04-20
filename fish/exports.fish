@@ -29,7 +29,7 @@ set -x FZF_DEFAULT_OPTS "
 
   --no-scrollbar
 
-  --prompt   '❱ '
+  --prompt   '$(set_color --bold)$(set_color normal)❱ '
   --pointer  '>'
   --marker   '+'
   --ellipsis '…'
