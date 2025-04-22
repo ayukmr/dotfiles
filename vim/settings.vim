@@ -24,7 +24,7 @@ endfunc
 
 " fold styling
 set foldtext=<SID>fold_text()
-set fillchars+=fold:\ 
+set fillchars+=fold:\ "
 set foldmethod=syntax
 set foldlevelstart=99
 

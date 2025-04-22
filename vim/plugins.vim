@@ -163,7 +163,7 @@ func! s:goyo_enter() abort
 
   " clear tabline
   set showtabline=2
-  set tabline=\ 
+  set tabline=\ "
 
   " hide cursor line
   set nocursorline
