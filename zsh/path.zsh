@@ -5,33 +5,36 @@
 # defaults
 path=('/opt/homebrew/bin' '/usr/local/bin' '/usr/bin' '/bin' '/usr/sbin' '/sbin')
 
-# golang binaries
-path+=~/go/bin
-
-# rust binaries
-path+=~/.cargo/bin
-
-# ruby binaries
+# ruby
 path+="$GEM_HOME/bin"
 
-# yarn binaries
+# rust
+path+=~/.cargo/bin
+
+# yarn
 path+=~/.yarn/bin
 
-# config binaries
+# android
+path+=~/Library/Android/sdk/platform-tools
+
+# config
 path+=~/.cfg/bin
 
-# binaries folder
+# local
 path+=~/.local/bin
 
 # homebrew env
 eval "$(brew shellenv)"
-path[1,0]="$HOMEBREW_PREFIX/opt/ruby/bin"
+
+# override binaries
+path[1,0]=/opt/homebrew/opt/ruby/bin
+path[1,0]=/opt/homebrew/opt/java/bin
 
 # export path
 export PATH
 
 # add homebrew completions
-fpath+="$HOMEBREW_PREFIX/share/zsh/site-functions"
+fpath+=/opt/homebrew/share/zsh/site-functions
 
 # export fpath
 export FPATH
