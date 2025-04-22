@@ -9,11 +9,12 @@ yabai -m config layout bsp
 
 # window padding
 yabai -m config     \
-  top_padding    25 \
-  bottom_padding 25 \
-  left_padding   25 \
-  right_padding  25 \
+  top_padding    15 \
+  bottom_padding 15 \
+  left_padding   15 \
+  right_padding  15 \
   window_gap     10
 
 # move mouse to focus
 yabai -m config mouse_follows_focus on
+source ~/.cfg/colemak/yabai/colemak.zsh
