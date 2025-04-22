@@ -58,6 +58,17 @@ blink_cmp.setup {
     kind_icons = symbols,
   },
 
+  cmdline = {
+    completion = {
+      menu = {
+        -- show automatically
+        auto_show = function(ctx)
+          return vim.fn.getcmdtype() == ":"
+        end
+      },
+    },
+  },
+
   completion = {
     list = {
       selection = {
