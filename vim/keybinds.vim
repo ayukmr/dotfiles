@@ -11,6 +11,14 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" start of text
+nnoremap 0 ^
+xnoremap 0 ^
+
+" start of line
+nnoremap ^ 0
+xnoremap ^ 0
+
 " select edited
 noremap gV `[v`]
 
