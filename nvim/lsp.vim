@@ -242,13 +242,14 @@ local servers = {
   "clangd",
   "crystalline",
   "cssls",
+  "dartls",
   "marksman",
   "pyright",
   "rubocop",
-  "ruby_ls",
+  "ruby_lsp",
   "rust_analyzer",
   "sourcekit",
-  "tsserver",
+  "ts_ls",
   "vimls",
 }
 
