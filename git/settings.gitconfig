@@ -47,6 +47,10 @@
 	# automatically setup remote
 	autoSetupRemote = true
 
+[rebase]
+	# automatically stash changes
+	autoStash = true
+
 [url "https://github.com/"]
 	# alias for github
 	insteadOf = gh:
