@@ -14,8 +14,4 @@ windows:
         - btm
 
   - editor: anyvim
-  - tasks:  vit
-
-  - wiki:
-    - cd ~/wiki
-    - anyvim index.md
+  - text: anyvim
