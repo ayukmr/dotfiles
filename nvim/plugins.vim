@@ -18,7 +18,7 @@ treesitter.setup {
     enable = true,
 
     -- vim highlighting for markdown
-    additional_vim_regex_highlighting = { "markdown" },
+    additional_vim_regex_highlighting = { "markdown", "crystal" },
   },
 
   -- matchup support
