@@ -50,6 +50,7 @@ alias ipy='ipython'
 # crystal aliases
 alias s='shards'
 alias sr='shards run'
+alias sb='shards build'
 
 # flutter aliases
 alias f='flutter'
