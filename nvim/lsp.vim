@@ -213,9 +213,9 @@ sign define DiagnosticSignHint  text=-- texthl=DiagnosticSignHint
 " leader keybinds
 nnoremap <silent> <Leader>lf :lua vim.lsp.buf.format()<CR>
 nnoremap <silent> <Leader>lr :lua vim.lsp.buf.rename()<CR>
-nnoremap <silent> <Leader>lR :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <Leader>la :lua vim.lsp.buf.code_action()<CR>
-nnoremap <silent> <Leader>ls :lua vim.lsp.buf.workspace_symbol("")<CR>
+nnoremap <silent> <Leader>lR :lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <Leader>lS :lua vim.lsp.buf.workspace_symbol("")<CR>
 
 " buffer keybinds
 nnoremap <silent> K  :lua vim.lsp.buf.hover()<CR>
