@@ -73,6 +73,9 @@ func! s:set_highlights() abort
   " yank color
   highlight! link HighlightedyankRegion Search
 
+  " cursor line number
+  highlight! link CursorLineNr CursorLine
+
   " jsx tag highlights
   highlight! link jsxOpenPunct   Fg
   highlight! link jsxClosePunct  Fg

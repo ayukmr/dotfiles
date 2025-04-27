@@ -71,6 +71,9 @@ func! s:set_highlights() abort
   " yank color
   highlight! link HighlightedyankRegion Search
 
+  " cursor line number
+  highlight! link CursorLineNr CursorLine
+
   " float cursor line
   highlight DressingCursorLine ctermbg=237 guibg=#393939
 
