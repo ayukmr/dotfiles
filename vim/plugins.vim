@@ -137,8 +137,8 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 " ============
 
 " sizing
-let g:goyo_width='115'
-let g:goyo_height='100%'
+let g:goyo_width = '115'
+let g:goyo_height = '100%'
 
 " setup goyo
 augroup goyo_setup
