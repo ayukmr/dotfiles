@@ -4,8 +4,17 @@
 # === Yabai Config ===
 # ====================
 
+# load system scripts
+yabai --load-sa
+
 # default to bsp
 yabai -m config layout bsp
+
+# move mouse to focus
+yabai -m config mouse_follows_focus on
+
+# hide window shadow
+yabai -m config window_shadow off
 
 # window padding
 yabai -m config     \
@@ -15,6 +24,4 @@ yabai -m config     \
   right_padding  15 \
   window_gap     10
 
-# move mouse to focus
-yabai -m config mouse_follows_focus on
 source ~/.cfg/colemak/yabai/colemak.zsh

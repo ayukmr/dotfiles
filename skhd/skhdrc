@@ -6,6 +6,10 @@
 alt + ctrl - 0x28 : ~/.cfg/skhd/window-action focus prev last
 alt + ctrl - 0x26 : ~/.cfg/skhd/window-action focus next first
 
+# focus space
+alt + ctrl - 0x04 : yabai -m space --focus prev
+alt + ctrl - 0x25 : yabai -m space --focus next
+
 # swap window
 alt + ctrl + shift - 0x28 : ~/.cfg/skhd/window-action swap prev last
 alt + ctrl + shift - 0x26 : ~/.cfg/skhd/window-action swap next first
