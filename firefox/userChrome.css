@@ -66,16 +66,34 @@
 
 /* url bar */
 #urlbar {
+  --urlbar-height: 32px !important;
+  --urlbar-toolbar-height: 42px !important;
+
   font-size: small !important;
   overflow: hidden;
 
-  --urlbar-height: 32px !important;
-  --urlbar-toolbar-height: 42px !important;
+  animation: fade-sidebar 0.2s ease-in-out;
 }
 
 /* expand completions */
 #urlbar[breakout-extend] {
   width: 35vw !important;
+  transform: translateX(-50%);
+
+  top: 15% !important;
+  left: calc(50% + 150px) !important;
+
+  animation: fade-breakout 0.2s ease-in-out;
+}
+
+@keyframes fade-sidebar {
+  from { opacity: 0; }
+  to   { opacity: 100%; }
+}
+
+@keyframes fade-breakout {
+  from { opacity: 0; }
+  to   { opacity: 100%; }
 }
 
 /* urlbar container */
@@ -83,6 +101,11 @@
   --urlbar-container-height: 40px !important;
   width: fit-content !important;
   margin-right: 0 !important;
+}
+
+/* focus outline */
+#urlbar[focused]:not([breakout-extend]) #urlbar-background {
+  outline: 1px solid #75747b !important;
 }
 
 /* hide page actions */
