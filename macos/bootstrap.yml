@@ -258,9 +258,10 @@ scripts:
       # === Killing ===
       # ===============
 
-      - killall Dock:       'killing dock'
+      - killall Dock: 'killing dock'
       - killall SystemUIServer: 'killing uiserver'
-      - killall Finder:     'killing finder'
-      - killall TextEdit:   'killing textedit'
-      - killall Safari:     'killing safari'
-      - killall Mail:       'killing mail'
+
+      - killall Finder:   'killing finder'
+      - killall TextEdit: 'killing textedit'
+      - killall Safari:   'killing safari'
+      - killall Mail:     'killing mail'
