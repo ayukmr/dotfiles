@@ -24,6 +24,7 @@ treesitter.setup {
   -- matchup support
   matchup = {
     enable = true,
+    disable_virtual_text = true,
   },
 }
 EOF

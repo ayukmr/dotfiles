@@ -14,4 +14,3 @@ windows:
         - btm
 
   - editor: anyvim
-  - text: anyvim

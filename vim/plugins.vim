@@ -39,7 +39,9 @@ let s:extension_icons['cljs'] = ''
 let s:extension_icons['lock'] = ''
 let s:extension_icons['tmux'] = ''
 let s:extension_icons['toml'] = '󰅪'
-let s:extension_icons['svelte']      = ''
+let s:extension_icons['wgsl'] = ''
+let s:extension_icons['swift']  = '󰛥'
+let s:extension_icons['svelte'] = ''
 let s:extension_icons['gitconfig']   = '󰊢'
 let s:extension_icons['applescript'] = '󰀵'
 
@@ -98,6 +100,9 @@ let g:fzf_layout = {
   \ 'window': { 'width': 0.75, 'height': 0.6 }
 \}
 
+" ensure fast esc
+inoremap <Esc> <Esc>
+
 " select buffer
 nnoremap <silent> - :Buffers<CR>
 
@@ -106,8 +111,8 @@ nnoremap <silent> _ :Files<CR>
 nnoremap <silent> + :Files ~<CR>
 
 " ripgrep search
-nnoremap <silent> <Leader>- :Rg<CR>
-nnoremap <silent> <Leader>_ <C-w>v:Rg<CR>
+nnoremap <silent> <Leader>- :RG<CR>
+nnoremap <silent> <Leader>_ <C-w>v:RG<CR>
 
 " =================
 " === GitGutter ===
@@ -140,6 +145,9 @@ nnoremap <silent> yog :GitGutterToggle<CR>
 let g:goyo_width = '115'
 let g:goyo_height = '100%'
 
+" line numbers
+let g:goyo_linenr = 1
+
 " setup goyo
 augroup goyo_setup
   au!
@@ -164,9 +172,6 @@ func! s:goyo_enter() abort
   " clear tabline
   set showtabline=2
   set tabline=\ "
-
-  " hide cursor line
-  set nocursorline
 endfunc
 
 " on goyo leave
@@ -176,9 +181,6 @@ func! s:goyo_leave() abort
 
   " show tabline
   call lightline#enable()
-
-  " show cursor line
-  set cursorline
 endfunc
 
 " toggle goyo
@@ -240,15 +242,18 @@ func! s:markdown_keybinds() abort
   nnoremap <buffer> gf <Plug>Markdown_EditUrlUnderCursor
 endfunc
 
+" enable conceal
+augroup markdown_conceal
+  au!
+  au FileType markdown setlocal conceallevel=2
+augroup END
+
 " ===============
 " === MatchUp ===
 " ===============
 
 " hide offscreen matches
 let g:matchup_matchparen_offscreen = {}
-
-" match end sign
-let g:matchup_matchparen_end_sign = '⯇'
 
 " ==============
 " === Rooter ===
@@ -293,14 +298,4 @@ nnoremap ]t gt
 augroup plug_no_numbers
   au!
   au FileType vim-plug setlocal nonumber
-augroup END
-
-" =================
-" === Wikigraph ===
-" =================
-
-" focus file in graph
-augroup wikigraph_focus
-  au!
-  au BufEnter *.md call wikigraph#focus_file()
 augroup END

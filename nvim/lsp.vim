@@ -184,8 +184,8 @@ local mason = require "mason"
 mason.setup {
   ui = {
     icons = {
-      package_installed   = "",
       package_pending     = "",
+      package_installed   = "",
       package_uninstalled = "",
     },
   },
@@ -196,7 +196,7 @@ local mason_lspconfig = require "mason-lspconfig"
 
 -- setup mason lspconfig
 mason_lspconfig.setup {
-  -- automatic_installation = true,
+  automatic_installation = true,
 }
 EOF
 
@@ -262,8 +262,8 @@ end
 
 -- diagnostics config
 vim.diagnostic.config {
-  underline    = true,
   signs        = true,
+  underline    = true,
   virtual_text = false,
 
   float = {

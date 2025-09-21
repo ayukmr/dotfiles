@@ -11,4 +11,4 @@ attach: false
 windows:
   - shell:
     # disable status for session
-    - tmux set -s status off
+    - tmux set status off

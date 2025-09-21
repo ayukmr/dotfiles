@@ -45,6 +45,9 @@ export FZF_DEFAULT_OPTS="
 export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ENV_HINTS=1
 
+# prevent auto updates
+export TLDR_AUTO_UPDATE_DISABLED=1
+
 # disable venv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 

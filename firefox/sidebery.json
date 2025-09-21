@@ -11,6 +11,7 @@
     "navBtnCount":    false,
     "tabsLvlDots":    false,
     "searchBarMode":  "none",
+    "tabsUpdateMark": "none",
     "showNewTabBtns": false,
     "pinnedTabsPosition": "top",
 

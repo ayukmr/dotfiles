@@ -15,7 +15,7 @@ config:
     - ~/.config/nvim/ginit.vim: 'source ~/.cfg/nvim/ginit.vim'
 
   shell:
-    - pip3 install neovim: 'install neovim python module'
+    - pip3 install neovim --break-system-packages: 'install neovim python module'
 
   test:
     - '[[ ! -f ~/.vim/autoload/plug.vim ]]':

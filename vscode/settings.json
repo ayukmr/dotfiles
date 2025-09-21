@@ -7,14 +7,13 @@
   // === General Settings ===
   // ========================
 
-  "editor.fontFamily": "Iosevka Nerd Font Mono",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "MDIO Nerd Font Mono",
+  "editor.fontSize": 15,
   "editor.cursorStyle": "block",
-  "workbench.colorTheme": "One Dark Pro",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.iconTheme": "Monokai Classic Icons",
+  "workbench.iconTheme": "Monokai Pro Icons",
   "editor.fontLigatures": false,
   "editor.guides.bracketPairs": false,
   "editor.linkedEditing": false,
@@ -55,7 +54,6 @@
 
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
-  "zenMode.hideTabs": false,
 
   // =====================
   // === File Settings ===
@@ -76,6 +74,7 @@
   // ===========================
 
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.fontWeightBold": "600",
 

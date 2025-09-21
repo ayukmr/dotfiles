@@ -6,7 +6,6 @@
 	a = add
 	p = push
 	d = diff
-	c = commit
 	s = status -s
 	l = log -n 20 --oneline
 
@@ -27,5 +26,6 @@
 	dc = diff --cached
 
 	sth = stash
+	cmt = commit
 	rao = remote add origin
 	rsh = reset --soft HEAD~1

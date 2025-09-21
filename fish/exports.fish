@@ -45,6 +45,9 @@ set -x FZF_DEFAULT_OPTS "
 set -x HOMEBREW_NO_EMOJI 1
 set -x HOMEBREW_NO_ENV_HINTS 1
 
+# prevent auto updates
+set -x TLDR_AUTO_UPDATE_DISABLED 1
+
 # disable venv prompt
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 

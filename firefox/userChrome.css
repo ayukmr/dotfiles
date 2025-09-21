@@ -29,12 +29,12 @@
 
 /* browser sidebar */
 #sidebar-box {
-  width:   300px !important;
+  width: 300px !important;
   padding: 1px 0 1px 4px;
   background: #282828 !important;
   z-index: 1000;
 
-  transition: margin 0.1s ease-in-out;
+  transition: margin 0.15s ease-out;
 }
 
 /* hide sidebar header */
@@ -147,9 +147,10 @@
 
 /* extensions button */
 #TabsToolbar .toolbarbutton-icon {
+  width:  30px !important;
+  height: 30px !important;
+
   padding: 7px !important;
-  width:   30px !important;
-  height:  30px !important;
 }
 
 /* remove excess padding */
@@ -159,7 +160,7 @@
 
 /* background */
 #tabbrowser-tabpanels {
-  background: #282828 !important;
+  background: #1e1e1e !important;
 }
 
 /* content border */

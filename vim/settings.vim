@@ -62,16 +62,20 @@ set numberwidth=4
 " merge with signcolumn
 set signcolumn=number
 
-" allowed backspacing
-set backspace=indent,eol,start
-
 " show invisibles
 set list
 set listchars=tab:│\ ,trail:·
 
+" scroll offset
+set scrolloff=3
+set sidescrolloff=3
+
 " split pane to bottom right
 set splitbelow
 set splitright
+
+" allowed backspacing
+set backspace=indent,eol,start
 
 " keep hidden buffers
 set hidden
@@ -124,8 +128,5 @@ set noshowmode
 " disable wrapping
 set nowrap
 
-" conceal level
-set conceallevel=2
-
-" scroll offset
-set scrolloff=3
+" disable conceal
+set conceallevel=0
