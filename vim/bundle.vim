@@ -164,6 +164,9 @@ Plug 'nvim-treesitter/nvim-treesitter', Nvim({ 'as': 'treesitter', 'do': ':TSUpd
 " [treesj] splitjoin using treesitter
 Plug 'wansmer/treesj', Nvim()
 
+" [typst] typst language support
+Plug 'kaarmu/typst.vim', { 'as': 'typst' }
+
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
