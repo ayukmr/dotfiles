@@ -167,7 +167,4 @@ Plug 'wansmer/treesj', Nvim()
 " [unimpaired] bracket keybinds
 Plug 'tpope/vim-unimpaired', { 'as': 'unimpaired' }
 
-" [wikigraph] personal wiki graph
-Plug 'ayukmr/wikigraph'
-
 call plug#end()
