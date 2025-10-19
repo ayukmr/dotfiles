@@ -10,16 +10,16 @@
   --font: 11.5px system-ui;
 
   /* apply system font */
-  --tabs-font:               var(--font);
-  --ctx-menu-font:           var(--font);
-  --tabs-count-font:         var(--font);
-  --bookmarks-folder-font:   var(--font);
+  --tabs-font: var(--font);
+  --ctx-menu-font: var(--font);
+  --tabs-count-font: var(--font);
+  --bookmarks-folder-font: var(--font);
   --bookmarks-bookmark-font: var(--font);
 
   /* remove drop shadows */
-  --popup-shadow:          none;
-  --ctx-menu-shadow:       none;
-  --active-el-shadow:      none;
+  --popup-shadow: none;
+  --ctx-menu-shadow: none;
+  --active-el-shadow: none;
   --nav-btn-active-shadow: none;
   --tabs-activated-shadow: none;
   --bookmarks-expanded-folder-shadow: none;

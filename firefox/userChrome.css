@@ -147,7 +147,7 @@
 
 /* extensions button */
 #TabsToolbar .toolbarbutton-icon {
-  width:  30px !important;
+  width: 30px !important;
   height: 30px !important;
 
   padding: 7px !important;
@@ -171,10 +171,10 @@
   box-sizing: border-box;
   pointer-events: none;
 
-  width:  calc(100% + 10px);
+  width: calc(100% + 10px);
   height: calc(100% + 10px);
 
-  top:  -5px;
+  top: -5px;
   left: -5px;
 
   border: 14px solid #282828;
@@ -189,10 +189,10 @@
   z-index: 99;
   pointer-events: none;
 
-  width:  calc(100% - 18px);
+  width: calc(100% - 18px);
   height: calc(100% - 18px);
 
-  top:  9px;
+  top: 9px;
   left: 9px;
 
   border-radius: 6px;
@@ -260,7 +260,7 @@ panelview .unified-extensions-item {
 
 /* icon size */
 panelview .unified-extensions-item image {
-  width:  16px !important;
+  width: 16px !important;
   height: 16px !important;
 }
 

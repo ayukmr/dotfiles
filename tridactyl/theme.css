@@ -24,10 +24,10 @@
   --tridactyl-of-bg: #519fdf;
 
   /* hints */
-  --tridactyl-hint-bg:      none;
+  --tridactyl-hint-bg: none;
   --tridactyl-hint-outline: none;
-  --tridactyl-hintspan-fg:  var(--tridactyl-bg);
-  --tridactyl-hintspan-bg:  #e6ce5b;
+  --tridactyl-hintspan-fg: var(--tridactyl-bg);
+  --tridactyl-hintspan-bg: #e6ce5b;
 
   /* active hint */
   --tridactyl-hint-active-fg: #333333;
@@ -41,7 +41,7 @@
   --tridactyl-cmplt-option-height: 1.4em;
 
   /* command line font */
-  --tridactyl-cmdl-font-family:  var(--tridactyl-font-family);
+  --tridactyl-cmdl-font-family: var(--tridactyl-font-family);
   --tridactyl-cmplt-font-family: var(--tridactyl-font-family);
 
   /* header */
@@ -55,17 +55,17 @@
   font-weight: bold !important;
 
   position: fixed !important;
-  bottom:   10px  !important;
-  right:    10px  !important;
+  bottom: 10px !important;
+  right: 10px !important;
 
   padding: 3px 5px !important;
 }
 
 /* private mode status */
 :root .TridactylStatusIndicator.TridactylPrivate {
-  color:      inherit !important;
+  color: inherit !important;
   background: inherit !important;
-  border:     inherit !important;
+  border: inherit !important;
 }
 
 /* focused option */
@@ -88,7 +88,7 @@
 
 /* completions table */
 :root #completions > div > table {
-  padding:   16px;
+  padding: 16px;
   font-size: 14px;
 }
 
@@ -109,9 +109,9 @@
 
 /* completions header */
 :root #completions .sectionHeader {
-  font-size:  14px;
+  font-size: 14px;
   background: none;
-  padding:    16px 16px 0 16px !important;
+  padding: 16px 16px 0 16px !important;
 }
 
 /* completion options */
@@ -123,8 +123,8 @@
 :root #cmdline_iframe {
   position: fixed !important;
 
-  top:   25% !important;
-  left:  10% !important;
+  top: 25% !important;
+  left: 10% !important;
   width: 80% !important;
 
   filter: drop-shadow(0px 0px 20px #000000) !important;
