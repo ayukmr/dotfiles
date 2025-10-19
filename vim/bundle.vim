@@ -37,6 +37,9 @@ Plug 'saghen/blink.cmp', Nvim({ 'as': 'blink-cmp', 'tag': '*' })
 " [closetag] automatically close html tags
 Plug 'alvan/vim-closetag', { 'as': 'closetag' }
 
+" [crystal] crystal support
+Plug 'vim-crystal/vim-crystal', Nvim({ 'as': 'crystal', 'for': 'crystal' })
+
 " [commentary] comment text
 Plug 'tpope/vim-commentary', { 'as': 'commentary' }
 
