@@ -29,14 +29,14 @@ let g:onedark_color_overrides = {
   \ 'visual_grey':    { 'gui': '#303030', 'cterm': '237', 'cterm16': '8'  },
   \ 'special_grey':   { 'gui': '#303030', 'cterm': '238', 'cterm16': '8'  },
   \
-  \ 'red':            { 'gui': '#d05c65', 'cterm': '204', 'cterm16': '1'  },
-  \ 'dark_red':       { 'gui': '#d05c65', 'cterm': '196', 'cterm16': '9'  },
-  \ 'green':          { 'gui': '#88b369', 'cterm': '114', 'cterm16': '2'  },
-  \ 'yellow':         { 'gui': '#d5b06b', 'cterm': '180', 'cterm16': '3'  },
-  \ 'dark_yellow':    { 'gui': '#d5b06b', 'cterm': '173', 'cterm16': '11' },
-  \ 'blue':           { 'gui': '#519fdf', 'cterm': '39',  'cterm16': '4'  },
-  \ 'purple':         { 'gui': '#b668cd', 'cterm': '170', 'cterm16': '5'  },
-  \ 'cyan':           { 'gui': '#46a6b2', 'cterm': '38',  'cterm16': '6'  },
+  \ 'red':         { 'gui': '#d05c65', 'cterm': '204', 'cterm16': '1'  },
+  \ 'dark_red':    { 'gui': '#d05c65', 'cterm': '196', 'cterm16': '9'  },
+  \ 'green':       { 'gui': '#88b369', 'cterm': '114', 'cterm16': '2'  },
+  \ 'yellow':      { 'gui': '#d5b06b', 'cterm': '180', 'cterm16': '3'  },
+  \ 'dark_yellow': { 'gui': '#d5b06b', 'cterm': '173', 'cterm16': '11' },
+  \ 'blue':        { 'gui': '#519fdf', 'cterm': '39',  'cterm16': '4'  },
+  \ 'purple':      { 'gui': '#b668cd', 'cterm': '170', 'cterm16': '5'  },
+  \ 'cyan':        { 'gui': '#46a6b2', 'cterm': '38',  'cterm16': '6'  },
 \}
 
 " one dark theme
@@ -66,8 +66,8 @@ func! s:set_highlights() abort
 
   " sneak colors
   highlight Sneak        ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
-  highlight SneakCurrent cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
   highlight SneakLabel   ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
+  highlight SneakCurrent cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
   highlight! link SneakScope CursorLine
 
   " yank color

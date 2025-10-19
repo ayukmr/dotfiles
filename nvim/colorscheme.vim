@@ -59,9 +59,9 @@ func! s:set_highlights() abort
   highlight LightlineInfo  ctermfg=39  ctermbg=236 guifg=#519fdf guibg=#252525
 
   " sneak colors
-  highlight Sneak        ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
+  highlight Sneak      ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
+  highlight SneakLabel ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
   highlight SneakCurrent cterm=bold ctermfg=236 ctermbg=39 gui=bold guifg=#252525 guibg=#519fdf
-  highlight SneakLabel   ctermfg=236 ctermbg=39 guifg=#252525 guibg=#519fdf
   highlight! link SneakScope CursorLine
 
   " cmp matching text

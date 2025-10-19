@@ -21,7 +21,7 @@ endfunc
 func! LightlineFiletype() abort
   return
     \ WebDevIconsGetFileTypeSymbol() . ' ' . (
-    \   !empty(&filetype) ? &filetype : 'none'
+      \ !empty(&filetype) ? &filetype : 'none'
     \ )
 endfunc
 
@@ -178,7 +178,7 @@ let s:palette.tabline = {
   \ 'left':   [[s:white, s:visual_grey]],
   \ 'middle': [[s:white, s:cursor_grey]],
   \
-  \ 'right':  [[s:white,       s:visual_grey]],
+  \ 'right':  [[s:white, s:visual_grey]],
   \ 'tabsel': [[s:cursor_grey, s:purple, 'bold']],
 \}
 

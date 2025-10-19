@@ -15,36 +15,30 @@ local blink_cmp = require "blink.cmp"
 
 -- symbols for kinds
 local symbols = {
-  Text        = "󰦨",
-  Method      = "󰅲",
-  Function    = "󰅲",
+  Text = "󰦨",
+  Method = "󰅲",
+  Function = "󰅲",
   Constructor = "",
-
-  Field    = "",
+  Field = "",
   Variable = "",
   Property = "",
-
-  Class     = "",
+  Class = "",
   Interface = "󰠱",
-  Struct    = "󰙅",
-  Module    = "󰆧",
-
-  Unit       = "",
-  Value      = "",
-  Enum       = "󰓻",
+  Struct = "󰙅",
+  Module = "󰆧",
+  Unit = "",
+  Value = "",
+  Enum = "󰓻",
   EnumMember = "󰓻",
-
-  Keyword  = "",
+  Keyword = "",
   Constant = "",
-
-  Snippet   = "󰆐",
-  Color     = "",
-  File      = "󰈤",
+  Snippet = "󰆐",
+  Color = "",
+  File = "󰈤",
   Reference = "",
-
-  Folder        = "󰉋",
-  Event         = "",
-  Operator      = "󰍘",
+  Folder = "󰉋",
+  Event = "",
+  Operator = "󰍘",
   TypeParameter = "",
 }
 
