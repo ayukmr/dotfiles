@@ -10,8 +10,7 @@ config:
     - ~/.vim/undos
 
   files:
-    - ~/.vim/vimrc:  'source ~/.cfg/vim/vimrc.vim'
-    - ~/.vim/gvimrc: 'source ~/.cfg/vim/gvimrc.vim'
+    - ~/.vim/vimrc: 'source ~/.cfg/vim/vimrc.vim'
 
   test:
     - '[[ ! -f ~/.vim/autoload/plug.vim ]]':
