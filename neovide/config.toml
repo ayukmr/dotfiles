@@ -1,0 +1,6 @@
+# ======================
+# === Neovide Config ===
+# ======================
+
+# hide title bar
+frame = "none"

@@ -1,0 +1,10 @@
+# =========================
+# === Neovide Bootstrap ===
+# =========================
+
+config:
+  dirs:
+    - ~/.config/neovide
+
+  link:
+    - ~/.config/neovide: config.toml
