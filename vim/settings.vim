@@ -116,9 +116,6 @@ set title
 " command completion
 set wildmenu
 
-" smart indenting
-set smartindent
-
 " highlight current line
 set cursorline
 

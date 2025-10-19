@@ -231,12 +231,12 @@ nnoremap <silent> ]d :lua vim.diagnostic.goto_next()<CR>
 
 lua <<EOF
 -- lsp modules
-local lspconfig = require "lspconfig"
 local blink_cmp = require "blink.cmp"
 
 -- capabilities for completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = blink_cmp.get_lsp_capabilities(capabilities)
+local capabilities = blink_cmp.get_lsp_capabilities(
+  vim.lsp.protocol.make_client_capabilities()
+)
 
 local servers = {
   "clangd",
@@ -255,15 +255,15 @@ local servers = {
 
 -- add lsp servers
 for _, lsp in pairs(servers) do
-  lspconfig[lsp].setup {
+  vim.lsp.config(lsp, {
     capabilities = capabilities,
-  }
+  })
 end
 
 -- diagnostics config
 vim.diagnostic.config {
-  signs        = true,
-  underline    = true,
+  signs = true,
+  underline = true,
   virtual_text = false,
 
   float = {

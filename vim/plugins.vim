@@ -18,6 +18,14 @@ nnoremap <silent> <Leader>Q :Bdelete!<CR>
 let g:better_escape_shortcut = 'jk'
 
 " ================
+" === Closetag ===
+" ================
+
+" additional filetypes
+let g:closetag_filetypes = 'html,javascriptreact,svelte'
+let g:closetag_regions = {}
+
+" ================
 " === DevIcons ===
 " ================
 

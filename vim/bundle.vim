@@ -130,10 +130,6 @@ Plug 'ku1ik/vim-pasta', { 'as': 'pasta' }
 " [plenary] utils for neovim lua
 Plug 'nvim-lua/plenary.nvim', { 'as': 'plenary' }
 
-" [polyglot] language syntax pack
-let g:polyglot_disabled = ['sensible']
-Plug 'sheerun/vim-polyglot', { 'as': 'polyglot' }
-
 " [repeat] better repetition for plugins
 Plug 'tpope/vim-repeat', { 'as': 'repeat' }
 
