@@ -261,7 +261,7 @@ vim.diagnostic.config {
   virtual_text = false,
 
   float = {
-    scope  = "cursor",
+    scope = "cursor",
     source = "always",
   },
 }
