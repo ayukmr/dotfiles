@@ -33,12 +33,7 @@ set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undos
 
-" skip making backups in temp dirs
-set backupskip=
-set backupskip+=/tmp/*
-set backupskip+=/private/tmp/*
-
-" two spaces instead of tabs
+" two space indent
 set tabstop=2
 set shiftwidth=2
 set shiftround
@@ -59,7 +54,7 @@ set showtabline=2
 set number
 set numberwidth=4
 
-" merge with signcolumn
+" merge with sign column
 set signcolumn=number
 
 " show invisibles
@@ -127,3 +122,6 @@ set nowrap
 
 " disable conceal
 set conceallevel=0
+
+" skip swap files
+set noswapfile
