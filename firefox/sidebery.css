@@ -85,4 +85,5 @@
 /* pinned tabs background */
 .PinnedTabsBar .Tab[data-active='false'] .body {
   background: #2d2d2d;
+  border-radius: 8px;
 }
